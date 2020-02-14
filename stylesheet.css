@@ -1,0 +1,10 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ------------ Float fix --------- */
+.cf:before, .cf:after { content: " "; /* 1 */ display: table; /* 2 */ }
+.cf:after { clear: both; }
+/*** For IE 6/7 only*/
+.cf { *zoom: 1; }
+
+
