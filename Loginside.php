@@ -6,7 +6,7 @@
 	$username = "admin";
 	$password = "admin";
 // Hvis login sessionen, er den samme som sessions resultat altså at de begge er true så skal der logges ind //
-	if(isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true)
+	if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
 	{// Her giver vi besked på at hvis det lykkes skal vi head til sucess.php //
 		header("Location: Admin.php");
 	}
@@ -14,7 +14,7 @@
 	if (isset($_POST['username']) && isset($_POST['password']))
 	{// hvis det postede data i formen stemmer overens med det data der er i vores $username og $passwrod Så skal der logges ind //
 	if ($_POST['username'] == $username && $_POST['password'] == $password)
-		$_SESSION['logged_in'] = true;
+		$_SESSION['loggedin'] = true;
 		header("Location: Admin.php");	
 	}
 ?>
@@ -28,12 +28,12 @@
 <body>
    <!-- Formen starter her for login felter -->
    <!-- formen poster form dataet videre til admin.php -->
-	<form method="post" action="Admin.php">
+	<form method="post" action="Loginside.php">
 	<!-- Her er input feltet til bruger navn -->
 	Brugernavn: <input type="text" name="username">
-	<br/>
+
 	<!-- inputfelt for kodeord -->
-	Kode: <input type="password" name="password"> <br/>
+	Kode: <input type="password" name="password"> 
 	<input type="submit" value="Login">
 	</form>
 		   
