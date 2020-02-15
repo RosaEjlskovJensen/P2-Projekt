@@ -34,14 +34,18 @@
 <body>
    <!-- Formen starter her for login felter -->
    <!-- formen poster form dataet videre til admin.php -->
-	<form method="post" action="Loginside.php">
+	<form method="post" action="Loginside.php" class="offset-by-five colums two columns test1"> 
+	AmaliePhotography Admin
+	</br>
 	<!-- Her er input feltet til bruger navn -->
-	Brugernavn: <input type="text" name="username">
-
+	<input type="text" name="username" class="" placeholder="Brugernavn" autocomplete="on">
+	</br>
 	<!-- inputfelt for kodeord -->
-	Kode: <input type="password" name="password"> 
-	<input type="submit" value="Login">
+	<input type="password" name="password" class="" placeholder="Kodeord" autocomplete="on">
+	</br>
+	<input type="submit" value="Login" class="button1">
 	</form>
+	
 		   
 
 </body>
