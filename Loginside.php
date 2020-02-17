@@ -34,17 +34,24 @@
 <body>
    <!-- Formen starter her for login felter -->
    <!-- formen poster form dataet videre til admin.php -->
-	<form method="post" action="Loginside.php" class="offset-by-five colums two columns test1"> 
-	AmaliePhotography Admin
-	</br>
+   <div class="row">
+   	<div class="offset-by-one-third colum one-third column">
+	<form method="post" action="Loginside.php" class=" test1"> 
+	<center>
+	<img src="Billeder/AmalieSandgaardPhotography_LOGO.png" alt="Logo" height="150" width="400">
+	</center>
+	
 	<!-- Her er input feltet til bruger navn -->
-	<input type="text" name="username" class="" placeholder="Brugernavn" autocomplete="on">
-	</br>
+	
+	<input type="text" name="username" class="u-full-width" placeholder="Brugernavn" autocomplete="on">
+
 	<!-- inputfelt for kodeord -->
-	<input type="password" name="password" class="" placeholder="Kodeord" autocomplete="on">
+	<input type="password" name="password" class="u-full-width" placeholder="Kodeord" autocomplete="on">
 	</br>
-	<input type="submit" value="Login" class="button1">
+	<input type="submit" value="Login" class="button1 u-full-width">
 	</form>
+	</div>
+	</div>
 	
 		   
 

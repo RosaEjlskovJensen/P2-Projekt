@@ -424,13 +424,13 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  height: 30px;
+  height: 38px;
   padding: 0 30px;
   color: #555;
   text-align: center;
   font-size: 11px;
   font-weight: 600;
-  line-height: 30px;
+  line-height: 38px;
   letter-spacing: .5rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -440,13 +440,12 @@ input[type="button"] {
   border: 2px solid #464646;
   cursor: pointer;
   box-sizing: border-box;
-  margin-top: 20px;
-  margin: 2% 20%;
-	
+  margin-top: 1%;
+ 
 }
 .test1{
 	margin-top: 10%;
-	background: #F3999A;
+	background: #ccc;
 	margin: 10% auto;
 }
 
