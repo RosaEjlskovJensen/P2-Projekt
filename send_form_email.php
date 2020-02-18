@@ -86,7 +86,7 @@ if(isset($_POST['email'])) {
     $email_message .= "Telefon: ".clean_string($telephone)."\n";
     $email_message .= "Besked: ".clean_string($comments)."\n";
  
-// create email headers
+// Email header kode
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
