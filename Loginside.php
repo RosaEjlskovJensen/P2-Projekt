@@ -38,7 +38,7 @@
    	<div class="offset-by-one-third colum one-third column">
 	<form method="post" action="Loginside.php" class=" test1"> 
 	<center>
-	<img src="Billeder/AmalieSandgaardPhotography_LOGO.png" alt="Logo" height="150" width="400">
+	<img class="u-full-width" src="Billeder/AmalieSandgaardPhotography_LOGO.png" alt="Logo" height="150" width="350">
 	</center>
 	
 	<!-- Her er input feltet til bruger navn -->
