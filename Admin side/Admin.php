@@ -24,5 +24,6 @@ session_start();
 
 <body>
 	<h2> Du er logget ind <h2>
+	<a href=""
 </body>
 </html>

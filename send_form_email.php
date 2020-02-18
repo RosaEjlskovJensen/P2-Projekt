@@ -161,7 +161,7 @@ Tak for henvendelsen
             </form>
         </div>
     </div>
-
+<a href="index.php" class="button">Tilbage</a>
 </body>
 
 </html>
