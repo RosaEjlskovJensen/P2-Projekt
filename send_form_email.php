@@ -1,16 +1,17 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<!-- Linker til Skeleton -->
-<link rel="stylesheet" href="stylesheet.css">
-<!-- Linker til normalize der styre font størelser på små skærme -->
-<link rel="stylesheet" href="normalize.css">
-<!-- Dette link er ikonet der er i ens browser tab -->
-<link rel="icon" type="image/png" href="INDSET IKON HER">
-<title>Kontakt</title>
-	</head>
-	<!-------------------------------- Her starter php'en------------------------------------->
+    <meta charset="utf-8">
+    <!-- Linker til Skeleton -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <!-- Linker til normalize der styre font størelser på små skærme -->
+    <link rel="stylesheet" href="normalize.css">
+    <!-- Dette link er ikonet der er i ens browser tab -->
+    <link rel="icon" type="image/png" href="INDSET IKON HER">
+    <title>Kontakt</title>
+</head>
+<!-------------------------------- Her starter php'en------------------------------------->
 <?php
 if(isset($_POST['email'])) {
  
@@ -92,74 +93,75 @@ $headers = 'From: '.$email_from."\r\n".
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
- 
+
 <!-- Egen succes besked -->
- 
+
 Tak for henvendelsen
- 
+
 <?php
  
 }
 ?>
 <!-------------------------------- Her Slutter php'en------------------------------------->
-	
+
 <body>
-	
-	<!-- Simpel form til navn, efternavn, telefon nummer og besked. Derudover også en submit knap -->
-<div class="row">
-<div class="four columns offset-by-one-third column">
-<form class="test1" name="contactform" method="post" action="send_form_email.php">
-<table width="450px">
-<tr>
-<br>
- <td valign="top">
-  <label for="first_name">Fornavn</label>
- </td>
- <td valign="top">
-  <input class="u-full-width" type="text" name="first_name" maxlength="50" size="38">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="last_name">Efternavn</label>
- </td>
- <td valign="top">
-  <input class="u-full-width"  type="text" name="last_name" maxlength="50" size="38">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">Email</label>
- </td>
- <td valign="top">
-  <input class="u-full-width" type="text" name="email" maxlength="80" size="38">
- </td>
-</tr>
-<tr>
- <td class="kontakt-tekst38" valign="top">
-  <label for="telephone">Telefon nummer</label>
- </td>
- <td valign="top">
-  <input class="u-full-width"  type="text" name="telephone" maxlength="30" size="38">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Besked</label>
- </td>
- <td valign="top">
-  <textarea class="u-full-width" name="comments" maxlength="1000" cols="25" rows="6"></textarea>
- </td>
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input class="u-full-width button-primary" type="submit" value="Submit">
- </td>
-</tr>
-</table>
-</form>
-	</div>
-</div>
-	
+
+    <!-- Simpel form til navn, efternavn, telefon nummer og besked. Derudover også en submit knap -->
+    <div class="row">
+        <div class="four columns offset-by-one-third column">
+            <form class="test1" name="contactform" method="post" action="send_form_email.php">
+                <table width="450px">
+                    <tr>
+                        <br>
+                        <td valign="top">
+                            <label for="first_name">Fornavn</label>
+                        </td>
+                        <td valign="top">
+                            <input class="u-full-width" type="text" name="first_name" maxlength="50" size="38">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="last_name">Efternavn</label>
+                        </td>
+                        <td valign="top">
+                            <input class="u-full-width" type="text" name="last_name" maxlength="50" size="38">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="email">Email</label>
+                        </td>
+                        <td valign="top">
+                            <input class="u-full-width" type="text" name="email" maxlength="80" size="38">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="kontakt-tekst38" valign="top">
+                            <label for="telephone">Telefon nummer</label>
+                        </td>
+                        <td valign="top">
+                            <input class="u-full-width" type="text" name="telephone" maxlength="30" size="38">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <label for="comments">Besked</label>
+                        </td>
+                        <td valign="top">
+                            <textarea class="u-full-width" name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center">
+                            <input class="u-full-width button-primary" type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
 </body>
+
 </html>
