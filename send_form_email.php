@@ -110,58 +110,43 @@ Tak for henvendelsen
     <div class="row">
         <div class="four columns offset-by-one-third column">
             <form class="test1" name="contactform" method="post" action="send_form_email.php">
-                <table width="450px">
-                    <tr>
                         <br>
-                        <td valign="top">
-                            <label for="first_name">Fornavn</label>
-                        </td>
-                        <td valign="top">
+                        <p valign="top">
+                            <label for="first_name">Fornavn</label> </p> 
+                        <p valign="top">
                             <input class="u-full-width" type="text" name="first_name" maxlength="50" size="38">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
+                        </p> 
+                  
+                        <p valign="top">
                             <label for="last_name">Efternavn</label>
-                        </td>
-                        <td valign="top">
+                        </p> 
+                        <p valign="top">
                             <input class="u-full-width" type="text" name="last_name" maxlength="50" size="38">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
+                        </p> 
+                        <p valign="top">
                             <label for="email">Email</label>
-                        </td>
-                        <td valign="top">
+                            </p> 
+                        <p valign="top">
                             <input class="u-full-width" type="text" name="email" maxlength="80" size="38">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="kontakt-tekst38" valign="top">
+                        </p> 
+                        <p class="kontakt-tekst38" valign="top">
                             <label for="telephone">Telefon nummer</label>
-                        </td>
-                        <td valign="top">
+                        </p> 
+                        <p valign="top">
                             <input class="u-full-width" type="text" name="telephone" maxlength="30" size="38">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td valign="top">
+                        </p> 
+                        <p valign="top">
                             <label for="comments">Besked</label>
-                        </td>
-                        <td valign="top">
-                            <textarea class="u-full-width" name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="text-align:center">
-                            <input class="u-full-width button-primary" type="submit" value="Submit">
-                        </td>
-                    </tr>
-                </table>
+                        </p> 
+                        <p valign="top">
+                            <textarea class="u-full-width" name="comments" maxlength="1000" cols="25" rows="6"></textarea> </p> 
+
+                        <p colspan="2" style="text-align:center">
+                            <input class="u-full-width button-primary" type="submit" value="Submit">  </p> 
             </form>
         </div>
     </div>
-<a href="index.php" class="button">Tilbage</a>
+    <a href="index.php" class="button">Tilbage</a> 
 </body>
 
 </html>
