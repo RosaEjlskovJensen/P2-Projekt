@@ -79,13 +79,12 @@ if(isset($_POST['email'])) {
     }
  
      
- 
-    $email_message .= "Fornanv: ".clean_string($first_name)."\n";
+  $email_message .= "Navn: ".clean_string($first_name)."\n";
     $email_message .= "Efternavn: ".clean_string($last_name)."\n";
     $email_message .= "Email: ".clean_string($email_from)."\n";
-    $email_message .= "Tlf: ".clean_string($telephone)."\n";
+    $email_message .= "Telefon: ".clean_string($telephone)."\n";
     $email_message .= "Besked: ".clean_string($comments)."\n";
- 
+	
 // Email header
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
@@ -93,14 +92,14 @@ $headers = 'From: '.$email_from."\r\n".
 @mail($email_to, $email_subject, $email_message, $headers);  
 ?>
  
-<!-- Responsen når du har trykket submit skrives herunder -->
+<!-- Responsen når du har trykket submit kommer frem, hvis der er succes. Det der kommer frem skrives herunder -->
  
 Tak for din henvendelsen, du hører fra os hurtigst muligt.
 <?php
  
 }
 ?>
-
+<!-------------------------------- Her Slutter php'en------------------------------------->
 	
 <body>
 	
