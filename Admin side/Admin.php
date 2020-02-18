@@ -14,9 +14,9 @@ session_start();
 <head>
 <meta charset="utf-8">
 <!-- Linker til Skeleton -->
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="../stylesheet.css">
 <!-- Linker til normalize der styre font størelser på små skærme -->
-<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="../normalize.css">
 <!-- Dette link er ikonet der er i ens browser tab -->
 <link rel="icon" type="image/png" href="INDSET IKON HER">
 <title>test</title>
@@ -24,6 +24,8 @@ session_start();
 
 <body>
 	<h2> Du er logget ind <h2>
-	<a href=""
+	<a href="Blog_Overview.php" class="button">Blogs</a>
+	<a href="Write_Blog.php" class="button">Skriv Blog</a>
+	<a href="" class="button">Blank</a>
 </body>
 </html>

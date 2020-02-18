@@ -9,7 +9,7 @@ if(isset($_POST['deleted']))
 	$results = mysqli_query($connection,$query);
 	if($results)
 	{
-		header("Location: EditContact.php");
+		header("Location: Blog_Overview.php");
 		exit();
 	} else
 	{
