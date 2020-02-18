@@ -8,22 +8,20 @@ require_once 'Connection.php';
     $email = $_POST['email'];
 if(isset($_POST['email']) && !empty($_POST['email'])) {
 
-
-
    
 	
     if($_POST['type'] == '1') {
 		
-		$query = "INSERT INTO newsletter VALUES ('','$email')";
-
+	$query = "INSERT INTO newsletter VALUES ('','$email')";
 	$results = mysqli_query($connection,$query);
-
     echo "Din email $email er nu tilmeldt vores nyhedsbrev.";
    
-    }if($_POST['type'] == '0') {
+    }
+	elseif($_POST['type'] == '0') {
 
     $query = "DELETE FROM newsletter WHERE email=" ."'" .$email. "'" or die(mysql_error);
-	echo "Din email $email er nu frameldt vores nyhedsbrev.";
+	$results = mysqli_query($connection,$query);
+		echo "Din email $email er nu frameldt vores nyhedsbrev.";
    
 
 }
