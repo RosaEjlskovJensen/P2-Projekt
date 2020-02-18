@@ -10,7 +10,7 @@
 <link rel="icon" type="image/png" href="INDSET IKON HER">
 <title>Kontakt</title>
 	</head>
-	
+	<!-------------------------------- Her starter php'en------------------------------------->
 <?php
 if(isset($_POST['email'])) {
  
@@ -101,6 +101,7 @@ Tak for din henvendelsen, du hører fra os hurtigst muligt.
 }
 ?>
 
+	
 <body>
 	
 	<!-- Simpel form til navn, efternavn, telefon nummer og besked. Derudover også en submit knap -->
