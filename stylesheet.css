@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -448,20 +448,18 @@ input[type="button"] {
 	background: #ccc;
 	margin: 10% auto;
 }
+.greytopbar
+{
+
+	background-color:hsla(0,0%,0%,0.05)
+	
+}
 /* ------------- Costum Knapper ---------*/
 .button2
 {
     margin: 0;
     padding: 2;
     font-family: consolas;
-}
-body
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #f2f3f7;
 }
 a
 {

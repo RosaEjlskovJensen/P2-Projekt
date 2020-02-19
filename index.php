@@ -8,19 +8,19 @@
 <link rel="stylesheet" href="normalize.css">
 <!-- Dette link er ikonet der er i ens browser tab -->
 <link rel="icon" type="image/png" href="INDSET IKON HER">
-<title> </title>
+<title>Index</title>
 </head>
 <body>
-<h2>Hjemmeside starter her:</h2>
-<h6>Hust at det hele skal køre over mamp eller xamp, da intet php kan køre uden</h6>
-<div class="row">
-<a href="nyhedsbrev.php" class="button">nyhedsbrev</a>
-<a href="send_form_email.php" class="button">Kontakt</a>
-<a href="Blog_Page.php" class="button">Blogs</a>
-<br>
-<a href="Admin side/Loginside.php" class="button1">Admin Login</a>
-</div>
+  
 
+<div class="greytopbar">
+<a href="Admin side/Loginside.php" class="button-primary u-pull-right">Admin Login</a>
+<a href="nyhedsbrev.php" class="button-primary">nyhedsbrev</a>	
+<a href="send_form_email.php" class="button-primary">Kontakt</a> 
+<a href="Blog_Page.php" class="button-primary">Blogs</a> 
+
+</div>
+</div>
 
 </body>
 </html>
