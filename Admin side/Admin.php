@@ -23,11 +23,16 @@ session_start();
 </head>
 
 <body>
+<div class="row">
+<div class="eight columns">
+<center>
 	<h2> Du er logget ind <h2>
-	<a href="Blog_Overview.php" class="button">Blogs</a>
+	
+	<a href="Blog_Overview.php" class="button-primary">Blogs</a>
 	<a href="Write_Blog.php" class="button">Skriv Blog</a>
 	<a href="" class="button">Blank</a>
-	<br>
-	<a href="../index.php" class="button1">Hjem til forside</a>
+	<a href="../index.php" class="button-primary">til forside</a>
+	</center>
+	</div></div>
 </body>
 </html>
