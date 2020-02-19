@@ -23,40 +23,36 @@ die("could not query the database" .mysqli_error());
 
 <table class="">
 	<tr>
-		<th>Nummer </th><th> Text</th>
+		<th>Nummer</th>
+		<th>Text</th>
 	</tr>
 	<?php 
 	while($row = mysqli_fetch_assoc($results)){
 	?>
 	<tr class="">
-		<td><?php echo $row['id']?></td>
-		<td><?php echo $row['Medie']?></td>
-		<td><?php echo $row['Text']?></td>
-		
+			<td><?php echo $row['id']?></td>
+			<td><?php echo $row['Medie']?></td>
+			<td><?php echo $row['Text']?></td>
 		<td class="">
-		
 			<form action='delete_blog.php' method='post' >
-			<input type='submit' value='delete' onclick="return confirm('Are you sure you want to delete this item?');" >
-			<input type='hidden' name='deleted' value='<?php echo $row['id']?>'>
+				<input type='submit' value='delete' onclick="return confirm('Are you sure you want to delete this item?');" >
+				<input type='hidden' name='deleted' value='<?php echo $row['id']?>'>
 			</form>
-			
+	
 			<form action="Update_Blog.php?item=<?php echo $row['id']; ?>" method='post'>
-			<input type='submit' value='update' >
-			<input type='hidden' name='updated' value='<?php echo $row['id']?>'>
-			</form>
-			
+				<input type='submit' value='update' >
+				<input type='hidden' name='updated' value='<?php echo $row['id']?>'>
+			</form>	
 		</td>		
 	</tr>
-	
-	<?php } ?>
-	
+	<?php } ?>	
 </table>
-	<a href="Admin.php" class="button">Tilbage</a>		
+<a href="Admin.php" class="button">Tilbage</a>		
 	
 
 </body>
-</html>
 
+</html>
 <?php 
 mysqli_close($connection);
 ?>

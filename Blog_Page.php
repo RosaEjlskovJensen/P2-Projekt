@@ -20,16 +20,17 @@ die("could not query the database" .mysqli_error());
 </head>
 
 <body>
-<h1>Her kan blogs ses</h1>
-Work in progress (casper)
-       <?php while($row = mysqli_fetch_assoc($results)) {?>
-		<div class="row">
-       	<div class="" >
-        <?php echo $row['Medie'];?>
-        <?php echo $row['Text'];?>
-		</div>
-	    </div>
-		 										  <?php }?>
-	<a href="index.php" class="button">Tilbage</a>
+	<h1>Her kan blogs ses</h1>
+	Work in progress (casper)
+		<?php while($row = mysqli_fetch_assoc($results)) {?>
+			<div class="row">
+				<div class="" >
+					<?php echo $row['Medie'];?>
+					<?php echo $row['Text'];?>
+				</div>
+			</div>
+		<?php }?>
+<a href="index.php" class="button">Tilbage</a>
 </body>
+
 </html>

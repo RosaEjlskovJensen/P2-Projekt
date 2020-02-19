@@ -13,7 +13,7 @@
 // her tjekkes der om der ligger noget data i formen. //
 	if (isset($_POST['username']) && isset($_POST['password']))
 	{// hvis det postede data i formen stemmer overens med det data der er i vores $username og $passwrod Så skal der logges ind //
-	if ($_POST['username'] == $username && $_POST['password'] == $password)
+		if ($_POST['username'] == $username && $_POST['password'] == $password)
 		$_SESSION['loggedin'] = true;
 		header("Location: Admin.php");	
 	}
@@ -35,25 +35,21 @@
    <!-- Formen starter her for login felter -->
    <!-- formen poster form dataet videre til admin.php -->
    <div class="row">
-   	<div class="offset-by-one-third colum one-third column">
-	<form method="post" action="Loginside.php" class=" test1"> 
-	<center>
-	<img class="u-full-width" src="Billeder/AmalieSandgaardPhotography_LOGO.png" alt="Logo" height="150" width="350">
-	</center>
-	
-	<!-- Her er input feltet til bruger navn -->
-	
-	<input type="text" name="username" class="u-full-width" placeholder="Brugernavn" autocomplete="on">
+		<div class="offset-by-one-third colum one-third column">
+			<form method="post" action="Loginside.php" class=" test1"> 
+				<center>
+				<img class="u-full-width" src="Billeder/AmalieSandgaardPhotography_LOGO.png" alt="Logo" height="150" width="350">
+				</center>
 
-	<!-- inputfelt for kodeord -->
-	<input type="password" name="password" class="u-full-width" placeholder="Kodeord" autocomplete="on">
-	</br>
-	<input type="submit" value="Login" class="button1 u-full-width">
-	</form>
+				<!-- Her er input feltet til bruger navn -->
+				<input type="text" name="username" class="u-full-width" placeholder="Brugernavn" autocomplete="on">
+				<!-- inputfelt for kodeord -->
+				<input type="password" name="password" class="u-full-width" placeholder="Kodeord" autocomplete="on">
+			</br>
+				<input type="submit" value="Login" class="button1 u-full-width">
+			</form>
+		</div>
 	</div>
-	</div>
-	
-		   
-
 </body>
+
 </html>

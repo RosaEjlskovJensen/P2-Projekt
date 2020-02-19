@@ -15,10 +15,11 @@ if(isset($Medie) && isset($Text)){
 	$results = mysqli_query($connection,$query);
 
 		if($results){
-		header("Location: Blog_Overview.php"); /* Redirects browser */
-		exit();
-		}else{
-		die("could not query the database" .mysqli_error());
+			header("Location: Blog_Overview.php"); /* Redirects browser */
+			exit();
+		}else
+		{
+			die("could not query the database" .mysqli_error());
 		}
 	}
 }

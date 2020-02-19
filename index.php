@@ -10,16 +10,18 @@
 <link rel="icon" type="image/png" href="INDSET IKON HER">
 <title>Index</title>
 </head>
+
 <body>
   
+<div class="row">
+	<div class="greytopbar">
+		<a href="Admin side/Loginside.php" class="button-primary u-pull-right">Admin Login</a>
+		<a href="nyhedsbrev.php" class="button-primary">nyhedsbrev</a>	
+		<a href="send_form_email.php" class="button-primary">Kontakt</a> 
+		<a href="Blog_Page.php" class="button-primary">Blogs</a> 
+		<a href="My_Pictures.php" class="button-primary">Bestil dine billeder her</a>
 
-<div class="greytopbar">
-<a href="Admin side/Loginside.php" class="button-primary u-pull-right">Admin Login</a>
-<a href="nyhedsbrev.php" class="button-primary">nyhedsbrev</a>	
-<a href="send_form_email.php" class="button-primary">Kontakt</a> 
-<a href="Blog_Page.php" class="button-primary">Blogs</a> 
-
-</div>
+	</div>
 </div>
 
 </body>

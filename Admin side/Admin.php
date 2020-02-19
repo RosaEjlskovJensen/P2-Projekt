@@ -1,5 +1,4 @@
 <!doctype html>
-
 <?php
 session_start();
 	if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == false)
@@ -23,16 +22,17 @@ session_start();
 </head>
 
 <body>
-<div class="row">
-<div class="eight columns">
-<center>
-	<h2> Du er logget ind <h2>
-	
-	<a href="Blog_Overview.php" class="button-primary">Blogs</a>
-	<a href="Write_Blog.php" class="button">Skriv Blog</a>
-	<a href="" class="button">Blank</a>
-	<a href="../index.php" class="button-primary">til forside</a>
-	</center>
-	</div></div>
+	<div class="row">
+		<div class="eight columns">	
+			<div class="">
+				<h2> Du er logget ind <h2>
+				<a href="Blog_Overview.php" class="button-primary">Blogs</a>
+				<a href="Write_Blog.php" class="button">Skriv Blog</a>
+				<a href="" class="button">Blank</a>
+				<a href="../index.php" class="button-primary">til forside</a>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
