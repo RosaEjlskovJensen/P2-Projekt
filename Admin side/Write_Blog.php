@@ -25,11 +25,11 @@ die("could not query the database" .mysqli_error());
 <form name="Blog_Form" class="u-full-width" autocomplete="on" method="post" action="process_input.php">
  
   <div>
-  <input type="text" name="media" class="u-full-width" placeholder="HER SKAL MAN KUNNE INDSÆTTE BILLEDE" > 
+  <input type="text" name="Medie" class="u-full-width" placeholder="HER SKAL MAN KUNNE INDSÆTTE BILLEDE" > 
 </div>
  
   <div>
-  <textarea name="Blog_Text" placeholder="Skriv blog texten her" class="u-full-width " ></textarea> 
+  <textarea name="Text" placeholder="Skriv blog texten her" class="u-full-width " ></textarea> 
 </div>
   
  <div class="">

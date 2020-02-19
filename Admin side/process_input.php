@@ -1,16 +1,16 @@
 <?php
 require_once 'Connection_blog.php';
 
-$media = $_POST['media'];
-$Blog_Text = $_POST['Blog_Text'];
+$Medie = $_POST['Medie'];
+$Text = $_POST['Text'];
 
 
-if(isset($media) && isset($Blog_Text)){
+if(isset($Medie) && isset($Text)){
 	
-	if(!empty($media) && !empty($Blog_Text)){
+	if(!empty($Medie) && !empty($Text)){
 
 
-	$query = "INSERT INTO blogs VALUES ('','$Blog_Text','$media','')";
+	$query = "INSERT INTO blogs VALUES ('','$Text','$Medie')";
 
 	$results = mysqli_query($connection,$query);
 

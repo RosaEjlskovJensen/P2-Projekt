@@ -30,16 +30,17 @@ die("could not query the database" .mysqli_error());
 	?>
 	<tr class="">
 		<td><?php echo $row['id']?></td>
-		<td><?php echo $row['text']?></td>
+		<td><?php echo $row['Medie']?></td>
+		<td><?php echo $row['Text']?></td>
 		
 		<td class="">
 		
-			<form action='delete_contact.php' method='post' >
-			<input type='submit' value='delete' >
+			<form action='delete_blog.php' method='post' >
+			<input type='submit' value='delete' onclick="return confirm('Are you sure you want to delete this item?');" >
 			<input type='hidden' name='deleted' value='<?php echo $row['id']?>'>
 			</form>
 			
-			<form action="update_contact.php?item=<?php echo $row['id']; ?>" method='post'>
+			<form action="Update_Blog.php?item=<?php echo $row['id']; ?>" method='post'>
 			<input type='submit' value='update' >
 			<input type='hidden' name='updated' value='<?php echo $row['id']?>'>
 			</form>

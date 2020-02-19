@@ -1,11 +1,11 @@
 <!doctype html>
 <?php 
-require_once 'Connection.php';
+require_once 'Connection_blog.php';
 
 if(isset($_POST['deleted']))
 {
-	$user_id = $_POST['deleted'];
-	$query = "DELETE FROM users WHERE users_id=" ."'" .$user_id. "'";
+	$id = $_POST['deleted'];
+	$query = "DELETE FROM blogs WHERE id=" ."'" .$id. "'";
 	$results = mysqli_query($connection,$query);
 	if($results)
 	{

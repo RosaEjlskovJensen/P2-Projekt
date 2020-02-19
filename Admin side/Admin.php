@@ -27,5 +27,7 @@ session_start();
 	<a href="Blog_Overview.php" class="button">Blogs</a>
 	<a href="Write_Blog.php" class="button">Skriv Blog</a>
 	<a href="" class="button">Blank</a>
+	<br>
+	<a href="../index.php" class="button1">Hjem til forside</a>
 </body>
 </html>

@@ -25,7 +25,8 @@ Work in progress (casper)
        <?php while($row = mysqli_fetch_assoc($results)) {?>
 		<div class="row">
        	<div class="" >
-        <?php echo $row['blog_post'];?>
+        <?php echo $row['Medie'];?>
+        <?php echo $row['Text'];?>
 		</div>
 	    </div>
 		 										  <?php }?>
