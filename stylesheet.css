@@ -31,7 +31,7 @@
 .container {
   position: relative;
   width: 100%;
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box; }
@@ -448,5 +448,105 @@ input[type="button"] {
 	background: #ccc;
 	margin: 10% auto;
 }
+.greytopbar
+{
 
+	background-color:hsla(0,0%,0%,0.05)
+	
+}
+/* ------------- Costum Knapper ---------*/
+.button2
+{
+    margin: 0;
+    padding: 2;
+    font-family: consolas;
+}
+a
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #5a84a2;
+    font-size: 18px;
+    border-radius: 40px;
+    box-shadow: -2px -2px 8px rgba(255, 255, 255, 1),
+    -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    2px 2px 8px rgba(0, 0, 0, 0.15);
+}
+a:hover
+{
+    box-shadow: inset -2px -2px 8px rgba(255, 255, 255, 1),
+    inset -2px -2px 12px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.1),
+    inset 2px 2px 8px rgba(0, 0, 0, 0.15);  
+}
+a:hover span
+{
+    display: inline-block;
+    transform: scale(0.98);
+}
+/* ------------- Costum Knapper Slut ---------*/
+nav{
+  background: #000000;
+  color: #ffffff;
+  list-style: none;
+  clear: both;
+    margin-right: 17.33%;
+}
+nav li{
+display: inline-block;
+margin: 10px;
+}
+body{
+  margin:0;
+}
+.burger div{
+  width: 35px;
+  height: 5px;
+  background: #ffffff;
+  margin: 6px 0;
+}
+#burger{
+  float: right;
+  visibility:hidden;
+  margin: 5px;
+}
 
+@media screen and (max-width:700px){
+  #burger{
+  visibility: visible;
+}
+.burger{
+display: block;
+height: 40px;
+width: 30px;
+float: right;
+cursor: pointer;
+}
+nav{
+  list-style: none;
+  overflow: hidden;
+  min-height: 40px;
+  margin: 0px auto;
+}
+nav li{
+  display: none;
+}
+
+nav li.open{
+float: none;
+text-align: left;
+margin:0;
+visibility: visible;
+display: block;
+text-align: center;
+padding-top: 40px;
+width: 100%;
+height: auto;
+}
+}
