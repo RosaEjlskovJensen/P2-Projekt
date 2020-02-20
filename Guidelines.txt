@@ -1,0 +1,15 @@
+Her skriver jeg (Casper) lige nogle kodnings regler som gør det hele nemmere #NoSpaghettiCode:
+
+Regl 1. Alle .php dokumenter skal skrives med stort, og mellemrum skal skrives som "_"
+altså er "Blog overview" skrevet som "Blog_Overview.php".
+
+Regl 2. Generelt skal alt skrives med stort i koden, så alle $værdi skal alle skrives med Stort frontbukstav fx: "$Email", "@Name".
+
+Regl 3. Alt kode skrives på engelsk, men fra brugerens side skal alts stå på dansk.
+
+Regl 4. alle connections til en database skal ske gennem Connection.php, denne connecter til en database der hedder "data" 
+her efter vælger man selv hvilken tabel man vil hente eller skrive data til.
+
+Regl 5. Kommentare skrives over et stykke kode så kommentaren forklare hvad kode man skal til at læse.
+
+Regl 6. så lidt tomme linjer så muligt.
