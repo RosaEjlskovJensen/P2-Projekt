@@ -1,5 +1,5 @@
 <?php
-require_once 'Connection_blog.php';
+require_once 'Connection.php';
 
 $Medie = $_POST['Medie'];
 $Text = $_POST['Text'];

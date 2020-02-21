@@ -29,27 +29,27 @@ if(isset($_POST['email'])) {
     }
  
     // validation expected data exists
-    if(!isset($_POST['first_name']) ||
-        !isset($_POST['last_name']) ||
-        !isset($_POST['email']) ||
-        !isset($_POST['telephone']) ||
-        !isset($_POST['comments'])) {
+    if(!isset($_POST['First_Name']) ||
+        !isset($_POST['Last_Name']) ||
+        !isset($_POST['Email']) ||
+        !isset($_POST['Telephone']) ||
+        !isset($_POST['Comments'])) {
         died('Beklager, men der er en fejl med det indtastede.');       
     }
  
-    $first_name = $_POST['first_name']; // required
-    $last_name = $_POST['last_name']; // required
-    $email_from = $_POST['email']; // required
-    $telephone = $_POST['telephone']; // not required
-    $comments = $_POST['comments']; // required
+    $first_name = $_POST['First_Name']; // required
+    $last_name = $_POST['Last_Name']; // required
+    $email_from = $_POST['Email']; // required
+    $telephone = $_POST['Telephone']; // not required
+    $comments = $_POST['Comments']; // required
  
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
  
   if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'Forkert email.<br />';
+    $error_message .= 'Forkert Email.<br />';
   }
-    $string_exp = "/^[A-Za-z .'-]+$/";
+    $string_exp = "/^[A-Za-zÆØÅæøå .'-]+$/";
  
   if(!preg_match($string_exp,$first_name)) {
     $error_message .= 'Forkert fornavn.<br />';
@@ -89,44 +89,25 @@ Tak for henvendelsen
 <body>
     <!-- Simpel form til navn, efternavn, telefon nummer og besked. Derudover også en submit knap -->
     <div class="row">
-        <div class="four columns offset-by-one-third column">
-            <form class="test1" name="contactform" method="post" action="send_form_email.php">
-                        <br>
-                        <p valign="top">
-                            <label for="first_name">Fornavn</label> 
-                        </p> 
-                        <p valign="top">
-                        	<input class="u-full-width" type="text" name="first_name" maxlength="50" size="38">
-                        </p> 
-                        <p valign="top">
-                        	<label for="last_name">Efternavn</label>
-                        </p> 
-                        <p valign="top">
-                        	<input class="u-full-width" type="text" name="last_name" maxlength="50" size="38">
-                        </p> 
-                        <p valign="top">
-                        	<label for="email">Email</label>
-                        </p> 
-                        <p valign="top">
-                            <input class="u-full-width" type="text" name="email" maxlength="80" size="38">
-                        </p> 
-                        <p class="kontakt-tekst38" valign="top">
-                        	<label for="telephone">Telefon nummer</label>
-                        </p> 
-                        <p valign="top">
-                        	<input class="u-full-width" type="text" name="telephone" maxlength="30" size="38">
-                        </p> 
-                        <p valign="top">
-                            <label for="comments">Besked</label>
-                        </p> 
-                        <p valign="top">
-                        	<textarea class="u-full-width" name="comments" maxlength="1000" cols="25" rows="6"></textarea>
-                        </p> 
-                        <p colspan="2" style="text-align:center">
+            <form class="four columns offset-by-one-third column test1" name="contactform" method="post" action="send_form_email.php">
+                       
+							<label for="First_Name">Fornavn</label> 
+                        	<input class="u-full-width" type="text" name="first_name" maxlength="50" placeholder="Fornavn">
+                        	
+                        	<label for="Last_Name">Efternavn</label>
+                        	<input class="u-full-width" type="text" name="last_name" maxlength="50" placeholder="Efternavn">
+                        	
+                        	<label for="Email">Email</label>
+                            <input class="u-full-width" type="text" name="email" maxlength="80" placeholder="Email">
+                            
+                        	<label for="Telephone">Telefon nummer</label>
+                        	<input class="u-full-width" type="text" name="telephone" maxlength="30" placeholder="Telefon Nummer" >
+                           
+                            <label for="Comments">Besked</label>
+                        	<textarea class="u-full-width" name="comments" maxlength="1000" placeholder="Besked"></textarea>
+                        	
                         	<input class="u-full-width button-primary" type="submit" value="Submit">
-                        </p> 
             </form>
-        </div>
     </div>
 <a href="index.php" class="button">Tilbage</a> 
 </body>

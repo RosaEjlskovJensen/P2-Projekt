@@ -28,7 +28,7 @@ session_start();
 				<h2> Du er logget ind <h2>
 				<a href="Blog_Overview.php" class="button-primary">Blogs</a>
 				<a href="Write_Blog.php" class="button">Skriv Blog</a>
-				<a href="" class="button">Blank</a>
+				<a href="Mailing_List.php" class="button">Mailing Liste</a>
 				<a href="../index.php" class="button-primary">til forside</a>
 			</div>
 		</div>

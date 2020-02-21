@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 
 <?php  
-require_once 'Connection_newsletter.php';
+require_once 'Connection.php';
     $email = $_POST['email'];
 if(isset($_POST['email']) && !empty($_POST['email'])) {
 /* ---------------------Tilmeld------------------------*/
