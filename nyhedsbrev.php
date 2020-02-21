@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
-
 <?php  
+error_reporting(0);
 require_once 'Connection.php';
-    $email = $_POST['email'];
+$email = $_POST['email'];
 if(isset($_POST['email']) && !empty($_POST['email'])) {
 /* ---------------------Tilmeld------------------------*/
     if($_POST['type'] == '1') {
