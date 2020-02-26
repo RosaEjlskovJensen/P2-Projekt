@@ -1,6 +1,6 @@
 <!doctype html>
 <?php 
-require_once 'Connection_blog.php';
+require_once 'Connection.php';
 $id = $_GET['item'];
 if(isset($_POST['Text'])){
 
@@ -8,6 +8,7 @@ if(isset($_POST['Text'])){
 	$Medie = $_POST['Medie'];
 	
 	if(!empty($Text)&&!empty($Medie)){
+		// Hvis text og medie ikke er tomme vil den tage den nye text og medie og udskifte det i tabellen //
 			$query = "UPDATE blogs SET Text='$Text',Medie='$Medie' WHERE id = '$id';";
    			echo $query;
 			$results = mysqli_query($connection,$query);

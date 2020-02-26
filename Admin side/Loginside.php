@@ -23,9 +23,9 @@
 <head>
 <meta charset="utf-8">
 <!-- Linker til Skeleton -->
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="../stylesheet.css">
 <!-- Linker til normalize der styre font størelser på små skærme -->
-<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="../normalize.css">
 <!-- Dette link er ikonet der er i ens browser tab -->
 <link rel="icon" type="image/png" href="INDSET IKON HER">
 <title>Untitled Document</title>
@@ -35,17 +35,16 @@
    <!-- Formen starter her for login felter -->
    <!-- formen poster form dataet videre til admin.php -->
    <div class="row">
-		<div class="offset-by-one-third colum one-third column">
+		<div class="four columns offset-by-four">
 			<form method="post" action="Loginside.php" class=" test1"> 
 				<center>
-				<img class="u-full-width" src="Billeder/AmalieSandgaardPhotography_LOGO.png" alt="Logo" height="150" width="350">
+				<img class="u-full-width" src="../Billeder/AmalieSandgaardPhotography_LOGO.png" alt="Logo" height="200">
 				</center>
-
 				<!-- Her er input feltet til bruger navn -->
-				<input type="text" name="username" class="u-full-width" placeholder="Brugernavn" autocomplete="on">
+				<input type="text" name="username" class="ten columns offset-by-one" placeholder="Brugernavn" autocomplete="on"><br><br>
 				<!-- inputfelt for kodeord -->
-				<input type="password" name="password" class="u-full-width" placeholder="Kodeord" autocomplete="on">
-			</br>
+				<input type="password" name="password" class="ten columns offset-by-one" placeholder="Kodeord" autocomplete="on"><br><br>
+			
 				<input type="submit" value="Login" class="button1 u-full-width">
 			</form>
 		</div>

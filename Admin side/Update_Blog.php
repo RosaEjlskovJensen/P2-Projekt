@@ -1,6 +1,6 @@
 <!doctype html>
 <?php 
-	require_once 'Connection_blog.php';
+	require_once 'Connection.php';
 	$id = $_GET['item'];
 	$query = "SELECT * FROM blogs WHERE id=" ."'" .$id. "'";
 	$results = mysqli_query($connection,$query);

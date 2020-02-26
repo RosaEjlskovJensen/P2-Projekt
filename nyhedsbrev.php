@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
-
 <?php  
-require_once 'Connection_newsletter.php';
-    $email = $_POST['email'];
+error_reporting(0);
+require_once 'Connection.php';
+$email = $_POST['email'];
 if(isset($_POST['email']) && !empty($_POST['email'])) {
 /* ---------------------Tilmeld------------------------*/
     if($_POST['type'] == '1') {
@@ -41,7 +41,7 @@ if(isset($_POST['email']) && !empty($_POST['email'])) {
 	<form method="post" action="nyhedsbrev.php">
 		Email:<input type="text" name="email"/>
 	<br/>
-		Tilmed: <input type="radio" name="type" value="1"/><br/>
+		Tilmeld: <input type="radio" name="type" value="1"/><br/>
 		Frameld:<input type="radio" name="type" value="0"/><br/>
 	<br/>  
 		<input type="submit" value="Fortsæt"/> 

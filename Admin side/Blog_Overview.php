@@ -1,12 +1,13 @@
 <!doctype html>
 <?php 
-require_once 'Connection_blog.php';
+require_once 'Connection.php';
 $query = "SELECT * FROM blogs";
 $results = mysqli_query($connection,$query);
 if(!$results){
 die("could not query the database" .mysqli_error());
 }
 ?>
+
 <html>
 <head>
 <meta charset="utf-8">
