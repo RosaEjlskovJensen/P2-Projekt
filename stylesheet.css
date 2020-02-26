@@ -491,6 +491,7 @@ a:hover span
     transform: scale(0.98);
 }
 /* ------------- Costum Knapper Slut ---------*/
+/* -------------- Burger menu start --------------*/
 nav{
   background: #000000;
   color: #ffffff;
@@ -550,3 +551,48 @@ width: 100%;
 height: auto;
 }
 }
+/* -------------- Burger menu slut --------------*/
+
+/* -------------- Frosted picture start --------------*/
+.frost_image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+	
+}
+
+.frost_middle {
+  transition: .5s ease;
+  opacity: 0;
+  
+   transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.frost_container:hover .frost_image {
+  opacity: 0.3;
+}
+
+.frost_container:hover .frost_middle {
+  opacity: 1;
+}
+
+.frost_text {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+	margin-top: -200px;
+ 
+	
+  
+}
+
+
+/* -------------- Frosted picture slut --------------*/
+
+
+
