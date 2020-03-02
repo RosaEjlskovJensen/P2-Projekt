@@ -536,11 +536,22 @@ height: auto;
   color: white;
   font-size: 16px;
 	margin-top: -200px;
- 
-	
-  
 }
 
 
 /* -------------- Frosted picture slut --------------*/
+
+/* -------------- Code vi selv --------------*/
+
+.test1{
+  margin-top: 10%;
+  background: #ccc;
+  margin: 10% auto;
+}
+.greytopbar
+{
+
+  background-color:hsla(0,0%,0%,0.05)
+  
+}
 
