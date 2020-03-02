@@ -36,15 +36,12 @@ die("cannot connect to database".mysqli_connect_error());
   while($row = mysqli_fetch_array($result))
   {
    $output .= '
-
-    <tr>
-     <td>
+   
+    <div>
       <img src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" />
-     </td>
-    </tr>
+    </div>
    ';
   }
-  $output .= '</table>';
   echo $output;
  }
     ?>
