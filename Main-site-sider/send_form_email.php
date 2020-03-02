@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <!-- Linker til Skeleton -->
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="../stylesheet.css">
     <!-- Linker til normalize der styre font størelser på små skærme -->
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../normalize.css">
     <!-- Dette link er ikonet der er i ens browser tab -->
-    <link rel="icon" type="image/png" href="INDSET IKON HER">
+    <link rel="icon" type="image/png" href="../INDSET IKON HER">
     <title>Kontakt</title>
 </head>
 <!-------------------------------- Her starter php'en------------------------------------->
@@ -89,7 +89,7 @@ Tak for henvendelsen
 <body>
     <!-- Simpel form til navn, efternavn, telefon nummer og besked. Derudover også en submit knap -->
     <div class="row">
-            <form class="four columns offset-by-one-third column test1" name="contactform" method="post" action="send_form_email.php">
+            <form class="four columns offset-by-one-third column test1" name="contactform" method="post" action="../send_form_email.php">
                        
 							<label for="First_Name">Fornavn</label> 
                         	<input class="u-full-width" type="text" name="first_name" maxlength="50" placeholder="Fornavn">
@@ -109,7 +109,7 @@ Tak for henvendelsen
                         	<input class="u-full-width button-primary" type="submit" value="Submit">
             </form>
     </div>
-<a href="index.php" class="button">Tilbage</a> 
+<a href="../index.php" class="button">Tilbage</a> 
 </body>
 
 </html>

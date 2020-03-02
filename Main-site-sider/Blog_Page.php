@@ -1,7 +1,7 @@
 <!doctype html>
 <!-- Denne kalder på connection dokumentet, og selecter hvilken tabel den skal acess -->
 <?php
-require_once 'Connection.php';
+require_once '../Connection.php';
 $query = "SELECT * FROM blogs";
 $results = mysqli_query($connection,$query);
 if(!$results){
@@ -13,11 +13,11 @@ die("could not query the database" .mysqli_error());
 <head>
 <meta charset="utf-8">
 <!-- Linker til Skeleton -->
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="../stylesheet.css">
 <!-- Linker til normalize der styre font størelser på små skærme -->
-<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="../normalize.css">
 <!-- Dette link er ikonet der er i ens browser tab -->
-<link rel="icon" type="image/png" href="INDSET IKON HER">
+<link rel="icon" type="image/png" href="../INDSET IKON HER">
 <title>Blogs</title>
 </head>
 
@@ -33,7 +33,7 @@ die("could not query the database" .mysqli_error());
 				</div>
 			</div>
 		<?php }?>
-<a href="index.php" class="button">Tilbage</a>
+<a href="../index.php" class="button">Tilbage</a>
 </body>
 
 </html>

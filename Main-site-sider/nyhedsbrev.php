@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <?php  
 error_reporting(0);
-require_once 'Connection.php';
+require_once '../Connection.php';
 $email = $_POST['email'];
 if(isset($_POST['email']) && !empty($_POST['email'])) {
 /* ---------------------Tilmeld------------------------*/
@@ -29,16 +29,16 @@ if(isset($_POST['email']) && !empty($_POST['email'])) {
 <head>
 <meta charset="utf-8">
 <!-- Linker til Skeleton -->
-<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="../stylesheet.css">
 <!-- Linker til normalize der styre font størelser på små skærme -->
-<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="../normalize.css">
 <!-- Dette link er ikonet der er i ens browser tab -->
-<link rel="icon" type="image/png" href="INDSET IKON HER">
+<link rel="icon" type="image/png" href="../INDSET IKON HER">
 <title> </title>
 </head>
 
 <body> 
-	<form method="post" action="nyhedsbrev.php">
+	<form method="post" action="../nyhedsbrev.php">
 		Email:<input type="text" name="email"/>
 	<br/>
 		Tilmeld: <input type="radio" name="type" value="1"/><br/>
@@ -46,7 +46,7 @@ if(isset($_POST['email']) && !empty($_POST['email'])) {
 	<br/>  
 		<input type="submit" value="Fortsæt"/> 
 	</form>
-<a href="index.php" class="button">Tilbage</a>
+<a href="../index.php" class="button">Tilbage</a>
 </body>
 
 </html>
