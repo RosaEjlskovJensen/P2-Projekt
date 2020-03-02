@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 02. 03 2020 kl. 09:11:44
+-- Genereringstid: 02. 03 2020 kl. 09:15:01
 -- Serverversion: 10.4.8-MariaDB
 -- PHP-version: 7.3.11
 
