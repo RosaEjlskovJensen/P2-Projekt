@@ -134,13 +134,6 @@
     opacity: 1;
   }
 
-  .text {
-    background-color: #4CAF50;
-    color: white;
-    font-size: 16px;
-    padding: 16px 32px;
-  }
-
 </style>
 
 <!-- Linker til normalize der styre font størelser på små skærme -->
