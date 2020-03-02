@@ -75,7 +75,15 @@
 	
 	 </div>
 	
-	
+	<?php
+		$row = mysqli_fetch_assoc($results);
+   	$name =  $row['name'];
+	  $surname =  $row['surname'];
+		$description =  $row['description'];
+		$email =  $row['email'];
+		$mobile =  $row['mobile'];
+		$picture =  $row['picture'];
+	?> 
 	
 	
 </body>
