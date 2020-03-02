@@ -25,6 +25,8 @@ function build_calendar($month, $year) {
      // Create array containing abbreviations of days of week.
      $daysOfWeek = array('Søndag','Mandag','Tirsdag','Onsdag','Torsdag','Fredag','Lørdag');
 	
+	 $months = array('Januar', 'Februar', 'Marts', 'April', 'Maj', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'December');
+	
 	
 
      // What is the first day of the month in question?
@@ -48,16 +50,17 @@ function build_calendar($month, $year) {
      // Create the table tag opener and day headers
      
     $datetoday = date('Y-m-d');
-    
+	
+    $monthdate = $month-1;
     
     
     $calendar = "<table class='table table-bordered'>";
-    $calendar .= "<center><h2>$monthName $year</h2>";
-    $calendar.= "<a class='btn btn-xs btn-primary' href='?month=".date('m', mktime(0, 0, 0, $month-1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month-1, 1, $year))."'>Forrige Måned</a> ";
+    $calendar .= "<center><h2>$months[$monthdate] $year</h2>";
+    $calendar.= "<a class='button1' href='?month=".date('m', mktime(0, 0, 0, $month-1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month-1, 1, $year))."'>Forrige Måned</a> ";
     
-    $calendar.= " <a class='btn btn-xs btn-primary' href='?month=".date('m')."&year=".date('Y')."'>Denne Måned</a> ";
+    $calendar.= " <a class='button1' href='?month=".date('m')."&year=".date('Y')."'>Denne Måned</a> ";
     
-    $calendar.= "<a class='btn btn-xs btn-primary' href='?month=".date('m', mktime(0, 0, 0, $month+1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month+1, 1, $year))."'>Næste Måned</a></center><br>";
+    $calendar.= "<a class='button1' href='?month=".date('m', mktime(0, 0, 0, $month+1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month+1, 1, $year))."'>Næste Måned</a></center><br>";
     
     
         
@@ -156,6 +159,7 @@ function build_calendar($month, $year) {
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheet.css">
     <style>
        @media only screen and (max-width: 760px),
         (min-device-width: 802px) and (max-device-width: 1020px) {
@@ -275,9 +279,12 @@ function build_calendar($month, $year) {
                      }
                     echo build_calendar($month,$year);
                 ?>
+                
             </div>
+            
         </div>
     </div>
+    <a href="../index.php" class="button1 two columns" >Tilbage</a>
 </body>
 
 </html>
