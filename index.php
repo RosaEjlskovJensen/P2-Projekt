@@ -14,11 +14,24 @@
   <!-- Linker til Stylesheet -->
   <link rel="stylesheet" href="indexcss.css">
   <style>
+    html {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+
     .navbar{
       position: fixed;
       z-index: 99;
       opacity: 0.98;
       top: 0;
+    }
+
+    .section_footer{
+     /*  */
     }
 
     .showcase_picture{
@@ -76,7 +89,7 @@
       height: 15px;
       width: 15px;
       margin: 0 2px;
-      background-color: #234946;
+      background-color: #8b752e;
       border-radius: 50%;
       display: inline-block;
       transition: background-color 0.6s ease;
@@ -91,7 +104,7 @@
     q {font-style: italic;}
 
     /* Add a blue color to the author */
-    .author {color: #234946;}
+    .author {color: #8b752e;}
   </style>
 
   <!-- Linker til normalize der styre font størelser på små skærme -->
@@ -204,9 +217,6 @@
           }
         </script>
 
-        <br>
-<!-- <form><button type="submit" formaction="send_form_email.php"><img src="billeder/Test_Picture.png"></button></form> -->
-
         <!-- Galleri Sektion -->
 
         <center><div><h1>Hvem fotografer jeg?</h1></div></center>
@@ -248,7 +258,23 @@
   <div class="u-full-width">
     <center>
       <div><h1>Her finder du mig!</h1></div>
+      <div class="row">
+        <div class="six columns">
+          <br>
+          <br>
+          <h6 style="color: #8b752e">NYTTIGE LINKS</h6>
+          <a href="#" >Privatlivspolitik</a><br>
+          <a href="#">Vilkår & Betingelser</a>
+          <p></p>
+          <h6 style="color: #8b752e">FØLG MIG PÅ</h6>
+          <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank">Facebook</a><br>
+          <a href="#" target="_blank">Instagram</a><br>
+          <a href="#" target="_blank">Flere</a>
+        </div>
+        <div class="five columns">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2170.129099026749!2d9.917400615981306!3d57.049329380919936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4649328c9bc379a3%3A0x97ceb14dd16f56d2!2sBispensgade%2013%2C%209000%20Aalborg!5e0!3m2!1sda!2sdk!4v1582824343072!5m2!1sda!2sdk" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+  </div>
     </center>
   </div>
 </section> 
