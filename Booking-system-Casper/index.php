@@ -156,6 +156,7 @@ function build_calendar($month, $year) {
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../stylesheet.css">
     <style>
        @media only screen and (max-width: 760px),
         (min-device-width: 802px) and (max-device-width: 1020px) {
@@ -275,9 +276,12 @@ function build_calendar($month, $year) {
                      }
                     echo build_calendar($month,$year);
                 ?>
+                
             </div>
+            
         </div>
     </div>
+    <a href="../index.php" class="button-primary two columns" >Tilbage</a>
 </body>
 
 </html>
