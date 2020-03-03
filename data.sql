@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 03. 03 2020 kl. 09:35:13
--- Serverversion: 10.4.11-MariaDB
--- PHP-version: 7.4.2
+-- Genereringstid: 03. 03 2020 kl. 12:01:17
+-- Serverversion: 10.4.8-MariaDB
+-- PHP-version: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,21 +25,43 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Struktur-dump for tabellen `baby`
+--
+
+CREATE TABLE `baby` (
+  `id` int(11) NOT NULL,
+  `name` longblob NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur-dump for tabellen `blogs`
 --
 
 CREATE TABLE `blogs` (
   `id` int(11) NOT NULL,
-  `Medie` varchar(256) NOT NULL,
-  `Text` varchar(5000) NOT NULL
+  `medie` varchar(256) NOT NULL,
+  `text` varchar(5000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Data dump for tabellen `blogs`
 --
 
-INSERT INTO `blogs` (`id`, `Medie`, `Text`) VALUES
-(1, '123', '321');
+INSERT INTO `blogs` (`id`, `medie`, `text`) VALUES
+(1, 'celia', 'fsagdsgasdgsa');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `boern`
+--
+
+CREATE TABLE `boern` (
+  `id` int(11) NOT NULL,
+  `name` longblob NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -58,12 +80,56 @@ CREATE TABLE `bookings` (
 -- --------------------------------------------------------
 
 --
+-- Struktur-dump for tabellen `bryllup`
+--
+
+CREATE TABLE `bryllup` (
+  `id` int(11) NOT NULL,
+  `name` longblob NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `familie`
+--
+
+CREATE TABLE `familie` (
+  `id` int(11) NOT NULL,
+  `name` longblob NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `gravid`
+--
+
+CREATE TABLE `gravid` (
+  `id` int(11) NOT NULL,
+  `name` longblob NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Struktur-dump for tabellen `konfirmation`
+--
+
+CREATE TABLE `konfirmation` (
+  `id` int(11) NOT NULL,
+  `name` longblob NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Struktur-dump for tabellen `newsletter`
 --
 
 CREATE TABLE `newsletter` (
   `id` int(11) NOT NULL,
-  `email` varchar(256) NOT NULL
+  `email` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -71,10 +137,11 @@ CREATE TABLE `newsletter` (
 --
 
 INSERT INTO `newsletter` (`id`, `email`) VALUES
-(2, 'da.fagot@hotmail.com'),
-(3, 'test@gmail.com'),
-(4, 'info@techammo.dk'),
-(5, 'Caroline_zacho@hotmail.com');
+(1, 0),
+(2, 0),
+(3, 0),
+(4, 0),
+(5, 0);
 
 --
 -- Begrænsninger for dumpede tabeller
@@ -84,12 +151,6 @@ INSERT INTO `newsletter` (`id`, `email`) VALUES
 -- Indeks for tabel `blogs`
 --
 ALTER TABLE `blogs`
-  ADD PRIMARY KEY (`id`);
-
---
--- Indeks for tabel `bookings`
---
-ALTER TABLE `bookings`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -106,13 +167,7 @@ ALTER TABLE `newsletter`
 -- Tilføj AUTO_INCREMENT i tabel `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-
---
--- Tilføj AUTO_INCREMENT i tabel `bookings`
---
-ALTER TABLE `bookings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- Tilføj AUTO_INCREMENT i tabel `newsletter`

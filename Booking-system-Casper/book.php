@@ -42,7 +42,7 @@ function timeslots($duration, $cleanup, $start, $end){
 
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="dk">
 
   <head>
     <meta charset="UTF-8">
@@ -52,12 +52,11 @@ function timeslots($duration, $cleanup, $start, $end){
     <title></title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/main.css">
   </head>
 
   <body>
     <div class="container">
-        <h1 class="text-center">Book for Date: <?php echo date('m/d/Y', strtotime($date)); ?></h1><hr>
+        <h1 class="text-center">Book Datoen: <?php echo date('m/d/Y', strtotime($date)); ?></h1><hr>
         <div class="row">
            <?php $timeslots = timeslots($duration, $cleanup, $start, $end);
 			foreach($timeslots as $ts){
