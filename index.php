@@ -31,6 +31,10 @@
       top: 0;
     }
 
+    .section_footer{
+     /*  */
+   }
+
    .showcase_picture{
     max-width: 100%;
     height: 91.5vh;
@@ -102,7 +106,8 @@
   /* Add a blue color to the author */
   .author {color: #8b752e;}
 
-  /* frost overlay */
+
+  ----------------------------- frost overlay ------------------------------------
 
 .container1 {
   position: relative;
@@ -142,7 +147,6 @@
   color: #8b752e;
   font-size: 25px;
 }
-
 
 </style>
 
@@ -265,7 +269,7 @@
 
         <!-- Galleri Sektion -->
 
-        <section class="section_galleri_row1">
+        <section class="section_galleri">
         <div class="container u-full-width">
           <div class="row">
             <div class="one-third column">
@@ -278,7 +282,7 @@
             </div>
             <div class="one-third column">
               <div class="container1">
-                <a href="index.php"><img src="billeder/FBBB1.jpg" class="image1">
+                <a href="index.php"><img src="billeder/FBBB1.jpg" class="image1 link_picture">
                   <div class="middle1">
                     <div class="text1">BØRN</div></a>
                   </div>
@@ -319,7 +323,7 @@
                   </div>
                 </div>
               </div>
-            </div>   
+            </div>  
         </section>
 
 <br>
