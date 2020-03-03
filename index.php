@@ -159,7 +159,7 @@
       <li><a href="Blog_Page.php" class="button">Nyheder</a></li>
       <li><a href="nyhedsbrev.php" class="button">Priser</a></li>
       <li><a href="Om_Mig.php" class="button">Om Mig</a></li>
-      <li><a href="My_Pictures.php" class="button">Portfolie</a></li>
+      <li><a href="portfolie/Portfolieforside.php" class="button">Portfolie</a></li>
     </div>
   </nav>
 

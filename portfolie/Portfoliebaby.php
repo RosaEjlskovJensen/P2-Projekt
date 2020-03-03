@@ -8,7 +8,7 @@
   <!-- Dette link er ikonet der er i ens browser tab -->
   <link rel="icon" type="image/png" href="billeder/asp.png">
 <!-- Linker til Skeleton -->
-<link rel="stylesheet" href="..//stylesheet.css">
+<link rel="stylesheet" href="../stylesheet2.css">
  <!-- Linker til normalize der styre font størelser på små skærme -->
 <link rel="stylesheet" href="../normalize.css">
      
@@ -101,7 +101,7 @@
 <!---Connect til database---->
 <?php
 //database connection
-$connection = mysqli_connect('localhost','root','root','data');
+$connection = mysqli_connect('localhost','root','','data');
 if(!$connection){
 die("cannot connect to database".mysqli_connect_error());
 }

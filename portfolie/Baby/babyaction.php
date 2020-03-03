@@ -2,7 +2,7 @@
 //action.php
 if(isset($_POST["action"]))
 {
- $connect = mysqli_connect("localhost", "root", "root", "data");
+ $connect = mysqli_connect("localhost", "root", "", "data");
  if($_POST["action"] == "fetch")
  {
   $query = "SELECT * FROM baby ORDER BY id DESC";
