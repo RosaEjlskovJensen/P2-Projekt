@@ -14,7 +14,7 @@
   <!-- Linker til Fontawsome -->
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Linker til Stylesheet -->
-  <link rel="stylesheet" href="..//indexcss.css">
+  <link rel="stylesheet" href="..//stylesheet2.css">
 
 <style>
 
@@ -148,7 +148,7 @@
         <center><div class="overskrift"><h1>Galleri</h1></div></center>
     
 
-<!-- Galleri sektion starter her, og det skal så være muligt at navigere sig videre til en template side som hun skal kunne ændre på. -->
+<!-- 6 kategorier med mulighed for at navigere sig videre til at større galeri af den ønskede sektion. -->
 
 <!-- Vigtigt at de billeder der bliver insat her, har teksten skrevet på billedet, så dette skaleres op. -->
       <section class="section_galleri_row1">

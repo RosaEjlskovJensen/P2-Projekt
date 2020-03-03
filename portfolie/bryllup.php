@@ -1,7 +1,7 @@
 <!DOCTYPE html>  
 <html>  
  <head>  
-  <title>Ajax Image Insert Update Delete in Mysql Database using PHP</title>  
+  <title>Bryllup</title>  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
@@ -9,7 +9,7 @@
  <body>  
   <br /><br />  
   <div class="container" style="width:900px;">  
-   <h3 align="center">Ajax Image Insert Update Delete in Mysql Database using PHP</h3>  
+   <h3 align="center">Bryllup</h3>  
    <br />
    <div align="right">
     <button type="button" name="add" id="add" class="btn btn-success">Add</button>
