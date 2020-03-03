@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Linker til Stylesheet -->
   <link rel="stylesheet" href="stylesheet2.css">
+  <script type="text/javascript" href="burgermenujs.js"></script>
   <style>
     html {
       overflow: scroll;
@@ -29,10 +30,6 @@
       opacity: 0.98;
       top: 0;
     }
-
-    .section_footer{
-     /*  */
-   }
 
    .showcase_picture{
     max-width: 100%;
@@ -56,8 +53,8 @@
   }
 
   .link_picture{
-    max-height: 99%;
-    max-width: 99%;
+    max-height: 101%;
+    max-width: 101%;
   }  
 
   /* Slideshow */
@@ -105,34 +102,47 @@
   /* Add a blue color to the author */
   .author {color: #8b752e;}
 
+  /* frost overlay */
 
-  .img_frost {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-  }
+.container1 {
+  position: relative;
+  width: 50%;
+}
 
-  .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
+.image1 {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
 
-  .container_img_frost:hover .img_frost {
-    opacity: 0.3;
-  }
+.middle1 {
+  transition: .5s ease;
+  opacity: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  text-align: center;
+}
 
-  .container_img_frost:hover .middle {
-    opacity: 1;
-  }
+.container1:hover .image1 {
+  opacity: 0.3;
+}
+
+.container1:hover .middle1 {
+  opacity: 1;
+}
+
+.text1 {
+  background-color: white;
+  color: #8b752e;
+  font-size: 25px;
+}
+
 
 </style>
 
@@ -159,7 +169,7 @@
       <li><a href="Blog_Page.php" class="button">Nyheder</a></li>
       <li><a href="nyhedsbrev.php" class="button">Priser</a></li>
       <li><a href="Om_Mig.php" class="button">Om Mig</a></li>
-      <li><a href="portfolie/Portfolieforside.php" class="button">Portfolie</a></li>
+      <li><a href="My_Pictures.php" class="button">Portfolie</a></li>
     </div>
   </nav>
 
@@ -255,45 +265,62 @@
 
         <!-- Galleri Sektion -->
 
-
-
-
         <section class="section_galleri_row1">
-          <div class="container">
+        <div class="container u-full-width">
+          <div class="row">
+            <div class="one-third column">
+              <div class="container1">
+                <a href="index.php"><img src="billeder/FBBBB1.jpg" class="image1 link_picture">
+                <div class="middle1">
+                  <div class="text1">BABY</div></a>
+                </div>
+              </div>
+            </div>
+            <div class="one-third column">
+              <div class="container1">
+                <a href="index.php"><img src="billeder/FBBB1.jpg" class="image1">
+                  <div class="middle1">
+                    <div class="text1">BØRN</div></a>
+                  </div>
+                </div>
+              </div>
+              <div class="one-third column">
+                <div class="container1">
+                  <a href="index.php"><img src="billeder/FFB1.jpg" class="image1 link_picture">
+                  <div class="middle1">
+                    <div class="text1">FAMILIE</div></a>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="row">
-              <div class="u-full-width">
-              <center><h1>Hvem fotografer jeg?</h1></center>
-            </div></div>
-            <div class="row">
-              <div class="container_img_frost">
               <div class="one-third column">
-                <a href="send_form_email.php"><img class="link_picture img_frost" src="billeder/FBBBB1.jpg"><div class="middle"></div></a></div>
+                <div class="container1">
+                  <a href="index.php"><img src="billeder/FKB1.jpg" class="image1 link_picture">
+                  <div class="middle1">
+                    <div class="text1">KONFIRMATION</div></a>
+                  </div>
+                </div>
               </div>
-              <div class="container_img_frost">
               <div class="one-third column">
-                <a href="send_form_email.php"><img class="link_picture img_frost" src="billeder/FBBB1.jpg"><div class="middle"></div></a></div>
+                <div class="container1">
+                  <a href="index.php"><img src="billeder/FBB1.jpg" class="image1 link_picture">
+                    <div class="middle1">
+                      <div class="text1">BRYLLUP</div></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="one-third column">
+                  <div class="container1">
+                    <a href="index.php"><img src="billeder/FBB1.jpg" class="image1 link_picture">
+                    <div class="middle1">
+                      <div class="text1">GRAVID</div></a>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="container_img_frost">
-              <div class="one-third column">
-                <a href="send_form_email.php"><img class="link_picture img_frost" src="billeder/FFB1.jpg"><div class="middle"></div></a></div>
-              </div>
-            <div class="row">
-              <div class="container_img_frost">
-              <div class="one-third column">
-                <a href="send_form_email.php"><img class="link_picture img_frost" src="billeder/FKB1.jpg"><div class="middle"><</div></a></div>
-              </div>
-              <div class="container_img_frost">
-              <div class="one-third column">
-                <a href="send_form_email.php"><img class="link_picture img_frost" src="billeder/FBB1.jpg"><div class="middle"></div></a></div>
-              </div>
-              <div class="container_img_frost">
-              <div class="one-third column">
-                <a href="send_form_email.php"><img class="link_picture img_frost" src="billeder/FBBBB1.jpg"><div class="middle"></div></a></div>
-              </div>
-            </div> 
-          </div>     
+            </div>   
         </section>
-
 
 <br>
 <br>

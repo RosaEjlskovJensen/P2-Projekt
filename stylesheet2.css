@@ -117,7 +117,15 @@
 html is set to 62.5% so that all the REM measurements throughout Skeleton
 are based on 10px sizing. So basically 1.5rem = 15px :) */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  overflow: scroll;
+  overflow-x: hidden;}
+
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;}  /* Optional: just make scrollbar invisible */
+    
+
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.6;
@@ -156,6 +164,11 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin-top: 0; }
 
+q {
+  font-style: italic;}
+
+.author {
+  color: #8b752e;}
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -503,7 +516,7 @@ height: auto;
 
 /* -------------- Burger menu slut --------------*/
 
-/* -------------- Frosted picture start --------------*/
+/* -------------- Frosted picture start -------------- <---ikke i brug!
 .frost_image {
   opacity: 1;
   display: block;
@@ -539,7 +552,7 @@ height: auto;
 }
 
 
-/* -------------- Frosted picture slut --------------*/
+ -------------- Frosted picture slut --------------*/
 
 /* -------------- Code vi selv --------------*/
 
@@ -554,4 +567,5 @@ height: auto;
   background-color:hsla(0,0%,0%,0.05)
   
 }
+
 
