@@ -98,6 +98,11 @@
 }
 </style>
  </head>  
+
+<?php
+$kategori = array("baby", "boern", "bryllup", "familie", "gravid", "konfirmation");
+?>
+
 <!---Connect til database---->
 <?php
 //database connection
@@ -121,7 +126,8 @@ die("cannot connect to database".mysqli_connect_error());
     <div class="billeder">
      <?php
  {
-  $query = "SELECT * FROM baby ORDER BY id DESC";
+  $kategori = $_GET['item']
+  $query = "SELECT * FROM kategori ORDER BY id DESC";
   $result = mysqli_query($connection, $query);
   
   while($row = mysqli_fetch_array($result))
