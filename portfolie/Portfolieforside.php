@@ -156,24 +156,24 @@
           <div class="container">
             <div class="row">
               <div class="four columns">
-              <a href="Portfolietemplate.php?item=<?php echo $row['user_id']; ?>"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
+              <a href="Portfolietemplate.php?item=0"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
               </div>
               <div class="four columns">
-            <a href="Portfolietemplate.php?item=<?php echo $row['user_id']; ?>"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
+            <a href="Portfolietemplate.php?item=1"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
               </div>
               <div class="four columns">
-            <a href="Portfolietemplate.php?item=<?php echo $row['user_id']; ?>"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
+            <a href="Portfolietemplate.php?item=2"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
               </div>
             </div>
             <div class="row">
               <div class="four columns">
-             <a href="Portfolietemplate.php?item=<?php echo $row['user_id']; ?>"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
+             <a href="Portfolietemplate.php?item=3"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
               </div>
               <div class="four columns">
-         <a href="Portfolietemplate.php?item=<?php echo $row['user_id']; ?>"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
+         <a href="Portfolietemplate.php?item=4"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
               </div>
               <div class="four columns">
-          <a href="Portfolietemplate.php?item=<?php echo $row['user_id']; ?>"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
+          <a href="Portfolietemplate.php?item=5>"><img class="link_picture" src="Portfoliebilleder/youtube.png"></a>
               </div>
             </div>  
           </div> 
