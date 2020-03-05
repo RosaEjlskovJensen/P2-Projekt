@@ -124,7 +124,7 @@ html {
 ::-webkit-scrollbar {
   width: 0px;  /* Remove scrollbar space */
   background: transparent;}  /* Optional: just make scrollbar invisible */
-    
+    }
 
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
@@ -430,6 +430,7 @@ there.
 */
 
 
+
 /* Larger than mobile */
 @media (min-width: 400px) {}
 
@@ -556,6 +557,8 @@ height: auto;
 
 /* -------------- Code vi selv --------------*/
 
+
+
 .test1{
   margin-top: 10%;
   background: #ccc;
@@ -568,4 +571,8 @@ height: auto;
   
 }
 
+
+
+
+/* test*/
 

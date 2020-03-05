@@ -1,0 +1,94 @@
+/* Menu */
+
+.header {
+	background-color: #e3e3dd;
+	opacity: 0.98;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+.header ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: #e3e3dd;
+}
+
+.header ul a{
+	display: block;
+	padding: 10px 10px 10px 50%;
+	margin-top: 10px;
+	text-decoration: none; 
+}
+
+.header .logo {
+	float: left;
+	display: block;
+}
+
+.header .menu {
+	clear: both;
+	max-height: 0;
+	transition: max-height .2 ease-out;
+}
+
+/* Checkbox */
+
+.header .menu_icon {
+	position: relative;
+	padding: 28px 20px;
+	float: right;
+}
+
+.header .menu_icon .nav_icon {
+	position: relative;
+	background-color: #8b752e;
+	display: block;
+	width: 18px;
+	height: 2px;
+	transition: background .2s ease-out;
+}
+
+.header .menu_icon .nav_icon:before,
+.header .menu_icon .nav_icon:after {
+	position: absolute;
+	background-color: #8b752e;
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 5px;
+	transition: all .2 ease-out;
+}
+
+.header .menu_icon .nav_icon:after {
+	top: -5px;
+}
+
+.header .menu_btn {
+	display: none;
+}
+
+.header .menu_btn:checked ~ .menu {
+	max-height: 100%;
+}
+
+
+@media (min-width: 1000px){
+	.header li{
+		float: left;
+	}
+	.header li a {
+		padding: 20px 30px;
+	}
+	.header .menu {
+		clear: none;
+		float: right;
+		max-height: none;
+	}
+	.header .menu_icon {
+		display: none;
+	}
+}
