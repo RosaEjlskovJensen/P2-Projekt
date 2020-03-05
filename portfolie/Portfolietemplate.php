@@ -106,7 +106,7 @@ $kategori = array("baby", "boern", "bryllup", "familie", "gravid", "konfirmation
 <!---Connect til database---->
 <?php
 //database connection
-$connection = mysqli_connect('localhost','root','','data');
+$connection = mysqli_connect('localhost','root','root','data');
 if(!$connection){
 die("cannot connect to database".mysqli_connect_error());
 }
