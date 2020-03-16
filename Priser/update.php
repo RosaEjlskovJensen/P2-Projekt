@@ -7,7 +7,7 @@ if(isset($_GET['conid'])){
 	
 	if(!empty($id)){
 		
-		$query = "SELECT * FROM priser WHERE ID= $id ";
+		$query = "SELECT * FROM prices WHERE id= $id ";
 		
 		$results = mysqli_query($connection,$query);
 		

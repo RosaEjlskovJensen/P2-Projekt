@@ -1,7 +1,7 @@
 <?php
  require_once 'Connection.php';
 
-$query = "SELECT ID, name, description,picture FROM priser";
+$query = "SELECT id, name, description,picture FROM prices";
 $results = mysqli_query($connection,$query);
 
 if(!$results){
@@ -35,8 +35,8 @@ while($row = mysqli_fetch_assoc($results)){
   	<img src="<?php echo $row['picture']?>" width="32" height="32">
     <h5><?php echo $row['name']." ".$row['description'] ?>"</h5>
     <div>
-    	<a href="update.php?conid=<?php echo $row['ID']?>" class="updelBtn">update</a>
-      <a href="Deleteprice.php?conid=<?php echo $row['ID']?>" class="updelBtn">delete</a>
+    	<a href="update.php?conid=<?php echo $row['id']?>" class="updelBtn">update</a>
+      <a href="Deleteprice.php?conid=<?php echo $row['id']?>" class="updelBtn">delete</a>
     </div>
    
 	</li>

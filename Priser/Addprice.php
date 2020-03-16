@@ -22,11 +22,11 @@
 <h1>Tilføj pakke</h1>
 
 
-<form name="addform" id="addform" method="post" action="Insertprice.php" autocomplete="on">
+<form name="addform" id="addform" method="post" action="Insertprice.php" autocomplete="off">
 	
   <div>
-    <label for="addName">Pakke</label>
-    <input type="text" name="addName" id="addName" required size="40" maxlength="60">
+    <label for="Name">Pakke</label>
+    <input type="text" name="Name" id="Name" required size="40" maxlength="60">
   </div>
   
   <div>

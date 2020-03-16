@@ -21,7 +21,7 @@ if(isset($_POST['addName'])&&isset($_POST['id'])){
 				}
 				
 				if(!empty($name)&&!empty($id)){
-					$query = "UPDATE priser SET name='$name',description='$description' WHERE ID = '$id';";
+					$query = "UPDATE priser SET name='$name',description='$description' WHERE id = '$id';";
    				echo $query;
 					$results = mysqli_query($connection,$query);
 

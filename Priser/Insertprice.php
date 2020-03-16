@@ -1,13 +1,13 @@
 <?php
 require_once 'Connection.php';
 
-if              (isset($_POST['addName'])){
-				$name = $_POST['addName'];
+if              (isset($_POST['Name'])){
+				$name = $_POST['Name'];
                 }
 				if(isset($_POST['description'])){
 					$description = $_POST['description'];
 				}else{
-					$description="";
+					$description=" ";
 				}
 				if(isset($_POST['image'])){
 					$image = $_POST['image'];
@@ -21,7 +21,7 @@ if              (isset($_POST['addName'])){
 				
 				
 				if(!empty($name)){
-					$query = "INSERT INTO priser VALUES ('$name','$description','$image')";
+					$query = "INSERT INTO prices VALUES ('', '$name', '$description', '$image')";
    				$results = mysqli_query($connection,$query);
 
 					 if(!$results){
@@ -32,8 +32,7 @@ if              (isset($_POST['addName'])){
 				header('Location: Priser.php');
 
 			
-				}
-			}else{
+				}else{
 				echo "something went wrong";
 			}
 			

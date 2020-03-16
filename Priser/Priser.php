@@ -1,7 +1,7 @@
     <?php
  require_once 'Connection.php';
 
-$query = "SELECT ID, name, description,picture FROM priser";
+$query = "SELECT id, name, description, picture FROM prices";
 $results = mysqli_query($connection,$query);
 
 if(!$results){
@@ -44,7 +44,7 @@ while($row = mysqli_fetch_assoc($results)){
 	
 	echo '<li>';
         /*-- Link til noget booking?--*/
-		echo "<a href='?id=".$row['ID']."'>";
+		echo "<a href='?id=".$row['id']."'>";
 
 			echo "<img src=". $row['picture']." width='32' height='32'>";
 			echo "<h5>".$row['name']." ".$row['description']."</h5>";
