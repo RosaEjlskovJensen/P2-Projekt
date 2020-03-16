@@ -40,7 +40,7 @@ if(isset($_GET['conid'])){
 	
   <div>
     <label for="addName">Pakke</label>
-    <input type="text" name="addName" id="addName" required size="40" maxlength="60" value="<?php echo $row['name']?>">  </div>
+    <input type="text" name="Name" id="Name" required size="40" maxlength="60" value="<?php echo $row['name']?>">  </div>
   
   <div>
     <label for="description">Info</label>

@@ -1,7 +1,7 @@
 <?php
  require_once 'Connection.php';
 
-$query = "SELECT id, name, description,picture FROM prices";
+$query = "SELECT id, name, description, picture FROM prices";
 $results = mysqli_query($connection,$query);
 
 if(!$results){

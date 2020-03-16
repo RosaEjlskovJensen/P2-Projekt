@@ -9,8 +9,8 @@ if              (isset($_POST['Name'])){
 				}else{
 					$description=" ";
 				}
-				if(isset($_POST['image'])){
-					$image = $_POST['image'];
+				if(isset($_POST['picture'])){
+					$image = $_POST['picture'];
 				}else{
 					$image="untitled.png";
 				}
@@ -29,7 +29,7 @@ if              (isset($_POST['Name'])){
 					 }
 
 				
-				header('Location: Priser.php');
+				header('Location: Addprice.php');
 
 			
 				}else{

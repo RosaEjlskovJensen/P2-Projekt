@@ -7,12 +7,12 @@ if(isset($_GET['conid'])){
 	
 	if(!empty($id)){
 		
-		$query = "DELETE FROM priser WHERE id= $id ";
+		$query = "DELETE FROM prices WHERE id= $id ";
 		
 		$results = mysqli_query($connection,$query);
 		
 		if($results){
-		header("Location: Priser.php");
+		header("Location: Editprice.php");
 		exit();
 		}else{
 			die("could not query the database" .msqli_error());

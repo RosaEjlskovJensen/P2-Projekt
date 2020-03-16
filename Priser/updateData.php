@@ -3,8 +3,8 @@ require_once 'Connection.php';
 
 
 
-if(isset($_POST['addName'])&&isset($_POST['id'])){
-				$name=htmlentities($_POST['addName']);
+if(isset($_POST['Name'])&&isset($_POST['id'])){
+				$name=htmlentities($_POST['Name']);
 				
 				$id=htmlentities($_POST['id']);
 				
@@ -14,14 +14,14 @@ if(isset($_POST['addName'])&&isset($_POST['id'])){
 					$description="";
 				}
 				
-				if(isset($_POST['image'])){
-					$image = $_POST['image'];
+				if(isset($_POST['picture'])){
+					$image = $_POST['picture'];
 				}else{
 					$image="untitled.png";
 				}
 				
 				if(!empty($name)&&!empty($id)){
-					$query = "UPDATE priser SET name='$name',description='$description' WHERE id = '$id';";
+					$query = "UPDATE prices SET name='$name',description='$description' WHERE id = '$id';";
    				echo $query;
 					$results = mysqli_query($connection,$query);
 
@@ -30,7 +30,7 @@ if(isset($_POST['addName'])&&isset($_POST['id'])){
 					 }
 
 				
-				header('Location: Priser.php');
+				header('Location: Editprice.php');
 
 			
 				}
