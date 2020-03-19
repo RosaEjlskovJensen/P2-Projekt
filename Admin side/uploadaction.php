@@ -41,7 +41,7 @@ if(isset($_POST["action"]))
  {
   $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
   $query = "INSERT INTO $kategori[$item](name) VALUES ('$file')";
-  if(mysqli_query($connect, $query))
+  if(mysqli_query($connection, $query))
   {
    echo 'Image Inserted into Database';
   }
@@ -50,7 +50,7 @@ if(isset($_POST["action"]))
  {
   $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
   $query = "UPDATE $kategori[$item] SET name = '$file' WHERE id = '".$_POST["image_id"]."'";
-  if(mysqli_query($connect, $query))
+  if(mysqli_query($connection, $query))
   {
    echo 'Image Updated into Database';
   }
@@ -58,7 +58,7 @@ if(isset($_POST["action"]))
  if($_POST["action"] == "delete")
  {
   $query = "DELETE FROM $kategori[$item] WHERE id = '".$_POST["image_id"]."'";
-  if(mysqli_query($connect, $query))
+  if(mysqli_query($connection, $query))
   {
    echo 'Image Deleted from Database';
   }
