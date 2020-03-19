@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Portfolie</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="..//burgermenujs.js"></script>
+    <script src=></script>
  <!-- Dette link er ikonet der er i ens browser tab -->
     <link rel="icon" type="image/png" href="INDSET IKON HER">
     <!-- Linker til Skeleton -->    

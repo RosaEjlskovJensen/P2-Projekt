@@ -23,14 +23,13 @@
 		<div class="eight columns">	
 			<div class="">
 				<h2> Vælg kategori <h2>
-				<a href="baby.php" class="button-primary">Baby</a>
-				<a href="bryllup.php" class="button-primary">Bryllup</a>
-				<a href="b%C3%B8rn.php" class="button-primary">Børn</a>
-                <a href="familie.php" class="button-primary">familie</a>
-                <a href="gravid.php" class="button-primary">gravid</a>
-                <a href="konfirmation.php" class="button-primary">konfirmation</a>
-                <a href="../Admin%2520side/Admin.php" class="button-primary">tilbage</a>
-                <a href="../index.php" class="button-primary">til forside</a>
+				<a href="Uploadtemplate.php?item=0" class="button-primary">Baby</a>
+				<a href="Uploadtemplate.php?item=1" class="button-primary">Bryllup</a>
+				<a href="Uploadtemplate.php?item=2" class="button-primary">Børn</a>
+                <a href="Uploadtemplate.php?item=3" class="button-primary">familie</a>
+                <a href="Uploadtemplate.php?item=4" class="button-primary">gravid</a>
+                <a href="Uploadtemplate.php?item=5" class="button-primary">konfirmation</a>
+                <a href="Admin.php" class="button-primary">tilbage</a>
 			</div>
 		</div>
 	</div>

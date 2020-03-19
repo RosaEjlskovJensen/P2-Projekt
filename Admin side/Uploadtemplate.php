@@ -1,7 +1,17 @@
 <!DOCTYPE html>  
+
+<?php
+session_start();
+$item = $_GET['item'];
+$_SESSION["item"]=$item;
+$kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
+$kategori2 = array("baby", "bryllup", "Børn", "familie", "gravid", "konfirmation");
+
+?>
+
 <html>  
  <head>  
-  <title>Bryllup</title>  
+  <title><?php echo($kategori2[$item])?></title>  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
@@ -9,7 +19,7 @@
  <body>  
   <br /><br />  
   <div class="container" style="width:900px;">  
-   <h3 align="center">Bryllup</h3>  
+   <h3 align="center"><?php echo($kategori2[$item])?></h3>  
    <br />
    <div align="right">
     <button type="button" name="add" id="add" class="btn btn-success">Add</button>
@@ -45,7 +55,7 @@
   </div>
  </div>
 </div>
- 
+ <a href="Portfolieadminside.php">Tilbage</a>
 <script>  
 $(document).ready(function(){
  
@@ -55,7 +65,7 @@ $(document).ready(function(){
  {
   var action = "fetch";
   $.ajax({
-   url:"bryllupaction.php",
+   url:"uploadaction.php",
    method:"POST",
    data:{action:action},
    success:function(data)
@@ -92,7 +102,7 @@ $(document).ready(function(){
    else
    {
     $.ajax({
-     url:"bryllupaction.php",
+     url:"uploadaction.php",
      method:"POST",
      data:new FormData(this),
      contentType:false,
@@ -121,7 +131,7 @@ $(document).ready(function(){
   if(confirm("Are you sure you want to remove this image from database?"))
   {
    $.ajax({
-    url:"bryllupaction.php",
+    url:"uploadaction.php",
     method:"POST",
     data:{image_id:image_id, action:action},
     success:function(data)

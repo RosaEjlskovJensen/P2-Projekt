@@ -100,13 +100,13 @@
  </head>  
 
 <?php
-$kategori = array("baby", "boern", "bryllup", "familie", "gravid", "konfirmation");
+$kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
 ?>
 
 <!---Connect til database---->
 <?php
 //database connection
-$connection = mysqli_connect('localhost','root','root','data');
+$connection = mysqli_connect('localhost','root','','data');
 if(!$connection){
 die("cannot connect to database".mysqli_connect_error());
 }
@@ -127,16 +127,12 @@ die("cannot connect to database".mysqli_connect_error());
      <?php
  {
   $item = $_GET['item'];
-  $query = "SELECT * FROM $kategori[$item]  ORDER BY id DESC";
+  $query = "SELECT * FROM $kategori[$item] ORDER BY id DESC";
   $result = mysqli_query($connection, $query);
   
   while($row = mysqli_fetch_array($result))
   {
-   $output .= '
-   
-      <img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" />
-      
-   '; 
+   $output.= '<img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" />'; 
   }
   echo $output;
  }
@@ -180,7 +176,7 @@ span.onclick = function() {
    modal.style.display = "none";
 }
 </script>
-
+<a href="file:///C:/Users/Casper/Documents/xampp/htdocs/test/Admin%20side/Admin.php">Tilbage</a>
     
   </body>
 </html>

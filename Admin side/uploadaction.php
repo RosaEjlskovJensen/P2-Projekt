@@ -1,11 +1,15 @@
 <?php
+session_start();
+$kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
+$item = $_SESSION["item"];
 //action.php
 if(isset($_POST["action"]))
 {
- $connect = mysqli_connect("localhost", "root", "root", "data");
+ $connect = mysqli_connect("localhost", "root", "", "data");
  if($_POST["action"] == "fetch")
- {
-  $query = "SELECT * FROM familie ORDER BY id DESC";
+ {  
+  $query = "SELECT * FROM $kategori[$item] ORDER BY id DESC";
+	 
   $result = mysqli_query($connect, $query);
   $output = '
    <table class="table table-bordered table-striped">  
@@ -37,7 +41,7 @@ if(isset($_POST["action"]))
  if($_POST["action"] == "insert")
  {
   $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
-  $query = "INSERT INTO familie(name) VALUES ('$file')";
+  $query = "INSERT INTO $kategori[$item](name) VALUES ('$file')";
   if(mysqli_query($connect, $query))
   {
    echo 'Image Inserted into Database';
@@ -46,7 +50,7 @@ if(isset($_POST["action"]))
  if($_POST["action"] == "update")
  {
   $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
-  $query = "UPDATE familie SET name = '$file' WHERE id = '".$_POST["image_id"]."'";
+  $query = "UPDATE $kategori[$item] SET name = '$file' WHERE id = '".$_POST["image_id"]."'";
   if(mysqli_query($connect, $query))
   {
    echo 'Image Updated into Database';
@@ -54,7 +58,7 @@ if(isset($_POST["action"]))
  }
  if($_POST["action"] == "delete")
  {
-  $query = "DELETE FROM familie WHERE id = '".$_POST["image_id"]."'";
+  $query = "DELETE FROM $kategori[$item] WHERE id = '".$_POST["image_id"]."'";
   if(mysqli_query($connect, $query))
   {
    echo 'Image Deleted from Database';
