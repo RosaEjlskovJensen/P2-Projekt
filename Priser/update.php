@@ -1,5 +1,5 @@
 <?php
-require_once 'Connection.php';
+require_once '../Connection.php';
 
 if(isset($_GET['conid'])){
 	
