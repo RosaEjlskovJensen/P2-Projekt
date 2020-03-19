@@ -10,7 +10,11 @@ if(isset($_POST["action"]))
  {  
   $query = "SELECT * FROM $kategori[$item] ORDER BY id DESC";
 	 
+<<<<<<< HEAD:Admin side/uploadaction.php
   $result = mysqli_query($connection, $query);
+=======
+  $result = mysqli_query($connect, $query);
+>>>>>>> dda348e1e51470b5e2f3b45391f67321abb5bd55:portfolie/Baby/babyaction.php
   $output = '
    <table class="table table-bordered table-striped">  
     <tr>
