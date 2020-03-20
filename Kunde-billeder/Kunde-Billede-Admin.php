@@ -26,12 +26,10 @@ session_start();
 		<div class="eight columns">	
 			<div class="">
 				<h2> Du er logget ind <h2>
-				<a href="Blog_Overview.php" class="button">Blogs</a>
-				<a href="Write_Blog.php" class="button">Skriv Blog</a>
-				<a href="Mailing_List.php" class="button">Mailing Liste</a>
-                 <a href="Portfolieadminside.php" class="button">Portfolie</a>
-                 <a href="../Kunde-billeder/Kunde-Billede-Admin.php" class="button">Kunde billede arkiv</a>
-				<a href="../index.php" class="button-primary">til forside</a>
+				<a href="Nytabel.php" class="button">Ny kunde</a>
+				<a href="FindTabel.php" class="button">Eksisterende kunde</a>
+				<a href="Mailing_List.php" class="button">Kunde liste (Virker ikke endnu)</a>
+				<a href="../Admin side/Admin.php" class="button-primary">Tilbage</a>
 			</div>
 		</div>
 	</div>

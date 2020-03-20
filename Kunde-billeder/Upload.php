@@ -1,17 +1,14 @@
 <!DOCTYPE html>  
-
-<?php
+<?php 
 session_start();
-$item = $_GET['item'];
-$_SESSION["item"]=$item;
-$kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
-$kategori2 = array("baby", "bryllup", "Børn", "familie", "gravid", "konfirmation");
+$email = $_SESSION["email"];
+$_SESSION["email"] = $email;
+
 
 ?>
-
 <html>  
  <head>  
-  <title><?php echo($kategori2[$item])?></title>  
+  <title>Upload</title> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
@@ -19,7 +16,7 @@ $kategori2 = array("baby", "bryllup", "Børn", "familie", "gravid", "konfirmatio
  <body>  
   <br /><br />  
   <div class="container" style="width:900px;">  
-   <h3 align="center"><?php echo($kategori2[$item])?></h3>  
+   <h3 align="center">Upload til <?php echo $email; ?></h3>  
    <br />
    <div align="right">
     <button type="button" name="add" id="add" class="btn btn-success">Add</button>
@@ -55,7 +52,7 @@ $kategori2 = array("baby", "bryllup", "Børn", "familie", "gravid", "konfirmatio
   </div>
  </div>
 </div>
- <a href="Portfolieadminside.php">Tilbage</a>
+ <a href="Kunde-Billede-Admin.php">Tilbage</a>
 <script>  
 $(document).ready(function(){
  
