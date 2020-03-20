@@ -1,5 +1,5 @@
 <!DOCTYPE html>  
-
+<!--  På portfolieadminsiden vælger man hvilket item der skal tages i brug. Den vælger derfra 0,1,2,3,4,5 ud fra arrayen nedenuden og derefter kommer der nogle scripts som gør det muligt både at uploade, og se billederne fra admin siden af.  -->
 <?php
 session_start();
 $item = $_GET['item'];
@@ -60,7 +60,7 @@ $kategori2 = array("baby", "bryllup", "Børn", "familie", "gravid", "konfirmatio
 $(document).ready(function(){
  
  fetch_data();
-
+/*-- Koden herunder "linker" til uploadaction.php som laver handlingen hvor billedet enten bliver uploaded eller fjernet --*/
  function fetch_data()
  {
   var action = "fetch";

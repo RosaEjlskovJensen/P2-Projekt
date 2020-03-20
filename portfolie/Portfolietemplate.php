@@ -97,7 +97,10 @@
         margin-right: 50px;
 }
 </style>
+
  </head>  
+
+<!-- Det første php gode her, laver en array med de forskellige kategorier   >
 
 <?php
 $kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
@@ -119,11 +122,11 @@ die("cannot connect to database".mysqli_connect_error());
          <h1> billeder </h1>
 </center>
     
-    <!-------------------------->
+    
 <!---Her fetches billederne fra databasen. Billederne er upleaded som binære koder og skal derfor krypteres først--->
-
 <center>
     <div class="billeder">
+
      <?php
  {
   $item = $_GET['item'];
@@ -141,7 +144,7 @@ die("cannot connect to database".mysqli_connect_error());
 </center>
     <!-------------------------->
 
-<!-- The Modal -->
+<!-- Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img01">

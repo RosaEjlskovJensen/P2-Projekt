@@ -1,6 +1,7 @@
 <?php
 require_once '../Connection.php';
 
+//Loop der igen tjekker om tingene er rigtige og til sidst sender en tilbage til editprice.php. 
 
 
 if(isset($_POST['Name'])&&isset($_POST['id'])){
@@ -19,7 +20,9 @@ if(isset($_POST['Name'])&&isset($_POST['id'])){
 				}else{
 					$image="untitled.png";
 				}
-				
+
+				//Man kan se her ved UPDATE at den ikke sletter, eller adder noget, den updater bare de data der allerede er skrevne. 
+
 				if(!empty($name)&&!empty($id)){
 					$query = "UPDATE prices SET name='$name',description='$description' WHERE id = '$id';";
    				echo $query;

@@ -20,7 +20,7 @@
 <body>
 
 <h1>Tilføj pakke</h1>
-
+<!-- Simpel form til at uploade pakker. Action siden som laver handlingen hedder insterprice.php -->
 
 <form name="addform" id="addform" method="post" action="Insertprice.php" autocomplete="off">
 	

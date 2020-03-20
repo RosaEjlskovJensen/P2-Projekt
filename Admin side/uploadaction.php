@@ -2,7 +2,7 @@
 session_start();
 $kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
 $item = $_SESSION["item"];
-//action.php
+//Først connecter man til databasen, derefter vælger den hvilket item, ud fra id'et, den skal vælge at lave om på
 if(isset($_POST["action"]))
 {
  require_once '../Connection.php';
@@ -19,6 +19,7 @@ if(isset($_POST["action"]))
      <th width="10%">Remove</th>
     </tr>
   ';
+//Når billeder skal outputtes skal det krypteres, da det i databasen står i binære koder. Altså når billedet skal ind i databasen. Koden i bunden af dette kan både, uploade, update og slette billeder fra databasen.
   while($row = mysqli_fetch_array($result))
   {
    $output .= '

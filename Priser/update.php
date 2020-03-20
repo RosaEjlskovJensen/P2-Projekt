@@ -34,7 +34,7 @@ if(isset($_GET['conid'])){
 
 <h1>Rediger</h1>
 
-
+<!-- Form der kan reditere dataen i de forskellige pakker. Når du trykker på knappen til slut, sendes man videre til siden updatedata.php -->
 
 <form name="addform" id="addform" method="post" action="updateData.php" autocomplete="on">
 	

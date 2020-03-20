@@ -35,7 +35,10 @@ while($row = mysqli_fetch_assoc($results)){
   	<img src="<?php echo $row['picture']?>" width="32" height="32">
     <h5><?php echo $row['name']." ".$row['description'] ?>"</h5>
     <div>
+<!-- Sender videre til update.php hvor man kan redigere i pakken -->
     	<a href="update.php?conid=<?php echo $row['id']?>" class="updelBtn">update</a>
+
+<!-- Sender viedere til ddeleteprice.php som sletter ved hjælp af databasen -->
       <a href="Deleteprice.php?conid=<?php echo $row['id']?>" class="updelBtn">delete</a>
     </div>
    

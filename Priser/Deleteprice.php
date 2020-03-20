@@ -7,6 +7,8 @@ if(isset($_GET['conid'])){
 	
 	if(!empty($id)){
 		
+// Sletter pakken.
+        
 		$query = "DELETE FROM prices WHERE id= $id ";
 		
 		$results = mysqli_query($connection,$query);

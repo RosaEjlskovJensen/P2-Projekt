@@ -36,24 +36,24 @@ if(!$results){
 
 <h1>Priser</h1>
 
-
+<!-- Php koden herunder echoer ud alle informationer vi har i databasen -->
 
 <?php 
 echo "<ol>";
 while($row = mysqli_fetch_assoc($results)){
 	
-	echo '<li>';
+	echo '<div> <li>';
         /*-- Link til noget booking?--*/
 		echo "<a href='?id=".$row['id']."'>";
 
 			echo "<img src=". $row['picture']." width='32' height='32'>";
-			echo "<h5>".$row['name']." ".$row['description']."</h5>";
+			echo " <h5>".$row['name']." ".$row['description']."</h5>";
+        
 		echo "</a>";
-	echo '</li>';
+	echo '</li> </div>';
 }
 echo "</ol>";	
 ?>
-
 
 </body>
 </html>

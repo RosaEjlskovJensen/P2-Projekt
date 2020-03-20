@@ -129,7 +129,7 @@
     <div></div>
     <div></div>
   </div>
-  <!--Navigation burger slut-->
+  
 
   <nav class="u-full-width navbar">
     <div class="two.columns">
@@ -143,12 +143,12 @@
       <li><a href="My_Pictures.php" class="button">Portfolie</a></li>
     </div>
   </nav>  
-
+ <!--Navigation burger slut-->
 <br>
         <center><div class="overskrift"><h1>Galleri</h1></div></center>
     
 
-<!-- 6 kategorier med mulighed for at navigere sig videre til at større galeri af den ønskede sektion. -->
+<!-- 6 kategorier med mulighed for at navigere sig videre til at større galeri af den ønskede kategori. -->
 
 <!-- Vigtigt at de billeder der bliver insat her, har teksten skrevet på billedet, så dette skaleres op. -->
       <section class="section_galleri_row1">
@@ -182,6 +182,7 @@
 
         <br>
         <br>
+
 <!-- Info Sektion -->
         
 <section class="section_footer">

@@ -1,6 +1,8 @@
 <?php
 require_once '../Connection.php';
 
+// Det første loop her tjekker navn, description og billede. Billede tager f.eks untitled.png hvis der ikke er upladed et billede, desctiption behøver ikke udfyldes. 
+
 if              (isset($_POST['Name'])){
 				$name = $_POST['Name'];
                 }
