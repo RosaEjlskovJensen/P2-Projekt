@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<title>Amalie Sandgaard | Photography</title>
 	<!-- ajax/jquery -->
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- -->
   <script src="mySlides.js"></script>
 	<!-- Dette link er ikonet der er i ens browser tab -->
   	<link rel="icon" type="image/png" href="billeder/asp.png">
   	<!-- Linker til Skeleton -->
   	<!-- Linker til Fontawsome -->
-  	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<script src="https://kit.fontawesome.com/600e3ecdcb.js" crossorigin="anonymous"></script>
   	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="main.css">
 </head>
@@ -23,28 +23,100 @@
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
-      <li><a href="portfolie/Portfolieforside.php" class="button">Portfolie</a></li> 
-      <li><a href="Om_Mig.php" class="button">Om Mig</a></li>
-      <li><a href="nyhedsbrev.php" class="button">Priser</a></li>
-      <li><a href="Blog_Page.php" class="button">Nyheder</a></li>
-      <li><a href="Booking-system-Casper/index.php" class="button">Booking</a></li>
-      <li><a href="send_form_email.php" class="button">Kontakt</a></li>
-      <li><a href="Admin side/Loginside.php" class="button">Login</a></li>
+      <div class="nav_dropdown">
+        <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
+          <div class="dropdown-content">
+          <li><a href="My_Pictures.php" class="button">Baby</a></li>
+          <li><a href="My_Pictures.php" class="button">Børn</a></li>
+          <li><a href="My_Pictures.php" class="button">Familie</a></li>
+          <li><a href="My_Pictures.php" class="button">Konfirmation</a></li>
+          <li><a href="My_Pictures.php" class="button">Bryllup</a></li>
+          <li><a href="My_Pictures.php" class="button">Gravid</a></li>
+            </div>
+            </div>
+      <div class="nav_dropdown">
+        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
+          <div class="dropdown-content">
+          <li><a href="Om_Mig.php" class="button">Om Mig</a></li>
+          <li><a href="Blog_Page.php" class="button">Blog</a></li>
+          <li><a href="nyhedsbrev.php" class="button">Nyheder</a></li>
+          <li><a href="Blog_Page.php" class="button">Anmeldeser</a></li>
+            </div>
+            </div>
+      <div class="nav_dropdown">
+        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
+          <div class="dropdown-content">
+          <li><a href="Admin side/Loginside.php" class="button">Pakker</a></li>
+          <li><a href="Admin side/Loginside.php" class="button">Digital Print</a></li>
+            </div>
+            </div>
+      <div class="nav_dropdown">
+        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
+          <div class="dropdown-content">
+          <li><a href="Booking-system-Casper/index.php" class="button">Kalender</a></li>
+          <li><a href="Admin side/Loginside.php" class="button">Login</a></li>
+            </div>
+            </div>
+      <div class="nav_dropdown">
+        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
+          <div class="dropdown-content">
+          <li><a href="send_form_email.php" class="button">Kontakt</a></li>
+          <li><a href="send_form_email.php" class="button">FAQ</a></li>
+          <li><a href="send_form_email.php" class="button">Privatlivspolitik</a></li>
+          <li><a href="send_form_email.php" class="button">Vilkår & Betingelser</a></li>
+            </div>
+            </div>
+      <div class="nav_dropdown">
+        <button class="btn_dropdown"></button>
+          <div class="dropdown-content">
+          </div>
+      </div>
     </ul>
   </nav>
-  <br>
 
  <!-- Showcase -->
   <section class="section_showcase">
-    <div class="u-full-width">
+    <div class="container u-full-width">
       <img class="showcase_picture" src="billeder/FTB1.jpg">
     </div>
   </section>
-  <br>
+
+ <!-- Seneste nyhed -->
+  <section class="section_nyhed">
+    <div class="container u-full-width">
+      <div class="row">
+        <div class="u-full-width">
+          <center><h5>Seneste nyt</h5></center>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one-third column offset-by-one-third column">
+          <div class="container1">
+            <center><img class="image1 link_picture" src="billeder/FBBBB1.jpg"></center>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="two columns offset-by-five columns">
+          <form action="#"><button type="submit" class="btn btn2">Læs Mere</button></form> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="u-full-width">
+          <center><p style="font-size: 15px"><i>Tilmelde dig mit <a style="color: #8b752e" href="#">nyhedsbrev</a> idag og gå aldrig glip af events, specialtilbud, etc.</i></p></center>
+        </div>
+      </div>
+    </div>
+  </section>
 
  <!--Galleri -->
   <section class="section_galleri">
   	<div class="container u-full-width">
+      <div class="row">
+        <div class="u-full-width">
+          <center><h5>Hvem fotografer jeg?</h5><p style="font-size: 15px">Klik og læs mere om de forskellige fotograferings typer jeg tilbyder.</p></center>
+        </div>
+      </div>
  		<div class="row">
  			<div class="one-third column">
  				<div class="container1">
@@ -91,80 +163,13 @@
  				</div>
  			</div>
  		</div>
-  	</div>  
-  </section>
-  <br>
-
-
-  <!--Testimonials -->
-  <section class="section_testimonials">
-    <div class="container">
-      <div class="row">
-        <div class="u-full-width">
-          <center><h6>See hvad kunderne siger (arrow down)</h6></center>
-        </div>
-      <div class="row">
-        <div class="u-full-width">
-          <div class="slideshow_container">
-            <div class="slides">
-              <div class="mySlides">
-                <center><q>Jeg er glad for at få taget nogle billeder hos Amalie da hun tager imod en med et smil og åbentsind. Hun søger for at man hele tiden er i centrum og er klar på nogle nye idéer.</q><br>
-                <p class="author">- Tommy Rank</p></center>
-              </div>
-              <div class="mySlides">
-                <center><q>Utrolig sød og behagelig ung pige ❤️ hun har en fantastisk tålmodighed og kan bevarede overblikket til min datters konfirmation hvor alle vi andre rendte forvirret rundt en stor tak for de helt fantastiske billeder og din måde at være på - kan helt klart anbefale dig og vil også gøre det til andre - du er en stjerne. ❤️❤️❤️</q><br>
-                <p class="author">- Lene Tranbjerg</p></center>
-              </div>
-              <div class="mySlides">
-                <center><q>Jeg har lige fået taget billeder af min søn på tre år - og det var en rigtig god oplevelse. Amalie havde med det samme en god kontakt med min søn, så vi fik taget nogle rigtig gode billeder, som viser alle facetterne hos min søn. Jeg kan helt klart anbefale Amalie.</q><br>
-                <p class="author">- Annemette Sørensen</p></center>
-              </div>
-              <div class="mySlides">
-                <center><q>Vi havde Amalie til at tage fotos til vores bryllup - det kom der mange rigtig gode billeder ud af. Kan klart anbefales.</q><br>
-                <p class="author">- Morten Kierkegaard</p></center>
-              </div>
-              <div class="mySlides">
-                <center><q>Vi blev hurtigt fascineret af de billeder Amalie tager og besluttede, at det var hende som skulle forevige vores søn’s store dag. Vi bookede 3 timers fotosession, og fik alle vores ønsker indfriet. Amalie er samarbejdsvillig, fyldt med gode ideer, og fanger de gode øjeblikke. Samme dag hun havde taget billederne, fik vi et “sneak peak” om aftenen, og næste dag modtog vi den færdige billedpakke. Vi er fuldt tilfredse, med det arbejde Amalie har udført og kan varmt anbefale hende. Vi er ikke i tvivl om, at det også er Amalie, vi vælger næste gang, vi får brug for en fotograf.</q><br>
-                <p class="author">- Mette Sørensen</p></center>
-              </div>
-              <div class="mySlides">
-                <center><q>Amalie var hjemme hos os og vi fik nogle rigtigt gode billeder,som vi glæder os til at kunne give til familien.</q><br>
-                <p class="author">- Hanne Theilmann Petersen</p></center>
-              </div>
-              <div class="mySlides">
-                <center><q>Vi fik taget billeder af vores datter på 4 uger og selvom hun var lidt urolig, tog Amalie det i stiv arm og fik taget nogle super gode billeder. :-) Super sød og tålmodig pige, som kan sit kram. :-)</q><br>
-                <p class="author">- Annedorte Khouri </p></center>
-              </div>
-              <div class="mySlides">
-                <center><q>Super sød pige med en masse tålmodighed - selv når man har en knap 2 årige med, som absolut ikke vil det vi vil Vi fik nogle fantastiske billeder fra den dag, så kan VARMT ANBEFALES! ⭐⭐⭐⭐⭐</q><br>
-                <p class="author">- Annika Grandt Madsen</p></center>
-              </div>
-              <div class="mySlides">
-                <center><q>Amalie sprang med kort varsel til, så vi kunne få taget familiebilleder i det fri med vores 2-årige. Flotte billeder, god efterbearbejdning og masser af tålmodighed med den lille on location. Kan varmt anbefales.</q><br>
-                <p class="author">- Louise Hjort Nielsen</p></center>
-              </div>
-              <div class="mySlides">
-                <center><q>Amalie fotograferede til vores datter Yasmin´s konfirmation her i maj 2017. Amalie var fantastisk til at få nogle fantastiske billeder både med konfirmanden, men også med de øvrige gæster. Med hendes vindende væsen og positive tilgang - så vandt hun hurtigt alles opmærksomhed på en positiv måde. Vi har fået nogle helt fantastiske billeder fra en fantastisk dag og vil varmt anbefale Amalie til andre.</q><br>
-                <p class="author">- Tommy Nielsen</p></center>
-              </div>
-            <div class="dot-container">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-              <span class="dot" onclick="currentSlide(4)"></span>
-              <span class="dot" onclick="currentSlide(5)"></span> 
-              <span class="dot" onclick="currentSlide(6)"></span> 
-              <span class="dot" onclick="currentSlide(7)"></span> 
-              <span class="dot" onclick="currentSlide(8)"></span> 
-              <span class="dot" onclick="currentSlide(9)"></span> 
-              <span class="dot" onclick="currentSlide(10)"></span>  
-            </div>
-          </div>
+  	<div class="row">
+      <div class="u-full-width">
+        <center><p style="font-size: 15px"><i>Besøg mit <a style="color: #8b752e" href="My_Pictures.php">portfolio</a> og se billeder fra tidliger fotosessioner.</i></p></center>
         </div>
       </div>
-    </div>
+    </div>  
   </section>
-  <br>
 
  <!-- Booking -->
  <section class="section_booking">
@@ -174,16 +179,21 @@
         <div class="row">
           <div class="u-full-width">
            <h5>Mangler du en fotograf?</h5>
-           <p>Helt fra barnsben, har jeg været, grebet om ideen at skulle forevige øjeblikke, mennesker, dyr, stemninger mm. Der gik mange år, fra da jeg fik det første analog kamera i ti års alderen, til at jeg fik købt mit første DSLR kamera i 2010, da jeg blev komfimreret. Siden da, har jeg bygget mere og mere på min viden som fotograf. Jeg har blandt andet været i Herning Fotoklub, hvor jeg lærte om blænde, lukketid, hvidbalance, iso og så videre.
+           <p style="font-size: 17px">Investigatam diutissime quaestionem, quantum nostrae mentis igniculum lux diuina dignata est, formatam rationibus litterisque mandatam offerendam uobis communicandamque curaui tam uestri cupidus iudicii quam nostri studiosus inuenti. Qua in re quid mihi sit animi quotiens stilo cogitata commendo, tum ex ipsa materiae difficultate tum ex eo quod raris id est uobis tantum conloquor, intellegi potest. Neque enim famae iactatione et inanibus uulgi clamoribus excitamur; sed si quis est fructus exterior, hic non potest aliam nisi materiae similem sperare sententiam.
            </p>
            <div class="row">
-            <div class="six columns">
+            <div class="two columns offset-by-one-third">
               <form action="#"><button type="submit" class="btn btn2">Se Datoer</button></form> 
             </div>
-            <div class="six columns">
+            <div class="two columns">
               <form action="#"><button type="submit" class="btn btn2">Se Priser</button></form> 
             </div>
           </center>   
+        </div>
+        <div class="row">
+          <div class="u-full-width">
+            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="#">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="#">mail</a>.</i></p></center>
+          </div>
         </div>
       </div>
     </div>
@@ -191,38 +201,43 @@
 </div>
 </section>
 
- <!-- Ínformation -->
-  <section class="section_maps">
+ <!-- Top part of the footer-->
+  <section class="section_topfooter">
     <div class="container">
       <div class="u-full-width">
         <div class="row">
-          <div class="four columns">
+          <div class="six columns">
             <center>
-            <h6 style="color: #8b752e">NYTTIGE LINKS</h6>
-            <a href="#" >Privatlivspolitik</a><br>
-            <a href="#">Vilkår & Betingelser</a>
-            <p></p>
-            <h6 style="color: #8b752e">FØLG MIG PÅ</h6>
-            <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank">Facebook</a><br>
-            <a href="#" target="_blank">Instagram</a><br>
+            <p style="font-size: 16px">KONTAKTOPLYSNINGER</p>
+            <p style="font-size: 15px">Amalie Sandgaard<br>CVR: 38 02 70 34<br>+45 31 51 45 55<br>amaliesandgaardphotography@hotmail.com</p>
             </center>
           </div>
-          <div class="seven columns">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2170.129099026749!2d9.917400615981306!3d57.049329380919936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4649328c9bc379a3%3A0x97ceb14dd16f56d2!2sBispensgade%2013%2C%209000%20Aalborg!5e0!3m2!1sda!2sdk!4v1582824343072!5m2!1sda!2sdk" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <div class="two columns">
+            <center>
+            <p style="font-size: 16px">NYTTIGE LINKS</p>
+            <a style="font-size: 15px" href="#" >Privatlivspolitik</a><br>
+            <a style="font-size: 15px" href="#">Vilkår & Betingelser</a>
+            </center>
+          </div>
+          <div class="two columns">
+            <center>
+            <p style="font-size: 16px">FØLG MIG PÅ</p>
+            <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><br>
+            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
+            </center>
           </div>
         </div>
       </div>
     </div>
   </section> 
-  <br>
-
- <!--Footer -->
-  <section class="section_footer">
+ <!--Bottom part of the footer -->
+  <section class="section_bottomfooter">
     <div>
       <center>
-        <p class="footer"> &copy; <?php echo date("Y"); ?> | Amalie Sandgaard Photography | CVR: 38 02 70 34  </p>
+        <p style="font-size: 15px" class="footer"> &copy; Copyright <?php echo date("Y"); ?> | Amalie Sandgaard Photography | All Rights Reserved</p>
       </center>
     </div>
   </section>
+
 </body>
 </html>
