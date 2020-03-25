@@ -7,7 +7,7 @@ html{
 	overflow: scroll;
     overflow-x: hidden;}
 
-::-webkit-scrollbar {
+::-webkit-scrollbar{
  	width: 0px;  /* Remove scrollbar space */
     background: transparent;}  /* Optional: just make scrollbar invisible */
 
@@ -21,7 +21,7 @@ body{
   	min-height: 100%;
   	width: 100%;}
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
 	margin-top: 0;
 	margin-bottom: 2rem;
 	font-weight: 300;}
@@ -64,7 +64,7 @@ a:hover{
   background-color: none;
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 10px 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -76,7 +76,7 @@ a:hover{
   max-height: 99%;}
 
 .btn2{
-  background-color: #e3e3dd; 
+  background-color: #e3e3dd;
   color: #2a2723; 
   border: 2px solid #8b752e;}
 
@@ -86,32 +86,57 @@ a:hover{
 
 /* RESIZE PICTURES */
 .img_logo{
-	max-width: 20vw;
+	max-width: 250px;
 	height: auto;}
 
 .showcase_picture{
-  max-width: 100%;
-  height: 95vh;
-  width: 100vw;}
+  max-height: 85.5vh;
+  width: 100%;
+  position: absolute;
+  top: 84px;
+  left: 0;}
 
 .link_picture{
 	width: 33.33%;
-	max-height: auto;
-}
+	max-height: auto;}
 
 /* SECTIONS */
 
 /* Showcase*/
 .section_showcase{
-	max-height: 100vh;}
+  background-color: #e3e3dd;
+	height: 100vh;}
 
-.section_maps{
+.section_nyhed{
+  background-color: #e3e3dd;
+}
+
+.section_galleri{
+  background-color: #e3e3dd;
+  padding-top: 20px;}
+
+.section_booking{
+  background-color: #e3e3dd;
+}
+
+.section_topfooter{
+  color: #2a2723;
 	width: 100%;
-	overflow: hidden;}
+	overflow: hidden;
+  margin-top: 20px;
+  padding-top: 15px;
+  background-color: #e3e3dd;
+  opacity: 0.55;}
+
+.section_bottomfooter{
+  color: #e3e3dd;
+  padding: 10px 0px 1px 0px;
+  background-color: #2a2723;
+  opacity: 0.85;}
 
 
 /* Galleri */
-.container1 {
+.container1{
   position: relative;
   width: 100%;}
 
@@ -144,39 +169,6 @@ a:hover{
   color: #8b752e;
   font-size: 25px;}
 
-/* Testimonials */
-
-.slideshow-container{
-  position: relative;
-  background: transparent;}
-
-.mySlides{
-  display: none;
-  padding: 80px;
-  text-align: center;}
-
-.dot-container{
-  text-align: center;
-  padding: 20px;
-  background: #e3e3dd;}
-
-.dot{
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #8b752e;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;}
-
-.active, .dot:hover{
-  background-color: #2D2926;}
-
-q {font-style: italic;}
-
-.author {color: #8b752e;}
-
 /* Information */
 
 .section_booking{
@@ -189,9 +181,10 @@ q {font-style: italic;}
 /* Menu */
 .nav{
 	background-color: #e3e3dd;
-	opacity: 0.98;
+	opacity: 0.95;
 	position: fixed;
 	width: 100%;
+  height: 83.39px;
 	z-index: 3;}
 
 .nav ul{
@@ -203,17 +196,17 @@ q {font-style: italic;}
 
 .nav ul a{
 	display: block;
-	font-size: 20px;
-	margin-top: 12px;
+	font-size: 15px;
+	margin-top: 5px;
 	color: #2a2723;
 	text-decoration: none;}
 
 .nav ul a:hover{
 	display: block;
-	font-size: 20px;
-	margin-top: 12px;
-  	color: #8b752e;
-  	text-decoration: underline;}
+	font-size: 15px;
+	margin-top: 5px;
+  color: #8b752e;
+  text-decoration: underline;}
 
 .nav .logo{
 	float: left;
@@ -225,8 +218,9 @@ q {font-style: italic;}
 	transition: max-height .2 ease-out;}
 
 /* Checkbox */
-.nav .menu_icon {
+.nav .menu_icon{
 	position: relative;
+  margin-top: 12px;
 	padding: 28px 20px;
 	float: right;} 
 
@@ -259,7 +253,7 @@ q {font-style: italic;}
 	max-height: 100%;}
 
 /* Screen resize fix */
-@media (min-width: 1101px){
+@media (min-width: 930px){
 	.nav li{
 		float: left;}
 	.nav li a{
@@ -269,7 +263,61 @@ q {font-style: italic;}
 		float: right;
 		max-height: none;}
 	.nav .menu_icon{
-		display: none;}}
+		display: none;}
+  .nav img{
+  max-width: 250px;
+  height: auto;}}
+
+.nav_dropdown{
+  float: left;
+  overflow: hidden;}
+
+.nav_dropdown .btn_dropdown{
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: #2a2723;
+  padding: 14px 16px;
+  padding-left: 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: 12px;}
+
+.nav_dropdown:hover .btn_dropdown{
+  background-color: inherit;
+  color: #8b752e;
+  text-decoration: underline;}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #e3e3dd;
+  max-width: 150px;
+  z-index: 1;}
+
+.dropdown-content a{
+  float: none;
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  padding: 10px;
+  color: #2a2723;
+  text-decoration: none;}
+
+.dropdown-content a:hover{
+  background-color: inherit;}
+
+.nav_dropdown:hover .dropdown-content{
+  display: block;}
+
+
+/* Color ref.
+#e3e3dd = cream~beige / den nuance bruges til navigationsbaren og footer. 
+
+#8b752e = gold / den nuance bruges til hover effect på links samt knapper
+
+#2a2723 = black-ish / den nuance bruges til text.
+´* /
 
 
 /* SKELETON */
@@ -285,36 +333,35 @@ q {font-style: italic;}
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.container {
+.container{
   position: relative;
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 20px;
-  box-sizing: border-box; }
+  box-sizing: border-box;}
 .column,
-.columns {
+.columns{
   width: 100%;
   float: left;
-  box-sizing: border-box; }
+  box-sizing: border-box;}
 
 /* For devices larger than 400px */
-@media (min-width: 400px) {
-  .container {
+@media (min-width: 400px){
+  .container{
     width: 85%;
-    padding: 0; }
-}
+    padding: 0;}}
 
 /* For devices larger than 550px */
-@media (min-width: 550px) {
-  .container {
-    width: 80%; }
+@media (min-width: 550px){
+  .container{
+    width: 80%;}
   .column,
-  .columns {
-    margin-left: 4%; }
+  .columns{
+    margin-left: 4%;}
   .column:first-child,
-  .columns:first-child {
-    margin-left: 0; }
+  .columns:first-child{
+    margin-left: 0;}
 
   .one.column,
   .one.columns                    { width: 4.66666666667%; }
@@ -379,14 +426,14 @@ input[type="tel"],
 input[type="url"],
 input[type="password"],
 textarea,
-select {
+select{
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
   background-color: #fff;
   border: 1px solid #D1D1D1;
   border-radius: 4px;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;}
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
@@ -395,14 +442,14 @@ input[type="text"],
 input[type="tel"],
 input[type="url"],
 input[type="password"],
-textarea {
+textarea{
   -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none; }
-textarea {
+          appearance: none;}
+textarea{
   min-height: 65px;
   padding-top: 6px;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;}
 input[type="email"]:focus,
 input[type="number"]:focus,
 input[type="search"]:focus,
@@ -411,85 +458,85 @@ input[type="tel"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
-select:focus {
+select:focus{
   border: 1px solid #33C3F0;
-  outline: 0; }
+  outline: 0;}
 label,
-legend {
+legend{
   display: block;
   margin-bottom: .5rem;
-  font-weight: 600; }
-fieldset {
+  font-weight: 600;}
+fieldset{
   padding: 0;
-  border-width: 0; }
+  border-width: 0;}
 input[type="checkbox"],
-input[type="radio"] {
-  display: inline; }
-label > .label-body {
+input[type="radio"]{
+  display: inline;}
+label > .label-body{
   display: inline-block;
   margin-left: .5rem;
-  font-weight: normal; }
+  font-weight: normal;}
 
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-ul {
-  list-style: circle inside; }
-ol {
-  list-style: decimal inside; }
-ol, ul {
+ul{
+  list-style: circle inside;}
+ol{
+  list-style: decimal inside;}
+ol, ul{
   padding-left: 0;
-  margin-top: 0; }
+  margin-top: 0;}
 ul ul,
 ul ol,
 ol ol,
-ol ul {
+ol ul{
   margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%; }
-li { }
+  font-size: 90%;}
+li{/**/}
 
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-code {
+code{
   padding: .2rem .5rem;
   margin: 0 .2rem;
   font-size: 90%;
   white-space: nowrap;
   background: #F1F1F1;
   border: 1px solid #E1E1E1;
-  border-radius: 4px; }
-pre > code {
+  border-radius: 4px;}
+pre > code{
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre; }
+  white-space: pre;}
 
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
-td {
+td{
   padding: 12px 15px;
   text-align: left;
-  border-bottom: 1px solid #E1E1E1; }
+  border-bottom: 1px solid #E1E1E1;}
 th:first-child,
-td:first-child {
-  padding-left: 0; }
+td:first-child{
+  padding-left: 0;}
 th:last-child,
-td:last-child {
-  padding-right: 0; }
+td:last-child{
+  padding-right: 0;}
 
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 button,
-.button {
+.button{
   margin-bottom: 1rem; }
 input,
 textarea,
 select,
-fieldset {
-  margin-bottom: 1.5rem; }
+fieldset{
+  margin-bottom: 1.5rem;}
 pre,
 blockquote,
 dl,
@@ -498,31 +545,31 @@ table,
 p,
 ul,
 ol,
-form {
+form{
   margin-bottom: 2.5rem; }
 
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.u-full-width {
+.u-full-width{
   width: 100%;
-  box-sizing: border-box; }
-.u-max-full-width {
+  box-sizing: border-box;}
+.u-max-full-width{
   max-width: 100%;
-  box-sizing: border-box; }
-.u-pull-right {
-  float: right; }
-.u-pull-left {
-  float: left; }
+  box-sizing: border-box;}
+.u-pull-right{
+  float: right;}
+.u-pull-left{
+  float: left;}
 
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-hr {
+hr{
   margin-top: 3rem;
   margin-bottom: 3.5rem;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  border-top: 1px solid #E1E1E1;}
 
 
 /* Clearing
@@ -531,10 +578,10 @@ hr {
 /* Self Clearing Goodness */
 .container:after,
 .row:after,
-.u-cf {
+.u-cf{
   content: "";
   display: table;
-  clear: both; }
+  clear: both;}
 
 
 /* Media Queries
@@ -545,7 +592,6 @@ near the relevant code. For example, if you wanted to change the styles for butt
 on small devices, paste the mobile query code up in the buttons section and style it
 there.
 */
-
 
 /* Larger than mobile */
 @media (min-width: 400px) {}
@@ -561,3 +607,30 @@ there.
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+
+/* Test */
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #e3e3dd;
+}
+
+.text{
+padding-top: 15px;
+}
+
+/* Slides */
+.slides {
+  display: none;
+  padding: 30px 80px 50px 80px;
+  text-align: center;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: #8b752e;}
+
