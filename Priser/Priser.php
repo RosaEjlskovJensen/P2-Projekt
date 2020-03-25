@@ -11,56 +11,48 @@ if(!$results){
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Priser</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="..//burgermenujs.js"></script>
- <!-- Dette link er ikonet der er i ens browser tab -->
-    <link rel="icon" type="image/png" href="INDSET IKON HER">
-    <!-- Linker til Skeleton -->    
-    <!-- <link rel="stylesheet" href="..//stylesheet.css"> -->
-    <!-- Linker til normalize der styre font størelser på små skærme -->
-    <link rel="stylesheet" href="..//normalize.css">
-  <!-- Linker til Fontawsome -->
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Linker til Stylesheet -->
-  <link rel="stylesheet" href="..//stylesheet.css">
 </head>
+
+<style>
+
+#box {
+  width: 600px;
+  height: 250px;
+  border: 1px red solid;
+}
+
+#box .box1, #box .box2 {
+  width: 300px;
+  height: 250px;
+  float: left;
+  outline: 1px red solid;
+}
+    </style>
 
 <body>
 
-<h1>Priser</h1>
+
+<h1>Prices</h1>
 
 <!-- Php koden herunder echoer ud alle informationer vi har i databasen -->
 
 <?php 
-echo "<ol>";
 while($row = mysqli_fetch_assoc($results)){
-	
-	echo '<div> <li>';
-        /*-- Link til noget booking?--*/
-		echo "<a href='?id=".$row['id']."'>";
 
-			echo "<img src=". $row['picture']." width='32' height='32'>";
-			echo " <h5>".$row['name']." ".$row['description']."</h5>";
-        
-		echo "</a>";
-	echo '</li> </div>';
-}
-echo "</ol>";	
-?>
+	?>
+    <div align=center>
+	        <div id="box"> <div class="box1">                                                         
+			<?php echo '<img src="'.$row['picture'].'" width="120px" height="120px" >'?></div>  
+			<div class="box2"><?php echo $row['name']?>                                                               
+            <?php echo $row['description']?>   </div>                    
+            </div>
+    </div>
+<?php } ?>
 
 </body>
 </html>
-
-
-
-
-<?php
-mysqli_close($connection);
-?>

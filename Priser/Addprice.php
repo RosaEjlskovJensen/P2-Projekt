@@ -34,7 +34,13 @@
     <textarea name="description" id="description" cols="30" rows="1"></textarea>
 
   </div>
-
+    
+    <div>
+  <label for="img">Select image:</label>
+  <input type="file" id="picture" name="picture" accept="image/*">
+  <input type="submit">
+</div>
+    
   <div class="addBtnDiv">
   	<input type="submit" id="addBtn" value="add">
 	</div>
