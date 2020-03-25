@@ -1,6 +1,6 @@
 <!doctype html>
 <?php 
-	require_once 'Connection.php';
+	require_once '../Connection.php';
 	$query = "SELECT * FROM blogs";
 	$results = mysqli_query($connection,$query);
 	if(!$results){

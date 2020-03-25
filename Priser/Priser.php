@@ -37,7 +37,7 @@ if(!$results){
 <body>
 
 
-<h1>Prices</h1>
+<h1>Priser</h1>
 
 <!-- Php koden herunder echoer ud alle informationer vi har i databasen -->
 
@@ -53,6 +53,6 @@ while($row = mysqli_fetch_assoc($results)){
             </div>
     </div>
 <?php } ?>
-
+<a href="../index.php" >Tilbage</a>
 </body>
 </html>

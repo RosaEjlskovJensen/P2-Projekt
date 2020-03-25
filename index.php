@@ -26,28 +26,28 @@
       <div class="nav_dropdown">
         <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="My_Pictures.php" class="button">Baby</a></li>
-          <li><a href="My_Pictures.php" class="button">Børn</a></li>
-          <li><a href="My_Pictures.php" class="button">Familie</a></li>
-          <li><a href="My_Pictures.php" class="button">Konfirmation</a></li>
-          <li><a href="My_Pictures.php" class="button">Bryllup</a></li>
-          <li><a href="My_Pictures.php" class="button">Gravid</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=1" class="button">Børn</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=2" class="button">Familie</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=3" class="button">Konfirmation</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=4" class="button">Bryllup</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=5" class="button">Gravid</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
         <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="Om_Mig.php" class="button">Om Mig</a></li>
-          <li><a href="Blog_Page.php" class="button">Blog</a></li>
-          <li><a href="nyhedsbrev.php" class="button">Nyheder</a></li>
-          <li><a href="Blog_Page.php" class="button">Anmeldeser</a></li>
+          <li><a href="" class="button">Blog</a></li>
+          <li><a href="" class="button">Nyheder</a></li>
+          <li><a href="" class="button">Anmeldeser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
         <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="Admin side/Loginside.php" class="button">Pakker</a></li>
-          <li><a href="Admin side/Loginside.php" class="button">Digital Print</a></li>
+          <li><a href="Priser/Priser.php" class="button">Pakker</a></li>
+          <li><a href="Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -60,10 +60,10 @@
       <div class="nav_dropdown">
         <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="send_form_email.php" class="button">Kontakt</a></li>
-          <li><a href="send_form_email.php" class="button">FAQ</a></li>
-          <li><a href="send_form_email.php" class="button">Privatlivspolitik</a></li>
-          <li><a href="send_form_email.php" class="button">Vilkår & Betingelser</a></li>
+          <li><a href="Kontakt/Kontakt.php" class="button">Kontakt</a></li>
+          <li><a href="Kontakt/FAQ.html" class="button">FAQ</a></li>
+          <li><a href="Kontakt/Privateterms.html" class="button">Privatlivspolitik</a></li>
+          <li><a href="Kontakt/Terms_conditions.html" class="button">Vilkår & Betingelser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -215,8 +215,8 @@
           <div class="two columns">
             <center>
             <p style="font-size: 16px">NYTTIGE LINKS</p>
-            <a style="font-size: 15px" href="#" >Privatlivspolitik</a><br>
-            <a style="font-size: 15px" href="#">Vilkår & Betingelser</a>
+            <a style="font-size: 15px" href="Kontakt/Privateterms.html" >Privatlivspolitik</a><br>
+            <a style="font-size: 15px" href="Kontakt/Terms_conditions.html">Vilkår & Betingelser</a>
             </center>
           </div>
           <div class="two columns">
