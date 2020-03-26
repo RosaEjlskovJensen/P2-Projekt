@@ -1,6 +1,6 @@
 <!doctype html>
 <?php 
-require_once 'Connection.php';
+require_once '../Connection.php';
 $query = "SELECT * FROM blogs";
 $results = mysqli_query($connection,$query);
 if(!$results){
@@ -26,14 +26,19 @@ die("could not query the database" .mysqli_error());
 	<tr>
 		<th>Nummer</th>
 		<th>Text</th>
+		<th>...</th>
+		<th>Medie</th>
 	</tr>
 	<?php 
 	while($row = mysqli_fetch_assoc($results)){
 	?>
 	<tr class="">
 			<td><?php echo $row['id']?></td>
-			<td><?php echo $row['Medie']?></td>
 			<td><?php echo $row['Text']?></td>
+			<td></td>
+			
+			<td><?php echo $row['Medie']?></td>
+			
 		<td class="">
 			<form action='delete_blog.php' method='post' >
 				<input type='submit' value='delete' onclick="return confirm('Are you sure you want to delete this item?');" >

@@ -1,6 +1,6 @@
 <!doctype html>
 <?php 
-require_once 'Connection.php';
+require_once '../Connection.php';
 
 if(isset($_POST['deleted']))
 {

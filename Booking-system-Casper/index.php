@@ -1,4 +1,5 @@
 <?php
+require_once '../Connection.php';
 setlocale(LC_TIME, array('da_DA.UTF-8','da_DA@euro','da_DA','danish'));
 setlocale(LC_ALL, 'da_DA');
 
@@ -6,7 +7,7 @@ setlocale(LC_ALL, 'da_DA');
 
 
 function build_calendar($month, $year) {
-    $mysqli = new mysqli('localhost', 'root', '', 'data');
+    
     /*$stmt = $mysqli->prepare("select * from bookings where MONTH(date) = ? AND YEAR(date) = ?");
     $stmt->bind_param('ss', $month, $year);
     $bookings = array();
@@ -286,3 +287,4 @@ function build_calendar($month, $year) {
 </body>
 
 </html>
+<?php $connection->close(); ?>
