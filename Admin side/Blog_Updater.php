@@ -1,6 +1,6 @@
 <!doctype html>
 <?php 
-require_once 'Connection.php';
+require_once '../Connection.php';
 $id = $_GET['item'];
 if(isset($_POST['Text'])){
 

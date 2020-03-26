@@ -16,7 +16,7 @@ body{
 	font-weight: 400;
 	font-family: "Lato", "Raleway", Helvetica, Arial, sans-serif;
 	color: #2a2723;
-	background-color: #e3e3dd;
+	background-color: #fff;
   	margin: 0px;
   	min-height: 100%;
   	width: 100%;}
@@ -76,7 +76,7 @@ a:hover{
   max-height: 99%;}
 
 .btn2{
-  background-color: #e3e3dd;
+  background-color: #fff; 
   color: #2a2723; 
   border: 2px solid #8b752e;}
 
@@ -86,14 +86,15 @@ a:hover{
 
 /* RESIZE PICTURES */
 .img_logo{
-	max-width: 250px;
+	max-width: 20vw;
 	height: auto;}
 
 .showcase_picture{
-  max-height: 85.5vh;
-  width: 100%;
+  max-width: 100%;
+  height: 84vh;
+  width: 100vw;
   position: absolute;
-  top: 84px;
+  top: 92px;
   left: 0;}
 
 .link_picture{
@@ -108,7 +109,6 @@ a:hover{
 	height: 100vh;}
 
 .section_nyhed{
-  background-color: #e3e3dd;
 }
 
 .section_galleri{
@@ -116,10 +116,9 @@ a:hover{
   padding-top: 20px;}
 
 .section_booking{
-  background-color: #e3e3dd;
 }
 
-.section_topfooter{
+.section_maps{
   color: #2a2723;
 	width: 100%;
 	overflow: hidden;
@@ -128,7 +127,7 @@ a:hover{
   background-color: #e3e3dd;
   opacity: 0.55;}
 
-.section_bottomfooter{
+.section_footer{
   color: #e3e3dd;
   padding: 10px 0px 1px 0px;
   background-color: #2a2723;
@@ -184,7 +183,6 @@ a:hover{
 	opacity: 0.95;
 	position: fixed;
 	width: 100%;
-  height: 83.39px;
 	z-index: 3;}
 
 .nav ul{
@@ -196,15 +194,15 @@ a:hover{
 
 .nav ul a{
 	display: block;
-	font-size: 15px;
-	margin-top: 5px;
+	font-size: 20px;
+	margin-top: 12px;
 	color: #2a2723;
 	text-decoration: none;}
 
 .nav ul a:hover{
 	display: block;
-	font-size: 15px;
-	margin-top: 5px;
+	font-size: 20px;
+	margin-top: 12px;
   color: #8b752e;
   text-decoration: underline;}
 
@@ -220,7 +218,6 @@ a:hover{
 /* Checkbox */
 .nav .menu_icon{
 	position: relative;
-  margin-top: 12px;
 	padding: 28px 20px;
 	float: right;} 
 
@@ -253,7 +250,7 @@ a:hover{
 	max-height: 100%;}
 
 /* Screen resize fix */
-@media (min-width: 930px){
+@media (min-width: 1101px){
 	.nav li{
 		float: left;}
 	.nav li a{
@@ -263,52 +260,7 @@ a:hover{
 		float: right;
 		max-height: none;}
 	.nav .menu_icon{
-		display: none;}
-  .nav img{
-  max-width: 250px;
-  height: auto;}}
-
-.nav_dropdown{
-  float: left;
-  overflow: hidden;}
-
-.nav_dropdown .btn_dropdown{
-  font-size: 20px;  
-  border: none;
-  outline: none;
-  color: #2a2723;
-  padding: 14px 16px;
-  padding-left: 20px;
-  background-color: inherit;
-  font-family: inherit;
-  margin-top: 12px;}
-
-.nav_dropdown:hover .btn_dropdown{
-  background-color: inherit;
-  color: #8b752e;
-  text-decoration: underline;}
-
-.dropdown-content{
-  display: none;
-  position: absolute;
-  background-color: #e3e3dd;
-  max-width: 150px;
-  z-index: 1;}
-
-.dropdown-content a{
-  float: none;
-  text-align: center;
-  display: block;
-  font-size: 20px;
-  padding: 10px;
-  color: #2a2723;
-  text-decoration: none;}
-
-.dropdown-content a:hover{
-  background-color: inherit;}
-
-.nav_dropdown:hover .dropdown-content{
-  display: block;}
+		display: none;}}
 
 
 /* Color ref.
@@ -633,78 +585,9 @@ q {font-style: italic;}
 
 /* Add a blue color to the author */
 .author {color: #8b752e;}
-/* Vilkår og betingelser / Privatpolitik */
-
-.section_heading{
-	color:#2a2723;
-	background-color: #e3e3dd;
-	height: 150px;
-	padding-top:150px;
-}
-
-.section_text{
-	margin:3rem;
-	color:#2A2723;
-}
-
-.section_text ul{
-  text-align: center;
-  list-style: inside;
- font-size: 15px;
-}
 
 
-.section_text h6{
-	font-size: 18px;
-	font-style: italic;
-}
 
-.section_text p {
-	font-size: 14px;
-}
-
-
-/* FAQ */
-
-.section_main_question{
-	margin-bottom: 150px;
-}
-
-.section_question h6 {
-	Margin: 0;
-	margin-top: 40px;
-}
-
-.Questions{
-	background-color: grey;
-	color:#2a2723;
-	width: 100%;
-	height: 40px;
-	border-radius: 5px;
-	text-align: left;
-	font-size: 15px;
-	cursor: pointer;
-	border:none;
-	outline:none;
-	margin: 1px 0;
-}
- 
-.Questions:hover {
-	  opacity: 0.6;
-}
-
-.Anwser{
-	font-size: 15px;
-	color:#2a2723;
-	padding: 0 10px;
-	display: none;
-	overflow:hidden;
-}
-
-
-.Anwser p {
-	margin-bottom: 10px;
-}
 /* Om mig - alt herunder er jeanettes */
 .om_mig 
 { 
@@ -754,4 +637,3 @@ q {font-style: italic;}
 {
 	height: 400px;
 }
-

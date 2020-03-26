@@ -1,7 +1,7 @@
 <!doctype html>
 <?php
 //database connection
-require_once 'Connection.php';
+require_once '../Connection.php';
 $query = "SELECT * FROM newsletter";
 $results = mysqli_query($connection,$query);
 if(!$results){
@@ -30,14 +30,23 @@ echo "<form action='send.php' method='get'>";
 while($row = mysqli_fetch_assoc($results))
 {
 	$mailcount ++;
-echo "<input type='checkbox' name='mail_count' checked>". "$mailcount. ".$row['email']."<br>";
+echo "$mailcount. ".$row['email']."<br>";
 };
-echo "<input type='submit' value='Send (Feature Virker ikke endnu)'>";
+	?>
+	<a href="mailto:<?php
+//setup variables
+while($row = mysqli_fetch_assoc($results))
+{
+echo $row['email'].',';
+};
+
+?>">Send Email til alle på Mailing liste</a>  
+	<?php
 echo "</form>";
 
  ?>
 <!-- copy paste delen -->
-<a href="Copy_Paste_Email_Liste.php" class="button">Copy paste liste</a>
+
 <br>
 <a href="Admin.php" class="button">Hjem</a>
 </body>

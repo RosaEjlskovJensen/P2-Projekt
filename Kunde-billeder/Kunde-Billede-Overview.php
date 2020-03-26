@@ -1,5 +1,7 @@
 <!DOCTYPE html>  
-<?php error_reporting(0); ?>
+<?php $kunde = $_POST["email"]; 
+error_reporting(0);
+?>
 <html>  
  <head>  
   <title>Portfolie baby</title>  
@@ -102,9 +104,6 @@
 
 <!-- Det første php gode her, laver en array med de forskellige kategorier   >
 
-<?php
-$kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
-?>
 
 <!---Connect til database---->
 <?php
@@ -119,7 +118,7 @@ die("cannot connect to database".mysqli_connect_error());
 
 
 <center>
-         <h1> billeder </h1>
+         <h1> billeder for <?php echo $kunde ?> </h1>
 </center>
     
     
@@ -129,11 +128,11 @@ die("cannot connect to database".mysqli_connect_error());
 
      <?php
  {
-  $item = $_GET['item'];
-  $query = "SELECT * FROM $kategori[$item] ORDER BY id DESC";
-  $result = mysqli_query($connection, $query);
+  $table = $kunde;
+  $query = "SELECT * FROM `$table` ORDER BY id DESC";
+  $results = mysqli_query($connection, $query);
   
-  while($row = mysqli_fetch_array($result))
+  while($row = mysqli_fetch_array($results))
   {
    $output.= '<img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" />'; 
   }
