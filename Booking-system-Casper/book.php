@@ -19,7 +19,11 @@ if(isset($_GET['date'])){
 
 if(isset($_POST['submit'])){
     $name = $_POST['name'];
+    $phone = $_POST['phone'];
     $email = $_POST['email'];
+	$adress = $_POST['adress'];
+	$postnummer = $_POST['postnummer'];
+	
     $timeslot = $_POST['timeslot'];
 		$stmt = $mysqli->prepare("select * from bookings where date = ? AND timeslot = ?");
     $stmt->bind_param('ss', $date, $timeslot);
@@ -29,8 +33,8 @@ if(isset($_POST['submit'])){
               $msg = "<div class='alert alert-danger'>Allready booked</div>";  
            
         }else{
-			 $stmt = $mysqli->prepare("INSERT INTO bookings (name, timeslot, email, date) VALUES (?,?,?,?)");
-    $stmt->bind_param('ssss', $name, $timeslot, $email, $date);
+			 $stmt = $mysqli->prepare("INSERT INTO bookings (name, phone, timeslot, email, adress, postnummer, date) VALUES (?,?,?,?,?,?,?)");
+    $stmt->bind_param('sssssss', $name, $phone, $timeslot, $email, $adress, $postnummer, $date);
     $stmt->execute();
     $msg = "<div class='alert alert-success'>Booking Successfull</div>";
 	$bookings[]=$timeslot;
@@ -131,6 +135,18 @@ function timeslots($duration, $cleanup, $start, $end){
         				<lable for="">Email</lable>
         				<input required type="email"  name="email" class="form-control">
         			</div>
+        			<div class="from-group">
+        				<lable for="">Telefon</lable>
+        				<input required type="phone"  name="phone" class="form-control">
+        			</div>
+        			<div class="from-group">
+        				<lable for="">Adresse</lable>
+        				<input required type="text"  name="adress" class="form-control">
+        			</div>
+        			<div class="from-group">
+        				<lable for="">postnummer</lable>
+        				<input required type="number"  name="postnummer" class="form-control">
+        			</div>
         			<div class="form-group pull-right">
         			<br>
         				<button class="btn btn-primary" type="submit" name="submit">Submit</button>
@@ -160,3 +176,4 @@ function timeslots($duration, $cleanup, $start, $end){
   </body>
 
 </html>
+
