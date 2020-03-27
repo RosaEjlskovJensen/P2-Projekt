@@ -27,8 +27,8 @@ session_start();
 			<div class="">
 				<h2> Du er logget ind <h2>
 				<a href="Nytabel.php" class="button">Ny kunde</a>
-				<a href="FindTabel.php" class="button">Eksisterende kunde</a>
-				<a href="Mailing_List.php" class="button">Kunde liste (Virker ikke endnu)</a>
+				<a href="FindTabel.php" class="button">Find kunde specifik arkiv</a>
+				<a href="Kunde-Liste.php" class="button">Liste over alle kunde arkiver</a>
 				<a href="../Admin side/Admin.php" class="button-primary">Tilbage</a>
 			</div>
 		</div>
