@@ -31,6 +31,7 @@ session_start();
 				<a href="Mailing_List.php" class="button">Mailing Liste</a>
                  <a href="Portfolieadminside.php" class="button">Portfolie</a>
                  <a href="../Kunde-billeder/Kunde-Billede-Admin.php" class="button">Kunde billede arkiv</a>
+                 <a href="../Booking-system-Casper/Booking_Admin.php" class="button">kunde bookinger</a>
 				<a href="../index.php" class="button-primary">til forside</a>
 			</div>
 		</div>
