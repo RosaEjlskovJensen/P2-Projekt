@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 27. 03 2020 kl. 14:52:13
+-- Genereringstid: 29. 03 2020 kl. 21:43:14
 -- Serverversion: 10.4.11-MariaDB
 -- PHP-version: 7.4.2
 
@@ -113,18 +113,8 @@ CREATE TABLE `bookings` (
 --
 
 INSERT INTO `bookings` (`id`, `name`, `email`, `phone`, `adress`, `postnummer`, `date`, `timeslot`) VALUES
-(48, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-15', '09:00AM-09:10AM'),
-(49, 'Casper Roskær', 'Casper.roskaer@gmail.com', 0, '', 0, '2020-03-25', '09:40AM-09:50AM'),
-(50, 'Casper Roskær', 'Casper.roskaer@gmail.com', 0, '', 0, '2020-03-25', '09:00AM-09:10AM'),
-(51, 'Casper Roskær', 'Casper.roskaer@gmail.com', 0, '', 0, '2020-03-25', '10:20AM-10:30AM'),
-(52, 'Casper Roskær', 'Casper.roskaer@gmail.com', 0, '', 0, '2020-03-26', '09:00AM-09:10AM'),
-(53, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-27', '09:00AM-09:10AM'),
-(54, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-26', '09:40AM-09:50AM'),
-(55, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-26', '10:20AM-10:30AM'),
-(56, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-26', '11:00AM-11:10AM'),
-(57, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-27', '09:40AM-09:50AM'),
-(58, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-27', '10:20AM-10:30AM'),
-(59, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-05-07', '10:20AM-10:30AM');
+(66, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-29', '11:00AM-11:10AM'),
+(67, 'Casper Roskær', 'test12@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-29', '11:40AM-11:50AM');
 
 -- --------------------------------------------------------
 
@@ -320,7 +310,7 @@ ALTER TABLE `blogs`
 -- Tilføj AUTO_INCREMENT i tabel `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
 -- Tilføj AUTO_INCREMENT i tabel `newsletter`
