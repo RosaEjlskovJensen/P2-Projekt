@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Portfolie</title>
+    <title>Amalie Sandgaard | Photography | Portfolio</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src=></script>
  <!-- Dette link er ikonet der er i ens browser tab -->

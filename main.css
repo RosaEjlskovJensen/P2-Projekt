@@ -609,31 +609,8 @@ there.
 @media (min-width: 1200px) {}
 
 
-/* Test */
 
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  background: #e3e3dd;
-}
-
-.text{
-padding-top: 15px;
-}
-
-/* Slides */
-.slides {
-  display: none;
-  padding: 30px 80px 50px 80px;
-  text-align: center;
-}
-
-/* Add an italic font style to all quotes */
-q {font-style: italic;}
-
-/* Add a blue color to the author */
-.author {color: #8b752e;}
-/* Vilkår og betingelser / Privatpolitik */
+/* Vilkår og betingelser + Privatpolitik */
 
 .section_heading{
 	color:#2a2723;
@@ -671,7 +648,7 @@ q {font-style: italic;}
 }
 
 .section_question h6 {
-	Margin: 0;
+	margin: 0;
 	margin-top: 40px;
 }
 
@@ -701,11 +678,11 @@ q {font-style: italic;}
 	overflow:hidden;
 }
 
-
 .Anwser p {
 	margin-bottom: 10px;
 }
-/* Om mig - alt herunder er jeanettes */
+
+/* Om mig */
 .om_mig 
 { 
 	padding-top: 150px;

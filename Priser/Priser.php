@@ -15,7 +15,7 @@ if(!$results){
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Priser</title>
+    <title>Amalie Sandgaard | Photography | Priser</title>
 </head>
 
 <style>

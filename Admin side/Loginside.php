@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="../normalize.css">
 <!-- Dette link er ikonet der er i ens browser tab -->
 <link rel="icon" type="image/png" href="INDSET IKON HER">
-<title>Untitled Document</title>
+<title>Amalie Sandgaard | Photography | Login</title>
 </head>
 
 <body>

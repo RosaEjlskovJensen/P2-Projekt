@@ -2,7 +2,7 @@
 <?php error_reporting(0); ?>
 <html>  
  <head>  
-  <title>Portfolie baby</title>  
+  <title>Amalie Sandgaard | Photography | Portfolio</title>  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="burgermenujs.js"></script>
   <!-- Dette link er ikonet der er i ens browser tab -->
