@@ -2,7 +2,7 @@
 <?php
 //database connection
 require_once '../Connection.php';
-$query = "SELECT * FROM bookings";
+$query = "SELECT * FROM bookings ORDER BY date, timeslot";
 $results = mysqli_query($connection,$query);
 if(!$results){
 die("could not query the database" .mysqli_error());
@@ -27,25 +27,42 @@ echo "<h1>liste over bookede tider</h1>";
 
 	?> 
 	<style>
-		table{
-			border-spacing: 10px;
-			border-collapse: inherit;
-			background: grey;
+		
+		.tablegreen{
+			background: lightgreen;
+			margin: auto;
 			 }
+		.tablered{
+			background: hsla(359,100%,80%,1.00);
+			 }
+		.tabletotal{
+			
+			border-collapse: collapse;
+			border-spacing: 15px;
+			border-style: dashed;
+			
+			 }
+		
+		td{
+			padding: 5px;
+		}
 		.displayflex
 		{
-			display: flex;
+			display: inline;
+			margin: -5px, auto;
+			
 		}
 		
 	</style>
- <table class="table">
+	
+ <table class="tabletotal">
 	<tr>
-		<th>Dato</th><th>Tid</th><th>Navn</th><th>Email</th><th>Tlf:</th><th>Adresse</th><th>Postnummer</th>
+		<th>Dato</th><th>Tid</th><th>Navn</th><th>Email</th><th>Tlf:</th><th>Adresse</th><th>Postnummer</th><th>Action</th>
 	</tr>
 	<?php 
 	while($row = mysqli_fetch_assoc($results)){
-	?>
-	<tr class="table">
+	if($row['date']>= date("Y-m-d")){ ?>
+	<tr class="tablegreen">
 		<td><?php echo $row['date']?></td>
 		<td><?php echo $row['timeslot']?></td>
 		<td><?php echo $row['name']?></td>
@@ -54,19 +71,38 @@ echo "<h1>liste over bookede tider</h1>";
 		<td><?php echo $row['adress']?></td>
 		<td><?php echo $row['postnummer']?></td>
 		<td class="displayflex">
-		
-			<form action='delete_booking.php' method='post' >
+			<form action='delete_booking.php' onclick="return confirm('Er du sikker på at slette denne tid? når den er slettet kan den ikke genfindes')" method='post' class="displayflex" >
+			<input type='submit' value='delete' >
+			<input type='hidden' name='deleted' value='<?php echo $row['email']?>'>
+			</form>
+		</td>		
+	</tr>
+	
+	<?php } else { ?>
+	<tr class="tablered">
+		<td><?php echo $row['date']?></td>
+		<td><?php echo $row['timeslot']?></td>
+		<td><?php echo $row['name']?></td>
+		<td><?php echo $row['email']?></td>
+		<td><?php echo $row['phone']?></td>
+		<td><?php echo $row['adress']?></td>
+		<td><?php echo $row['postnummer']?></td>
+		<td class="displayflex">
+			<form action='delete_booking.php' onclick="return confirm('Er du sikker på at slette denne tid? når den er slettet kan den ikke genfindes')" method='post' class="displayflex" >
 			<input type='submit' value='delete' >
 			<input type='hidden' name='deleted' value='<?php echo $row['email']?>'>
 			</form>
 			
 			
 		</td>		
-	</tr>
-	
+	</tr> 
+
+	<?php } ?>
 	<?php } ?>
 	
+	
 </table>
+
 <!-- copy paste delen -->
 
 <br>
