@@ -21,21 +21,35 @@ session_start();
 <title>test</title>
 </head>
 
-<body>
-	<div class="row">
-		<div class="eight columns">	
-			<div class="">
-				<h2> Du er logget ind <h2>
-				<a href="Blog_Overview.php" class="button">Blogs</a>
-				<a href="Write_Blog.php" class="button">Skriv Blog</a>
-				<a href="Mailing_List.php" class="button">Mailing Liste</a>
-                 <a href="Portfolieadminside.php" class="button">Portfolie</a>
-                 <a href="../Kunde-billeder/Kunde-Billede-Admin.php" class="button">Kunde billede arkiv</a>
-                 <a href="../Booking-system-Casper/Booking_Admin.php" class="button">kunde bookinger</a>
-				<a href="../index.php" class="button-primary">til forside</a>
-			</div>
+<body class="wallpaper">
+<div class="twelve columns">
+	<div class="four columns ">
+		<div class="blackbar full-height">	
+			
+				<h2 class="u-full-width logintext"> Generelle site<h2><hr>
+				<a href="Blog_Overview.php" class="button1 twelve columns">Blogs</a>
+				<a href="Write_Blog.php" class="button1 u-full-width">Skriv Blog</a>
+				<a href="Mailing_List.php" class="button1 u-full-width">Mailing Liste</a>
+                 <a href="Portfolieadminside.php" class="button1 u-full-width">Portfolie</a>
+				<a href="../index.php" class="button1 u-full-width place-bottom">til forside</a>
+			
 		</div>
 	</div>
+	<div class="four columns">
+		<div class=" blackbar full-height">	
+			<h2 class="u-full-width logintext">Booking<h2><hr>	
+			<a href="../Booking-system-Casper/Booking_Admin.php" class="button1 u-full-width">kunde bookinger</a>		
+		</div>
+	</div>
+	<div class="four columns">
+		<div class=" blackbar full-height">	
+			<h2 class="u-full-width logintext">Billede arkiver<h2><hr>	
+				<a href="../Kunde-billeder/Nytabel.php" class="button1 u-full-width">Ny kunde</a>
+				<a href="../Kunde-billeder/FindTabel.php" class="button1 u-full-width">Find kunde specifik arkiv</a>
+				<a href="../Kunde-billeder/Kunde-Liste.php" class="button1 u-full-width">Liste over alle kunde arkiver</a>		
+		</div>
+	</div>
+</div>
 </body>
 
 </html>
