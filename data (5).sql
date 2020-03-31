@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Vært: 127.0.0.1
--- Genereringstid: 29. 03 2020 kl. 21:43:14
+-- Genereringstid: 31. 03 2020 kl. 15:58:36
 -- Serverversion: 10.4.11-MariaDB
 -- PHP-version: 7.4.2
 
@@ -113,8 +113,11 @@ CREATE TABLE `bookings` (
 --
 
 INSERT INTO `bookings` (`id`, `name`, `email`, `phone`, `adress`, `postnummer`, `date`, `timeslot`) VALUES
-(66, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-29', '11:00AM-11:10AM'),
-(67, 'Casper Roskær', 'test12@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-29', '11:40AM-11:50AM');
+(67, 'Casper Roskær', 'test12@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-03-29', '11:40AM-11:50AM'),
+(70, 'Casper Roskær', 'test12@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-06-18', '09:40AM-09:50AM'),
+(77, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-04-02', '09:00AM-09:10AM'),
+(78, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-04-02', '14:20PM-14:30PM'),
+(79, 'Casper Roskær', 'Casper.roskaer@gmail.com', 61601222, 'islandsgade 8. 2tv', 9000, '2020-05-07', '11:40AM-11:50AM');
 
 -- --------------------------------------------------------
 
@@ -219,7 +222,8 @@ INSERT INTO `newsletter` (`id`, `email`) VALUES
 (19, 'test13@gmail.com'),
 (20, 'info@techammo.dk'),
 (21, 'Casper.roskaer@gmail.com'),
-(22, 'Blank@gmail.com');
+(22, 'Blank@gmail.com'),
+(23, 'Celiashanse@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -310,13 +314,13 @@ ALTER TABLE `blogs`
 -- Tilføj AUTO_INCREMENT i tabel `bookings`
 --
 ALTER TABLE `bookings`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
 -- Tilføj AUTO_INCREMENT i tabel `newsletter`
 --
 ALTER TABLE `newsletter`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- Tilføj AUTO_INCREMENT i tabel `prices`
