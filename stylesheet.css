@@ -598,5 +598,36 @@ height: auto;
 
 /* ------------ Priser -----------*/
 
+/* ------------ adminsider css -------*/
+.blackbar
+{
+	background: #9C9C9C;
+	
+}
+.logintext
+{
+	color: #8b752e;
+	text-align: center;
+
+}
+.full-height
+{
+	height: 100vh;
+}
+.place-bottom
+{
+	position: relative;
+	margin-top: 75%;
+}
+.position-realative
+{
+	position: relative;
+}
+.wallpaper
+{
+	background: #8b752e;
+}
+/* ---------------adminsider slut --------*/
+
 
 
