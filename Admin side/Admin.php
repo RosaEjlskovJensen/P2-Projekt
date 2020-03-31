@@ -31,14 +31,14 @@ session_start();
 				<a href="Write_Blog.php" class="button1 u-full-width">Skriv Blog</a>
 				<a href="Mailing_List.php" class="button1 u-full-width">Mailing Liste</a>
                  <a href="Portfolieadminside.php" class="button1 u-full-width">Portfolie</a>
-				<a href="../index.php" class="button1 u-full-width place-bottom">til forside</a>
+				<a href="../index.php" class="button2 u-full-width place-bottom">til forside</a>
 			
 		</div>
 	</div>
 	<div class="four columns">
 		<div class=" blackbar full-height">	
 			<h2 class="u-full-width logintext">Booking<h2><hr>	
-			<a href="../Booking-system-Casper/Booking_Admin.php" class="button1 u-full-width">kunde bookinger</a>		
+			<a href="Booking_Admin.php" class="button1 u-full-width">kunde bookinger</a>		
 		</div>
 	</div>
 	<div class="four columns">
