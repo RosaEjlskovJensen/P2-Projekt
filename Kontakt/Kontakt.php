@@ -17,6 +17,18 @@
 </head>
 
 <style>
+.kontaktformular
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
     .lokation {
         float: right;
         padding-right:10%;
@@ -54,39 +66,129 @@
 }
 </style>
 
+    <?php
+if(isset($_POST['email'])) {
+ 
+    // Din email og beskeden
+    $email_to = "Daniel_wow1@live.dk";
+    $email_subject = "Henvendelse fra kunde";
+ 
+    function died($error) {
+        // Fejl kode 
+        echo "Vi beklager meget, men der blev fundet fejl med den formular, du indsendte. ";
+        echo "Disse fejl vises under.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Gå tilbage og ret disse fejl.<br /><br />";
+        die();
+    }
+ 
+ 
+    // validation expected data exists
+    if(!isset($_POST['first_name']) ||
+        !isset($_POST['last_name']) ||
+        !isset($_POST['email']) ||
+        !isset($_POST['telephone']) ||
+        !isset($_POST['comments'])) {
+        died('Vi beklager, men det ser ud til at være et problem med den formular, du har sendt.');       
+    }
+ 
+     
+ 
+    $first_name = $_POST['first_name']; // required
+    $last_name = $_POST['last_name']; // required
+    $email_from = $_POST['email']; // required
+    $telephone = $_POST['telephone']; // not required
+    $comments = $_POST['comments']; // required
+ 
+    $error_message = "";
+    $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
+ 
+  if(!preg_match($email_exp,$email_from)) {
+    $error_message .= 'Den angivne e-mail-adresse ser ikke ud til at være gyldig.<br />';
+  }
+ 
+    $string_exp = "/^[A-Za-z .'-]+$/";
+ 
+  if(!preg_match($string_exp,$first_name)) {
+    $error_message .= 'Fornavnet du intastede ser ikke ud til at være gyldigt.<br />';
+  }
+ 
+  if(!preg_match($string_exp,$last_name)) {
+    $error_message .= 'Efternavnet du har intastet ser ikke ud til, at være gyldigt.<br />';
+  }
+ 
+  if(strlen($comments) < 2) {
+    $error_message .= 'De kommentarer, du indtastede, ser ikke ud til at være gyldige.<br />';
+  }
+ 
+  if(strlen($error_message) > 0) {
+    died($error_message);
+  }
+ 
+    $email_message = "Detaljer herunder.\n\n";
+ 
+     
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+ 
+     
+ 
+    $email_message .= "First Name: ".clean_string($first_name)."\n";
+    $email_message .= "Last Name: ".clean_string($last_name)."\n";
+    $email_message .= "Email: ".clean_string($email_from)."\n";
+    $email_message .= "Telephone: ".clean_string($telephone)."\n";
+    $email_message .= "Comments: ".clean_string($comments)."\n";
+ 
+// Email header
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);  
+?>
+ 
+<!-- Responsen når du har trykket submit skrives herunder -->
+ 
+Tak for henvendelsen, du hører fra os hurtigst muligt.
+<?php
+ 
+}
+?>
+    
 <body>
 
 <!-- Navigation bar -->
   <nav class="nav">
-    <a href="../index.php"><img class="img_logo" src="../billeder/AmalieSandgaardPhotography_LOGO.png"></a>
+    <a href="index.php"><img class="img_logo" src="../billeder/AmalieSandgaardPhotography_LOGO.png"></a>
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
         <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="My_Pictures.php" class="button">Baby</a></li>
-          <li><a href="My_Pictures.php" class="button">Børn</a></li>
-          <li><a href="My_Pictures.php" class="button">Familie</a></li>
-          <li><a href="My_Pictures.php" class="button">Konfirmation</a></li>
-          <li><a href="My_Pictures.php" class="button">Bryllup</a></li>
-          <li><a href="My_Pictures.php" class="button">Gravid</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=1" class="button">Børn</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=2" class="button">Familie</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=3" class="button">Konfirmation</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=4" class="button">Bryllup</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=5" class="button">Gravid</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
         <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="Om_Mig.php" class="button">Om Mig</a></li>
-          <li><a href="Blog_Page.php" class="button">Blog</a></li>
-          <li><a href="nyhedsbrev.php" class="button">Nyheder</a></li>
-          <li><a href="Blog_Page.php" class="button">Anmeldeser</a></li>
+          <li><a href="Info/ommig.php" class="button">Om Mig</a></li>
+          <li><a href="Info/blog.php" class="button">Blog</a></li>
+          <li><a href="Info/blog.php" class="button">Nyheder</a></li>
+          <li><a href="Info/blog.php" class="button">Anmeldeser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
         <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="Admin side/Loginside.php" class="button">Pakker</a></li>
-          <li><a href="Admin side/Loginside.php" class="button">Digital Print</a></li>
+          <li><a href="Priser/Priser.php" class="button">Pakker</a></li>
+          <li><a href="Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -99,10 +201,10 @@
       <div class="nav_dropdown">
         <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="send_form_email.php" class="button">Kontakt</a></li>
-          <li><a href="send_form_email.php" class="button">FAQ</a></li>
-          <li><a href="send_form_email.php" class="button">Privatlivspolitik</a></li>
-          <li><a href="send_form_email.php" class="button">Vilkår & Betingelser</a></li>
+          <li><a href="Kontakt/Kontakt.php" class="button">Kontakt</a></li>
+          <li><a href="Kontakt/FAQ.php" class="button">FAQ</a></li>
+          <li><a href="Kontakt/Privateterms.php" class="button">Privatlivspolitik</a></li>
+          <li><a href="Kontakt/Terms_conditions.php" class="button">Vilkår & Betingelser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -115,7 +217,6 @@
 
 
   <!-- Heading -->
-<br> <br> <br>
 <section class="section_heading">
 	<div class="container u-full-width">
 		<h6><center>Kontaktinformationer
@@ -124,7 +225,58 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 </section>
-    
+    <br><br><br>
+<div class="kontaktformular">   
+<form name="contactform" method="post" action="Kontakt.php">
+<table width="450px">
+<tr>
+ <td valign="top">
+  <label for="first_name">Fornavn</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="first_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="last_name">Efternavn</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" maxlength="50" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="email">Email</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" maxlength="80" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="telephone">Telefon nummer</label>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" maxlength="30" size="30">
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label for="comments">Besked</label>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit">
+ </td>
+</tr>
+</table>
+</form>
+</div>    
 <div>
     
 <div class="kontaktinformation">

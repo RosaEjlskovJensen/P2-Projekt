@@ -116,12 +116,12 @@
 <h6>Fotosessioner</h6>
 
 
-<button class="Questions">Spørgsmål 1</button>
+<button class="Questions">Hvad er dine åbningstider?</button>
 <div class="Anwser">
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
 
-<button class="Questions">Spørgsmål 2</button>
+<button class="Questions">Hvordan finder vi dig?</button>
 <div class="Anwser">
 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 </div>
@@ -179,14 +179,14 @@
  <h6>Dine Rettigheder</h6>
 
 
-<button class="Questions">Spørgsmål 1</button>
+<button class="Questions">BRUGSRET</button>
 <div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Brugsretten er de rettigheder du har købt dig til. Men hvad er det så? Det kan være rettigheder til selv at måtte fremkalde filen, hvilket netop er tilfældet hos Koldsø Fotografi. læs mere <a href="Privateterms.php">HER</a></p>
 </div>
 
-<button class="Questions">Spørgsmål 2</button>
+<button class="Questions">OPHAVSRET</button>
 <div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	<p>Har man været ophavsmanden til et værk – fx. et fotografi – så har man ejerskabet over dét fotografi. Køber man som kunde en digital fil af en fotograf, så har du kun købt brugsretten – dvs. retten til at bruge filen til et bestemt formål. Du har ikke købt ejendomsretten – den vil altid tilhøre fotografen. Det er bl.a. derfor det ikke er tilladt at ændre i billedet, ved fx redigering medmindre skriftlig tilladelse er givet fra ophavsmanden (fotografen).</p>
 </div>
 
 
