@@ -14,30 +14,65 @@ die("could not query the database" .mysqli_error());
 </head>
 
 <body>
-<?php 
-echo "<h1>Liste over Kunder</h1>";
-//setup variables
-$costumercount = 0;
+<style>
+		
+		.tablegreen{
+			background: lightgreen;
+			margin: auto;
+			 }
+		
+		.tabletotal{
+			
+			border-collapse: collapse;
+			border-spacing: 15px;
+			border-style: dashed;
+			
+			 }
+		
+		td{
+			padding: 5px;
+		}
+		.displayflex
+		{
+			display: inline;
+			margin: -5px, auto;
+			
+		}
+		
+	</style>
+<table class="tabletotal">
+	<tr>
+		<th>Navn</th><th>Email</th><th>Oprettelses dato</th><th>Slet</th><th>Gå til arkiv</th>
+	</tr>
+	<?php 
+	while($row = mysqli_fetch_assoc($results)){ ?>
+	
+	<tr class="tablegreen">
+	<?php $email = $row['email']; ?>
+		<td><?php echo $row['name']?></td>
+		<td><?php echo $row['email']?></a></td>
+		<td><?php echo $row['date']?></td>
+		<td><?php echo "<form action='delete_archive.php' method='post'>";
+					echo "<input type='submit' value='Slet arkiv'>";
+					echo "<input type='hidden' name='deleted' value='$email'>";
+					echo "</form>"; ?></td>
+					
+					<td><form action='Tableaction-FromList.php' method='post'>
+					<input type='submit' value='Gå til arkiv'>
+					<input type='hidden' name='email' value='<?php echo $row['email'] ?>'>
+				
+					</form></td>
+					
+	</tr>
+	
+	
+	
+	<?php } ?>
+	
+</table>
 
-echo "<form action='send.php' method='get'>";
-while($row = mysqli_fetch_assoc($results))
-{
-	$costumercount ++;
-echo "$costumercount. ".
-	'navn: '.$row['name']." ".
-	'email: '. $row['email'].
-	' dato: '. $row['date']. "<br>";
-echo "<form action='delete_archive.php' method='post'>";
-echo "<input type='submit' value='Slet arkiv'>";
-	$email = $row['email'];
-echo "<input type='hidden' name='deleted' value='$email'>";
-echo "</form>";
-};
-	?>
 
-
-
-<a href="Kunde-Billede-Admin.php" class="button">Hjem</a>
+<a href="../Admin side/Admin.php" class="button">Tilbage</a>
 
 </body>
 </html>

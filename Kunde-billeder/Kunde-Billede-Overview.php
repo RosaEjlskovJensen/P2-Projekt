@@ -1,6 +1,14 @@
 <!DOCTYPE html>  
-<?php $kunde = $_POST["email"]; 
+<?php 
+$kunde = $_POST["email"]; 
 error_reporting(0);
+
+//database connection
+require_once '../Connection.php';
+if(!$connection){
+die("cannot connect to database".mysqli_connect_error());
+}
+
 ?>
 <html>  
  <head>  
@@ -106,13 +114,7 @@ error_reporting(0);
 
 
 <!---Connect til database---->
-<?php
-//database connection
-require_once '../Connection.php';
-if(!$connection){
-die("cannot connect to database".mysqli_connect_error());
-}
-?>
+
 
 <body>
 

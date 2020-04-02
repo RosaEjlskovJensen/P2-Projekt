@@ -75,7 +75,8 @@ echo "<h1>liste over bookede tider</h1>";
 			<input type='submit' value='delete' >
 			<input type='hidden' name='deleted' value='<?php echo $row['email']?>'>
 			</form>
-		</td>		
+		</td>
+			
 	</tr>
 	
 	<?php } else { ?>
@@ -92,9 +93,8 @@ echo "<h1>liste over bookede tider</h1>";
 			<input type='submit' value='delete' >
 			<input type='hidden' name='deleted' value='<?php echo $row['email']?>'>
 			</form>
-			
-			
-		</td>		
+		</td>	
+		
 	</tr> 
 
 	<?php } ?>
@@ -103,10 +103,29 @@ echo "<h1>liste over bookede tider</h1>";
 	
 </table>
 
-<!-- copy paste delen -->
+<?php
+if(isset($_POST["submit"]))
+{ $hest = $_POST["sendemails"];
+	if(!empty($_POST["sendemails"]))
+	{
+		echo "<a href=mailto:";
+		foreach ($hest as $sendemails)
+		{
+			echo "$sendemails". ",";
+		} 
+	echo">send</a>";} 
+	else
+	{
+		echo "Ingen mails blev valgt";
+	}
+}
+	
+?>
+
 
 <br>
 <a href="../Admin side/Admin.php" class="button">Hjem</a>
+
 </body>
 </html>
 <?php 

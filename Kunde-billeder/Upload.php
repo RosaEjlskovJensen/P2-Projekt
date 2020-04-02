@@ -1,6 +1,7 @@
 <!DOCTYPE html>  
 <?php 
 session_start();
+
 $email = $_SESSION["email"];
 $_SESSION["email"] = $email;
 
@@ -52,7 +53,7 @@ $_SESSION["email"] = $email;
   </div>
  </div>
 </div>
- <a href="Kunde-Billede-Admin.php">Tilbage</a>
+ <a href="../Admin side/Admin.php">Tilbage</a>
 <script>  
 $(document).ready(function(){
  

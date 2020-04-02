@@ -33,19 +33,10 @@ while($row = mysqli_fetch_assoc($results))
 echo "$mailcount. ".$row['email']."<br>";
 };
 	?>
-	<a href="mailto:<?php
-//setup variables
-while($row = mysqli_fetch_assoc($results))
-{
-echo $row['email'].',';
-};
+	
 
-?>">Send Email til alle på Mailing liste</a>  
-	<?php
-echo "</form>";
+<a href="MailToAll.php">Send mail til alle</a>
 
- ?>
-<!-- copy paste delen -->
 
 <br>
 <a href="Admin.php" class="button">Hjem</a>
