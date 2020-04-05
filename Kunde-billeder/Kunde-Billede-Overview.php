@@ -18,131 +18,78 @@ die("cannot connect to database".mysqli_connect_error());
   <!-- Dette link er ikonet der er i ens browser tab -->
   <link rel="icon" type="image/png" href="billeder/asp.png">
 <!-- Linker til Skeleton -->
-<link rel="stylesheet" href="../stylesheet2.css">
+<link rel="stylesheet" href="../stylesheet.css">
  <!-- Linker til normalize der styre font størelser på små skærme -->
 <link rel="stylesheet" href="../normalize.css">
-     
-     
-     <style>
-
-.myImg {
-  border-radius: 5px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.myImg:hover {opacity: 0.7;}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-/* Modal Content (image) */
-.modal-content {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-}
-
-
-/* Add Animation */
-.modal-content, #caption {  
-  -webkit-animation-name: zoom;
-  -webkit-animation-duration: 0.6s;
-  animation-name: zoom;
-  animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)} 
-  to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
-}
-
-/* The Close Button */
-.close {
-  position: absolute;
-  top: 15px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #bbb;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-  .modal-content {
-    width: 100%;
-  }
-}
-         
-.billeder{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 50px;
-        margin-right: 50px;
-}
-</style>
-
  </head>  
-
-<!-- Det første php gode her, laver en array med de forskellige kategorier   >
-
-
-<!---Connect til database---->
-
-
 <body>
-
-
 <center>
          <h1> billeder for <?php echo $kunde ?> </h1>
 </center>
     
     
 <!---Her fetches billederne fra databasen. Billederne er upleaded som binære koder og skal derfor krypteres først--->
-<center>
-    <div class="billeder">
 
+    <div class="billeder">
      <?php
  {
   $table = $kunde;
   $query = "SELECT * FROM `$table` ORDER BY id DESC";
   $results = mysqli_query($connection, $query);
-  
-  while($row = mysqli_fetch_array($results))
-  {
-   $output.= '<img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" />'; 
+	 echo "<div class='ten columns'";
+  echo "<form name='pictureform'>";
+	 
+	 while($row = mysqli_fetch_array($results))
+  { 
+   $output.= '<div class=" borderbox three columns"><center><img class="myImg u-full width" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" /> 
+	   <br>
+	   <table class="tg">
+  <tr>
+    <td>Farve</td>
+    <td><input type="checkbox" id="Farve" name="farvevalg" value="Farve">farve
+	  <input type="checkbox" id="sort/hvid" name="farvevalg" value="sort/hvid">sort/hvid</td>
+  </tr>
+  <tr>
+    <td>Størelse</td>
+    <td><select id="antal">
+  <option value="4x9">4x9</option>
+  <option value="7x13">7x13</option>
+  <option value="1x1">1x1</option>
+  <option value="10x9">10x9</option>
+</select></td>
+  </tr>
+  <tr>
+    <td>Antal</td>
+    <td><select id="antal" >
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+</select></td>
+  </tr>
+  <tr>
+    <td>Print type</td>
+    <td><select id="antal" >
+  <option value="Blank">Blank</option>
+  <option value="Mat">Mat</option>
+  <option value="på skumplade">på skumplade</option>
+</select></td>
+  </tr>
+  <tr>
+    <td>Kommentar</td>
+    <td><input type"text" cols="3" rows="3"></td>
+  </tr>
+</table>
+	  </center>
+	  </div>';
+	  
   }
   echo $output;
+echo "</form>";
  }
     ?>
     </div>
-</center>
+
     <!-------------------------->
 
 <!-- Modal -->
@@ -180,6 +127,7 @@ span.onclick = function() {
    modal.style.display = "none";
 }
 </script>
+
 <a href="../index.php">Tilbage</a>
     
   </body>
