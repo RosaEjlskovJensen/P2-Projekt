@@ -25,6 +25,10 @@ die("cannot connect to database".mysqli_connect_error());
 <body>
 <center>
          <h1> billeder for <?php echo $kunde ?> </h1>
+         <div class="twelve columns borderbox"><br>
+
+         	<center><p class="six columns offset-by-three">Her har du mulighed for at udvælge de billeder du ønsker printet. Samtidig har du mulig for at vælge hvordan dine billeder skal formateres samt typen. Du skal vælge 10 billeder der skal sendes til print. Vælger du mere end de 10 prints vil der bliver tilføjet en mer pris på 98,95,- per billede</p>
+         </div>
 </center>
     
     
@@ -34,14 +38,14 @@ die("cannot connect to database".mysqli_connect_error());
      <?php
  {
   $table = $kunde;
-  $query = "SELECT * FROM `$table` ORDER BY id DESC";
+  $query = "SELECT * FROM `$table` ORDER BY id ASC";
   $results = mysqli_query($connection, $query);
 	 echo "<div class='ten columns'";
   echo "<form name='pictureform'>";
 	 
 	 while($row = mysqli_fetch_array($results))
   { 
-   $output.= '<div class=" borderbox three columns"><center><img class="myImg u-full width" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" /> 
+   $output.= '<div class=" borderbox three columns">'. "Nummer ". $row["id"].'<center><img class="myImg u-full width" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" /> 
 	   <br>
 	   <table class="tg">
   <tr>
@@ -127,7 +131,8 @@ span.onclick = function() {
    modal.style.display = "none";
 }
 </script>
-
+<a href="">Gem</a>
+<a href="">Send til print</a>
 <a href="../index.php">Tilbage</a>
     
   </body>
