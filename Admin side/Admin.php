@@ -39,6 +39,7 @@ session_start();
 		<div class=" blackbar full-height">	
 			<h2 class="u-full-width logintext">Booking<h2><hr>	
 			<a href="Booking_Admin.php" class="button1 u-full-width">kunde bookinger</a>		
+			<a href="../Booking-system-Casper/Booking-Settings-Overview.php" class="button1 u-full-width">åben og luk tider for dage</a>		
 		</div>
 	</div>
 	<div class="four columns">

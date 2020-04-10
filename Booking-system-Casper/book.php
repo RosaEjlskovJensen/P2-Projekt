@@ -1,4 +1,6 @@
 <?php
+error_reporting(0);
+session_start();
 $mysqli = new mysqli('localhost', 'root', '', 'data');
 if(isset($_GET['date'])){
     $date = $_GET['date'];
@@ -46,10 +48,19 @@ if(isset($_POST['submit'])){
    
 }
 // Vigtigt dette er hvor tider produceres disse skal laves styret af admin side !!!!!! //
-$duration = 10;
-$cleanup = 30;
-$start = "09:00";
-$end = "15:00";
+
+//require_once '../Connection.php';
+
+    /* fetch associative array */
+  
+$duration = $_SESSION['duration'];
+$cleanup = $_SESSION['cleanup'];
+$start = $_SESSION['start'];
+$end = $_SESSION['end'];
+  
+
+
+
 // ---------------------------------------------------------------------------------//
 
 
@@ -92,6 +103,9 @@ function timeslots($duration, $cleanup, $start, $end){
           <div class="col-md-12">
           	<?php echo isset($msg)?$msg:""; ?>
           </div>
+          <!-- Hvis der ikke er nogen tider ville denne text komme frem -->
+          <?php if(!isset($duration))
+				{echo "<center><p>Der er endten igen ledige tider tilbage, eller også er der ikke planlagt skema for denne dag endnu, tjek tilbage i morgen.</p><a href='index.php' class='btn-danger two columns' >Tilbage</a></center>"?><?php } ?>
            <?php $timeslots = timeslots($duration, $cleanup, $start, $end);
 			foreach($timeslots as $ts){
 			?>
@@ -109,7 +123,7 @@ function timeslots($duration, $cleanup, $start, $end){
         </div>
        
     </div>
- 
+  
    <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -149,6 +163,7 @@ function timeslots($duration, $cleanup, $start, $end){
         			</div>
         			<div class="form-group pull-right">
         			<br>
+        			
         				<button class="btn btn-primary" type="submit" name="submit">Submit</button>
         			</div>
         		</form>

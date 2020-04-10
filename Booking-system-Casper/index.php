@@ -24,7 +24,7 @@ function build_calendar($month, $year) {
     
     
      // Create array containing abbreviations of days of week.
-     $daysOfWeek = array('Søndag','Mandag','Tirsdag','Onsdag','Torsdag','Fredag','Lørdag');
+     $daysOfWeek = array('Mandag','Tirsdag','Onsdag','Torsdag','Fredag','Lørdag', 'Søndag');
 	
 	 $months = array('Januar', 'Februar', 'Marts', 'April', 'Maj', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'December');
 	
@@ -47,6 +47,11 @@ function build_calendar($month, $year) {
      // What is the index value (0-6) of the first day of the
      // month in question.
      $dayOfWeek = $dateComponents['wday'];
+		if($dayOfWeek==0){
+			$dayOfWeek = 6;
+		}else{
+			$dayOfWeek = $dayOfWeek-1;
+		}
 
      // Create the table tag opener and day headers
      
@@ -115,7 +120,7 @@ function build_calendar($month, $year) {
          if($date<date('Y-m-d')){
              $calendar.="<td><h4>$currentDay</h4> <button class='btn btn-danger btn-xs'>N/A</button>";
          }else{
-             $calendar.="<td class='$today'><h4>$currentDay</h4> <a href='book.php?date=".$date."' class='btn btn-success btn-xs'>Book</a>";
+             $calendar.="<td class='$today'><h4>$currentDay</h4> <a href='booksettings.php?date=".$date."' class='btn btn-success btn-xs'>Book</a>";
          }
             
             
