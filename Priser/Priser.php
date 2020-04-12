@@ -70,7 +70,11 @@ if(!$results){
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
           <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
+<<<<<<< HEAD
           <li><a href="../Info/andmeldelser.php" class="button">Anmeldelser</a></li>
+=======
+          <li><a href="../Info/blog.php" class="button">Anmeldeser</a></li>
+>>>>>>> db2494863e60865b98428b6212e6b1c40d5ba88c
             </div>
             </div>
       <div class="nav_dropdown">
