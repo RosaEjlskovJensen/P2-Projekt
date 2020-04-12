@@ -39,7 +39,7 @@
           <li><a href="Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="Info/blog.php" class="button">Blog</a></li>
           <li><a href="Info/blog.php" class="button">Nyheder</a></li>
-          <li><a href="Info/blog.php" class="button">Anmeldeser</a></li>
+          <li><a href="Info/andmeldelser.php" class="button">Anmeldelser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -119,21 +119,21 @@
  		<div class="row">
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=0"><img src="billeder/FBBBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=0"><img src="billeder/FBBBB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">BABY</div></a>
  					</div>
  				</div>
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=1"><img src="billeder/FBBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=1"><img src="billeder/FBBB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">BØRN</div></a>
  					</div>
  				</div>
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=2"><img src="billeder/FFB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=2"><img src="billeder/FFB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">FAMILIE</div></a>
  					</div>
  				</div>
@@ -142,21 +142,21 @@
  		<div class="row">
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=3"><img src="billeder/FKB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=3"><img src="billeder/FKB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">KONFIRMATION</div></a>
  					</div>
  				</div>
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=4"><img src="billeder/FBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=4"><img src="billeder/FBB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">BRYLLUP</div></a>
  					</div>
  				</div>
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=5"><img src="billeder/FBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=5"><img src="billeder/FBB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">GRAVID</div></a>
  					</div>
  				</div>
@@ -222,7 +222,7 @@
             <center>
             <p style="font-size: 16px">FØLG MIG PÅ</p>
             <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><br>
-            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
+            <a href="https://www.instagram.com/amalie_sandgaard_photography/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
             </center>
           </div>
         </div>

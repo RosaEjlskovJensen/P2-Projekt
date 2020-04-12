@@ -18,7 +18,7 @@
 
  <!-- Navigation bar -->
   <nav class="nav">
-    <a href="../index.php"><img class="img_logo" src="../billeder/AmalieSandgaardPhotography_LOGO.png"></a>
+    <a href="../index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
@@ -36,10 +36,10 @@
       <div class="nav_dropdown">
         <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="Om_Mig.php" class="button">Om Mig</a></li>
-          <li><a href="" class="button">Blog</a></li>
-          <li><a href="" class="button">Nyheder</a></li>
-          <li><a href="" class="button">Anmeldeser</a></li>
+          <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
+          <li><a href="../Info/blog.php" class="button">Blog</a></li>
+          <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
+          <li><a href="../Info/andmeldelser.php" class="button">Anmeldelser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -60,9 +60,9 @@
         <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
-          <li><a href="../Kontakt/FAQ.html" class="button">FAQ</a></li>
-          <li><a href="../Kontakt/Privateterms.html" class="button">Privatlivspolitik</a></li>
-          <li><a href="../Kontakt/Terms_conditions.html" class="button">Vilkår & Betingelser</a></li>
+          <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
+          <li><a href="../Kontakt/Privateterms.php" class="button">Privatlivspolitik</a></li>
+          <li><a href="../Kontakt/Terms_conditions.php" class="button">Vilkår & Betingelser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -72,6 +72,7 @@
       </div>
     </ul>
   </nav>
+
  
    
  <!-- Heading -->
@@ -92,9 +93,9 @@
 
 	
 	<ul> <!-- Indsæt links -->
-		<li>Undersøg mine <a style="color: #8b752e" href="#">priser</a> nærmere.</li>
-		<li>Se mit <a style="color: #8b752e" href="#">portfolio</a> for mere inspiration.</li>
-		<li>Book en fotosession via mit <a style="color: #8b752e" href="#">onlinebookingsystem.</a> </li>
+		<li>Undersøg mine <a style="color: #8b752e" href="../Priser/Priser.php">priser</a> nærmere.</li>
+		<li>Se mit portfolio i navigationsbaren i toppen, for mere inspiration.</li>
+		<li>Book en fotosession via mit <a style="color: #8b752e" href="../Booking-system-Casper/index.php">onlinebookingsystem.</a> </li>
 	</ul>
 	
 	<p style="font-size: 15px; text-align: center">Mangler du en fotograf til et større heldags-arrangemente, så kontakt mig via <a style="color: #8b752e" href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank">Facebook</a>, SMS eller Telefon.</p>
@@ -238,9 +239,11 @@ for (i = 0; i < acc.length; i++) {
 	
 </script>
  
-  
- <!-- Ínformation  Rename the classe!-->
-  <section class="section_maps">
+
+    
+   <br>
+   <!-- Top part of the footer-->
+  <section class="section_topfooter">
     <div class="container">
       <div class="u-full-width">
         <div class="row">
@@ -253,27 +256,26 @@ for (i = 0; i < acc.length; i++) {
           <div class="two columns">
             <center>
             <p style="font-size: 16px">NYTTIGE LINKS</p>
-            <a style="font-size: 15px" href="./Privateterms.html" >Privatlivspolitik</a><br>
-            <a style="font-size: 15px" href="./Terms_conditions.html">Vilkår & Betingelser</a>
+            <a style="font-size: 15px" href="#" >Privatlivspolitik</a><br>
+            <a style="font-size: 15px" href="#">Vilkår & Betingelser</a>
             </center>
           </div>
           <div class="two columns">
             <center>
             <p style="font-size: 16px">FØLG MIG PÅ</p>
             <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><br>
-            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
+            <a href="https://www.instagram.com/amalie_sandgaard_photography/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
             </center>
           </div>
         </div>
       </div>
     </div>
   </section> 
-    
-<!--Footer -->
-  <section class="section_footer">
+ <!--Bottom part of the footer -->
+  <section class="section_bottomfooter">
     <div>
       <center>
-        <p style="font-size: 15px" class="footer"> &copy; Copyright <?php echo date("Y");?> | Amalie Sandgaard Photography | All Rights Reserved</p>
+        <p style="font-size: 15px" class="footer"> &copy; Copyright <?php echo date("Y"); ?> | Amalie Sandgaard Photography | All Rights Reserved</p>
       </center>
     </div>
   </section>
