@@ -119,21 +119,21 @@
  		<div class="row">
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=0"><img src="billeder/FBBBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=0"><img src="billeder/FBBBB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">BABY</div></a>
  					</div>
  				</div>
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=1"><img src="billeder/FBBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=1"><img src="billeder/FBBB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">BØRN</div></a>
  					</div>
  				</div>
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=2"><img src="billeder/FFB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=2"><img src="billeder/FFB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">FAMILIE</div></a>
  					</div>
  				</div>
@@ -142,21 +142,21 @@
  		<div class="row">
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=3"><img src="billeder/FKB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=3"><img src="billeder/FKB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">KONFIRMATION</div></a>
  					</div>
  				</div>
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=4"><img src="billeder/FBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=4"><img src="billeder/FBB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">BRYLLUP</div></a>
  					</div>
  				</div>
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=5"><img src="billeder/FBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/Portfolietemplate.php?item=5"><img src="billeder/FBB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">GRAVID</div></a>
  					</div>
  				</div>

@@ -18,8 +18,8 @@
 
 	
  <!-- Navigation bar -->
-   <nav class="nav">
-    <a href="../index.php"><img class="img_logo" src="../billeder/AmalieSandgaardPhotography_LOGO.png"></a>
+  <nav class="nav">
+    <a href="index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
@@ -37,17 +37,17 @@
       <div class="nav_dropdown">
         <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="Info/ommig.html" class="button">Om Mig</a></li>
-          <li><a href="" class="button">Blog</a></li>
-          <li><a href="" class="button">Nyheder</a></li>
-          <li><a href="" class="button">Anmeldeser</a></li>
+          <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
+          <li><a href="../Info/blog.php" class="button">Blog</a></li>
+          <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
+          <li><a href="../Info/blog.php" class="button">Anmeldeser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
         <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="Priser/Priser.php" class="button">Pakker</a></li>
-          <li><a href="Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
+          <li><a href="../Priser/Priser.php" class="button">Pakker</a></li>
+          <li><a href="../Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -61,9 +61,9 @@
         <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
-          <li><a href="../Kontakt/FAQ.html" class="button">FAQ</a></li>
-          <li><a href="../Kontakt/Privateterms.html" class="button">Privatlivspolitik</a></li>
-          <li><a href="../Kontakt/Terms_conditions.html" class="button">Vilkår & Betingelser</a></li>
+          <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
+          <li><a href="../Kontakt/Privateterms.php" class="button">Privatlivspolitik</a></li>
+          <li><a href="../Kontakt/Terms_conditions.php" class="button">Vilkår & Betingelser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
