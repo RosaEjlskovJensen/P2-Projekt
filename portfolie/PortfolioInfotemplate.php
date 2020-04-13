@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php
+$kategori = array("baby", "bryllup", "børn", "familie", "gravid", "konfirmation");
+//database connection
+require_once '../Connection.php';
+if(!$connection){
+die("cannot connect to database".mysqli_connect_error());
+}
+
+  $item = $_GET['item'];
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -102,7 +112,7 @@
 
  <!-- Navigation bar -->
   <nav class="nav">
-    <a href="index.php"><img class="img_logo" src="billeder/AmalieSandgaardPhotography_LOGO.png"></a>
+    <a href="index.php"><img class="img_logo" src="../billeder/AmalieSandgaardPhotography_LOGO.png"></a>
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
@@ -110,11 +120,11 @@
         <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
-          <li><a href="portfolie/Portfolietemplate.php?item=1" class="button">Børn</a></li>
-          <li><a href="portfolie/Portfolietemplate.php?item=2" class="button">Familie</a></li>
-          <li><a href="portfolie/Portfolietemplate.php?item=3" class="button">Konfirmation</a></li>
-          <li><a href="portfolie/Portfolietemplate.php?item=4" class="button">Bryllup</a></li>
-          <li><a href="portfolie/Portfolietemplate.php?item=5" class="button">Gravid</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=2" class="button">Børn</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=3" class="button">Familie</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=4" class="button">Gravid</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=5" class="button">Konfirmation</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -157,80 +167,24 @@
     </ul>
   </nav>
 
-<?php
-$kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
-?>
 
-<!---Connect til database---->
-<?php
-//database connection
-require_once '../Connection.php';
-if(!$connection){
-die("cannot connect to database".mysqli_connect_error());
-}
-?>
 
 <center>
-         <h1> Billeder? </h1>
+        <br>
+        <br>
+         <h1> <?php echo $kategori[$item]; ?> </h1>
+
+    
+    
+<?php echo"Overskrift kommer her<br>". "Billede kommer her<br>". "Under overskrif kommer her<br>". "brød text kommer her<br>"; ?>
+<?php echo"ny billede kommer her<br>". "underoverskrift kommer her<br>". "text overskrifkommer her<br>"; ?>
+<?php echo"ny billede kommer her<br>". "underoverskrift kommer her<br>". "text overskrifkommer her<br>"; ?>
+<br><br>
+
+  <a href="..//Priser/Priser.php" class="btn2">Priser</a>
+<a href="Portfolietemplate.php?item=<?php echo $item ?>" class="btn2">Portfolie</a>
 </center>
-    
-    
-<!---Her fetches billederne fra databasen. Billederne er upleaded som binære koder og skal derfor krypteres først--->
-<center>
-    <div class="billeder">
 
-     <?php
- {
-  $item = $_GET['item'];
-  $query = "SELECT * FROM $kategori[$item] ORDER BY id DESC";
-  $result = mysqli_query($connection, $query);
-  
-  while($row = mysqli_fetch_array($result))
-  {
-   $output.= '<img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" />'; 
-  }
-  echo $output;
- }
-    ?>
-    </div>
-</center>
-    <!-------------------------->
-
-<!-- Modal -->
-<div id="myModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img01">
-</div>
-    
-
-<script>
-// Javascriptet her henter modalen og bruger informationerne ovenover til at hente billederne individuelt.
-
-var modal = document.getElementById("myModal");
-var i;
-
-var img = document.getElementsByClassName("myImg");
-var modalImg = document.getElementById("img01");
-
-//Den skal have alle billederne med, så derfor er vi nødt til at lave et loop.
-
- for(i=0;i< img.length;i++)
-   {    
-    img[i].onclick = function(){
-
-    modal.style.display = "block";
-       modalImg.src = this.src;
-
- }
-}
-//funktionen der lukker modalen igen. Altså krydset i højre hjørne.
-var span = document.getElementsByClassName("close")[0];
-
-
-span.onclick = function() { 
-   modal.style.display = "none";
-}
-</script>
 <a href="../index.php">Tilbage</a>
 
 

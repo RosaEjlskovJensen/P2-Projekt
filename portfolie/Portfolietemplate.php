@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php
+$kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
+
+
+//database connection
+require_once '../Connection.php';
+if(!$connection){
+die("cannot connect to database".mysqli_connect_error());
+}
+?>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -16,7 +26,6 @@
 
      
      <style>
-
 .myImg {
   border-radius: 5px;
   cursor: pointer;
@@ -104,18 +113,7 @@
 
 <!-- Det første php gode her, laver en array med de forskellige kategorier   >
 
-<?php
-$kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
-?>
 
-<!---Connect til database---->
-<?php
-//database connection
-require_once '../Connection.php';
-if(!$connection){
-die("cannot connect to database".mysqli_connect_error());
-}
-?>
 
 <body>
 
@@ -129,11 +127,11 @@ die("cannot connect to database".mysqli_connect_error());
         <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="Portfolietemplate.php?item=0" class="button">Baby</a></li>
-          <li><a href="Portfolietemplate.php?item=1" class="button">Børn</a></li>
-          <li><a href="Portfolietemplate.php?item=2" class="button">Familie</a></li>
-          <li><a href="Portfolietemplate.php?item=3" class="button">Konfirmation</a></li>
-          <li><a href="Portfolietemplate.php?item=4" class="button">Bryllup</a></li>
-          <li><a href="Portfolietemplate.php?item=5" class="button">Gravid</a></li>
+          <li><a href="Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
+          <li><a href="Portfolietemplate.php?item=2" class="button">Børn</a></li>
+          <li><a href="Portfolietemplate.php?item=3" class="button">Familie</a></li>
+          <li><a href="Portfolietemplate.php?item=4" class="button">Gravid</a></li>
+          <li><a href="Portfolietemplate.php?item=5" class="button">Konfirmation</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -190,7 +188,7 @@ die("cannot connect to database".mysqli_connect_error());
 <center>
     <div class="billeder">
 
-     <?php
+ <?php
 		error_reporting(0);
  {
   $item = $_GET['item'];
