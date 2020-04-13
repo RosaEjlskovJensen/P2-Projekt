@@ -19,11 +19,11 @@
     
     <!-- Navigation bar -->
   <nav class="nav">
-<<<<<<< HEAD
+
     <a href="../index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
-=======
+
     <a href="index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
->>>>>>> db2494863e60865b98428b6212e6b1c40d5ba88c
+
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">

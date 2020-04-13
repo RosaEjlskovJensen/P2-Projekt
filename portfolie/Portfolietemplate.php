@@ -191,6 +191,7 @@ die("cannot connect to database".mysqli_connect_error());
     <div class="billeder">
 
      <?php
+		error_reporting(0);
  {
   $item = $_GET['item'];
   $query = "SELECT * FROM $kategori[$item] ORDER BY id DESC";
