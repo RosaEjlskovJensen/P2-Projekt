@@ -28,22 +28,39 @@ if(!$results){
   	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="../main.css">
 </head>
-
 <style>
-
-#box {
-  width: 600px;
-  height: 190px;
-  
-    margin: 20px 20px 20px 20px;
+    
+    .bigbox {
+        width: auto;
+        padding-left: 28%;
+        padding-right: 28%;
 }
-
-#box .box1, #box .box2 {
-  width: 300px;
-  height: 190px;
-  float: left;
+    .storbox {
+        display: inline-block;
+        align-content:  center;
+        width: 600px;
+        height: 190px;
+        
 }
-    </style>
+    .box1 {
+        float: left;
+}
+    .box2{
+        display: inline-block;
+        width: 360px;
+        margin-left: 40px;
+        font-family: "Lucida Console", Courier, monospace;
+        font-style: solid;
+}
+    .box3{
+        display: inline-block;
+        margin-top: 50px;
+        width: 360px;
+        margin-left: 40px;
+        font-family: "Lucida Console", Courier, monospace;
+        font-size: medium;
+        
+</style>
 
 <body>
 
@@ -70,11 +87,8 @@ if(!$results){
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
           <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
-<<<<<<< HEAD
           <li><a href="../Info/andmeldelser.php" class="button">Anmeldelser</a></li>
-=======
           <li><a href="../Info/blog.php" class="button">Anmeldeser</a></li>
->>>>>>> db2494863e60865b98428b6212e6b1c40d5ba88c
             </div>
             </div>
       <div class="nav_dropdown">
@@ -117,20 +131,26 @@ if(!$results){
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
 	</div>
 </section>
-
+<br>
+<br>
 <!-- Php koden herunder echoer ud alle informationer vi har i databasen -->
 
 <?php 
 while($row = mysqli_fetch_assoc($results)){
 
 	?>
-    <div align=center>
-	        <div id="box"> <div class="box1">                                                         
-			<?php echo '<img src="'.$row['picture'].'" width="190px" height="190px" >'?></div>  
-			<div class="box2"><?php echo $row['name']?>                                                               
-            <?php echo $row['description']?>   </div>                    
+<div class="bigboxfarve">
+<div class="bigbox">
+	        <div class="storbox"> 
+                <div class="box1">                                                         
+			     <?php echo '<img src="'.$row['picture'].'" width="190px" height="190px" >'?>
+                  </div>  
+			      <div class="box2"><?php echo $row['name']?> </div>                                                              
+                <div class="box3"><?php echo $row['description']?>  </div>                    
             </div>
-    </div>
+</div>
+</div>
+    <br>
 <?php } ?>
 
 

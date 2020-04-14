@@ -56,7 +56,7 @@ if(isset($_GET['conid'])){
   <input type="hidden" name="id" value="<?php echo $id?>">
 </form>
 
-
+<a href="Editprice.php" class="button">Tilbage</a>
 </body>
 </html>
 

@@ -37,7 +37,6 @@ form
     .informationer {
         float: right;
         width: 50%;
-        padding-left: 20px;
         display: inline-block;
 }
     .kontaktinformation {
@@ -64,6 +63,12 @@ form
         width: 120px;
         height: 120px;
 }
+    
+    .formkontakt {
+        border-style: solid;
+        padding: 5% 10% 0 10%;
+}
+
 </style>
 
     <?php
@@ -160,11 +165,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 
 <!-- Navigation bar -->
   <nav class="nav">
-<<<<<<< HEAD
     <a href="../index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
-=======
-    <a href="index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
->>>>>>> db2494863e60865b98428b6212e6b1c40d5ba88c
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
@@ -185,11 +186,8 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
           <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
-<<<<<<< HEAD
           <li><a href="../Info/andmeldelser.php" class="button">Anmeldelser</a></li>
-=======
           <li><a href="../Info/blog.php" class="button">Anmeldeser</a></li>
->>>>>>> db2494863e60865b98428b6212e6b1c40d5ba88c
             </div>
             </div>
       <div class="nav_dropdown">
@@ -228,15 +226,13 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
   <!-- Heading -->
 <section class="section_heading">
 	<div class="container u-full-width">
-		<h6><center>Kontaktinformationer
+		<h5><center>Skriv til mig!
 		</center>	
-		</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</h5>
 	</div>
 </section>
-    <br><br><br>
 <div class="kontaktformular">   
-<form name="contactform" method="post" action="Kontakt.php">
+<form name="contactform" method="post" action="Kontakt.php" class="formkontakt">
 <table width="450px">
 <tr>
  <td valign="top">
@@ -275,12 +271,12 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
   <label for="comments">Besked</label>
  </td>
  <td valign="top">
-  <textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+  <textarea style="width: 180px;" name="comments" maxlength="1000" cols="25" rows="6"></textarea>
  </td>
 </tr>
 <tr>
  <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">
+  <input type="submit" value="Send">
  </td>
 </tr>
 </table>
@@ -319,33 +315,32 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
             <div class="billedeinformation">
             <div>
             <p>Adresse: 
-                <br>Færøvej</p></div>
+                <br>BISPENSGADE 13, 1.2</p></div>
             </div>
     
             <div class="billedeinformation">
             <p>Telefonnummer:
-                <br>26834088</p>    
+                <br>+45 31 51 45 55</p>    
             </div>
     
             <div class="billedeinformation">
             <p><br>Email:
-                <br>Daniel_wow1@live.dk</p>
+                <br>Amaliesandgard@live.dk</p>
             </div>
     
             <div class="billedeinformation">
-            <p><br>Facebook:
-                <br>Daniel Prior phorography</p>
+            <p>Facebook:
+                Amalie Sandgaard photography</p>
             </div>
     
             <div class="billedeinformation">
-            Instagram:
             <p> Instagram:
-                <br>DaPrior</p>
+                <br>Amalie_sandgaard_Photography</p>
             </div>
     
             <div class="billedeinformation">
             <p>Åbningstider:
-                <br>Alle ugens dage</p>
+                <br>ALTID EFTER AFTALE</p>
             </div>
         </div>
     </div>

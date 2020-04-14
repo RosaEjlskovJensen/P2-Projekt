@@ -49,6 +49,7 @@ while($row = mysqli_fetch_assoc($results)){
 echo "</ol>";	
 ?>
 
+<a href="../Admin%20side/Admin.php" class="button">Tilbage</a>
 
 </body>
 </html>
