@@ -22,27 +22,26 @@
 <h1>Tilføj pakke</h1>
 <!-- Simpel form til at uploade pakker. Action siden som laver handlingen hedder insterprice.php -->
 
-<form name="addform" id="addform" method="post" action="Insertprice.php" autocomplete="off">
+<form name="addform" id="addform" method="post" action="Insertprice.php" autocomplete="on">
 	
   <div>
     <label for="Name">Pakke</label>
-    <input type="text" name="Name" id="Name" required size="40" maxlength="60">
+    <input type="text" name="name" id="name" required size="40" maxlength="60" required>
   </div>
   
   <div>
     <label for="description">Info</label>
-    <textarea name="description" id="description" cols="30" rows="1"></textarea>
+    <textarea name="description" id="description" cols="30" rows="1" required></textarea>
 
   </div>
     
     <div>
   <label for="img">Select image:</label>
-  <input type="file" id="picture" name="picture" accept="image/*">
-  <input type="submit">
+  <input type="file" id="picture" name="picture" accept="image/png, image/jpeg" required>
 </div>
     
   <div class="addBtnDiv">
-  	<input type="submit" id="addBtn" value="add">
+  	<input type="submit" id="addBtn" value="tilføj">
 	</div>
 </form>
 
