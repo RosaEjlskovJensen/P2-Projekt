@@ -5,7 +5,7 @@ session_start();
 $item = $_GET['item'];
 $_SESSION["item"]=$item;
 $kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
-$kategori2 = array("baby", "bryllup", "Børn", "familie", "gravid", "konfirmation");
+$kategori2 = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
 
 ?>
 
