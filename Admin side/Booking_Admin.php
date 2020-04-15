@@ -2,7 +2,7 @@
 <?php
 //database connection
 require_once '../Connection.php';
-$query = "SELECT * FROM bookings ORDER BY date, timeslot";
+$query = "SELECT * FROM bookings ORDER BY date DESC, timeslot";
 $results = mysqli_query($connection,$query);
 if(!$results){
 die("could not query the database" .mysqli_error());

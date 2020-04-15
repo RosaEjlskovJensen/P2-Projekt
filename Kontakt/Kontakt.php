@@ -75,7 +75,7 @@ form
 if(isset($_POST['email'])) {
  
     // Din email og beskeden
-    $email_to = "Daniel_wow1@live.dk";
+    $email_to = "casper.roskaer@gmail.com";
     $email_subject = "Henvendelse fra kunde";
  
     function died($error) {

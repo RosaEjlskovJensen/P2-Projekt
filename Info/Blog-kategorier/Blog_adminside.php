@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>blogs</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="..//burgermenujs.js"></script>
+ <!-- Dette link er ikonet der er i ens browser tab -->
+    <link rel="icon" type="image/png" href="INDSET IKON HER">
+    <!-- Linker til Skeleton -->    
+    <!-- <link rel="stylesheet" href="..//stylesheet.css"> -->
+    <!-- Linker til normalize der styre font størelser på små skærme -->
+    <link rel="stylesheet" href="../..//normalize.css">
+  <!-- Linker til Fontawsome -->
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Linker til Stylesheet -->
+  <link rel="stylesheet" href="../..//stylesheet.css">
+</head>
+
+    <body>
+        
+    <div class="row">
+		<div class="six columns">	
+			
+				<h2> Vælg Kategori <h2>
+				<a href="EditKategoritemplate.php?item=0" class="button-primary six columns">FOTOGRAFERING</a><br>
+				<a href="EditKategoritemplate.php?item=1" class="button-primary six columns">BILLEDE OPHÆNG</a><br>
+				<a href="EditKategoritemplate.php?item=2" class="button-primary six columns">KUNDERS BLOGINDLÆG</a><br>
+                <a href="EditKategoritemplate.php?item=3" class="button-primary six columns">PRODUKTER</a><br>
+                <a href="EditKategoritemplate.php?item=4" class="button-primary six columns">SÅDAN TEGER UD BEDRE BILLEDER</a><br>
+                <a href="EditKategoritemplate.php?item=5" class="button-primary six columns">TIPS OG TRICKS</a><br>
+                <a href="../../Admin side/Admin.php" class="button six columns">tilbage</a>
+			
+		</div>
+	</div>
+  </body>
+    
+</html>

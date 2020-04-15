@@ -113,12 +113,16 @@ function build_calendar($month, $year) {
           
           $currentDayRel = str_pad($currentDay, 2, "0", STR_PAD_LEFT);
           $date = "$year-$month-$currentDayRel";
-          
+		 $date30 = $currentDayRel+30;
+		  $date2  = "$year-$month-$date30";
+		  
             $dayname = strtolower(date('l', strtotime($date)));
             $eventNum = 0;
             $today = $date==date('Y-m-d')? "today" : "";
          if($date<date('Y-m-d')){
              $calendar.="<td><h4>$currentDay</h4> <button class='btn btn-danger btn-xs'>N/A</button>";
+		 //}elseif($date>date('Y-m-d'),date("d")+3){
+			 //$calendar.="<td><h4>$currentDay</h4> <button class='btn btn-danger btn-xs'>Not yet open</button>";
          }else{
              $calendar.="<td class='$today'><h4>$currentDay</h4> <a href='booksettings.php?date=".$date."' class='btn btn-success btn-xs'>Book</a>";
          }
@@ -274,7 +278,7 @@ function build_calendar($month, $year) {
     
     <!-- Navigation bar -->
   <nav class="nav">
-    <a href="index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
+    <a href="../index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">

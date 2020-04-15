@@ -20,7 +20,7 @@
 <!-- Navigation bar -->
   <nav class="nav">
     <a href="../index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
-    <a href="index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
+
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
@@ -41,8 +41,10 @@
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
           <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
-          <li><a href="../Info/blog.php" class="button">Anmeldeser</a></li>
-            </div>
+
+          <li><a href="../Info/andmeldelser.php" class="button">Anmeldelser</a></li>
+
+                </div>
             </div>
       <div class="nav_dropdown">
         <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
@@ -105,8 +107,8 @@ body
 		
 	<!-- View of blogposts -->
 	<section class='blogpost'>
-		<div class='container'>
-			<div class='box'>
+		<div class=' offset-by-three columns six columns'>
+			<div class="box u-full-width">
 				<br>
 				<div class='row'>
 					<div class='u-full-width'>
@@ -129,6 +131,20 @@ body
 				</div>
 				</div>
 			</div>
+		</div>
+		<div class="three columns">
+			<center>Forskellige blogs:
+			<br>
+			<div class="separator">kategorier</div><br>
+			</center>
+			<a href="Blog-kategorier/Kategoritemplate.php?item=0" class="u-pull-left"><p>FOTOGRAFERING</p></a>
+			<a href="Blog-kategorier/Kategoritemplate.php?item=1" class="u-pull-left"><p>BILLEDE OPHÆNG</p></a>
+			<a href="Blog-kategorier/Kategoritemplate.php?item=2" class="u-pull-left"><p>KUNDERS BLOGINDLÆG</p></a>
+			<a href="Blog-kategorier/Kategoritemplate.php?item=3" class="u-pull-left"><p>PRODUKTER</p></a>
+			<a href="Blog-kategorier/Kategoritemplate.php?item=4" class="u-pull-left"><p>SÅDAN TAGER DU BEDRE BILLEDER</p></a>
+			<a href="Blog-kategorier/Kategoritemplate.php?item=5" class="u-pull-left"><p>TIPS OG TRICKS</p></a>
+
+			
 		</div>
 	</section> <br> 
 

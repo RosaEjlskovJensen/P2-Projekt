@@ -163,6 +163,46 @@ function timeslots($duration, $cleanup, $start, $end){
         			</div>
         			<div class="form-group pull-right">
         			<br>
+        			 <?php
+						$kundeemail =$_POST['email'];
+if(isset($_POST['email'])) {
+ 
+    // Din email og beskeden
+    $email_to = $kundeemail;
+    $email_subject = "Fotograf Booking";
+
+    $timelsot = $_POST['timeslot']; // required
+    $date = $_POST['email']; // required
+  
+ 
+        
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+ 
+     
+ 
+    $email_message .= "Dette er en påmindelse og kopi af din bookede tid hos Amalie";
+    $email_message .= "Du har booket photografering kl: ".clean_string($timelsot)."\n";
+    $email_message .= "Den: : ".clean_string($date)."\n";
+    $email_message .= "Har du spørgsmål er du altid velkommen tila t ringe til 61601222";
+    
+ 
+// Email header
+$headers = 'From: '."Amaliephotography"."\r\n".
+'Reply-To: '.Amaliephotography."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);  
+?>
+ 
+<!-- Responsen når du har trykket submit skrives herunder -->
+ 
+Tak for henvendelsen, du hører fra os hurtigst muligt.
+<?php
+ 
+}
+?>
         			
         				<button class="btn btn-primary" type="submit" name="submit">Submit</button>
         			</div>

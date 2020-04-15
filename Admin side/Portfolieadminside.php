@@ -33,8 +33,6 @@
 			</div>
 		</div>
 	</div>
-
-<a href="../Admin%20side/Admin.php" class="button">Tilbage</a>
   </body>
     
 </html>
