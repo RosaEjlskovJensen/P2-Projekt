@@ -9,9 +9,10 @@ if(isset($_POST['start'])){
 	$start = $_POST['start'];
 	$end = $_POST['end'];
 	$cleanup = $_POST['cleanup'];
+	$price = $_POST['price'];
 	
 	if(!empty($duration)&&!empty($start)&&!empty($end)&&!empty($cleanup)){
-					$query = "UPDATE bookingsettings SET date='$date',duration='$duration',cleanup='$cleanup',start='$start',end='$end' WHERE date='$date'";
+					$query = "UPDATE bookingsettings SET date='$date',duration='$duration',cleanup='$cleanup',start='$start',end='$end', price='$price' WHERE date='$date'";
    				echo $query;
 				
 				$results = mysqli_query($connection,$query);

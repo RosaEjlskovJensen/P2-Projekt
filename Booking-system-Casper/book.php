@@ -1,7 +1,7 @@
 <?php
 error_reporting(0);
 session_start();
-$mysqli = new mysqli('localhost', 'root', 'root', 'data');
+$mysqli = new mysqli('localhost', 'root', '', 'data');
 if(isset($_GET['date'])){
     $date = $_GET['date'];
 	$stmt = $mysqli->prepare("select * from bookings where date = ?");
@@ -279,6 +279,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 }
 ?>
         			
+        				<input type="checkbox" required><a href="../Kontakt/Terms_conditions.php"><u>Vilkår og Betingelser</u></a>
         				<button class="btn btn-primary" type="submit" name="submit">Submit</button>
         			</div>
         		</form>

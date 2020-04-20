@@ -30,9 +30,7 @@ $kategori = array("fotografering", "billedeophæng", "kundersblog", "produkter",
 	<div class="row">
 		<div class="six columns offset-by-three column">
 			<form name="Blog_Form" class="u-full-width" autocomplete="on" method="post" action="Process_Input.php?item=<?php echo $item ?>">
-				<div>
-					<input type="file" name="Medie" class="u-full-width" placeholder="HER SKAL MAN KUNNE INDSÆTTE BILLEDE" > 
-				</div>
+				
 				<div>
 				
 				
@@ -47,8 +45,7 @@ $kategori = array("fotografering", "billedeophæng", "kundersblog", "produkter",
 		 </div>
 	 </div>
 </div>
-<script src="../../ckeditor/ckeditor.js"></script>
-<script>
+<script src="//cdn.ckeditor.com/4.14.0/standard/ckeditor.js"></script><script>
 	CKEDITOR.replace('content');
 	</script>
 <a href="Admin.php" class="button">Tilbage</a>		

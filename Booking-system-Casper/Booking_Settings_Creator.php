@@ -6,13 +6,14 @@ require_once '../Connection.php';
 	$start = $_POST['start'];
 	$end = $_POST['end'];
 	$cleanup = $_POST['cleanup'];
+	$price = $_POST['price'];
 
-if(isset($duration) && isset($start) && isset($end) && isset($cleanup)){
+if(isset($duration) && isset($start) && isset($end) && isset($cleanup) && isset($price)){
 	
-	if(!empty($duration) && !empty($start) && !empty($end) && !empty($cleanup)){
+	if(!empty($duration) && !empty($start) && !empty($end) && !empty($cleanup) && !empty($price)){
 
 
-	$query = "INSERT INTO bookingsettings VALUES ('$date','$duration','$cleanup','$start','$end')";
+	$query = "INSERT INTO bookingsettings VALUES ('$date','$duration','$cleanup','$start','$end', '$price')";
 
 	$results = mysqli_query($connection,$query);
 

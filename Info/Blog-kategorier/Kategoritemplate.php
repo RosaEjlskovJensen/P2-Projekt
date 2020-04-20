@@ -149,11 +149,10 @@ while($row = mysqli_fetch_assoc($results)){
 <div class="bigbox">
 	        <div class="storbox"> 
                 <div class="box1">                                                         
-			     <?php echo '<img src="'.$row['Text'].'" width="190px" height="190px" >'?>
-                  </div>  <br>
-<br>
+			     <?php echo $row['Text']?>
+                  </div>  
 
-			      <div class="box2"><?php echo $row['Medie']?> </div>                                                              
+			                                                          
                                    
             </div>
 </div>

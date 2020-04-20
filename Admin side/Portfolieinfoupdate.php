@@ -1,12 +1,12 @@
 <!doctype html>
 <?php 
-	require_once '../../Connection.php';
+	require_once '../Connection.php';
 	
-	$item = $_GET['item'];
+	
 	$id = $_GET['id'];
 
-	$kategori = array("fotografering", "billedeophæng", "kundersblog", "produkter", "bedrebilleder", "tot");
-	$query = "SELECT * FROM $kategori[$item] WHERE id=" ."'" .$id. "'";
+	
+	$query = "SELECT * FROM portfolieinfo WHERE id=" ."'" .$id. "'";
 	$results = mysqli_query($connection,$query);
 	if(!$results){
 	die("could not query the database" .mysqli_error());
@@ -29,7 +29,7 @@
 <body>
 	<div class="row">
 		<div class="six columns">
-			<form name="update" class="" autocomplete="off" method="post" action="Blog_Updater.php?item=<?php echo $item; ?>&id=<?php echo $row['id']; ?>">
+			<form name="update" class="" autocomplete="off" method="post" action="Blog_Updater.php?id=<?php echo $row['id']; ?>">
 			  <textarea name="content"><?php echo($row['Text']) ?> </textarea>
 			
 			  <input  type="submit" class="u-full-width" name="update" value="Updater">

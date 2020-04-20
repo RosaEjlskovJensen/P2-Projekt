@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <?php
 $kategori = array("baby", "bryllup", "børn", "familie", "gravid", "konfirmation");
-//database connection
+$item = $_GET['item'];
 require_once '../Connection.php';
-if(!$connection){
-die("cannot connect to database".mysqli_connect_error());
+$query = "SELECT * FROM portfolieinfo WHERE id=$item ";
+$results = mysqli_query($connection,$query);
+if(!$results){
+die("could not query the database" .mysqli_error());
 }
-
-  $item = $_GET['item'];
+while($row = mysqli_fetch_assoc($results)){
 ?>
 <html>
 <head>
@@ -174,11 +175,7 @@ die("cannot connect to database".mysqli_connect_error());
         <br>
          <h1> <?php echo $kategori[$item]; ?> </h1>
 
-    
-    
-<?php echo"Overskrift kommer her<br>". "Billede kommer her<br>". "Under overskrif kommer her<br>". "brød text kommer her<br>"; ?>
-<?php echo"ny billede kommer her<br>". "underoverskrift kommer her<br>". "text overskrifkommer her<br>"; ?>
-<?php echo"ny billede kommer her<br>". "underoverskrift kommer her<br>". "text overskrifkommer her<br>"; ?>
+<?php echo $row['Text']?>
 <br><br>
 
   <a href="..//Priser/Priser.php" class="btn2">Priser</a>
@@ -186,7 +183,7 @@ die("cannot connect to database".mysqli_connect_error());
 </center>
 
 <a href="../index.php">Tilbage</a>
-
+<?php } ?>
 
 
 

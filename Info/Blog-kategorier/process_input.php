@@ -2,16 +2,16 @@
 require_once '../../Connection.php';
 $item = $_GET['item'];
 $kategori = array("fotografering", "billedeophæng", "kundersblog", "produkter", "bedrebilleder", "tot");
-$Medie = $_POST['Medie'];
+
 $Text = $_POST['content'];
 
 
-if(isset($Medie) && isset($Text)){
+if(isset($Text)){
 	
-	if(!empty($Medie) && !empty($Text)){
+	if(!empty($Text)){
 
 
-	$query = "INSERT INTO $kategori[$item] (text, medie) VALUES ('$Text','$Medie')";
+	$query = "INSERT INTO $kategori[$item] (text) VALUES ('$Text')";
 		
 
 	$results = mysqli_query($connection,$query);
