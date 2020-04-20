@@ -28,7 +28,6 @@ session_start();
 			
 				<h2 class="u-full-width logintext"> Generelle site<h2><hr>
 				<a href="../Info/Blog-kategorier/Blog_adminside.php" class="button1 twelve columns">Blogs</a>
-				<a href="Write_Blog.php" class="button1 u-full-width">Skriv Blog</a>
 				<a href="Mailing_List.php" class="button1 u-full-width">Mailing Liste</a>
                 <a href="Portfolieadminside.php" class="button1 u-full-width">Portfolie</a>
                 <a href="PortfolieInfoadminside.php" class="button1 u-full-width">portfolie infosider</a>
