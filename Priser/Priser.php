@@ -1,7 +1,7 @@
     <?php
  require_once '../Connection.php';
 
-$query = "SELECT id, name, description, picture FROM prices";
+$query = "SELECT id, name, description, image FROM prices";
 $results = mysqli_query($connection,$query);
 
 if(!$results){
@@ -142,8 +142,8 @@ while($row = mysqli_fetch_assoc($results)){
 <div class="bigboxfarve">
 <div class="bigbox">
 	        <div class="storbox"> 
-                <div class="box1">                                                         
-			     <?php echo '<img src="'.$row['picture'].'" width="190px" height="190px" >'?>
+                <div class="box1">                                                          
+                <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['picture']); ?>" /> 
                   </div>  
 			      <div class="box2"><?php echo $row['name']?> </div>                                                              
                 <div class="box3"><?php echo $row['description']?>  </div>                    
