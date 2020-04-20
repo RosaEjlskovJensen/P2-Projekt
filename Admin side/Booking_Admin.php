@@ -57,7 +57,7 @@ echo "<h1>liste over bookede tider</h1>";
 	
  <table class="tabletotal">
 	<tr>
-		<th>Dato</th><th>Tid</th><th>Navn</th><th>Email</th><th>Tlf:</th><th>Adresse</th><th>Postnummer</th><th>Action</th>
+		<th>Dato</th><th>Tid</th><th>Navn</th><th>Email</th><th>Tlf:</th><th>Adresse</th><th>Postnummer</th><th>Kommentar</th><th>Action</th>
 	</tr>
 	<?php 
 	while($row = mysqli_fetch_assoc($results)){
@@ -66,12 +66,13 @@ echo "<h1>liste over bookede tider</h1>";
 		<td><?php echo $row['date']?></td>
 		<td><?php echo $row['timeslot']?></td>
 		<td><?php echo $row['name']?></td>
-		<td><?php echo $row['email']?></td>
+		<td><a href="mailto:<?php echo $row['email']?>"><?php echo $row['email']?></a></td>
 		<td><?php echo $row['phone']?></td>
 		<td><?php echo $row['adress']?></td>
 		<td><?php echo $row['postnummer']?></td>
+		<td><?php echo $row['kommentar']?></td>
 		<td class="displayflex">
-			<form action='delete_booking.php' onclick="return confirm('Er du sikker på at slette denne tid? når den er slettet kan den ikke genfindes')" method='post' class="displayflex" >
+			<form action='../Booking-system-Casper/delete_booking.php' onclick="return confirm('Er du sikker på at slette denne tid? når den er slettet kan den ikke genfindes')" method='post' class="displayflex" >
 			<input type='submit' value='delete' >
 			<input type='hidden' name='deleted' value='<?php echo $row['email']?>'>
 			</form>
@@ -88,8 +89,9 @@ echo "<h1>liste over bookede tider</h1>";
 		<td><?php echo $row['phone']?></td>
 		<td><?php echo $row['adress']?></td>
 		<td><?php echo $row['postnummer']?></td>
+		<td><?php echo $row['kommentar']?></td>
 		<td class="displayflex">
-			<form action='delete_booking.php' onclick="return confirm('Er du sikker på at slette denne tid? når den er slettet kan den ikke genfindes')" method='post' class="displayflex" >
+			<form action='../Booking-system-Casper/delete_booking.php' onclick="return confirm('Er du sikker på at slette denne tid? når den er slettet kan den ikke genfindes')" method='post' class="displayflex" >
 			<input type='submit' value='delete' >
 			<input type='hidden' name='deleted' value='<?php echo $row['email']?>'>
 			</form>

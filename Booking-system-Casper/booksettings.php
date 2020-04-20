@@ -14,6 +14,7 @@ $_SESSION['cleanup'] = $row['cleanup'];
 $_SESSION['start'] = $row['start'];
 $_SESSION['end'] = $row['end'];
 $_SESSION['price'] = $row['price'];
+$_SESSION['city'] = $row['city'];
 
 header("Location: book.php?date=$date");
 

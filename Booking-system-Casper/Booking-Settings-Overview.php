@@ -63,6 +63,7 @@ echo "<center><h1>Liste over datoers indstillinger</h1></center>";
 		<th><center>Fyraften</center></th>
 		<th><center>Længde af pause</center></th>
 		<th><center>Pris</center></th>
+		<th><center>By</center></th>
 		<th><center>Action</center></th>
 	</tr>
 	<?php 
@@ -75,6 +76,7 @@ echo "<center><h1>Liste over datoers indstillinger</h1></center>";
 		<td><center><?php echo $row['end']?></center></td>
 		<td><center><?php echo $row['cleanup']. " min"?></center></td>
 		<td><center><?php echo $row['price']. ",-"?></center></td>
+		<td><center><?php echo $row['city'] ?></center></td>
 		
 			
 				<td class="displayflex">
@@ -99,6 +101,8 @@ echo "<center><h1>Liste over datoers indstillinger</h1></center>";
 		<td><center><?php echo $row['end']?></center></td>
 		<td><center><?php echo $row['cleanup']. " min"?></center></td>
 		<td><center><?php echo $row['price']. ",-"?></center></td>
+		<td><center><?php echo $row['city'] ?></center></td>
+
 		<td class="displayflex">
 		<center>
 			<form action='delete_booking_settings.php' onclick="return confirm('Er du sikker på at slette disse indstillinger? når de er slettet skal de genlaves')" method='post' class="displayflex" >
@@ -129,6 +133,7 @@ echo "<center><h1>Liste over datoers indstillinger</h1></center>";
  <th><center>slut</center></th>
  <th><center>pause</center></th>
  <th><center>pris</center></th>
+ <th><center>By</center></th>
  </tr>
 <tr>
   <td><input type="date" name="date" id="date" class="u-full-width"> </td>
@@ -137,6 +142,7 @@ echo "<center><h1>Liste over datoers indstillinger</h1></center>";
  <td> <input type="time" name="end" id="end" class="u-full-width"> </td>
  <td> <input type="number" name="cleanup" id="cleanup" min="0" max="60" class="u-full-width"> </td>
  <td> <input type="number" name="price" id="price" min="0" max="9000" class="u-full-width" > </td>
+ <td> <input type="text" name="city" id="city"  class="u-full-width" > </td>
  </tr>
 </table>
 </div>
