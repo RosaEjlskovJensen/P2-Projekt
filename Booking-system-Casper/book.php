@@ -57,6 +57,7 @@ $duration = $_SESSION['duration'];
 $cleanup = $_SESSION['cleanup'];
 $start = $_SESSION['start'];
 $end = $_SESSION['end'];
+$price = $_SESSION['price'];
   
 
 
@@ -310,4 +311,9 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
   </body>
 
 </html>
+
+
+<img src="<?php echo $link ?>">
+
+<input type="text" name="link">
 
