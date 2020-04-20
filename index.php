@@ -76,7 +76,7 @@
  <!-- Showcase -->
   <section class="section_showcase">
     <div class="container u-full-width">
-      <img class="showcase_picture" src="billeder/FTB1.jpg">
+      <img class="showcase_picture" src="Billeder/amalie-pics/Familie/2.jpg">
     </div>
   </section>
 
@@ -126,7 +126,7 @@
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=1"><img src="billeder/FBBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=1"><img src="billeder/FBB1.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">BRYLLUP</div></a>
  					</div>
  				</div>
@@ -142,21 +142,21 @@
  		<div class="row">
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=3"><img src="billeder/FKB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=3"><img src="Billeder/amalie-pics/Familie/f.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">FAMILIE</div></a>
  					</div>
  				</div>
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=4"><img src="billeder/FBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=4"><img src="Billeder/amalie-pics/boern/7.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">GRAVID</div></a>
  					</div>
  				</div>
  			</div>
  			<div class="one-third column">
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=5"><img src="billeder/FBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=5"><img src="Billeder/amalie-pics/Konfihjemmeside/1D8A0526.jpg" class="image1 link_picture">
  						<div class="middle1"><div class="text1">KONFIRMATION</div></a>
  					</div>
  				</div>
@@ -164,7 +164,7 @@
  		</div>
   	<div class="row">
       <div class="u-full-width">
-        <center><p style="font-size: 15px"><i>Besøg mit <a style="color: #8b752e" href="My_Pictures.php">portfolio</a> og se billeder fra tidliger fotosessioner.</i></p></center>
+        <center><p style="font-size: 15px"><i>Besøg mit portfolio og se billeder fra tidliger fotosessioner.</i></p></center>
         </div>
       </div>
     </div>  
@@ -182,16 +182,16 @@
            </p>
            <div class="row">
             <div class="two columns offset-by-one-third">
-              <form action="#"><button type="submit" class="btn btn2">Se Datoer</button></form> 
+              <form action="Booking-system-Casper/index.php"><button type="submit" class="btn btn2">Se Datoer</button></form> 
             </div>
             <div class="two columns">
-              <form action="#"><button type="submit" class="btn btn2">Se Priser</button></form> 
+              <form action="Priser/Priser.php"><button type="submit" class="btn btn2">Se Priser</button></form> 
             </div>
           </center>   
         </div>
         <div class="row">
           <div class="u-full-width">
-            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="#">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="#">mail</a>.</i></p></center>
+            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="Kontakt/Kontakt.php">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="Kontakt/Kontakt.php">mail</a>.</i></p></center>
           </div>
         </div>
       </div>

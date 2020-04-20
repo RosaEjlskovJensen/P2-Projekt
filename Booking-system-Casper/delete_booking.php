@@ -9,7 +9,7 @@ if(isset($_POST['deleted']))
 	$results = mysqli_query($connection,$query);
 	if($results)
 	{
-		header("Location: Booking_Admin.php");
+		header("Location: ../Admin%20side/Booking_Admin.php");
 		exit();
 	} else
 	{

@@ -33,6 +33,7 @@ $row = mysqli_fetch_assoc($results);
  <th><center>slut</center></th>
  <th><center>pause</center></th>
  <th><center>pris</center></th>
+ <th><center>By</center></th>
  </tr>
 <tr>
   <td><?php echo( $row['date']) ?></td>
@@ -41,6 +42,7 @@ $row = mysqli_fetch_assoc($results);
  <td> <input type="time" name="end" id="end" class="u-full-width" value="<?php echo($row['end']) ?>"> </td>
  <td> <input type="number" name="cleanup" id="cleanup" min="0" max="60" class="u-full-width" value="<?php echo($row['cleanup']) ?>"> </td>
  <td> <input type="number" name="price" id="price" min="0" max="9000" class="u-full-width" value="<?php echo($row['price']) ?>" > </td>
+ <td> <input type="text" name="city" id="city"  class="u-full-width" value="<?php echo($row['city']) ?>" > </td>
  </tr>
 </table>
 </div>

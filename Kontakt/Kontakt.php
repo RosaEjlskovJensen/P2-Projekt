@@ -287,7 +287,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
   <label for="comments" class="kontaktnavn">Besked</label>
  </td>
  <td valign="top">
-  <textarea style="width: 180px;" name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+  <textarea style="width: 260px;" name="comments" maxlength="1000" cols="25" rows="6"></textarea>
  </td>
 </tr>
 <tr>

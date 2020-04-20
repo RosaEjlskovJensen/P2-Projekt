@@ -19,7 +19,7 @@
 	
  <!-- Navigation bar -->
   <nav class="nav">
-    <a href="index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
+    <a href="../index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
@@ -108,14 +108,15 @@
 		</div>
 <br>
 		<div class="row">
-          <div class="u-full-width">
-            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål, kan du eventuelt finde svar under <a style="color: #8b752e" href="#">FAQ</a>. Har du spørgsmål til priser, <a style="color: #8b752e" href="#">se prisliste.</a> <br> Benyt venligst mit <a style="color: #8b752e" href="#">online bookingsystem</a> for booking af fotografering.</i></p></center>
+          <div class="u-full-width">    
+            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål, kan du eventuelt finde svar under <a style="color: #8b752e" href="../Kontakt/FAQ.php">FAQ</a>. Har du spørgsmål til priser, <a style="color: #8b752e" href="../Priser/Priser.php">se prisliste.</a> <br> Benyt venligst mit <a style="color: #8b752e" href="../Booking-system-Casper/index.php">online bookingsystem</a> for booking af fotografering.</i></p></center>
           </div>
         </div>
 	</section>
 
-<!-- Ínformation  Rename the classe!-->
-  <section class="section_maps">
+    <br>
+<!-- Top part of the footer-->
+  <section class="section_topfooter">
     <div class="container">
       <div class="u-full-width">
         <div class="row">
@@ -128,23 +129,23 @@
           <div class="two columns">
             <center>
             <p style="font-size: 16px">NYTTIGE LINKS</p>
-            <a style="font-size: 15px" href="#" >Privatlivspolitik</a><br>
-            <a style="font-size: 15px" href="#">Vilkår & Betingelser</a>
+            <a style="font-size: 15px" href="../Kontakt/Privateterms.php" >Privatlivspolitik</a><br>
+            <a style="font-size: 15px" href="../Kontakt/Terms_conditions.php">Vilkår & Betingelser</a>
             </center>
           </div>
           <div class="two columns">
             <center>
             <p style="font-size: 16px">FØLG MIG PÅ</p>
             <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><br>
-            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
+            <a href="https://www.instagram.com/amalie_sandgaard_photography/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
             </center>
           </div>
         </div>
       </div>
     </div>
   </section> 
- <!--Footer -->
-  <section class="section_footer">
+ <!--Bottom part of the footer -->
+  <section class="section_bottomfooter">
     <div>
       <center>
         <p style="font-size: 15px" class="footer"> &copy; Copyright <?php echo date("Y"); ?> | Amalie Sandgaard Photography | All Rights Reserved</p>

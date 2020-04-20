@@ -4,26 +4,7 @@
       <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-<!------ Include the above in your HEAD tag ---------->
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/navbar-fixed-top.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 	<meta charset="utf-8">
 	<title>Amalie Sandgaard | Photography | Priser</title>
 	<!-- ajax/jquery -->
@@ -408,7 +389,7 @@ jeg kommer helt sikkert tilbage!</div>
      <p>Eller se min <a href="https://www.facebook.com/amaliesandgaardphotography/" style="color: black;">FACEBOOK</a> for mere</p>
           </center>
       
-<!-- Top part of the footer-->
+ <!-- Top part of the footer-->
   <section class="section_topfooter">
     <div class="container">
       <div class="u-full-width">
@@ -445,6 +426,7 @@ jeg kommer helt sikkert tilbage!</div>
       </center>
     </div>
   </section>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

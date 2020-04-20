@@ -138,8 +138,6 @@ die("cannot connect to database".mysqli_connect_error());
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
           <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
           <li><a href="../Info/andmeldelser.php" class="button">Anmeldelser</a></li>
-
-          <li><a href="../Info/blog.php" class="button">Anmeldeser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -259,7 +257,7 @@ span.onclick = function() {
         </div>
         <div class="row">
           <div class="u-full-width">
-            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="../Kontakt/Kontakt.php">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="#">mail</a>.</i></p></center>
+            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="../Kontakt/Kontakt.php">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="../Kontakt/Kontakt.php">mail</a>.</i></p></center>
           </div>
         </div>
       </div>
@@ -282,8 +280,8 @@ span.onclick = function() {
           <div class="two columns">
             <center>
             <p style="font-size: 16px">NYTTIGE LINKS</p>
-            <a style="font-size: 15px" href="Kontakt/Privateterms.html" >Privatlivspolitik</a><br>
-            <a style="font-size: 15px" href="Kontakt/Terms_conditions.html">Vilkår & Betingelser</a>
+            <a style="font-size: 15px" href="../Kontakt/Privateterms.php" >Privatlivspolitik</a><br>
+            <a style="font-size: 15px" href="../Kontakt/Terms_conditions.php">Vilkår & Betingelser</a>
             </center>
           </div>
           <div class="two columns">
@@ -291,7 +289,7 @@ span.onclick = function() {
             <p style="font-size: 16px">FØLG MIG PÅ</p>
             <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><br>
             <a href="https://www.instagram.com/amalie_sandgaard_photography/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
-            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
+            <a href="#" target="_blank"></a><br>
             </center>
           </div>
         </div>

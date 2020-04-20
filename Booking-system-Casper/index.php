@@ -168,7 +168,20 @@ function build_calendar($month, $year) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amalie Sandgaard | Photography | Booking</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../stylesheet.css">
+    
+    	<meta charset="utf-8">
+	<title>Amalie Sandgaard | Photography | Priser</title>
+	<!-- ajax/jquery -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- -->
+  <script src="mySlides.js"></script>
+	<!-- Dette link er ikonet der er i ens browser tab -->
+  	<link rel="icon" type="image/png" href="../Billeder/asp.png">
+  	<!-- Linker til Skeleton -->
+  	<!-- Linker til Fontawsome -->
+  	<script src="https://kit.fontawesome.com/600e3ecdcb.js" crossorigin="anonymous"></script>
+  	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="../main.css">
 <link rel="stylesheet" href="../main.css">
     <style>
        @media only screen and (max-width: 760px),
@@ -355,7 +368,7 @@ function build_calendar($month, $year) {
         </div>
     </div>
     
-     <!-- Top part of the footer-->
+ <!-- Top part of the footer-->
   <section class="section_topfooter">
     <div class="container">
       <div class="u-full-width">
@@ -369,15 +382,15 @@ function build_calendar($month, $year) {
           <div class="two columns">
             <center>
             <p style="font-size: 16px">NYTTIGE LINKS</p>
-            <a style="font-size: 15px" href="#" >Privatlivspolitik</a><br>
-            <a style="font-size: 15px" href="#">Vilkår & Betingelser</a>
+            <a style="font-size: 15px" href="../Kontakt/Privateterms.php" >Privatlivspolitik</a><br>
+            <a style="font-size: 15px" href="../Kontakt/Terms_conditions.php">Vilkår & Betingelser</a>
             </center>
           </div>
           <div class="two columns">
             <center>
             <p style="font-size: 16px">FØLG MIG PÅ</p>
             <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><br>
-            <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
+            <a href="https://www.instagram.com/amalie_sandgaard_photography/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
             </center>
           </div>
         </div>

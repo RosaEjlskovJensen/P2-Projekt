@@ -196,7 +196,7 @@ die("cannot connect to database".mysqli_connect_error());
   $results = mysqli_query($connection, $query);
 	 echo "<div class='container'";
 	 echo "<div class='row'";
-  echo  '<form id="myform">';
+  echo  '<form class="twelve columns">';
 	 $box=1;
 	 $box1=1;
 	 while($row = mysqli_fetch_array($results))
@@ -207,7 +207,7 @@ die("cannot connect to database".mysqli_connect_error());
 	 $box3++; 
 	 $box4++; 
 	 $box5++; 
-   $output.= '<div class=" borderbox three columns checkbox-container">'. "Nummer ". $row["id"].'<center><img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="100" width="100" /> 
+   $output.= '<div class=" borderbox four columns checkbox-container">'. $row["filename"].'<center><img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="100" width="100" /> 
 	   <br>
 	   <table class="tg">
   <tr>
@@ -313,9 +313,48 @@ function dstry(){
   });
 }
 </script>
+  <?php
+if(isset($_POST['email'])) {
+ 
+    // Din email og beskeden
+    $email_to = "casper.roskaer@gmail.com";
+    $email_subject = "Sendt til print";
+  
 
  
- <a href="">Send til print</a>
+    $kunde = $_POST['email']; // required
+    $email_from = $kunde; // required
+
+     
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+ 
+     
+ 
+    $email_message .= "Kunde arkiv: ".$kunde."\n";
+    $email_message .= "Er blevet færdig med at vælge billeder";
+    
+ 
+// Email header
+$headers = 'From: '.$email_from."\r\n".
+'Reply-To: '.$email_from."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);  
+?>
+ 
+<!-- Responsen når du har trykket submit skrives herunder -->
+ 
+Tak for din indsendelse, vi går over dine valg og du høre fra os, når det er sendt til print.
+<?php
+ 
+}
+?>
+<form name="contactform" method="post" action="Kunde-Billede-Overview.php" class="formkontakt">
+ 	<input type="hidden" name="email" value="<?php echo $kunde; ?>">
+<input class='btn btn2' type="submit" value="Send til print">
+	</form>
 <a href="../index.php">Tilbage</a>
 
  <!-- Top part of the footer-->

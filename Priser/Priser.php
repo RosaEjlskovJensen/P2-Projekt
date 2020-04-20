@@ -36,6 +36,7 @@ if(!$results){
     
     .box {
         padding-bottom: 20px;
+        margin-bottom: 20px;
 }
     .para {
         padding-top:20px;
@@ -68,7 +69,6 @@ if(!$results){
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
           <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
           <li><a href="../Info/andmeldelser.php" class="button">Anmeldelser</a></li>
-          <li><a href="../Info/blog.php" class="button">Anmeldeser</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -143,6 +143,19 @@ while($row = mysqli_fetch_assoc($results)){
 	</section> <br> 
  <?php } ?>   
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+ 
+
  <!-- Top part of the footer-->
   <section class="section_topfooter">
     <div class="container">
@@ -157,8 +170,8 @@ while($row = mysqli_fetch_assoc($results)){
           <div class="two columns">
             <center>
             <p style="font-size: 16px">NYTTIGE LINKS</p>
-            <a style="font-size: 15px" href="#" >Privatlivspolitik</a><br>
-            <a style="font-size: 15px" href="#">Vilkår & Betingelser</a>
+            <a style="font-size: 15px" href="../Kontakt/Privateterms.php" >Privatlivspolitik</a><br>
+            <a style="font-size: 15px" href="../Kontakt/Terms_conditions.php">Vilkår & Betingelser</a>
             </center>
           </div>
           <div class="two columns">

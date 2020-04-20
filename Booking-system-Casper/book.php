@@ -25,6 +25,7 @@ if(isset($_POST['submit'])){
     $email = $_POST['email'];
 	$adress = $_POST['adress'];
 	$postnummer = $_POST['postnummer'];
+	$kommentar = $_POST['kommentar'];
 	
     $timeslot = $_POST['timeslot'];
 		$stmt = $mysqli->prepare("select * from bookings where date = ? AND timeslot = ?");
@@ -35,8 +36,8 @@ if(isset($_POST['submit'])){
               $msg = "<div class='alert alert-danger'>Allready booked</div>";  
            
         }else{
-			 $stmt = $mysqli->prepare("INSERT INTO bookings (name, phone, timeslot, email, adress, postnummer, date) VALUES (?,?,?,?,?,?,?)");
-    $stmt->bind_param('sssssss', $name, $phone, $timeslot, $email, $adress, $postnummer, $date);
+			 $stmt = $mysqli->prepare("INSERT INTO bookings (name, phone, timeslot, email, adress, postnummer, date, kommentar) VALUES (?,?,?,?,?,?,?,?)");
+    $stmt->bind_param('ssssssss', $name, $phone, $timeslot, $email, $adress, $postnummer, $date, $kommentar);
     $stmt->execute();
     $msg = "<div class='alert alert-success'>Booking Successfull</div>";
 	$bookings[]=$timeslot;
@@ -58,6 +59,7 @@ $cleanup = $_SESSION['cleanup'];
 $start = $_SESSION['start'];
 $end = $_SESSION['end'];
 $price = $_SESSION['price'];
+$city = $_SESSION['city'];
   
 
 
@@ -174,7 +176,9 @@ function timeslots($duration, $cleanup, $start, $end){
       <br>
 
     <div class="container">
-        <h1 class="text-center">Book Datoen: <?php echo date('m/d/Y', strtotime($date)); ?></h1><hr>
+        <h1 class="text-center">Book Datoen: <?php echo date('m/d/Y', strtotime($date)); ?></h1>
+        <h1 class="text-center">By: <?php echo $city ?></h1>
+        <h1 class="text-center">Pris <?php echo $price.",-" ?></h1><hr>
         <div class="row">
           <div class="col-md-12">
           	<?php echo isset($msg)?$msg:""; ?>
@@ -208,6 +212,8 @@ function timeslots($duration, $cleanup, $start, $end){
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <h4 class="modal-title">Booking: <span id="slot"></span></h4>
+        <h4 class="modal-title">By: <?php echo $city ?></h4>
+        <h4 class="modal-title">Pris <?php echo $price.",-" ?></h4><hr>
       </div>
       <div class="modal-body">
         <div class="row">
@@ -236,6 +242,10 @@ function timeslots($duration, $cleanup, $start, $end){
         			<div class="from-group">
         				<lable for="">postnummer</lable>
         				<input required type="number"  name="postnummer" class="form-control">
+        			</div>
+        			<div class="from-group">
+        				<lable for="">Kommentar (På lokation eller i studiet?, hvis lokation hvilken adresse?)</lable>
+        				<input required type="text"  name="kommentar" class="form-control">
         			</div>
         			<div class="form-group pull-right">
         			<br>
@@ -304,7 +314,65 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 		})
 	  
 	</script>
-	<a href="index.php" class="btn-danger two columns" >Tilbage</a>
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    
+      
+	<!-- Top part of the footer-->
+  <section class="section_topfooter">
+    <div class="container">
+      <div class="u-full-width">
+        <div class="row">
+          <div class="six columns">
+            <center>
+            <p style="font-size: 16px">KONTAKTOPLYSNINGER</p>
+            <p style="font-size: 15px">Amalie Sandgaard<br>CVR: 38 02 70 34<br>+45 31 51 45 55<br>amaliesandgaardphotography@hotmail.com</p>
+            </center>
+          </div>
+          <div class="two columns">
+            <center>
+            <p style="font-size: 16px">NYTTIGE LINKS</p>
+            <a style="font-size: 15px" href="../Kontakt/Privateterms.php" >Privatlivspolitik</a><br>
+            <a style="font-size: 15px" href="../Kontakt/Terms_conditions.php">Vilkår & Betingelser</a>
+            </center>
+          </div>
+          <div class="two columns">
+            <center>
+            <p style="font-size: 16px">FØLG MIG PÅ</p>
+            <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><br>
+            <a href="https://www.instagram.com/amalie_sandgaard_photography/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
+            <a href="#" target="_blank"></a><br>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+ <!--Bottom part of the footer -->
+  <section class="section_bottomfooter">
+    <div>
+      <center>
+        <p style="font-size: 15px" class="footer"> &copy; Copyright <?php echo date("Y"); ?> | Amalie Sandgaard Photography | All Rights Reserved</p>
+      </center>
+    </div>
+  </section>
     
       
 
@@ -312,8 +380,4 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 
 </html>
 
-
-<img src="<?php echo $link ?>">
-
-<input type="text" name="link">
 

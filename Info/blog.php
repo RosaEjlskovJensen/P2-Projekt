@@ -41,7 +41,6 @@
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
           <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
-
           <li><a href="../Info/andmeldelser.php" class="button">Anmeldelser</a></li>
 
                 </div>

@@ -266,7 +266,10 @@ a:hover{
 		display: none;}
   .nav img{
   max-width: 250px;
-  height: auto;}}
+  height: auto;
+  margin-bottom: 20px;
+  margin-top:20px;
+margin-left: 20px}}
 
 .nav_dropdown{
   float: left;

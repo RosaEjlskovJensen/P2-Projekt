@@ -222,8 +222,8 @@ Forbrugeraftaleloven §18, Stk. 4. Såfremt aftalen vedrører fjernsalg af en ik
           <div class="two columns">
             <center>
             <p style="font-size: 16px">NYTTIGE LINKS</p>
-            <a style="font-size: 15px" href="#" >Privatlivspolitik</a><br>
-            <a style="font-size: 15px" href="#">Vilkår & Betingelser</a>
+            <a style="font-size: 15px" href="../Kontakt/Privateterms.php" >Privatlivspolitik</a><br>
+            <a style="font-size: 15px" href="../Kontakt/Terms_conditions.php">Vilkår & Betingelser</a>
             </center>
           </div>
           <div class="two columns">
