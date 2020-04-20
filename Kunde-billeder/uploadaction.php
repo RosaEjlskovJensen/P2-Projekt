@@ -12,10 +12,10 @@ if(isset($_POST["action"]))
   $output = '
    <table class="table table-bordered table-striped">  
     <tr>
-     <th width="10%">ID</th>
-     <th width="70%">Image</th>
-     <th width="10%">Change</th>
-     <th width="10%">Remove</th>
+     <th width="10%">Fil navn</th>
+     <th width="70%">Billede</th>
+     <th width="10%">Skift</th>
+     <th width="10%">Slet</th>
     </tr>
   ';
   while($row = mysqli_fetch_array($result))
@@ -23,7 +23,7 @@ if(isset($_POST["action"]))
    $output .= '
 
     <tr>
-     <td>'.$row["id"].'</td>
+     <td>'.$row["filename"].'</td>
      <td>
       <img src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="60" width="75" class="img-thumbnail" />
      </td>
@@ -39,7 +39,8 @@ if(isset($_POST["action"]))
  if($_POST["action"] == "insert")
  {
   $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
-  $query = "INSERT INTO `$email`(name) VALUES ('$file')";
+  $filename = $_FILES["image"]["name"];
+  $query = "INSERT INTO `$email`(name, filename) VALUES ('$file','$filename')";
   if(mysqli_query($connection, $query))
   {
    echo 'Image Inserted into Database';

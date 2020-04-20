@@ -207,7 +207,7 @@ die("cannot connect to database".mysqli_connect_error());
 	 $box3++; 
 	 $box4++; 
 	 $box5++; 
-   $output.= '<div class=" borderbox four columns checkbox-container">'. "Nummer ". $row["id"].'<center><img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="100" width="100" /> 
+   $output.= '<div class=" borderbox four columns checkbox-container">'. $row["filename"].'<center><img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="100" width="100" /> 
 	   <br>
 	   <table class="tg">
   <tr>
