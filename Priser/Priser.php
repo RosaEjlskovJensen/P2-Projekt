@@ -1,7 +1,7 @@
     <?php
  require_once '../Connection.php';
 
-$query = "SELECT id, name, description, image FROM prices";
+$query = "SELECT id, name, description, link FROM prices";
 $results = mysqli_query($connection,$query);
 
 if(!$results){
@@ -30,36 +30,16 @@ if(!$results){
 </head>
 <style>
     
-    .bigbox {
-        width: auto;
-        padding-left: 28%;
-        padding-right: 28%;
+    .u-pull-left {
+        margin-left: 20px;
+    }
+    
+    .box {
+        padding-bottom: 20px;
 }
-    .storbox {
-        display: inline-block;
-        align-content:  center;
-        width: 600px;
-        height: 190px;
-        
+    .para {
+        padding-top:20px;
 }
-    .box1 {
-        float: left;
-}
-    .box2{
-        display: inline-block;
-        width: 360px;
-        margin-left: 40px;
-        font-family: "Lucida Console", Courier, monospace;
-        font-style: solid;
-}
-    .box3{
-        display: inline-block;
-        margin-top: 50px;
-        width: 360px;
-        margin-left: 40px;
-        font-family: "Lucida Console", Courier, monospace;
-        font-size: medium;
-        
 </style>
 
 <body>
@@ -133,26 +113,35 @@ if(!$results){
 </section>
 <br>
 <br>
-<!-- Php koden herunder echoer ud alle informationer vi har i databasen -->
 
-<?php 
+
+  <?php 
 while($row = mysqli_fetch_assoc($results)){
 
-	?>
-<div class="bigboxfarve">
-<div class="bigbox">
-	        <div class="storbox"> 
-                <div class="box1">                                                          
-                <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['picture']); ?>" /> 
-                  </div>  
-			      <div class="box2"><?php echo $row['name']?> </div>                                                              
-                <div class="box3"><?php echo $row['description']?>  </div>                    
-            </div>
-</div>
-</div>
-    <br>
-<?php } ?>
+	?>  
+    <!-- View of priser -->
+	<section class='priser'>
+		<div class=' offset-by-three columns six columns' class="wrap1">
+			<div class="box u-full-width">
+				<br>
+				<div class='u-pull-left' class="billede1">
+					<div class='u-full-width'>
+					<center><img src="<?php echo $row['link'] ?>" width="135" height="135" /></center> <!-- Indhent information fra række; "image" -->
+					</div>
+				</div>
+				<div class='row'>
+					<div class='u-full-width'>
+					<center> <?php echo $row['name']?> </center><!-- indhent information fra række; "title" -->
+                    <center><p class="para" style="font-size: 17px"><?php echo $row['description']?></p></center>
+					</div>
+				</div>
 
+			
+	
+			</div>
+		</div>
+	</section> <br> 
+ <?php } ?>   
 
  <!-- Top part of the footer-->
   <section class="section_topfooter">

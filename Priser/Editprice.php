@@ -1,7 +1,7 @@
 <?php
  require_once '../Connection.php';
 
-$query = "SELECT id, name, description, picture FROM prices";
+$query = "SELECT id, name, description, link FROM prices";
 $results = mysqli_query($connection,$query);
 
 if(!$results){
@@ -32,7 +32,7 @@ while($row = mysqli_fetch_assoc($results)){
 ?>	
 	<li class="cf">
   
-  	<img src="<?php echo $row['picture']?>" width="32" height="32">
+  	<img src="<?php echo $row['link']?>" width="32" height="32">
     <h5><?php echo $row['name']." ".$row['description'] ?>"</h5>
     <div>
 <!-- Sender videre til update.php hvor man kan redigere i pakken -->

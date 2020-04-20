@@ -15,8 +15,8 @@ if(isset($_POST['Name'])&&isset($_POST['id'])){
 					$description="";
 				}
 				
-				if(isset($_POST['picture'])){
-					$image = $_POST['picture'];
+				if(isset($_POST['link'])){
+					$image = $_POST['link'];
 				}else{
 					$image="untitled.png";
 				}

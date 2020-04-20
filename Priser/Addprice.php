@@ -36,8 +36,8 @@
   </div>
     
     <div>
-  <label for="img">Select image:</label>
-  <input name="picture" type="file" class="inputFile" required>
+  <label for="img">Indsæt billede URL:</label>
+  <input name="link" type="text" required>
 </div>
     
   <div class="addBtnDiv">
