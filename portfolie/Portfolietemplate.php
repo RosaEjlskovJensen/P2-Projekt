@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <?php
 $kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
-
+$item = $_GET['item'];
+$kategorioverskrift = array("Baby billeder", "Bryllups billeder", "Børne billeder", "Familie billeder", "Graviditets billeder", "Konfirmations billeder");
 
 //database connection
 require_once '../Connection.php';
@@ -173,8 +174,9 @@ die("cannot connect to database".mysqli_connect_error());
   </nav>
 <br>
 <br>
+<br>
 <center>
-         <h1> Billeder </h1>
+         <h5 align="center"><?php echo($kategorioverskrift[$item])?></h5>
 </center>
     
     

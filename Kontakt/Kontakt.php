@@ -57,17 +57,33 @@ form
         display: inline-block;
         float:left;
         padding-left: 20px;
-        width: 50px;
 }
     .kontaktikon {
-        width: 120px;
         height: 120px;
 }
     
     .formkontakt {
         border-style: solid;
         padding: 5% 10% 0 10%;
+        color: #8b752e;
 }
+    
+    .kontaktnavn {
+        color: black;
+}
+    
+    .my-icon {
+    vertical-align: middle;
+}
+
+.my-fancy-container {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: inline-block;
+    margin: 60px;
+    padding: 10px;
+}
+    
 
 </style>
 
@@ -236,7 +252,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 <table width="450px">
 <tr>
  <td valign="top">
-  <label for="first_name">Fornavn</label>
+  <label for="first_name" class="kontaktnavn">Fornavn</label>
  </td>
  <td valign="top">
   <input  type="text" name="first_name" maxlength="50" size="30">
@@ -244,7 +260,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 </tr>
 <tr>
  <td valign="top">
-  <label for="last_name">Efternavn</label>
+  <label for="last_name" class="kontaktnavn">Efternavn</label>
  </td>
  <td valign="top">
   <input  type="text" name="last_name" maxlength="50" size="30">
@@ -252,7 +268,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 </tr>
 <tr>
  <td valign="top">
-  <label for="email">Email</label>
+  <label for="email" class="kontaktnavn">Email</label>
  </td>
  <td valign="top">
   <input  type="text" name="email" maxlength="80" size="30">
@@ -260,7 +276,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 </tr>
 <tr>
  <td valign="top">
-  <label for="telephone">Telefon nummer</label>
+  <label for="telephone" class="kontaktnavn">Telefon nummer</label>
  </td>
  <td valign="top">
   <input  type="text" name="telephone" maxlength="30" size="30">
@@ -268,7 +284,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 </tr>
 <tr>
  <td valign="top">
-  <label for="comments">Besked</label>
+  <label for="comments" class="kontaktnavn">Besked</label>
  </td>
  <td valign="top">
   <textarea style="width: 180px;" name="comments" maxlength="1000" cols="25" rows="6"></textarea>
@@ -276,7 +292,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 </tr>
 <tr>
  <td colspan="2" style="text-align:center">
-  <input type="submit" value="Send">
+  <input class='btn btn2' type="submit" value="Send">
  </td>
 </tr>
 </table>
@@ -284,64 +300,32 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 </div>    
 <div>
     
+    <br>
+
 <div class="kontaktinformation">
     <div class="kontaktbillede">
         <div class="kontaktikon"> 
-           <i class="fas fa-map-marker-alt"></i>     
+           <span class='my-icon icon-file-text'> <i class="fas fa-map-marker-alt fa-2x"></i></span><span class='my-text'>  Adresse: Bispensgade 13, 1.2 </span>   
         </div>
         
         <div class="kontaktikon"> 
-            <i class="fas fa-phone"></i>
+             <span class='my-icon icon-file-text'><i class="fas fa-phone fa-2x"></i></span><span class='my-text'>  Telefonnummer: +45 31 51 45 55 </span>
         </div>
     
         <div class="kontaktikon"> 
-            <i class="fas fa-envelope"></i>
+            <span class='my-icon icon-file-text'><i class="fas fa-envelope fa-2x"></i></span><span class='my-text'>  Email: Amaliesandgaard@live.dk   </span>
         </div>
     
         <div class="kontaktikon"> 
-            <i class="fab fa-facebook-f"></i>
+           <span class='my-icon icon-file-text'><i class="fab fa-facebook-f fa-2x"></i></span><span class='my-text'>  Facebook: Amalie Sandgaard Photography </span>
         </div>
     
         <div class="kontaktikon"> 
-            <i class="fab fa-instagram"></i>
+            <span class='my-icon icon-file-text'><i class="fab fa-instagram fa-2x"></i></span><span class='my-text'>  Instagram: Amalie_sandgaard_photography</span>
         </div>
     
         <div class="kontaktikon"> 
-            <i class="fas fa-clock"></i>
-        </div>
-    </div>
-    <div>
-        <div class="informationer">
-            <div class="billedeinformation">
-            <div>
-            <p>Adresse: 
-                <br>BISPENSGADE 13, 1.2</p></div>
-            </div>
-    
-            <div class="billedeinformation">
-            <p>Telefonnummer:
-                <br>+45 31 51 45 55</p>    
-            </div>
-    
-            <div class="billedeinformation">
-            <p><br>Email:
-                <br>Amaliesandgard@live.dk</p>
-            </div>
-    
-            <div class="billedeinformation">
-            <p>Facebook:
-                Amalie Sandgaard photography</p>
-            </div>
-    
-            <div class="billedeinformation">
-            <p> Instagram:
-                <br>Amalie_sandgaard_Photography</p>
-            </div>
-    
-            <div class="billedeinformation">
-            <p>Åbningstider:
-                <br>ALTID EFTER AFTALE</p>
-            </div>
+            <span class='my-icon icon-file-text'><i class="fas fa-clock fa-2x"></i></span><span class='my-text'>  Åbningstider: Altid efter aftale </span>
         </div>
     </div>
 </div>

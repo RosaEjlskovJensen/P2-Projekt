@@ -22,7 +22,6 @@
 
     <a href="../index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
 
-    <a href="index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
 
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
@@ -44,11 +43,8 @@
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
           <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
-<<<<<<< HEAD
           <li><a href="../Info/andmeldelser.php" class="button">Anmeldelser</a></li>
-=======
           <li><a href="../Info/blog.php" class="button">Anmeldeser</a></li>
->>>>>>> db2494863e60865b98428b6212e6b1c40d5ba88c
             </div>
             </div>
       <div class="nav_dropdown">
@@ -98,8 +94,6 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
 
 
    
@@ -125,11 +119,8 @@
             <center>
             <p style="font-size: 16px">FØLG MIG PÅ</p>
             <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><br>
-<<<<<<< HEAD
             <a href="https://www.instagram.com/amalie_sandgaard_photography/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
-=======
             <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
->>>>>>> db2494863e60865b98428b6212e6b1c40d5ba88c
             </center>
           </div>
         </div>
