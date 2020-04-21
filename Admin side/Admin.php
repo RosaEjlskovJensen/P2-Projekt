@@ -33,6 +33,7 @@ session_start();
                 <a href="PortfolieInfoadminside.php" class="button1 u-full-width">portfolie infosider</a>
                 <a href="../Priser/Addprice.php" class="button1 u-full-width">Tilføj Prispakke</a>
                 <a href="../Priser/Editprice.php" class="button1 u-full-width">Rediger Prispakke</a>
+                <a href="../Info/ommigadmin.php" class="button1 u-full-width">Rediger Om mig</a>
 
 				<a href="../index.php" class="button2 u-full-width place-bottom">til forside</a>
 			

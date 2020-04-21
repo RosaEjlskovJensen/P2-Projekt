@@ -1,3 +1,16 @@
+ <?php
+ require_once '../Connection.php';
+
+$query = "SELECT id, name, description FROM ommig";
+$results = mysqli_query($connection,$query);
+
+if(!$results){
+   die("could not query the database" .mysqli_error());
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -73,7 +86,11 @@
       </div>
     </ul>
   </nav>
+    
+ <?php 
+while($row = mysqli_fetch_assoc($results)){
 
+	?>  
 	<!-- Kode -->
 	<section class="om_mig">
     	<div class="container">
@@ -91,21 +108,16 @@
 					<div class="one-half column">
 					<br>				
 					<h5>Om mig</h5>
-					<p style="text-align: justify; font-size: 17px; padding-right: 15px">Jeg hedder Amalie Sandgaard. Jeg er 24 år 		gammel. Jeg bor i Aalborg, men er også ofte i Herning og Aarhus. 
-					Til dagligt studerer jeg på UCN business college, hvor jeg læser en bachelor i offentlig administration. 
-					I min fritid arbejder jeg som selvstændig fotograf, som jeg efterhånden har gjort i mange år.
-					Helt fra barnsben har jeg været grebet om ideen om, at skulle forevige øjeblikke, mennesker, dyr, stemninger mm. 
-					Der gik mange år fra da jeg fik det første analog kamera i ti års alderen, til at jeg fik købt mit første DSLR kamera 		i 2010, da jeg blev konfirmeret.
-					Siden da har jeg bygget mere og mere på min viden som fotograf. Jeg har blandt andet været i Herning Fotoklub, hvor 		jeg lærte om 			blænde, lukketid, hvidbalance, iso og så videre. 
-					Jeg har også haft atelier i hjertet af Herning, hvor jeg fotograferede børn, dyr, familier og gravide.</p>
+					<p style="text-align: justify; font-size: 17px; padding-right: 15px"><?php echo $row['name']?></p>
 
-					<p style="text-align: justify; font-size: 17px; padding-right: 15px">I dag har jeg et mini atelier i Aalborg på 		Bispensgade, hvor 			jeg glæder mig til at byde jer velkommen. </p>
+					<p style="text-align: justify; font-size: 17px; padding-right: 15px"><?php echo $row['description']?> </p>
 
 					<p style="text-align: justify; font-size: 17px; padding-right: 15px">Kh Amalie Sandgaard Photography</p>
 					</div>
         		</div>
       		</div>
 		</div>
+         <?php } ?> 
 <br>
 		<div class="row">
           <div class="u-full-width">    
