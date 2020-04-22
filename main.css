@@ -16,7 +16,7 @@ body{
 	font-weight: 400;
 	font-family: "Lato", "Raleway", Helvetica, Arial, sans-serif;
 	color: #2a2723;
-	background-color: #e3e3dd;
+	background-color: hsla(0,0%,100%,0.63);
   	margin: 0px;
   	min-height: 100%;
   	width: 100%;}
@@ -76,7 +76,7 @@ a:hover{
   max-height: 99%;}
 
 .btn2{
-  background-color: #e3e3dd;
+  background-color: hsla(0,0%,100%,0.63);
   color: #2a2723; 
   border: 2px solid #8b752e;}
 
@@ -104,19 +104,19 @@ a:hover{
 
 /* Showcase*/
 .section_showcase{
-  background-color: #e3e3dd;
+  background-color: white;
 	height: 100vh;}
 
 .section_nyhed{
-  background-color: #e3e3dd;
+  background-color: hsla(0,0%,100%,0.63);
 }
 
 .section_galleri{
-  background-color: #e3e3dd;
+  background-color: hsla(0,0%,100%,0.63);
   padding-top: 20px;}
 
 .section_booking{
-  background-color: #e3e3dd;
+  background-color: hsla(0,0%,100%,0.63);
 }
 
 .section_topfooter{
@@ -137,8 +137,7 @@ a:hover{
 
 /* Galleri */
 .container1{
-  position: relative;
-  width: 100%;}
+}
 
 .image1{
   opacity: 1;
@@ -151,11 +150,10 @@ a:hover{
 .middle1{
   transition: .5s ease;
   opacity: 0;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -100%);
-  -ms-transform: translate(-50%, -100%);
+  position: absolute;
+  
+ 
+	
   text-align: center;}
 
 .container1:hover .image1{
@@ -180,7 +178,7 @@ a:hover{
 
 /* Menu */
 .nav{
-	background-color: #e3e3dd;
+	background-color:hsla(0,0%,100%,0.63);
 	opacity: 0.95;
 	position: fixed;
 	width: 100%;
@@ -192,7 +190,7 @@ a:hover{
 	padding: 0;
 	list-style: none;
 	overflow: hidden;
-	background-color: #e3e3dd;}
+	background-color:hsla(0,0%,100%,0.00);}
 
 .nav ul a{
 	display: block;
@@ -255,7 +253,7 @@ a:hover{
 /* Screen resize fix */
 @media (min-width: 930px){
 	.nav li{
-		float: left;}
+		;}
 	.nav li a{
 		padding: 20px 30px;}
 	.nav .menu{
@@ -279,12 +277,13 @@ margin-left: 20px}}
   font-size: 20px;  
   border: none;
   outline: none;
-  color: #2a2723;
+  color: black;
   padding: 14px 16px;
   padding-left: 20px;
   background-color: inherit;
   font-family: inherit;
-  margin-top: 12px;}
+  margin-top: 12px;
+  margin-bottom: 20px; }
 
 .nav_dropdown:hover .btn_dropdown{
   background-color: inherit;
@@ -294,7 +293,7 @@ margin-left: 20px}}
 .dropdown-content{
   display: none;
   position: absolute;
-  background-color: #e3e3dd;
+  background-color: hsla(0,0%,100%,0.63);
   max-width: 150px;
   z-index: 1;}
 
@@ -380,10 +379,10 @@ margin-left: 20px}}
   .eleven.columns                 { width: 91.3333333333%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
 
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
+  .one-third.column               { width: 33.3333333333%; }
+  .two-thirds.column              { width: 66.6666666666%; }
 
-  .one-half.column                { width: 48%; }
+  .one-half.column                { width: 50%; }
 
   /* Offsets */
   .offset-by-one.column,
@@ -709,10 +708,7 @@ there.
 	background-color:#ffffff;
 }
 
-.container1 a
-{
-	margin: 10px;
-}
+
 
 /* Blog */
 .blog
@@ -750,3 +746,4 @@ there.
 .separator::after {
     margin-left: .25em;
 }
+

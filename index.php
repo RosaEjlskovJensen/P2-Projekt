@@ -3,6 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<title>Amalie Sandgaard | Photography</title>
+	
+	
 	<!-- ajax/jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Dette link er ikonet der er i ens browser tab -->
@@ -75,13 +77,10 @@
 
  <!-- Showcase -->
   <section class="section_showcase">
-    <div class="container u-full-width">
-      <img class="showcase_picture" src="Billeder/amalie-pics/Familie/2.jpg">
-    </div>
+      <img class="showcase_picture " src="Billeder/amalie-pics/Familie/2.jpg">
   </section>
-
  <!-- Seneste nyhed -->
-  <section class="section_nyhed">
+ <!-- <section class="section_nyhed">
     <div class="container u-full-width">
       <div class="row">
         <div class="u-full-width">
@@ -106,62 +105,83 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>-->
 
  <!--Galleri -->
-  <section class="section_galleri">
-  	<div class="container u-full-width">
-      <div class="row">
-        <div class="u-full-width">
-          <center><h5>Hvem fotografer jeg?</h5><p style="font-size: 15px">Klik og læs mere om de forskellige fotograferings typer jeg tilbyder.</p></center>
+ 
+  <div class="row">
+  <section class="u-full-width" >
+      <div class="u-center-block">
+          <center><h5 class="offset">Hvem fotografer jeg?</h5><p style="font-size: 15px">Klik og læs mere om de forskellige fotograferings typer jeg tilbyder.</p></center>
         </div>
       </div>
- 		<div class="row">
- 			<div class="one-third column">
+	  </div>
+	  
+	 <!-- Her starter de 6 billeders container -->
+	  
+	  <div class="">
+ 		<div class="row" >
+ 		
+ 			<div class="one-third column" >
  				<div class="container1">
  					<a href="portfolie/PortfolioInfotemplate.php?item=0"><img src="billeder/FBBBB1.jpg" class="image1 link_picture">
- 						<div class="middle1"><div class="text1">BABY</div></a>
+ 					</a>
+						</div>
  					</div>
- 				</div>
- 			</div>
- 			<div class="one-third column">
+ 				
+ 				
+ 				
+ 				
+ 			<div class="one-third column" >
  				<div class="container1">
  					<a href="portfolie/PortfolioInfotemplate.php?item=1"><img src="billeder/FBB1.jpg" class="image1 link_picture">
- 						<div class="middle1"><div class="text1">BRYLLUP</div></a>
+ 					</a>
  					</div>
  				</div>
- 			</div>
- 			<div class="one-third column">
+					
+					
+					
+ 			<div class="one-third column" >
  				<div class="container1">
  					<a href="portfolie/PortfolioInfotemplate.php?item=2"><img src="billeder/FFB1.jpg" class="image1 link_picture">
- 						<div class="middle1"><div class="text1">BØRN</div></a>
- 					</div>
- 				</div>
+ 						</a>
+				 </div>
  			</div>
- 		</div>
+		  </div>
+ 			
+					
+ 			 		
+ 		<!-- her starter 2. række af de 6 billeder -->	
+ 			 			
  		<div class="row">
- 			<div class="one-third column">
+ 			<div class="one-third column" >
  				<div class="container1">
  					<a href="portfolie/PortfolioInfotemplate.php?item=3"><img src="Billeder/amalie-pics/Familie/f.jpg" class="image1 link_picture">
- 						<div class="middle1"><div class="text1">FAMILIE</div></a>
+ 						</a>
  					</div>
  				</div>
- 			</div>
- 			<div class="one-third column">
+			
+ 			
+ 			<div class="one-third column" >
  				<div class="container1">
  					<a href="portfolie/PortfolioInfotemplate.php?item=4"><img src="Billeder/amalie-pics/boern/7.jpg" class="image1 link_picture">
- 						<div class="middle1"><div class="text1">GRAVID</div></a>
+ 						</a>
  					</div>
  				</div>
- 			</div>
- 			<div class="one-third column">
+				
+				
+				
+ 			<div class="one-third column" >
  				<div class="container1">
  					<a href="portfolie/PortfolioInfotemplate.php?item=5"><img src="Billeder/amalie-pics/Konfihjemmeside/1D8A0526.jpg" class="image1 link_picture">
- 						<div class="middle1"><div class="text1">KONFIRMATION</div></a>
+ 						</a>
  					</div>
  				</div>
- 			</div>
- 		</div>
+	</div>
+	</div>	
+	 
+ 		<br>
+
   	<div class="row">
       <div class="u-full-width">
         <center><p style="font-size: 15px"><i>Besøg mit portfolio og se billeder fra tidliger fotosessioner.</i></p></center>

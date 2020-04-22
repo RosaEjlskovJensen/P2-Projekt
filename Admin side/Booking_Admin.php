@@ -16,6 +16,7 @@ die("could not query the database" .mysqli_error());
 <link rel="stylesheet" href="../stylesheet.css">
 <!-- Linker til normalize der styre font størelser på små skærme -->
 <link rel="stylesheet" href="../normalize.css">
+<link rel="stylesheet" type="text/css" href="../../main.css">
 <!-- Dette link er ikonet der er i ens browser tab -->
 <link rel="icon" type="image/png" href="INDSET IKON HER">
 <title>Rediger Blogs</title>
@@ -57,7 +58,18 @@ echo "<h1>liste over bookede tider</h1>";
 	
  <table class="tabletotal">
 	<tr>
-		<th>Dato</th><th>Tid</th><th>Navn</th><th>Email</th><th>Tlf:</th><th>Adresse</th><th>Postnummer</th><th>Kommentar</th><th>Action</th>
+		<th><center>Dato</th>
+		<th><center>Tid</th>
+		<th><center>Navn</th>
+		<th><center>Email</th>
+		<th><center>Tlf</th>
+		<th><center>Adresse</th>
+		<th><center>Postnummer</th>
+		<th><center>Kommentar</th>
+		<th><center>Foto type</th>
+		<th><center>Personer</th>
+		<th><center>Kæledyr</th>
+		<th><center>Slet</th>
 	</tr>
 	<?php 
 	while($row = mysqli_fetch_assoc($results)){
@@ -66,11 +78,14 @@ echo "<h1>liste over bookede tider</h1>";
 		<td><?php echo $row['date']?></td>
 		<td><?php echo $row['timeslot']?></td>
 		<td><?php echo $row['name']?></td>
-		<td><a href="mailto:<?php echo $row['email']?>"><?php echo $row['email']?></a></td>
+		<td><a href="mailto:<?php echo $row['email']?>" class="button1"><?php echo $row['email']?></a></td>
 		<td><?php echo $row['phone']?></td>
 		<td><?php echo $row['adress']?></td>
 		<td><?php echo $row['postnummer']?></td>
 		<td><?php echo $row['kommentar']?></td>
+		<td><?php echo $row['fototype']?></td>
+		<td><?php echo $row['peoplecount']?></td>
+		<td><?php echo $row['pet']?></td>
 		<td class="displayflex">
 			<form action='../Booking-system-Casper/delete_booking.php' onclick="return confirm('Er du sikker på at slette denne tid? når den er slettet kan den ikke genfindes')" method='post' class="displayflex" >
 			<input type='submit' value='delete' >
@@ -85,11 +100,14 @@ echo "<h1>liste over bookede tider</h1>";
 		<td><?php echo $row['date']?></td>
 		<td><?php echo $row['timeslot']?></td>
 		<td><?php echo $row['name']?></td>
-		<td><?php echo $row['email']?></td>
+		<td><a href="mailto:<?php echo $row['email']?>" class="button1"><?php echo $row['email']?></a></td>
 		<td><?php echo $row['phone']?></td>
 		<td><?php echo $row['adress']?></td>
 		<td><?php echo $row['postnummer']?></td>
 		<td><?php echo $row['kommentar']?></td>
+		<td><?php echo $row['fototype']?></td>
+		<td><?php echo $row['peoplecount']?></td>
+		<td><?php echo $row['pet']?></td>
 		<td class="displayflex">
 			<form action='../Booking-system-Casper/delete_booking.php' onclick="return confirm('Er du sikker på at slette denne tid? når den er slettet kan den ikke genfindes')" method='post' class="displayflex" >
 			<input type='submit' value='delete' >

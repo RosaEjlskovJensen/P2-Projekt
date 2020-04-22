@@ -42,7 +42,7 @@ die("could not query the database" .mysqli_error());
 	</style>
 <table class="tabletotal">
 	<tr>
-		<th>Navn</th><th>Email</th><th>Oprettelses dato</th><th>Slet</th><th>Gå til arkiv</th>
+		<th>Navn</th><th>Email</th><th>Oprettelses dato</th><th>Slet</th><th>Gå til arkiv</th><th>Se bestilling</th>
 	</tr>
 	<?php 
 	while($row = mysqli_fetch_assoc($results)){ ?>
@@ -62,6 +62,7 @@ die("could not query the database" .mysqli_error());
 					<input type='hidden' name='email' value='<?php echo $row['email'] ?>'>
 				
 					</form></td>
+					<td><a href="Se-Kunde-Bestilling.php?kunde=<?php echo $email ?>">Kunde Bestilling</a></td>
 					
 	</tr>
 	

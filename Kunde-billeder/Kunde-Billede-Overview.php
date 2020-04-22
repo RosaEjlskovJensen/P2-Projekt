@@ -1,6 +1,8 @@
 <!DOCTYPE html>  
 <?php 
+session_start();
 $kunde = $_POST["email"]; 
+$_SESSION['kunde'] = $kunde;
 error_reporting(0);
 
 //database connection
@@ -186,75 +188,105 @@ die("cannot connect to database".mysqli_connect_error());
 <!---Her fetches billederne fra databasen. Billederne er upleaded som binære koder og skal derfor krypteres først--->
 
     <div class="billeder">
-  
-   
+  <div class='container'>
+   <div class='row'>
+   <form name="contactform" method="post" action="Kunde-Billede-Overview-Mail.php" class="formkontakt twelve columns">
     
      <?php
 
   $table = $kunde;
   $query = "SELECT * FROM `$table` ORDER BY id ASC";
   $results = mysqli_query($connection, $query);
-	 echo "<div class='container'";
-	 echo "<div class='row'";
-  echo  '<form class="twelve columns">';
-	 $box=1;
-	 $box1=1;
+
+	 $option1=0;
+	 $option3=0;
+	 $option4=0;
+	 $option5=0;
+	 $option6=0;
 	 while($row = mysqli_fetch_array($results))
   { 
-	 $box++; 
-	 $box1++; 
-	 $box2++; 
-	 $box3++; 
-	 $box4++; 
-	 $box5++; 
+	 $option1++; 
+	 $option3++; 
+	 $option4++; 
+	 $option5++; 
+	 $option6++; 
    $output.= '<div class=" borderbox four columns checkbox-container">'. $row["filename"].'<center><img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="100" width="100" /> 
 	   <br>
 	   <table class="tg">
+	   
   <tr>
     <td>Farve</td>
-   	<input type="checkbox" class="auto-save"'.  'id="box'. $box. '" name="farvevalg" value="Farve">Farve
-	  <input type="checkbox" class="auto-save"'.  'id="box1'. $box1. '" name="farvevalg" value="sort/hvid">Sorthvid</td>
+   	<input type="radio" class="auto-save"'.  'name="option1'.$option1.'"  value="Farve">Farve
+	  <input type="radio" class="auto-save"'.  'name="option1'.$option1.'"  value="sort/hvid">Sorthvid</td>
   </tr>
+  
   <tr>
     <td>Størelse</td>
-    <td><select '.  'id="box2'. $box2. '" class="auto-save">
-  <option value="4x9">4x9</option>
-  <option value="7x13">7x13</option>
-  <option value="1x1">1x1</option>
-  <option value="10x9">10x9</option>
-</select></td>
+    <td>
+  <select '.  'name="option3'.$option3.'" class="auto-save">
+		  <option disabled selected value>vælg</option>
+		  <option value="4x9">4x9</option>
+		  <option value="7x13">7x13</option>
+		  <option value="1x1">1x1</option>
+		  <option value="10x9">10x9</option>
+  </select>
+  </td>
   </tr>
+  
   <tr>
     <td>Antal</td>
-    <td><select '.  'id="box3'. $box3. '" class="auto-save" >
-  <option value="Antal">Antal</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-</select></td>
+    <td>
+	<select '.  'name="option4'.$option4.'" class="auto-save">
+		  <option disabled selected value>vælg</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+  </select>
+	</td>
   </tr>
+  
   <tr>
     <td>Print type</td>
-    <td><select '.  'id="box4'. $box4. '" class="auto-save">
-  <option value="Type">Type</option>
-  <option value="Blank">Blank</option>
-  <option value="Mat">Mat</option>
-  <option value="Skumplade">Skumplade</option>
-</select></td>
+    <td>
+	<select '.  'name="option5'.$option5.'" class="auto-save">
+	   <option disabled selected value>vælg</option>
+	   <option value="Blank">Blank</option>
+	   <option value="Mat">Mat</option>
+	   <option value="Skumplade">Skumplade</option>
+   </select>
+</td>
   </tr>
+  
   <tr>
     <td>Kommentar</td>
-    <td><input type"text" '.  'id="box5'. $box5. '" size="12" class="auto-save"></td>
+    <td><input type"text" '.  'name="option6'.$option6.'" size="12" class="auto-save"></td>
   </tr>
+  
 </table>
 	  </center>
 	  
 	  </div>';
-	  
+	  //først skal alle selektioner laves til variable//
+	  /*$selektion1 = $_POST['option1'. $option1];
+	
+	  $selektion2 = $_POST['option3'. $option3];
+	  $selektion2 = $_POST['option4'. $option4];
+	  $selektion2 = $_POST['option5'. $option5];
+	  $selektion2 = $_POST['option6'. $option6];
+	  //For hver bos skal følgende ske//
+	  //først skrives navnet på filen//
+	  $body_message .= 'Fil: '.$row["filename"]."<br>";
+	  // Så skrives de forskellige indstillinger //
+	  $body_message .= 'Farve eller Sort/hvid: '.$selektion1."<br>";
+	  $body_message .= 'Størrelse: '.$selektion3."<br>";
+	  $body_message .= 'Antal: '.$selektion4."<br>";
+	  $body_message .= 'Print Type: '.$selektion5."<br>";
+	  $body_message .= 'Kommentar: '.$selektion6."<br>";
+	  echo $body_message; */
   }
   echo $output;
-echo "</form>";
+ 
 	
  
     ?>
@@ -296,65 +328,10 @@ span.onclick = function() {
 }
 </script>
     <!-------------------------->
-<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
-<script type="text/javascript" src="savy.js"></script>
-<script type="text/javascript">
 
-//$('.auto-save').savy('load') --> can be used without callback
-$('.auto-save').savy('load',function(){
-  console.log("All data from savy are loaded");
-});
-
-function dstry(){
-  //$('.auto-save').savy('destroy') --> can be used without callback
-  $('.auto-save').savy('destroy',function(){
-    console.log("All data from savy are Destroyed");
-    window.location.reload();
-  });
-}
-</script>
-  <?php
-if(isset($_POST['email'])) {
- 
-    // Din email og beskeden
-    $email_to = "casper.roskaer@gmail.com";
-    $email_subject = "Sendt til print";
-  
-
- 
-    $kunde = $_POST['email']; // required
-    $email_from = $kunde; // required
-
-     
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
- 
-     
- 
-    $email_message .= "Kunde arkiv: ".$kunde."\n";
-    $email_message .= "Er blevet færdig med at vælge billeder";
-    
- 
-// Email header
-$headers = 'From: '.$email_from."\r\n".
-'Reply-To: '.$email_from."\r\n" .
-'X-Mailer: PHP/' . phpversion();
-@mail($email_to, $email_subject, $email_message, $headers);  
-?>
- 
-<!-- Responsen når du har trykket submit skrives herunder -->
- 
-Tak for din indsendelse, vi går over dine valg og du høre fra os, når det er sendt til print.
-<?php
- 
-}
-?>
-<form name="contactform" method="post" action="Kunde-Billede-Overview.php" class="formkontakt">
- 	<input type="hidden" name="email" value="<?php echo $kunde; ?>">
-<input class='btn btn2' type="submit" value="Send til print">
+<input class='btn btn2' type="submit"  name="Send" value="Send til print">
 	</form>
+	
 <a href="../index.php">Tilbage</a>
 
  <!-- Top part of the footer-->

@@ -26,6 +26,9 @@ if(isset($_POST['submit'])){
 	$adress = $_POST['adress'];
 	$postnummer = $_POST['postnummer'];
 	$kommentar = $_POST['kommentar'];
+	$fototype = $_POST['fototype'];
+	$peoplecount = $_POST['peoplecount'];
+	$pet = $_POST['pet'];
 	
     $timeslot = $_POST['timeslot'];
 		$stmt = $mysqli->prepare("select * from bookings where date = ? AND timeslot = ?");
@@ -36,8 +39,8 @@ if(isset($_POST['submit'])){
               $msg = "<div class='alert alert-danger'>Allready booked</div>";  
            
         }else{
-			 $stmt = $mysqli->prepare("INSERT INTO bookings (name, phone, timeslot, email, adress, postnummer, date, kommentar) VALUES (?,?,?,?,?,?,?,?)");
-    $stmt->bind_param('ssssssss', $name, $phone, $timeslot, $email, $adress, $postnummer, $date, $kommentar);
+			 $stmt = $mysqli->prepare("INSERT INTO bookings (name, phone, timeslot, email, adress, postnummer, date, kommentar, fototype, peoplecount, pet) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
+    $stmt->bind_param('sssssssssss', $name, $phone, $timeslot, $email, $adress, $postnummer, $date, $kommentar, $fototype, $peoplecount, $pet);
     $stmt->execute();
     $msg = "<div class='alert alert-success'>Booking Successfull</div>";
 	$bookings[]=$timeslot;
@@ -211,42 +214,71 @@ function timeslots($duration, $cleanup, $start, $end){
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Booking: <span id="slot"></span></h4>
-        <h4 class="modal-title">By: <?php echo $city ?></h4>
-        <h4 class="modal-title">Pris <?php echo $price.",-" ?></h4><hr>
+        <h4 class="modal-title u-pull-left">By: <?php echo $city ?></h4>
+        <h4 class="modal-title u-pull-right">Pris: <?php echo $price.",-" ?></h4>
       </div>
       <div class="modal-body">
         <div class="row">
         	<div class="col-md-12">
         		<form action="" method="post">
-        			<div class="from-group">
-        				<lable for="">Timeslot</lable>
-        				<input required type="text" Readonly name="timeslot" id="timeslot" class="form-control">
-        			</div>
+        		<strong>Kunde Oplysninger:</strong>
         			<div class="from-group">
         				<lable for="">Name</lable>
-        				<input required type="text"  name="name" class="form-control">
+        				<input required type="text"  name="name" class="form-control" required>
         			</div>
         			<div class="from-group">
         				<lable for="">Email</lable>
-        				<input required type="email"  name="email" class="form-control">
+        				<input required type="email"  name="email" class="form-control" required>
         			</div>
         			<div class="from-group">
         				<lable for="">Telefon</lable>
-        				<input required type="phone"  name="phone" class="form-control">
+        				<input required type="phone"  name="phone" class="form-control" required>
         			</div>
         			<div class="from-group">
         				<lable for="">Adresse</lable>
-        				<input required type="text"  name="adress" class="form-control">
+        				<input required type="text"  name="adress" class="form-control" required>
         			</div>
         			<div class="from-group">
         				<lable for="">postnummer</lable>
-        				<input required type="number"  name="postnummer" class="form-control">
+        				<input required type="number"  name="postnummer" class="form-control" required>
+        			</div>
+						<hr>
+       			<strong>Booking Oplysninger</strong>
+       			<div class="from-group">
+        				<lable for="">Tid på dagen:</lable>
+        				<input required type="text" Readonly name="timeslot" id="timeslot" class="form-control" required>
         			</div>
         			<div class="from-group">
-        				<lable for="">Kommentar (På lokation eller i studiet?, hvis lokation hvilken adresse?)</lable>
+        			<lable for="">Fotograferings Type:</lable>
+        			 <select name="fototype" id="fototype" class="form-control" required>
+						<option value="blank">Vælg</option>
+						<option value="Familie">Familie</option>
+						<option value="Babyer">Babyer</option>
+						<option value="Børn">Børn</option>
+						<option value="CV">CV</option>
+						<option value="Højtid">Højtid</option>
+					  </select>
+        			</div>
+        			<div class="from-group">
+        			<lable for="">Antal personer til fotografering:</lable>
+        				<select class="form-control" name="peoplecount" id="peoplecount">
+						<?php for ($i=1; $i<=20; $i++){ ?>
+							<option value="<?php echo $i;?>"><?php echo $i;?></option>
+						<?php } ?>
+						</select>
+        			</div>
+        				<div class="from-group">
+       		      <lable for="">Har de et kæledyr med til photoshoot?</lable>
+        		      <select name="pet" id="pet" class="form-control" required>
+						<option value="Nej">Nej</option>
+						<option value="Ja">Ja</option>
+					  </select>
+        			</div>
+        			<div class="from-group">
+        				<lable for="">Kommentar På lokation eller i studiet? (hvis lokation hvilken adresse?)</lable>
         				<input required type="text"  name="kommentar" class="form-control">
         			</div>
+        		
         			<div class="form-group pull-right">
         			<br>
         			 <?php
@@ -291,7 +323,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 ?>
         			
         				<input type="checkbox" required><a href="../Kontakt/Terms_conditions.php"><u>Vilkår og Betingelser</u></a>
-        				<button class="btn btn-primary" type="submit" name="submit">Submit</button>
+        				<button class="btn btn-primary" type="submit" name="submit">Send</button>
         			</div>
         		</form>
         	</div>
