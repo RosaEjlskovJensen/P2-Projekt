@@ -96,10 +96,6 @@ body
          		<div>
             		<center><h5>Blog</h5></center>
 				</div>
-				<div>
-					<p style="font-size: 17px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptatibus et ipsam, harum enim nulla voluptate, maiores dolore neque quos corporis eveniet maxime iusto commodi dicta qui modi consectetur eaque.
-					</p>
-				</div>
       		</div>
 		</div>
 	</section>
@@ -109,25 +105,27 @@ body
 		<div class=' offset-by-three columns six columns'>
 			<div class="box u-full-width">
 				<br>
+				
 				<div class='row'>
 					<div class='u-full-width'>
-					<center><img class="img_viewblog" src="../Billeder/konfirmation.jpg"></center> <!-- Indhent information fra række; "image" -->
+					<center><img class="img_viewblog" src="https://cdn.sparesinmotion.com/sites/default/files/test-product-test.png"></center> <!-- Indhent information fra række; "image" -->
 					</div>
 				</div>
+				
 				<div class='row'>
 					<div class='u-full-width'>
-					<center><h5>Konfirmationstid</h5></center> <!-- indhent information fra række; "title" -->
+					<center><h5>Introduktion til blogs</h5></center> <!-- indhent information fra række; "title" -->
 					</div>
 				</div>
+				
 				<div class='row'>
 				<div class='u-full-width'>
-				<center><p style="font-size: 17px">Nu er det snart tid til konfirmationer...</p></center> <!-- Indhent information fra række; "description" -->
+				<center><p style="font-size: 17px">Text omkring at her kan man finde information om mange spændene ting, og der løbende kommer nye intrasante posts</p></center> <!-- Indhent information fra række; "description" -->
 				</div>
 				</div>
+				
 				<div class='row'>
-				<div class='u-full-width'>
-				<center><a class='btn btn2' href="blog_template.php"><b>Læs mere</b></a></center><br>	<!-- Går til blog_template.php hvor man kan se det fulde blogpost -->
-				</div>
+				<p><center>Her kan der være en slut bemærkning</center></p>
 				</div>
 			</div>
 		</div>
@@ -136,12 +134,13 @@ body
 			<br>
 			<div class="separator">kategorier</div><br>
 			</center>
-			<a href="Blog-kategorier/Kategoritemplate.php?item=0" class="u-pull-left"><p>FOTOGRAFERING</p></a>
-			<a href="Blog-kategorier/Kategoritemplate.php?item=1" class="u-pull-left"><p>BILLEDE OPHÆNG</p></a>
-			<a href="Blog-kategorier/Kategoritemplate.php?item=2" class="u-pull-left"><p>KUNDERS BLOGINDLÆG</p></a>
-			<a href="Blog-kategorier/Kategoritemplate.php?item=3" class="u-pull-left"><p>PRODUKTER</p></a>
-			<a href="Blog-kategorier/Kategoritemplate.php?item=4" class="u-pull-left"><p>SÅDAN TAGER DU BEDRE BILLEDER</p></a>
-			<a href="Blog-kategorier/Kategoritemplate.php?item=5" class="u-pull-left"><p>TIPS OG TRICKS</p></a>
+			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=0" class="u-full-width"><p>FOTOGRAFERING</p></a></div>
+			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=1" class="u-full-width"><p>BILLEDE OPHÆNG</p></a></div>
+			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=2" class="u-full-width"><p>KUNDERS BLOGINDLÆG</p></a></div>
+			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=3" class="u-full-width"><p>PRODUKTER</p></a></div>
+			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=4" class="u-full-width"><p>SÅDAN TAGER DU BEDRE BILLEDER</p></a></div>
+			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=5" class="u-full-width"><p>TIPS OG TRICKS</p></a></div>
+			
 
 			
 		</div>

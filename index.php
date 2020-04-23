@@ -110,13 +110,21 @@
  <!--Galleri -->
  
   <div class="row">
-  <section class="u-full-width" >
-      <div class="u-center-block">
-          <center><h5 class="offset">Hvem fotografer jeg?</h5><p style="font-size: 15px">Klik og læs mere om de forskellige fotograferings typer jeg tilbyder.</p></center>
+      <div class="six columns offset-by-three ramme">
+          <center>
+          <h5 class="">Invester i dine minder</h5>
+          <p align="justify" class="padding5">
+		“Taknemmeligheden er hjertets hukommelse”, sagde H.C Andersen. 
+		Tiden går så mega stærkt, og puf, så er den borte. Lad os hjælpe hinanden med at huske, hvor små ungerne engang var, hvad deres frække smil eller mærke det nærvær, som er i lige netop jeres familie. Lad os mindes jeres bryllupsdag – alle de fantastiske gæster, gaverne, maden og små epokér, som lige netop kendetegnede jeres store dag. 
+		Mit fornemmeste opgave, er at fastfryse nogle af jeres minder, som i kan se tilbage på om 10, 20 eller 30 år og så i får præcis samme følelse, som da øjeblikket var.
+		</p>
+       </center>
         </div>
       </div>
-	  </div>
 	  
+	  <br>
+<br>
+
 	 <!-- Her starter de 6 billeders container -->
 	  
 	  <div class="">

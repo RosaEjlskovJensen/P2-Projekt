@@ -103,10 +103,10 @@ die("cannot connect to database".mysqli_connect_error());
 }
          
 .billeder{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        margin-left: 50px;
-        margin-right: 50px;
+           margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 </style>
 
@@ -180,7 +180,7 @@ die("cannot connect to database".mysqli_connect_error());
     
 <!---Her fetches billederne fra databasen. Billederne er upleaded som binære koder og skal derfor krypteres først--->
 <center>
-    <div class="billeder">
+    <div class="billeder ramme">
 
  <?php
 		error_reporting(0);
@@ -239,31 +239,35 @@ span.onclick = function() {
     <!-- Booking -->
  <section class="section_booking">
    <div class="u-full-width">
-     <div class="container">
+     
       <center>
         <div class="row">
-          <div class="u-full-width">
-           <h5>Mangler du en fotograf?</h5>
-           <p style="font-size: 17px">Investigatam diutissime quaestionem, quantum nostrae mentis igniculum lux diuina dignata est, formatam rationibus litterisque mandatam offerendam uobis communicandamque curaui tam uestri cupidus iudicii quam nostri studiosus inuenti. Qua in re quid mihi sit animi quotiens stilo cogitata commendo, tum ex ipsa materiae difficultate tum ex eo quod raris id est uobis tantum conloquor, intellegi potest. Neque enim famae iactatione et inanibus uulgi clamoribus excitamur; sed si quis est fructus exterior, hic non potest aliam nisi materiae similem sperare sententiam.
-           </p>
-           <div class="row">
+      <div class="six columns offset-by-three ramme padding5side">
+          <center>
+          <h5 class="">Invester i dine minder</h5>
+          <p align="justify" class="">
+		“Taknemmeligheden er hjertets hukommelse”, sagde H.C Andersen. 
+		Tiden går så mega stærkt, og puf, så er den borte. Lad os hjælpe hinanden med at huske, hvor små ungerne engang var, hvad deres frække smil eller mærke det nærvær, som er i lige netop jeres familie. Lad os mindes jeres bryllupsdag – alle de fantastiske gæster, gaverne, maden og små epokér, som lige netop kendetegnede jeres store dag. 
+		Mit fornemmeste opgave, er at fastfryse nogle af jeres minder, som i kan se tilbage på om 10, 20 eller 30 år og så i får præcis samme følelse, som da øjeblikket var.
+		</p>
+      <div class="row">
             <div class="two columns offset-by-one-third">
-              <form action="../Booking-system-Casper/index.php"><button type="submit" class="btn btn2">Se Datoer</button></form> 
+              <form action="../Booking-system-Casper/index.php"><button type="submit" class="btn btn2 u-full-width">Se Datoer</button></form> 
             </div>
             <div class="two columns">
-              <form action="../Priser/priser.php"><button type="submit" class="btn btn2">Se Priser</button></form> 
+              <form action="../Priser/priser.php"><button type="submit" class="btn btn2 u-full-width">Se Priser</button></form> 
             </div>
           </center>   
-        </div>
+
         <div class="row">
           <div class="u-full-width">
             <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="../Kontakt/Kontakt.php">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="../Kontakt/Kontakt.php">mail</a>.</i></p></center>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
+       </center>
+        </div>
+      </div>
 </section>
 
  <!-- Top part of the footer-->

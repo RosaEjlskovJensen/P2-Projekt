@@ -746,4 +746,15 @@ there.
 .separator::after {
     margin-left: .25em;
 }
-
+.ramme{
+	border: 2px solid #8b752e;
+}
+.padding5
+{
+	padding: 5%;
+}
+.padding5side
+{
+	padding-left: 5%;
+	padding-right: 5%;
+}

@@ -134,43 +134,39 @@ body
          		<div>
             		<center><h5><?php echo $kategori2[$item] ?></h5></center>
 				</div>
-				<div>
-					<p style="font-size: 17px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates voluptatibus et ipsam, harum enim nulla voluptate, maiores dolore neque quos corporis eveniet maxime iusto commodi dicta qui modi consectetur eaque.
-					</p>
-				</div>
       		</div>
 		</div>
 	</section>
 		
 <!-- View of blogposts -->
     
-  <?php 
-while($row = mysqli_fetch_assoc($results)){
-
-	?>  
+   
     
    <section class="priser"> 
 <div class=' offset-by-three columns six columns'>
-    <div class="box u-full-width">
-        <br>
-            <div class='row'>
-				<div class='u-full-width'>
-				            <center>
-                    <div class="bigboxfarve">
-                        <div class="bigbox">
-	        <div class="storbox"> 
-                <div class="box1">                                                       
-			     <?php echo $row['Text']?>
-                  </div></div></div></div>
-                            </center>
-				</div>
-			</div>
-		</div>
-</div>
-       </section>
- <?php } ?>
     
-      
+          <?php 
+while($row = mysqli_fetch_assoc($results)){
+
+	?>  
+          
+            <div class='row box'>
+				<div class='u-full-width'>
+	 <center>
+                
+               <div class="box1">                                                       
+			     <?php echo $row['Text']?>
+                  </div></div></div>
+     </center>
+				
+			
+	
+
+     
+ <?php } ?>
+ 	</div>
+  	</div>
+       </section> 
     
     
     
