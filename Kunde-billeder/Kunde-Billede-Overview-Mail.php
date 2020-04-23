@@ -47,14 +47,13 @@ $table = $kunde;
 	  $body_message .= "<br>";
 	 
   }
-header('Location: Kunde-Billede-Overview-Mail-Save.php');
-exit;
-?>
-<?php 
 $_SESSION['message'] = $body_message;
 $_SESSION['kunde'] = $kunde;
 header('Location: Kunde-Billede-Overview-Mail-Save.php');
 exit;
+?>
+<?php 
+
 ?>
 <html>
 <head>

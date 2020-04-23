@@ -2,7 +2,7 @@
 <?php
 $kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
 $item = $_GET['item'];
-$kategorioverskrift = array("Baby billeder", "Bryllups billeder", "Børne billeder", "Familie billeder", "Graviditets billeder", "Konfirmations billeder");
+$kategorioverskrift = array("Baby billeder", "Bryllup", "Børne billeder", "Familie billeder", "Graviditets billeder", "Konfirmations billeder");
 
 //database connection
 require_once '../Connection.php';
@@ -31,6 +31,9 @@ die("cannot connect to database".mysqli_connect_error());
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-bottom: 1%;
 }
 
 .myImg:hover {opacity: 0.7;}
@@ -55,7 +58,8 @@ die("cannot connect to database".mysqli_connect_error());
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 1200px;
+	margin-top: 5%;
 }
 
 
@@ -82,7 +86,7 @@ die("cannot connect to database".mysqli_connect_error());
   position: absolute;
   right: 35px;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 150px;
   font-weight: bold;
   transition: 0.3s;
   z-index: +1;
@@ -173,14 +177,15 @@ die("cannot connect to database".mysqli_connect_error());
 <br>
 <br>
 <br>
-<center>
-         <h5 align="center"><?php echo($kategorioverskrift[$item])?></h5>
+<center><br>
+
+         <h3 align="center"><?php echo($kategorioverskrift[$item])?></h3>
 </center>
     
     
 <!---Her fetches billederne fra databasen. Billederne er upleaded som binære koder og skal derfor krypteres først--->
 <center>
-    <div class="billeder ramme">
+    <div class="billeder">
 
  <?php
 		error_reporting(0);
@@ -191,7 +196,7 @@ die("cannot connect to database".mysqli_connect_error());
   
   while($row = mysqli_fetch_array($result))
   {
-   $output.= '<img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="200" />'; 
+   $output.= '<img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="250" width="375" />'; 
   }
   echo $output;
  }

@@ -39,7 +39,7 @@ if(!$results){
         margin-bottom: 20px;
 }
     .para {
-        padding-top:20px;
+        padding:20px;
 }
 </style>
 
@@ -123,16 +123,19 @@ while($row = mysqli_fetch_assoc($results)){
 	<section class='priser'>
 		<div class=' offset-by-three columns six columns' class="wrap1">
 			<div class="box u-full-width">
+		
 				<br>
 				<div class='u-pull-left' class="billede1">
 					<div class='u-full-width'>
 					<center><img src="<?php echo $row['link'] ?>" width="135" height="135" /></center> <!-- Indhent information fra række; "image" -->
 					</div>
 				</div>
+			
 				<div class='row'>
 					<div class='u-full-width'>
-					<center> <?php echo $row['name']?> </center><!-- indhent information fra række; "title" -->
-                    <center><p class="para" style="font-size: 17px"><?php echo $row['description']?></p></center>
+					<center> <?php echo $row['name']?><br>
+                     <hr> </center><!-- indhent information fra række; "title" -->
+                    <center><p class="para" style="font-size: 20px"><?php echo $row['description']?></p></center>
 					</div>
 				</div>
 

@@ -12,7 +12,8 @@ $date = date("d-m-Y");
 <?php 
 $query = "CREATE TABLE `$email` (
   `id` int(250) NOT NULL  AUTO_INCREMENT PRIMARY KEY,
-  `name` longblob NOT NULL
+  `name` longblob NOT NULL,
+  `filename` varchar(5000) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 INSERT INTO newsletter (email) VALUES ('$email');

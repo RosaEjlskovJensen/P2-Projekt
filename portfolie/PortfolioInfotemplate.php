@@ -31,6 +31,8 @@ while($row = mysqli_fetch_assoc($results)){
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+	  margin-left: 1%;
+	  margin-right: 1%;
   }
 
   .myImg:hover {opacity: 0.7;}

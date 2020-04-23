@@ -21,7 +21,7 @@ die("cannot connect to database".mysqli_connect_error());
   <!-- Dette link er ikonet der er i ens browser tab -->
   <link rel="icon" type="image/png" href="billeder/asp.png">
 <!-- Linker til Skeleton -->
-<link rel="stylesheet" href="../stylesheet.css">
+<!--<link rel="stylesheet" href="../stylesheet.css">
  <!-- Linker til normalize der styre font størelser på små skærme -->
 <link rel="stylesheet" href="../normalize.css">
        <!-- Stylesheets -->
@@ -58,7 +58,8 @@ die("cannot connect to database".mysqli_connect_error());
   margin: auto;
   display: block;
   width: 80%;
-  max-width: 700px;
+  max-width: 1200px;
+	margin-top: 10%;
 }
 
 
@@ -85,7 +86,7 @@ die("cannot connect to database".mysqli_connect_error());
   position: absolute;
   right: 35px;
   color: #f1f1f1;
-  font-size: 40px;
+  font-size: 140px;
   font-weight: bold;
   transition: 0.3s;
   z-index: +1;
@@ -188,9 +189,8 @@ die("cannot connect to database".mysqli_connect_error());
 <!---Her fetches billederne fra databasen. Billederne er upleaded som binære koder og skal derfor krypteres først--->
 
     <div class="billeder">
-  <div class='container'>
-   <div class='row'>
-   <form name="contactform" method="post" action="Kunde-Billede-Overview-Mail.php" class="formkontakt twelve columns">
+   
+   <form name="contactform" method="post" action="Kunde-Billede-Overview-Mail.php" class="formkontakt u-full-width">
     
      <?php
 
@@ -199,94 +199,91 @@ die("cannot connect to database".mysqli_connect_error());
   $results = mysqli_query($connection, $query);
 
 	 $option1=0;
+	 $option2=0;
 	 $option3=0;
 	 $option4=0;
 	 $option5=0;
 	 $option6=0;
+	echo "<div class='row'>";
 	 while($row = mysqli_fetch_array($results))
   { 
 	 $option1++; 
+	 $option2++; 
 	 $option3++; 
 	 $option4++; 
 	 $option5++; 
 	 $option6++; 
-   $output.= '<div class=" borderbox four columns checkbox-container">'. $row["filename"].'<center><img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="100" width="100" /> 
+   $output.= '<div class=" borderbox one-fourth column height615 checkbox-container">'. $row["filename"].'<center><img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="300" /> 
 	   <br>
 	   <table class="tg">
-	   
-  <tr>
-    <td>Farve</td>
-   	<input type="radio" class="auto-save"'.  'name="option1'.$option1.'"  value="Farve">Farve
-	  <input type="radio" class="auto-save"'.  'name="option1'.$option1.'"  value="sort/hvid">Sorthvid</td>
-  </tr>
-  
-  <tr>
-    <td>Størelse</td>
-    <td>
-  <select '.  'name="option3'.$option3.'" class="auto-save">
+	
+	  
+	  <div>
+    <div>
+    Digital fil
+	 <input type="radio" name="'. 'order-type'. $option2.'" id="digital">
+	 <div class="reveal-if-active">
+        <label for="which-dog">Modtaget!</label>
+      </div>
+    </div>
+      
+    
+    PRINT
+	 <input type="radio" name="'. 'order-type'. $option2.'" id="print">
+	 <div class="reveal-if-active">
+	 
+        <label for="Farve">Farve</lable>
+<input type="radio" class=""'.  'name="option1'.$option1.'"  value="Farve">Farve
+	  <input type="radio" class=""'.  'name="option1'.$option1.'"  value="sort/hvid">Sorthvid
+		
+		<label for="stoerelse">Størelse</lable>
+		<select '.  'name="option3'.$option3.'" class="">
 		  <option disabled selected value>vælg</option>
 		  <option value="4x9">4x9</option>
 		  <option value="7x13">7x13</option>
 		  <option value="1x1">1x1</option>
 		  <option value="10x9">10x9</option>
   </select>
-  </td>
-  </tr>
   
-  <tr>
-    <td>Antal</td>
-    <td>
-	<select '.  'name="option4'.$option4.'" class="auto-save">
+  		<label for="Antal">Antal</lable>
+  <select '.  'name="option4'.$option4.'" class="">
 		  <option disabled selected value>vælg</option>
 		  <option value="1">1</option>
 		  <option value="2">2</option>
 		  <option value="3">3</option>
 		  <option value="4">4</option>
   </select>
-	</td>
-  </tr>
-  
-  <tr>
-    <td>Print type</td>
-    <td>
-	<select '.  'name="option5'.$option5.'" class="auto-save">
+		
+		<label for="Type">Tryk type</lable>
+		<select '.  'name="option5'.$option5.'" class="">
 	   <option disabled selected value>vælg</option>
 	   <option value="Blank">Blank</option>
 	   <option value="Mat">Mat</option>
 	   <option value="Skumplade">Skumplade</option>
    </select>
-</td>
-  </tr>
-  
-  <tr>
-    <td>Kommentar</td>
-    <td><input type"text" '.  'name="option6'.$option6.'" size="12" class="auto-save"></td>
-  </tr>
+   
+   		<label for="Kommentar">Kommentar</lable>
+		<input type"text" '.  'name="option6'.$option6.'" size="12" class="">
+		
+		
+      </div>
+    </div>
+ 
+
+
+	  
+</div>
+
+
+ 
   
 </table>
 	  </center>
 	  
 	  </div>';
-	  //først skal alle selektioner laves til variable//
-	  /*$selektion1 = $_POST['option1'. $option1];
-	
-	  $selektion2 = $_POST['option3'. $option3];
-	  $selektion2 = $_POST['option4'. $option4];
-	  $selektion2 = $_POST['option5'. $option5];
-	  $selektion2 = $_POST['option6'. $option6];
-	  //For hver bos skal følgende ske//
-	  //først skrives navnet på filen//
-	  $body_message .= 'Fil: '.$row["filename"]."<br>";
-	  // Så skrives de forskellige indstillinger //
-	  $body_message .= 'Farve eller Sort/hvid: '.$selektion1."<br>";
-	  $body_message .= 'Størrelse: '.$selektion3."<br>";
-	  $body_message .= 'Antal: '.$selektion4."<br>";
-	  $body_message .= 'Print Type: '.$selektion5."<br>";
-	  $body_message .= 'Kommentar: '.$selektion6."<br>";
-	  echo $body_message; */
   }
   echo $output;
- 
+ echo "</div>";
 	
  
     ?>
@@ -327,12 +324,41 @@ span.onclick = function() {
    modal.style.display = "none";
 }
 </script>
+   <script>var FormStuff = {
+  
+  init: function() {
+    this.applyConditionalRequired();
+    this.bindUIActions();
+  },
+  
+  bindUIActions: function() {
+    $("input[type='radio'], input[type='checkbox']").on("change", this.applyConditionalRequired);
+  },
+  
+  applyConditionalRequired: function() {
+    
+    $(".require-if-active").each(function() {
+      var el = $(this);
+      if ($(el.data("require-pair")).is(":checked")) {
+        el.prop("required", true);
+      } else {
+        el.prop("required", false);
+      }
+    });
+    
+  }
+  
+};
+
+FormStuff.init();</script>
     <!-------------------------->
 
-<input class='btn btn2' type="submit"  name="Send" value="Send til print">
+<div class="row">
+<div class="offset-by-one columns ten columns">
+<input class='btn btn2 five columns' type="submit"  name="Send" value="Send til print">
 	</form>
 	
-<a href="../index.php">Tilbage</a>
+<a href="../index.php" class="btn btn2 five columns">Tilbage</a></div></div>
 
  <!-- Top part of the footer-->
   <section class="section_topfooter">
