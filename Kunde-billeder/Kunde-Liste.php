@@ -42,7 +42,7 @@ die("could not query the database" .mysqli_error());
 	</style>
 <table class="tabletotal">
 	<tr>
-		<th>Navn</th><th>Email</th><th>Oprettelses dato</th><th>Slet</th><th>Gå til arkiv</th><th>Se bestilling</th>
+		<th>Navn</th><th>Email</th><th>Kode</th><th>Oprettelses dato</th><th>Slet</th><th>Gå til arkiv</th><th>Se bestilling</th>
 	</tr>
 	<?php 
 	while($row = mysqli_fetch_assoc($results)){ ?>
@@ -50,7 +50,8 @@ die("could not query the database" .mysqli_error());
 	<tr class="tablegreen">
 	<?php $email = $row['email']; ?>
 		<td><?php echo $row['name']?></td>
-		<td><?php echo $row['email']?></a></td>
+		<td><?php echo $row['email']?></td>
+		<td><?php echo $row['pass']?></td>
 		<td><?php echo $row['date']?></td>
 		<td><?php echo "<form action='delete_archive.php' method='post'>";
 					echo "<input type='submit' value='Slet arkiv'>";

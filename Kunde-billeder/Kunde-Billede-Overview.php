@@ -1,7 +1,7 @@
 <!DOCTYPE html>  
 <?php 
 session_start();
-$kunde = $_POST["email"]; 
+$kunde = $_POST["pass"]; 
 $_SESSION['kunde'] = $kunde;
 error_reporting(0);
 
@@ -178,7 +178,7 @@ die("cannot connect to database".mysqli_connect_error());
 <br>
 <br>
 <center>
-         <h1> billeder for <?php echo $kunde ?> </h1>
+         <h1> Billede Bestilling </h1>
          <div class="twelve columns borderbox"><br>
          	<center>
          	<p class="six columns offset-by-three">Her har du mulighed for at udvælge de billeder du ønsker printet. Samtidig har du mulig for at vælge hvordan dine billeder skal formateres samt typen. Du skal vælge 10 billeder der skal sendes til print. Vælger du mere end de 10 prints vil der bliver tilføjet en mer pris på 98,95,- per billede</p></center>

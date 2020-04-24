@@ -28,11 +28,11 @@
         <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
-          <li><a href="portfolie/Portfolietemplate.php?item=1" class="button">Børn</a></li>
-          <li><a href="portfolie/Portfolietemplate.php?item=2" class="button">Familie</a></li>
-          <li><a href="portfolie/Portfolietemplate.php?item=3" class="button">Konfirmation</a></li>
-          <li><a href="portfolie/Portfolietemplate.php?item=4" class="button">Bryllup</a></li>
-          <li><a href="portfolie/Portfolietemplate.php?item=5" class="button">Gravid</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=2" class="button">Børn</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=3" class="button">Familie</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=4" class="button">Gravid</a></li>
+          <li><a href="portfolie/Portfolietemplate.php?item=5" class="button">Konfirmation</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
@@ -132,7 +132,7 @@
  		
  			<div class="one-third column" >
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=0"><img src="billeder/FBBBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=0"><img src="Billeder/front/Baby.jpg" class="image1 link_picture">
  					</a>
 						</div>
  					</div>
@@ -142,7 +142,7 @@
  				
  			<div class="one-third column" >
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=1"><img src="billeder/FBB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=1"><img src="Billeder/front/Bryllup.jpg" class="image1 link_picture">
  					</a>
  					</div>
  				</div>
@@ -151,7 +151,7 @@
 					
  			<div class="one-third column" >
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=2"><img src="billeder/FFB1.jpg" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=2"><img src="Billeder/front/Børn.jpg" class="image1 link_picture">
  						</a>
 				 </div>
  			</div>
@@ -164,7 +164,7 @@
  		<div class="row">
  			<div class="one-third column" >
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=3"><img src="Billeder/amalie-pics/Familie/f.jpg" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=3"><img src="Billeder/front/Familie.jpg" class="image1 link_picture">
  						</a>
  					</div>
  				</div>
@@ -172,7 +172,7 @@
  			
  			<div class="one-third column" >
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=4"><img src="Billeder/amalie-pics/boern/7.jpg" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=4"><img src="Billeder/front/Gravid.jpg" class="image1 link_picture">
  						</a>
  					</div>
  				</div>
@@ -181,7 +181,7 @@
 				
  			<div class="one-third column" >
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=5"><img src="Billeder/amalie-pics/Konfihjemmeside/1D8A0526.jpg" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=5"><img src="Billeder/front/Konfirmation.jpg" class="image1 link_picture">
  						</a>
  					</div>
  				</div>

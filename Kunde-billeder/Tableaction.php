@@ -5,19 +5,21 @@ session_start();
 
 $email = $_POST["email"];
 $name = $_POST["name"];
+$pass = $_POST["pass"];
+$_SESSION["pass"] = $pass;
 $_SESSION["email"] = $email;
 $date = date("d-m-Y");
 ?>
 
 <?php 
-$query = "CREATE TABLE `$email` (
+$query = "CREATE TABLE `$pass` (
   `id` int(250) NOT NULL  AUTO_INCREMENT PRIMARY KEY,
   `name` longblob NOT NULL,
   `filename` varchar(5000) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 INSERT INTO newsletter (email) VALUES ('$email');
-INSERT INTO customer_archive (email, name, date) VALUES ('$email', '$name', '$date')"; 
+INSERT INTO customer_archive (email, name, date, pass) VALUES ('$email', '$name', '$date','$pass')"; 
 
 /* en query der tilføjer emailen til en liste, så ledes man kan se listen over arkiver der er lavet */
 

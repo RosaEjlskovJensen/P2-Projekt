@@ -83,7 +83,7 @@
     <br>
 <center> <h5>skriv din email her for at se dine billeder</h5>
 <form action="Kunde-Billede-Overview.php" method="post">
-<input type="email" name="email" id="email" placeholder="Kundens Email">
+<input type="password" name="pass" id="pass" placeholder="Skriv din 8cif kode her" minlength="8" maxlength="8" required>
 <input type="submit" name="submit" id="submit" value="Se billeder">	
 	
 </form>

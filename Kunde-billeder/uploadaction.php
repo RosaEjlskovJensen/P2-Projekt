@@ -1,6 +1,6 @@
 <?php
 session_start();
-$email = $_SESSION["email"];
+$email = $_SESSION["pass"];
 //action.php
 if(isset($_POST["action"]))
 {

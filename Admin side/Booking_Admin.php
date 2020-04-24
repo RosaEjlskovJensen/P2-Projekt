@@ -1,5 +1,14 @@
 <!doctype html>
 <?php
+session_start();
+	if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == false)
+	{
+		header("Location: Loginside.php");
+		
+	}
+		
+?>
+<?php
 //database connection
 require_once '../Connection.php';
 $query = "SELECT * FROM bookings ORDER BY date DESC, timeslot";
