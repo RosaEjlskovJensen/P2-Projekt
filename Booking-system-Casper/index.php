@@ -62,12 +62,13 @@ function build_calendar($month, $year) {
     
     $calendar = "<table class='table table-bordered'>";
     $calendar .= "<center><h2>$months[$monthdate] $year</h2>";
-    $calendar.= "<a class='button1' href='?month=".date('m', mktime(0, 0, 0, $month-1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month-1, 1, $year))."'>Forrige Måned</a> ";
+    $calendar.= "<a class='btn btn-primary' href='?month=".date('m', mktime(0, 0, 0, $month-1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month-1, 1, $year))."'>Forrige Måned</a> ";
     
-    $calendar.= " <a class='button1' href='?month=".date('m')."&year=".date('Y')."'>Denne Måned</a> ";
+    $calendar.= " <a class='btn btn-primary' href='?month=".date('m')."&year=".date('Y')."'>Denne Måned</a> ";
     
-    $calendar.= "<a class='button1' href='?month=".date('m', mktime(0, 0, 0, $month+1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month+1, 1, $year))."'>Næste Måned</a></center><br>";
-    
+    $calendar.= "<a class='btn btn-primary' href='?month=".date('m', mktime(0, 0, 0, $month+1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month+1, 1, $year))."'>Næste Måned</a></center><br>";
+    $calendar.= "<center><a class='btn btn-success' href='book-week/index.php'>Ugevisning</a></center><br>";
+ 
     
         
       $calendar .= "<tr>";

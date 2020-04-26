@@ -83,7 +83,7 @@ function timeslots($duration, $cleanup, $start, $end){
 		if($endPeriod>$end){
 			break;
 		}
-		$slots[] = $intStart->format("H:iA")."-". $endPeriod->format("H:iA");
+		$slots[] = $intStart->format("H:i")."-". $endPeriod->format("H:i");
 	}
 	return $slots;
 }
@@ -179,7 +179,7 @@ function timeslots($duration, $cleanup, $start, $end){
       <br>
 
     <div class="container">
-        <h1 class="text-center">Book Datoen: <?php echo date('m/d/Y', strtotime($date)); ?></h1>
+        <h1 class="text-center">Book Datoen: <?php echo date('d/m/Y', strtotime($date)); ?></h1>
         <h1 class="text-center">By: <?php echo $city ?></h1>
         <h1 class="text-center">Pris <?php echo $price.",-" ?></h1><hr>
         <div class="row">
@@ -196,9 +196,9 @@ function timeslots($duration, $cleanup, $start, $end){
 					<div class="form-group">
 					<?php if(in_array($ts, $bookings)){?>
 					
-						<button class="btn btn-danger"><?php echo $ts; ?></button> 
+						<button class="btn btn-danger"><?php echo "<center>". $ts->format('H:i'). "</center>"; ?></button> 
        		<?php }else{ ?>
-       		<button class="btn btn-success book" data-timeslot="<?php echo $ts; ?>"><?php echo $ts; ?></button> 
+       		<button class="btn btn-success book" data-timeslot="<?php echo $ts; ?>"><center><?php echo $ts; ?></center></button> 
        		<?php } ?>
        		</div>
       			</div>
