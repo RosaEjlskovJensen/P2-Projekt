@@ -125,7 +125,7 @@ function timeslots($duration, $cleanup, $start, $end){
       <div class="nav_dropdown">
         <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
-          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
+         <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=2" class="button">Børn</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=3" class="button">Familie</a></li>
