@@ -83,6 +83,20 @@ a:hover{
 .btn2:hover{
   background-color: #8b752e;
   color: #e3e3dd;}
+.btn3{
+  background-color: none;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  max-width: 99%;
+  max-height: 99%;}
 
 /* RESIZE PICTURES */
 .img_logo{
@@ -549,7 +563,7 @@ p,
 ul,
 ol,
 form{
-  margin-bottom: 2.5rem; }
+   }
 
 
 /* Utilities
@@ -801,4 +815,11 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
 .greywall
 {
 	background-color:  #e3e3dd;
+}
+.soegefelt{
+	 height: 50px !important;
+}
+.paddinttop1
+{
+	padding-top: 5px;
 }

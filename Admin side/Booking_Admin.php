@@ -22,10 +22,10 @@ die("could not query the database" .mysqli_error());
 <head>
 <meta charset="utf-8">
 <!-- Linker til Skeleton -->
-<link rel="stylesheet" href="../stylesheet.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <!-- Linker til normalize der styre font størelser på små skærme -->
 <link rel="stylesheet" href="../normalize.css">
-<link rel="stylesheet" type="text/css" href="../../main.css">
+<link rel="stylesheet" type="text/css" href="../main.css">
 <!-- Dette link er ikonet der er i ens browser tab -->
 <link rel="icon" type="image/png" href="INDSET IKON HER">
 <title>Rediger Blogs</title>
@@ -87,7 +87,7 @@ echo "<h1>liste over bookede tider</h1>";
 		<td><?php echo $row['date']?></td>
 		<td><?php echo $row['timeslot']?></td>
 		<td><?php echo $row['name']?></td>
-		<td><a href="mailto:<?php echo $row['email']?>" class="button1"><?php echo $row['email']?></a></td>
+		<td><a href="mailto:<?php echo $row['email']?>" class="btn3 btn-primary"><?php echo $row['email']?></a></td>
 		<td><?php echo $row['phone']?></td>
 		<td><?php echo $row['adress']?></td>
 		<td><?php echo $row['postnummer']?></td>
@@ -97,7 +97,7 @@ echo "<h1>liste over bookede tider</h1>";
 		<td><?php echo $row['pet']?></td>
 		<td class="displayflex">
 			<form action='../Booking-system-Casper/delete_booking.php' onclick="return confirm('Er du sikker på at slette denne tid? når den er slettet kan den ikke genfindes')" method='post' class="displayflex" >
-			<input type='submit' value='delete' >
+			<input type='submit' value='SLET' class="btn3 btn-danger" >
 			<input type='hidden' name='deleted' value='<?php echo $row['email']?>'>
 			</form>
 		</td>
@@ -109,7 +109,7 @@ echo "<h1>liste over bookede tider</h1>";
 		<td><?php echo $row['date']?></td>
 		<td><?php echo $row['timeslot']?></td>
 		<td><?php echo $row['name']?></td>
-		<td><a href="mailto:<?php echo $row['email']?>" class="button1"><?php echo $row['email']?></a></td>
+		<td><a href="mailto:<?php echo $row['email']?>" class="btn3 btn-primary"><?php echo $row['email']?></a></td>
 		<td><?php echo $row['phone']?></td>
 		<td><?php echo $row['adress']?></td>
 		<td><?php echo $row['postnummer']?></td>
@@ -119,7 +119,7 @@ echo "<h1>liste over bookede tider</h1>";
 		<td><?php echo $row['pet']?></td>
 		<td class="displayflex">
 			<form action='../Booking-system-Casper/delete_booking.php' onclick="return confirm('Er du sikker på at slette denne tid? når den er slettet kan den ikke genfindes')" method='post' class="displayflex" >
-			<input type='submit' value='delete' >
+			<input type='submit' class="btn3 btn-danger" value='SLET' >
 			<input type='hidden' name='deleted' value='<?php echo $row['email']?>'>
 			</form>
 		</td>	
@@ -153,7 +153,7 @@ if(isset($_POST["submit"]))
 
 
 <br>
-<a href="../Admin side/Admin.php" class="button">Hjem</a>
+<a href="../Admin side/Admin.php" class="btn3 btn-warning">TILBAGE</a>
 
 </body>
 </html>

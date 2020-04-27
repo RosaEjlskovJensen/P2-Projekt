@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Portfolie</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="..//burgermenujs.js"></script>
- <!-- Dette link er ikonet der er i ens browser tab -->
-    <link rel="icon" type="image/png" href="INDSET IKON HER">
-    <!-- Linker til Skeleton -->    
-    <!-- <link rel="stylesheet" href="..//stylesheet.css"> -->
-    <!-- Linker til normalize der styre font størelser på små skærme -->
-    <link rel="stylesheet" href="..//normalize.css">
+ <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    	<meta charset="utf-8">
+	<title>Amalie Sandgaard | Photography</title>
+	<!-- ajax/jquery -->
+ 
+	<!-- Dette link er ikonet der er i ens browser tab -->
+  <link rel="icon" type="image/png" href="billeder/asp.png">
   <!-- Linker til Fontawsome -->
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Linker til Stylesheet -->
-  <link rel="stylesheet" href="..//stylesheet.css">
+  
+  <!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="../main.css">
+  <!-- Linker til normalize der styre font størelser på små skærme -->
+  <link rel="stylesheet" href="../normalize.css">
+
+<title>test</title>
 </head>
 
     <body>
         
-    <div class="row">
-		<div class="eight columns">	
-			<div class="">
-				<h2> Vælg kategori <h2>
-				<a href="Uploadtemplate.php?item=0" class="button-primary">Baby</a>
-				<a href="Uploadtemplate.php?item=1" class="button-primary">Bryllup</a>
-				<a href="Uploadtemplate.php?item=2" class="button-primary">Børn</a>
-                <a href="Uploadtemplate.php?item=3" class="button-primary">familie</a>
-                <a href="Uploadtemplate.php?item=4" class="button-primary">gravid</a>
-                <a href="Uploadtemplate.php?item=5" class="button-primary">konfirmation</a>
-                <a href="Admin.php" class="button-primary">tilbage</a>
-			</div>
+   
+		<div class="six columns">	
+			
+				<h2> Vælg Kategori <h2>
+				<a href="Uploadtemplate.php?item=0" class="btn3 btn-primary u-full-width">BABY</a>
+				<a href="Uploadtemplate.php?item=1" class="btn3 btn-primary u-full-width">BRYLLUP</a>
+				<a href="Uploadtemplate.php?item=2" class="btn3 btn-primary u-full-width">BØRN</a>
+                <a href="Uploadtemplate.php?item=3" class="btn3 btn-primary u-full-width">FAMILIE</a>
+                <a href="Uploadtemplate.php?item=4" class="btn3 btn-primary u-full-width">GRAVID</a>
+                <a href="Uploadtemplate.php?item=5" class="btn3 btn-primary u-full-width">KONFIRMATION</a>
+                <a href="Admin.php" class="btn3 btn-warning u-full-width">TILBAGE</a>
+			
 		</div>
-	</div>
+	
   </body>
     
 </html>

@@ -29,8 +29,8 @@ if(isset($_POST["action"]))
      <td>
       <img src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="60" width="75" class="img-thumbnail" />
      </td>
-     <td><button type="button" name="update" class="btn btn-warning bt-xs update" id="'.$row["id"].'">Opdater</button></td>
-     <td><button type="button" name="delete" class="btn btn-danger bt-xs delete" id="'.$row["id"].'">Slet</button></td>
+     <td><button type="button" name="update" class="btn3 btn-success bt-xs update" id="'.$row["id"].'">Opdater</button></td>
+     <td><button type="button" name="delete" class="btn3 btn-danger bt-xs delete" id="'.$row["id"].'">Slet</button></td>
     </tr>
    ';
   }

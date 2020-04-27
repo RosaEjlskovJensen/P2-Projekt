@@ -22,17 +22,18 @@ die("could not query the database" .mysqli_error());
 <head>
 <meta charset="utf-8">
 <!-- Linker til Skeleton -->
-<link rel="stylesheet" href="../stylesheet.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="../main.css">
 <!-- Linker til normalize der styre font størelser på små skærme -->
 <link rel="stylesheet" href="../normalize.css">
-<!-- Dette link er ikonet der er i ens browser tab -->
+<!-- Dette link er ikonet der er i ens browser tab --> 
 <link rel="icon" type="image/png" href="INDSET IKON HER">
-<title>Liste over datoers indstillinger</title>
+<title>Bookingsindstillinger</title>
 </head>
 
 <body>
 <?php 
-echo "<center><h1>Liste over datoers indstillinger</h1></center>";
+echo "<center><h1>Bookingindstillinger</h1></center>";
 
 	?> 
 	<style>
@@ -67,13 +68,13 @@ echo "<center><h1>Liste over datoers indstillinger</h1></center>";
  <table class="tabletotal six columns">
 	<tr>
 		<th><center>Dato</center></th>
-		<th><center>længde af booking</center></th>
-		<th><center>Start dagen</center></th>
-		<th><center>Fyraften</center></th>
-		<th><center>Længde af pause</center></th>
+		<th><center>Varighed (min)</center></th>
+		<th><center>Start (00:00)</center></th>
+		<th><center>Slut (00:00)</center></th>
+		<th><center>Pause (min)</center></th>
 		<th><center>Pris</center></th>
-		<th><center>By</center></th>
-		<th><center>Action</center></th>
+		<th><center>Lokation</center></th>
+		<th><center>Handling</center></th>
 	</tr>
 	<?php 
 	while($row = mysqli_fetch_assoc($results)){
@@ -90,11 +91,11 @@ echo "<center><h1>Liste over datoers indstillinger</h1></center>";
 			
 				<td class="displayflex">
 			<center><form action='delete_booking_settings.php' onclick="return confirm('Er du sikker på at slette disse indstillinger? når de er slettet skal de genlaves')" method='post' class="displayflex" >
-			<input type='submit' value='delete' class="one-half column" >
+			<input type='submit' class="btn3 btn-danger" value='SLET' class="one-half column" >
 			<input type='hidden' name='deleted' value='<?php echo $row['date']?>'>
 			</form>
 			<form action="update_Booking_Settings.php" method='post' class="displayflex">
-			<input type='submit' value='update' class="one-half column" >
+			<input type='submit' value='OPDATER' class="btn3 btn-success" class="one-half column" >
 			<input type='hidden' name='updated' value='<?php echo $row['date']?>'>
 			</center>
 			</form>
@@ -115,7 +116,7 @@ echo "<center><h1>Liste over datoers indstillinger</h1></center>";
 		<td class="displayflex">
 		<center>
 			<form action='delete_booking_settings.php' onclick="return confirm('Er du sikker på at slette disse indstillinger? når de er slettet skal de genlaves')" method='post' class="displayflex" >
-			<input type='submit' value='delete' class="u-full-width" >
+			<input type='submit' value='SLET' class="u-full-width btn3 btn-danger" >
 			<input type='hidden' name='deleted' value='<?php echo $row['date']?>'>
 			</center>
 			</form>
@@ -137,35 +138,32 @@ echo "<center><h1>Liste over datoers indstillinger</h1></center>";
 <form name="create" id="create" autocomplete="on" method="post" action="Booking_Settings_Creator.php">
  <tr> 
  <th><center>Dato</center></th>
- <th><center>Længde af tid</center></th>
- <th><center>start</center></th>
- <th><center>slut</center></th>
- <th><center>pause</center></th>
- <th><center>pris</center></th>
- <th><center>By</center></th>
+ <th><center>Varighed (min)</center></th>
+ <th><center>Start (00:00)</center></th>
+ <th><center>Slut (00:00)</center></th>
+ <th><center>Pause (min)</center></th>
+ <th><center>Pris</center></th>
+ <th><center>Lokation</center></th>
  </tr>
 <tr>
   <td><input type="date" name="date" id="date" class="u-full-width"> </td>
-  <td><input type="number" name="duration" id="duration" min="1" max="60" class="u-full-width"> 
-  <td><input type="time" name="start" id="start" class="u-full-width"></td>
- <td> <input type="time" name="end" id="end" class="u-full-width"> </td>
- <td> <input type="number" name="cleanup" id="cleanup" min="0" max="60" class="u-full-width"> </td>
- <td> <input type="number" name="price" id="price" min="0" max="9000" class="u-full-width" > </td>
+  <td><input type="number" name="duration" id="duration" min="1" max="60" required class="u-full-width"> 
+  <td><input type="time" name="start" id="start" class="u-full-width" required></td>
+ <td> <input type="time" name="end" id="end" class="u-full-width" required> </td>
+ <td> <input type="number" name="cleanup" id="cleanup" min="0" max="60" required class="u-full-width"> </td>
+ <td> <input type="number" name="price" id="price" min="0" max="9000" required class="u-full-width" > </td>
  <td> <input type="text" name="city" id="city"  class="u-full-width" > </td>
  </tr>
 </table>
 </div>
-<div class="row offset-by-three columns">
- <div class="u-pull-left three columns"><input  type="submit" id=search3 name="create" value="Lav nye indstillinger for en dato">
- </div>
+<div class="offset-by-three columns six columns">
+	 
+		<input class="btn3 btn-success u-pull-right" type="submit" id=search3 name="create" value="OPRET">
+		<a href="../Admin side/Admin.php" class="btn3 btn-warning u-pull-left">TILBAGE</a>
+	
  </div>
 	</form>
 	
-
-
-
-<br>
-<center><a href="../Admin side/Admin.php" class="button">Hjem</a><center>
 
 </body>
 </html>

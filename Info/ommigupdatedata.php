@@ -27,12 +27,18 @@ if(isset($_GET['conid'])){
 <html>
 <head>
 <meta charset="utf-8">
-<title>Priser</title>
+<!-- Linker til Skeleton -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="../main.css">
+<!-- Linker til normalize der styre font størelser på små skærme -->
+<link rel="stylesheet" href="../normalize.css">
+<!-- Dette link er ikonet der er i ens browser tab --> 
+<link rel="icon" type="image/png" href="INDSET IKON HER">
+<title>Liste over datoers indstillinger</title>
 </head>
 
-<body>
 
-<h1>Rediger</h1>
+<body>
 
 <!-- Form der kan reditere dataen i de forskellige pakker. Når du trykker på knappen til slut, sendes man videre til siden updatedata.php -->
 
@@ -53,13 +59,13 @@ if(isset($_GET['conid'])){
   
 
   
-  <div class="addBtnDiv">
-  	<input type="submit" id="addBtn" value="update">
-	</div>
+  
+  	<input type="submit" class="btn3 btn-success" value="OPDATER">
+	
   <input type="hidden" name="id" value="<?php echo $id?>">
 </form>
 
-<a href="Editprice.php" class="button">Tilbage</a>
+<a href="../Admin side/Admin.php" class="btn3 btn-warning">TILBAGE</a>
 </body>
 </html>
 

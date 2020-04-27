@@ -36,8 +36,8 @@ if(!$results){
 <style>
 
     .box1 img{
-        width: 200px !important;
-        height: 200px !important;
+        width: 600px !important;
+        height: 600px !important;
 }
     
     <style>

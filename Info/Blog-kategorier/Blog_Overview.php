@@ -12,14 +12,21 @@ die("could not query the database" .mysqli_error());
 
 <html>
 <head>
-<meta charset="utf-8">
-<!-- Linker til Skeleton -->
-<link rel="stylesheet" href="../stylesheet.css">
-<!-- Linker til normalize der styre font størelser på små skærme -->
-<link rel="stylesheet" href="../normalize.css">
-<!-- Dette link er ikonet der er i ens browser tab -->
-<link rel="icon" type="image/png" href="INDSET IKON HER">
-<title>Rediger Blogs</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    	<meta charset="utf-8">
+	<title>Amalie Sandgaard | Photography</title>
+	<!-- ajax/jquery -->
+ 
+	<!-- Dette link er ikonet der er i ens browser tab -->
+  <link rel="icon" type="image/png" href="billeder/asp.png">
+  <!-- Linker til Fontawsome -->
+  
+  <!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="../../main.css">
+  <!-- Linker til normalize der styre font størelser på små skærme -->
+  <link rel="stylesheet" href="../normalize.css">
+
+<title>test</title>
 </head>
 
 <body>
@@ -28,7 +35,7 @@ die("could not query the database" .mysqli_error());
 	<tr>
 		<th>ID</th>
 		<th>Blog</th>
-		<th>Aktion</th>
+		<th>Handling</th>
 		
 		
 	</tr>
@@ -41,21 +48,21 @@ die("could not query the database" .mysqli_error());
 			<td></td>
 			
 			
-		<td class="">
+		<td class="twelve columns">
 			<form action='delete_blog.php?item=<?php echo $item; ?>&id=<?php echo $row['id']; ?>"' method='post' >
-				<input type='submit' value='delete' onclick="return confirm('Are you sure you want to delete this item?');" >
+				<input type='submit' class="btn3 btn-danger u-full-width" value='Slet' onclick="return confirm('Er du sikker på at du vil slette dette opslag?');" >
 				<input type='hidden' name='deleted' value='<?php echo $row['id']?>'>
 			</form>
-	
+
 			<form action="Update_Blog.php?item=<?php echo $item; ?>&id=<?php echo $row['id']; ?>" method='post'>
-				<input type='submit' value='update' >
+				<input type='submit' value='Opdater' class="btn3 btn-success u-full-width" >
 				<input type='hidden' name='updated' value='<?php echo $row['id']?>'>
 			</form>	
 		</td>		
 	</tr>
 	<?php } ?>	
 </table>
-<a href="EditKategoritemplate.php?item=<?php echo $item ?>" class="button">Tilbage</a>		
+<a href="EditKategoritemplate.php?item=<?php echo $item ?>" class="btn3 btn-warning">Tilbage</a>		
 	
 
 </body>

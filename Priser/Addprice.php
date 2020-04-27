@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Add price</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="..//burgermenujs.js"></script>
- <!-- Dette link er ikonet der er i ens browser tab -->
-    <link rel="icon" type="image/png" href="INDSET IKON HER">
-    <!-- Linker til Skeleton -->    
-    <!-- <link rel="stylesheet" href="..//stylesheet.css"> -->
-    <!-- Linker til normalize der styre font størelser på små skærme -->
-    <link rel="stylesheet" href="..//normalize.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    	<meta charset="utf-8">
+	<title>Amalie Sandgaard | Photography</title>
+	<!-- ajax/jquery -->
+ 
+	<!-- Dette link er ikonet der er i ens browser tab -->
+  <link rel="icon" type="image/png" href="billeder/asp.png">
   <!-- Linker til Fontawsome -->
-  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Linker til Stylesheet -->
-  <link rel="stylesheet" href="..//stylesheet.css">
+  
+  <!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="../main.css">
+  <!-- Linker til normalize der styre font størelser på små skærme -->
+  <link rel="stylesheet" href="../normalize.css">
+
+<title>test</title>
 </head>
 
 <body>
@@ -47,11 +48,11 @@
     <label for="kommentar">Kommentar</label>
     <input type="text" name="kommentar" id="kommentar" maxlength="200">
   </div>
-  <div class="addBtnDiv">
-  	<input type="submit" id="addBtn" value="tilføj">
+  <div>
+  	<input class="btn3 btn-success" type="submit" id="" value="TILFØJ">
 	</div>
 </form>
 
-<a href="../Admin%20side/Admin.php" class="button">Tilbage</a>
+<a href="../Admin%20side/Admin.php" class="btn3 btn-warning">TILBAGE</a>
 </body>
 </html>

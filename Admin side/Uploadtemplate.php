@@ -14,6 +14,9 @@ $kategori2 = array("Baby", "Bryllup", "Børn", "Familie", "Gravid", "Konfirmatio
   <title><?php echo($kategori2[$item])?></title>  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+  	<link rel="stylesheet" type="text/css" href="../main.css">
+  <!-- Linker til normalize der styre font størelser på små skærme -->
+  <link rel="stylesheet" href="../normalize.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
  </head>  
  <body>  
@@ -22,7 +25,7 @@ $kategori2 = array("Baby", "Bryllup", "Børn", "Familie", "Gravid", "Konfirmatio
    <h3 align="center"><?php echo($kategori2[$item])?></h3>  
    <br />
    <div align="right">
-    <button type="button" name="add" id="add" class="btn btn-success">Tilføj</button>
+    <button type="button" name="add" id="add" class="btn3 btn-primary">Tilføj</button>
    </div>
    <br />
    <div id="image_data">
@@ -45,7 +48,7 @@ $kategori2 = array("Baby", "Bryllup", "Børn", "Familie", "Gravid", "Konfirmatio
      <input type="file" name="image" id="image" /></p><br />
      <input type="hidden" name="action" id="action" value="insert" />
      <input type="hidden" name="image_id" id="image_id" />
-     <input type="submit" name="insert" id="insert" value="Indsæt" class="btn btn-info" />
+     <input type="submit" name="insert" id="insert" value="Indsæt" class="btn3 btn-primary" />
       
     </form>
    </div>
@@ -55,7 +58,7 @@ $kategori2 = array("Baby", "Bryllup", "Børn", "Familie", "Gravid", "Konfirmatio
   </div>
  </div>
 </div>
- <center><a class="btn btn-primary" href="Portfolieadminside.php">Tilbage</a></div>
+ <center><a class="btn3 btn-warning" href="Portfolieadminside.php">Tilbage</a></div>
 <script>  
 $(document).ready(function(){
  

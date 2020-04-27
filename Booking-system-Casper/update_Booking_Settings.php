@@ -13,12 +13,17 @@ $row = mysqli_fetch_assoc($results);
 
 <html>
 <head>
-<link rel="stylesheet" href="../stylesheet.css">
+<meta charset="utf-8">
+<!-- Linker til Skeleton -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="../main.css">
 <!-- Linker til normalize der styre font størelser på små skærme -->
 <link rel="stylesheet" href="../normalize.css">
-<meta charset="utf-8">
-<title>update_contact</title>
+<!-- Dette link er ikonet der er i ens browser tab --> 
+<link rel="icon" type="image/png" href="INDSET IKON HER">
+<title>Liste over datoers indstillinger</title>
 </head>
+
 
 <body>
 <center>
@@ -28,12 +33,12 @@ $row = mysqli_fetch_assoc($results);
 <form name="update" id="update" autocomplete="on" method="post" action="Booking_Settings_Updater.php?date=<?php echo $date?>">
  <tr> 
  <th><center>Dato</center></th>
- <th><center>Længde af tid</center></th>
- <th><center>start</center></th>
- <th><center>slut</center></th>
- <th><center>pause</center></th>
- <th><center>pris</center></th>
- <th><center>By</center></th>
+ <th><center>Varighed (min)</center></th>
+ <th><center>Start (00:00)</center></th>
+ <th><center>Slut (00:00)</center></th>
+ <th><center>Pause (min)</center></th>
+ <th><center>Pris</center></th>
+ <th><center>Lokation</center></th>
  </tr>
 <tr>
   <td><?php echo( $row['date']) ?></td>
@@ -47,7 +52,7 @@ $row = mysqli_fetch_assoc($results);
 </table>
 </div>
 <div class="row">
- <div class="middle"><input  type="submit" id=search3 name="update" value="update">
+ <div class="middle"><input  type="submit" id=search3 class="btn3 btn-success" name="update" value="OPDATER">
  </div>
  </div>
 	</form>
