@@ -180,7 +180,7 @@ function timeslots($duration, $cleanup, $start, $end){
 
     <div class="container">
         <h1 class="text-center">Book Datoen: <?php echo date('d/m/Y', strtotime($date)); ?></h1>
-        <h1 class="text-center">By: <?php echo $city ?></h1>
+        <h1 class="text-center">Lokation: <?php echo $city ?></h1>
         <h1 class="text-center">Pris <?php echo $price.",-" ?></h1><hr>
         <div class="row">
           <div class="col-md-12">
@@ -196,9 +196,9 @@ function timeslots($duration, $cleanup, $start, $end){
 					<div class="form-group">
 					<?php if(in_array($ts, $bookings)){?>
 					
-						<button class="btn btn-danger"><?php echo "<center>". $ts->format('H:i'). "</center>"; ?></button> 
+						<center><button class="btn btn-danger"><?php echo "<center>". $ts. "</center>"; ?></button> </center>
        		<?php }else{ ?>
-       		<button class="btn btn-success book" data-timeslot="<?php echo $ts; ?>"><center><?php echo $ts; ?></center></button> 
+       		<center><button class="btn btn-success book" data-timeslot="<?php echo $ts; ?>"><center><?php echo $ts; ?></center></button> </center>
        		<?php } ?>
        		</div>
       			</div>
@@ -206,7 +206,7 @@ function timeslots($duration, $cleanup, $start, $end){
         </div>
        
     </div>
-  
+  <center><a href="index.php" class="btn btn-primary">Tilbage</a></center>
    <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
 
@@ -275,7 +275,7 @@ function timeslots($duration, $cleanup, $start, $end){
 					  </select>
         			</div>
         			<div class="from-group">
-        				<lable for="">Kommentar På lokation eller i studiet? (hvis lokation hvilken adresse?)</lable>
+        				<lable for="">Kommentar</lable>
         				<input required type="text"  name="kommentar" class="form-control">
         			</div>
         		

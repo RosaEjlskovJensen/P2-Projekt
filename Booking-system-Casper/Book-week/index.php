@@ -116,7 +116,8 @@ $year = $dt->format('Y');
 	<div class="row">
 		<div class="col-md-12" >
 		<center>
-		<h2><?php echo "$month $year uge: $week"; ?></h2>
+		<h2><?php echo "$month $year"; ?></h2>
+		<h4><?php echo "uge: $week"; ?></h4>
 		<a class="btn btn-primary" href="<?php echo $_SERVER['PHP_SELF'].'?week='.($week-1).'&year='.$year; ?>">Pre Week</a> <!--Previous week-->
 		<a class="btn btn-primary" href="index.php">Current Week</a> <!--Previous week-->
 		<a class="btn btn-primary" href="<?php echo $_SERVER['PHP_SELF'].'?week='.($week+1).'&year='.$year; ?>">Next Week</a><br><br> <!--Next week-->
@@ -136,13 +137,13 @@ $year = $dt->format('Y');
 	<?php
 		do {
 			if($dt->format('M d Y')== date('M d Y')){
-				echo "<td style='background:lightgreen'><center><a class='btn btn-success' href='../booksettings.php?date=".$dt->format('Y-m-d')."'" . $dt->format('l') . "<br>" . $dt->format('d-m-Y') . "</td>\n";
+				echo "<td style='background:lightgreen'><center>".$dt->format('d-m-Y')."<br><a class='btn btn-success' href='../booksettings.php?date=".$dt->format('Y-m-d')."'" . $dt->format('l') . "<br>" . "Se Tider". "</td>\n";
 			}elseif($dt->format('M d Y')<= date('M d Y')){
-				echo "<td><center><a class='btn btn-danger' href=#'>N/A". "</td>\n";
+				echo "</td><td><center>".$dt->format('d-m-Y')."<br><a class='btn btn-danger' href=#'>N/A". "</td>\n";
 				
 				
 			}else{
-				echo "<td><center><a class='btn btn-success' href='../booksettings.php?date=".$dt->format('Y-m-d')."'" . $dt->format('l') . "<br>" . $dt->format('d-m-Y') . "</td>\n";
+				echo "<td><center>".$dt->format('d-m-Y')."<br><a class='btn btn-success' href='../booksettings.php?date=".$dt->format('Y-m-d')."'" . $dt->format('l') . "<br>" . "Se Tider". "</td>\n";
 				
 				
 			}
@@ -157,6 +158,27 @@ $year = $dt->format('Y');
 	</div>
 </div>
 </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7I2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

@@ -15,7 +15,7 @@ $table = $kunde;
   $results = mysqli_query($connection, $query);
 	
 	 $option1=0;
-	
+	 $option2=0;
 	 $option3=0;
 	 $option4=0;
 	 $option5=0;
@@ -23,14 +23,14 @@ $table = $kunde;
 	 while($row = mysqli_fetch_array($results))
   { 
 	 $option1++; 
-	  
+	 $option2++; 
 	 $option3++; 
 	 $option4++; 
 	 $option5++; 
 	 $option6++; 
 	  
 	  $selektion1 = $_POST['option1'.$option1];
-	
+	  $selektion2 = $_POST['option2'.$option2];
 	  $selektion3 = $_POST['option3'.$option3];
 	  $selektion4 = $_POST['option4'.$option4];
 	  $selektion5 = $_POST['option5'.$option5];
@@ -38,6 +38,7 @@ $table = $kunde;
 	  //For hver bos skal følgende ske//
 	  //først skrives navnet på filen//
 	  $body_message .= 'Fil: '.$row["filename"]."<br>";
+	  $body_message .= 'Print eller fil? '.$selektion2."<br>";
 	  // Så skrives de forskellige indstillinger //
 	  $body_message .= 'Farve eller Sort/hvid: '.$selektion1."<br>";
 	  $body_message .= 'Størrelse: '.$selektion3."<br>";

@@ -221,7 +221,7 @@ die("cannot connect to database".mysqli_connect_error());
 	  <div>
     <div>
     Digital fil
-	 <input type="radio" name="'. 'order-type'. $option2.'" id="digital">
+	 <input type="radio" name="'. 'option2'. $option2.'" id="digital" value="Digital Fil">
 	 <div class="reveal-if-active">
         <label for="which-dog">Modtaget!</label>
       </div>
@@ -229,10 +229,10 @@ die("cannot connect to database".mysqli_connect_error());
       
     
     PRINT
-	 <input type="radio" name="'. 'order-type'. $option2.'" id="print">
+	 <input type="radio" name="'. 'option2'. $option2.'" id="print" value="PRINT">
 	 <div class="reveal-if-active">
 	 
-        <label for="Farve">Farve</lable>
+        
 <input type="radio" class=""'.  'name="option1'.$option1.'"  value="Farve">Farve
 	  <input type="radio" class=""'.  'name="option1'.$option1.'"  value="sort/hvid">Sorthvid
 		

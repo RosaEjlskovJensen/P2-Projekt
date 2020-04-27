@@ -19,6 +19,7 @@ die("could not query the database" .mysqli_error());
 	while($row = mysqli_fetch_assoc($results)){ 
 	echo $row['bestilling']; 
 	}?>
+	<a href="Kunde-Liste.php">Tilbage</a>
 </body>
 </html>
 <?php

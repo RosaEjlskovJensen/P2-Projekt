@@ -25,7 +25,7 @@
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Portfolio <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
