@@ -36,32 +36,32 @@
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Info <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="Info/blog.php" class="button">Blog</a></li>
-          <li><a href="Info/blog.php" class="button">Nyheder</a></li>
-          <li><a href="Info/andmeldelser.php" class="button">Anmeldelser</a></li>
+          
+          
                       <li><a href="Infoforside.php" class="button">Fotograferins info</a></li>
 
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Priser <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Booking <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Kontakt <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="Kontakt/FAQ.php" class="button">FAQ</a></li>
@@ -194,7 +194,7 @@
         </div>
         <div class="row">
           <div class="u-full-width">
-            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="Kontakt/Kontakt.php">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="Kontakt/Kontakt.php">mail</a>.</i></p></center>
+            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="../Kontakt/Kontakt.php">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="../Kontakt/Kontakt.php">mail</a>.<br>OBS: Bryllup og konfirmationer skal bookes over mail eller ved telefonisk henvendelse.</i></p></center>
           </div>
         </div>
       </div>

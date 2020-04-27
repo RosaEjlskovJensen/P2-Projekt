@@ -121,7 +121,7 @@ while($row = mysqli_fetch_assoc($results)){
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Portfolio <i class=""></i></button>
           <div class="dropdown-content">
          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
@@ -132,30 +132,30 @@ while($row = mysqli_fetch_assoc($results)){
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Info <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
-          <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
-          <li><a href="../Info/andmeldelser.php" class="button">Anmeldeser</a></li>
+          
+          <li><a href="Infoforside.php" class="button">Fotograferins info</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Priser <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="../Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="../Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Booking <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="../Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="../Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Kontakt <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
@@ -202,8 +202,7 @@ while($row = mysqli_fetch_assoc($results)){
         <div class="row">
           <div class="u-full-width">
            <h5>Mangler du en fotograf?</h5>
-           <p style="font-size: 17px">Investigatam diutissime quaestionem, quantum nostrae mentis igniculum lux diuina dignata est, formatam rationibus litterisque mandatam offerendam uobis communicandamque curaui tam uestri cupidus iudicii quam nostri studiosus inuenti. Qua in re quid mihi sit animi quotiens stilo cogitata commendo, tum ex ipsa materiae difficultate tum ex eo quod raris id est uobis tantum conloquor, intellegi potest. Neque enim famae iactatione et inanibus uulgi clamoribus excitamur; sed si quis est fructus exterior, hic non potest aliam nisi materiae similem sperare sententiam.
-           </p>
+   
            <div class="row">
             <div class="two columns offset-by-one-third">
               <form action="../Booking-system-Casper/index.php"><button type="submit" class="btn btn2">Se Datoer</button></form> 
@@ -215,7 +214,7 @@ while($row = mysqli_fetch_assoc($results)){
         </div>
         <div class="row">
           <div class="u-full-width">
-            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="../Kontakt/Kontakt.php">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="../Kontakt/Kontakt.php">mail</a>.</i></p></center>
+            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="../Kontakt/Kontakt.php">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="../Kontakt/Kontakt.php">mail</a>.<br>OBS: Bryllup og konfirmationer skal bookes over mail eller ved telefonisk henvendelse.</i></p></center>
           </div>
         </div>
       </div>

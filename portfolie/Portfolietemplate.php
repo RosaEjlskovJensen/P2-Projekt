@@ -125,7 +125,7 @@ die("cannot connect to database".mysqli_connect_error());
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Portfolio <i class=""></i></button>
           <div class="dropdown-content">
          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
@@ -136,30 +136,30 @@ die("cannot connect to database".mysqli_connect_error());
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Info <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
-          <li><a href="../Info/blog.php" class="button">Nyheder</a></li>
-          <li><a href="../Info/andmeldelser.php" class="button">Anmeldelser</a></li>
+
+          <li><a href="../Infoforside.php" class="button">Fotograferins info</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Priser <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="../Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="../Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Booking <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="../Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="../Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Kontakt <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
@@ -242,38 +242,33 @@ span.onclick = function() {
 }
 </script>
     
-    <!-- Booking -->
+ <!-- Booking -->
  <section class="section_booking">
    <div class="u-full-width">
-     
+     <div class="container">
       <center>
         <div class="row">
-      <div class="six columns offset-by-three ramme padding5side">
-          <center>
-          <h5 class="">Invester i dine minder</h5>
-          <p align="justify" class="">
-		“Taknemmeligheden er hjertets hukommelse”, sagde H.C Andersen. 
-		Tiden går så mega stærkt, og puf, så er den borte. Lad os hjælpe hinanden med at huske, hvor små ungerne engang var, hvad deres frække smil eller mærke det nærvær, som er i lige netop jeres familie. Lad os mindes jeres bryllupsdag – alle de fantastiske gæster, gaverne, maden og små epokér, som lige netop kendetegnede jeres store dag. 
-		Mit fornemmeste opgave, er at fastfryse nogle af jeres minder, som i kan se tilbage på om 10, 20 eller 30 år og så i får præcis samme følelse, som da øjeblikket var.
-		</p>
-      <div class="row">
+          <div class="u-full-width">
+           <h5>Mangler du en fotograf?</h5>
+   
+           <div class="row">
             <div class="two columns offset-by-one-third">
-              <form action="../Booking-system-Casper/index.php"><button type="submit" class="btn btn2 u-full-width">Se Datoer</button></form> 
+              <form action="../Booking-system-Casper/index.php"><button type="submit" class="btn btn2">Se Datoer</button></form> 
             </div>
             <div class="two columns">
-              <form action="../Priser/priser.php"><button type="submit" class="btn btn2 u-full-width">Se Priser</button></form> 
+              <form action="../Priser/priser.php"><button type="submit" class="btn btn2">Se Priser</button></form> 
             </div>
           </center>   
-
+        </div>
         <div class="row">
           <div class="u-full-width">
-            <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="../Kontakt/Kontakt.php">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="../Kontakt/Kontakt.php">mail</a>.</i></p></center>
+         <center><p style="font-size: 15px"><i>Har du nogle spørgsmål så kan du udfylde <a style="color: #8b752e" href="../Kontakt/Kontakt.php">kontaktformularen</a> eller send en mig en <a style="color: #8b752e" href="../Kontakt/Kontakt.php">mail</a>.<br>OBS: Bryllup og konfirmationer skal bookes over mail eller ved telefonisk henvendelse.</i></p></center>
           </div>
         </div>
       </div>
-       </center>
-        </div>
-      </div>
+    </div>
+  </div>
+</div>
 </section>
 
  <!-- Top part of the footer-->
