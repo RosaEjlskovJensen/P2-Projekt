@@ -36,7 +36,7 @@
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Info <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="Info/blog.php" class="button">Blog</a></li>
@@ -45,21 +45,21 @@
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Priser <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Booking <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
+        <button class="btn_dropdown">Kontakt <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="Kontakt/FAQ.php" class="button">FAQ</a></li>
