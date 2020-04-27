@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php
 $kategori = array("baby", "bryllup", "børn", "familie", "gravid", "konfirmation");
+$kategori2 = array("Baby", "Bryllup", "Børn", "Familie", "Gravid", "Konfirmation");
 $item = $_GET['item'];
 require_once '../Connection.php';
 $query = "SELECT * FROM portfolieinfo WHERE id=$item ";
@@ -120,7 +121,7 @@ while($row = mysqli_fetch_assoc($results)){
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Portfolio <i class=""></i></button>
+        <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
@@ -131,7 +132,7 @@ while($row = mysqli_fetch_assoc($results)){
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class=""></i></button>
+        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
@@ -140,21 +141,21 @@ while($row = mysqli_fetch_assoc($results)){
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class=""></i></button>
+        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="../Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class=""></i></button>
+        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="../Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class=""></i></button>
+        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
@@ -174,13 +175,18 @@ while($row = mysqli_fetch_assoc($results)){
 
 <center>
         <br>
-        <br>
-         <h1> <?php echo $kategori[$item]; ?> </h1>
+        <br><br>
+<br>
 
-<?php echo $row['Text']?>
+         <h1> <?php echo $kategori2[$item]; ?> </h1>
+         <a href="Portfolietemplate.php?item=<?php echo $item ?>" class="btn btn2 Portfolieknap1">Se Portfolie</a><br><br>
+
+
+
+<div class="row"><div class="offset-by-three columns six columns"><?php echo $row['Text']?></div></div>
 <br><br>
 
-<a href="Portfolietemplate.php?item=<?php echo $item ?>" class="btn btn2">Se portfolio tilhørende <?php echo $kategori[$item]; ?> </a>
+
 </center>
 
 <?php } ?>
@@ -196,7 +202,7 @@ while($row = mysqli_fetch_assoc($results)){
         <div class="row">
           <div class="u-full-width">
            <h5>Mangler du en fotograf?</h5>
-           
+           <p style="font-size: 17px">Investigatam diutissime quaestionem, quantum nostrae mentis igniculum lux diuina dignata est, formatam rationibus litterisque mandatam offerendam uobis communicandamque curaui tam uestri cupidus iudicii quam nostri studiosus inuenti. Qua in re quid mihi sit animi quotiens stilo cogitata commendo, tum ex ipsa materiae difficultate tum ex eo quod raris id est uobis tantum conloquor, intellegi potest. Neque enim famae iactatione et inanibus uulgi clamoribus excitamur; sed si quis est fructus exterior, hic non potest aliam nisi materiae similem sperare sententiam.
            </p>
            <div class="row">
             <div class="two columns offset-by-one-third">

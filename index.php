@@ -36,30 +36,32 @@
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class=""></i></button>
+        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="Info/blog.php" class="button">Blog</a></li>
           <li><a href="Info/blog.php" class="button">Nyheder</a></li>
           <li><a href="Info/andmeldelser.php" class="button">Anmeldelser</a></li>
+                      <li><a href="Infoforside.php" class="button">Fotograferins info</a></li>
+
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class=""></i></button>
+        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class=""></i></button>
+        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class=""></i></button>
+        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="Kontakt/FAQ.php" class="button">FAQ</a></li>
@@ -79,45 +81,23 @@
   <section class="section_showcase">
       <img class="showcase_picture " src="Billeder/amalie-pics/Familie/2.jpg">
   </section>
- <!-- Seneste nyhed -->
- <!-- <section class="section_nyhed">
-    <div class="container u-full-width">
-      <div class="row">
-        <div class="u-full-width">
-          <center><h5>Seneste nyt</h5></center>
-        </div>
-      </div>
-      <div class="row">
-        <div class="one-third column offset-by-one-third column">
-          <div class="container1">
-            <center><img class="image1 link_picture" src="billeder/FBBBB1.jpg"></center>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="two columns offset-by-five columns">
-          <form action="Info/blog.php"><button type="submit" class="btn btn2">Læs Mere</button></form> 
-        </div>
-      </div>
-      <div class="row">
-        <div class="u-full-width">
-          <center><p style="font-size: 15px"><i>Tilmelde dig mit <a style="color: #8b752e" href="Info/blog.php">nyhedsbrev</a> idag og gå aldrig glip af events, specialtilbud, etc.</i></p></center>
-        </div>
-      </div>
-    </div>
-  </section>-->
 
- <!--Galleri -->
  
   <div class="row">
       <div class="six columns offset-by-three ramme">
-          <center>
+          <center><br><br>
+
+
           <h5 class="">Invester i dine minder</h5>
-          <p align="justify" class="padding5">
+          <p align="justify" class="padding5side"><i>
 		“Taknemmeligheden er hjertets hukommelse”, sagde H.C Andersen. 
 		Tiden går så mega stærkt, og puf, så er den borte. Lad os hjælpe hinanden med at huske, hvor små ungerne engang var, hvad deres frække smil eller mærke det nærvær, som er i lige netop jeres familie. Lad os mindes jeres bryllupsdag – alle de fantastiske gæster, gaverne, maden og små epokér, som lige netop kendetegnede jeres store dag. 
 		Mit fornemmeste opgave, er at fastfryse nogle af jeres minder, som i kan se tilbage på om 10, 20 eller 30 år og så i får præcis samme følelse, som da øjeblikket var.
-		</p>
+		</i></p>
+      <i class="u-pull-right padding5side">- Amalie Sandgaard</i><br><br><br>
+
+
+
        </center>
         </div>
       </div>
@@ -190,11 +170,7 @@
 	 
  		<br>
 
-  	<div class="row">
-      <div class="u-full-width">
-        
-        </div>
-      </div>
+  
     </div>  
   </section>
 
@@ -206,8 +182,7 @@
         <div class="row">
           <div class="u-full-width">
            <h5>Mangler du en fotograf?</h5>
-           
-           </p>
+         
            <div class="row">
             <div class="two columns offset-by-one-third">
               <form action="Booking-system-Casper/index.php"><button type="submit" class="btn btn2">Se Datoer</button></form> 

@@ -47,6 +47,13 @@ if(isset($_GET['conid'])){
     <textarea name="description" id="description" cols="30" rows="1"><?php echo $row['description']?> </textarea>
 
   </div>
+    <div>
+  <label for="img">Indsæt billede URL:</label>
+  <input name="link" type="text" required value="<?php echo $row['link']?>">
+</div>
+   <div>
+    <label for="kommentar">Kommentar</label>
+    <input type="kommentar" name="kommentar" id="kommentar" maxlength="200" value="<?php echo $row['kommentar']?>">  </div>
   
 
   

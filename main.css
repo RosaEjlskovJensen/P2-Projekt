@@ -708,6 +708,14 @@ there.
 	padding-right:15px;
 	background-color:#ffffff;
 }
+.box2
+{
+	border:2px solid #8b752e;
+	padding:15px;
+	background-color:#ffffff;
+	margin-bottom: 1%;
+}
+
 
 
 
@@ -759,6 +767,11 @@ there.
 	padding-left: 5%;
 	padding-right: 5%;
 }
+.padding1side
+{
+	padding-left: 1%;
+	padding-right: 1%;
+}
 .borderbox
 {
 	border-style: groove;
@@ -778,4 +791,14 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
 .height615
 {
 	height: 615px;
+}
+.Portfolieknap1{
+	width: 198px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 20px;
+}
+.greywall
+{
+	background-color:  #e3e3dd;
 }

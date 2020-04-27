@@ -1,7 +1,7 @@
     <?php
  require_once '../Connection.php';
 
-$query = "SELECT id, name, description, link FROM prices";
+$query = "SELECT * FROM prices ASE";
 $results = mysqli_query($connection,$query);
 
 if(!$results){
@@ -34,10 +34,7 @@ if(!$results){
         margin-left: 20px;
     }
     
-    .box {
-        padding-bottom: 20px;
-        margin-bottom: 20px;
-}
+   
     .para {
         padding:20px;
 }
@@ -52,7 +49,7 @@ if(!$results){
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Portfolio <i class=""></i></button>
+        <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
@@ -63,7 +60,7 @@ if(!$results){
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class=""></i></button>
+        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
@@ -72,21 +69,21 @@ if(!$results){
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class=""></i></button>
+        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="../Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class=""></i></button>
+        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="../Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class=""></i></button>
+        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
@@ -101,18 +98,19 @@ if(!$results){
       </div>
     </ul>
   </nav>
+<br>
+<br>
+<br>
+
 
   <!-- Heading -->
-<section class="section_heading">
+
 	<div class="container u-full-width">
-		<h6><center>Priser
-		</center>	
-		</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+		<h4><center>Priser</center>	</h4>
+     	
+      
 	</div>
-</section>
-<br>
-<br>
+
 
 
   <?php 
@@ -120,43 +118,47 @@ while($row = mysqli_fetch_assoc($results)){
 
 	?>  
     <!-- View of priser -->
-	<section class='priser'>
-		<div class=' offset-by-three columns six columns' class="wrap1">
-			<div class="box u-full-width">
-		
-				<br>
-				<div class='u-pull-left' class="billede1">
-					<div class='u-full-width'>
-					<center><img src="<?php echo $row['link'] ?>" width="135" height="135" /></center> <!-- Indhent information fra række; "image" -->
-					</div>
-				</div>
-			
-				<div class='row'>
-					<div class='u-full-width'>
-					<center> <?php echo $row['name']?><br>
-                     <hr> </center><!-- indhent information fra række; "title" -->
-                    <center><p class="para" style="font-size: 20px"><?php echo $row['description']?></p></center>
-					</div>
-				</div>
-
-			
 	
-			</div>
+		<div class=' offset-by-three columns six columns box2'>
+				
+				<div class="one-third column">
+					<div class="row">
+						<img class="u-full-width"  src="<?php echo $row['link']?>">
+					</div>
+				</div>
+			
+				
+				<div class="two-thirds column greywall">
+					<div class="row">
+								<br>
+						<center><p class="prispakkebillede" style="font-size: 45px"><?php echo $row['name']?> </p></center>
+						<center><p class="para" style="font-size: 20px"><?php echo $row['description']?></p> </center>  
+						<?php if(empty($row['pris']))
+							{
+								echo "<center><p class='padding5side' style='font-size: 10px'>". $row['kommentar']. "</p></center> ";
+							}else{ 
+					echo "<center><p class='u-pull-right padding5side' style='font-size: 20px'>". $row['pris']. ",-</p></center> ";
+	
+							echo "<center><p class=' padding5side' style='font-size: 12px'>". $row['kommentar']. "</p></center> ";} ?>
+						  
+					
+					</div>
+				</div>
+      		
 		</div>
-	</section> <br> 
+	
+	
+
+<br>
+
+
  <?php } ?>   
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
+
+
+
+
  
 
  <!-- Top part of the footer-->

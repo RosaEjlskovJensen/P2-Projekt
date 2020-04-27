@@ -40,11 +40,14 @@ if(isset($_GET['conid'])){
 	
   <div>
     <label for="addName">om mig øverst</label>
-    <input type="text" name="Name" id="Name" required size="40" maxlength="60" value="<?php echo $row['name']?>">  </div>
+     <br>
+
+    <textarea name="Name" id="Name" cols="30" rows="10"><?php echo $row['name']?> </textarea></div><br>
   
   <div>
-    <label for="description"> om mig nederst</label>
-    <textarea name="description" id="description" cols="30" rows="1"><?php echo $row['description']?> </textarea>
+    <label for="description"> om mig nederst</label><br>
+
+    <textarea name="description" id="description" cols="30" rows="10"><?php echo $row['description']?> </textarea>
 
   </div>
   

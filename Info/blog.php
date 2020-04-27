@@ -25,7 +25,7 @@
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Portfolio <i class=""></i></button>
+        <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
@@ -36,7 +36,7 @@
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class=""></i></button>
+        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
@@ -46,21 +46,21 @@
                 </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class=""></i></button>
+        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="../Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class=""></i></button>
+        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="../Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class=""></i></button>
+        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
@@ -127,20 +127,23 @@ body
 				<div class='row'>
 				<p><center>Her kan der være en slut bemærkning</center></p>
 				</div>
-			</div>
+			</div><br>
+
 		</div>
+
 		<div class="three columns">
-			<center>Forskellige blogs:
-			<br>
-			<div class="separator">kategorier</div><br>
+			<center>
+			
+			<div class="separator padding5side">Kategorier</div><br>
 			</center>
+			<div class="padding5side">
 			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=0" class="u-full-width"><p>FOTOGRAFERING</p></a></div>
 			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=1" class="u-full-width"><p>BILLEDE OPHÆNG</p></a></div>
 			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=2" class="u-full-width"><p>KUNDERS BLOGINDLÆG</p></a></div>
 			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=3" class="u-full-width"><p>PRODUKTER</p></a></div>
 			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=4" class="u-full-width"><p>SÅDAN TAGER DU BEDRE BILLEDER</p></a></div>
 			<div class="row"><a href="Blog-kategorier/Kategoritemplate.php?item=5" class="u-full-width"><p>TIPS OG TRICKS</p></a></div>
-			
+			</div>
 
 			
 		</div>

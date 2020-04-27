@@ -1,6 +1,7 @@
 <?php
 session_start();
 $kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
+$kategori2 = array("Baby", "Bryllup", "Boern", "Familie", "Gravid", "Konfirmation");
 $item = $_SESSION["item"];
 //action.php
 if(isset($_POST["action"]))
@@ -14,9 +15,9 @@ if(isset($_POST["action"]))
    <table class="table table-bordered table-striped">  
     <tr>
      <th width="10%">ID</th>
-     <th width="70%">Image</th>
-     <th width="10%">Change</th>
-     <th width="10%">Remove</th>
+     <th width="70%">Billede</th>
+     <th width="10%">Opdater</th>
+     <th width="10%">Slet</th>
     </tr>
   ';
   while($row = mysqli_fetch_array($result))
@@ -28,8 +29,8 @@ if(isset($_POST["action"]))
      <td>
       <img src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="60" width="75" class="img-thumbnail" />
      </td>
-     <td><button type="button" name="update" class="btn btn-warning bt-xs update" id="'.$row["id"].'">Change</button></td>
-     <td><button type="button" name="delete" class="btn btn-danger bt-xs delete" id="'.$row["id"].'">Remove</button></td>
+     <td><button type="button" name="update" class="btn btn-warning bt-xs update" id="'.$row["id"].'">Opdater</button></td>
+     <td><button type="button" name="delete" class="btn btn-danger bt-xs delete" id="'.$row["id"].'">Slet</button></td>
     </tr>
    ';
   }

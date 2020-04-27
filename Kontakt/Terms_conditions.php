@@ -23,7 +23,7 @@
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Portfolio <i class=""></i></button>
+        <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
@@ -34,7 +34,7 @@
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class=""></i></button>
+        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
@@ -43,21 +43,21 @@
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class=""></i></button>
+        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="../Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class=""></i></button>
+        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="../Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class=""></i></button>
+        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
@@ -89,7 +89,7 @@
 <section class="section_text">
   	<div class="container">
   		<div class="row">
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Gavekort</h6>
   				<p>Gavekort udstedes udelukkende af Amalie Sandgaard Photography. Gavekortet er et lukket forudbetalt kort, som kan benyttes som del- eller fuldbetaling til fotoshoots hos Amalie Sandgaard Photography. Gavekortet kan også bruges til betaling af ekstra filer eller prints.
 Hvis gavekortet er på et mindre beløb end fotoshootet, skal det resterende beløb betales på dagen hvor fotoshootet finder sted. 
@@ -98,7 +98,7 @@ Hvis gavekortet er på et mindre beløb end fotoshootet, skal det resterende bel
 
   				</p></center>	
   			</div>
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Digitale filer: </h6>
   				<p>Alle filer i det online galleri vises med vandmærke, men ved køb vil kunden modtage et link til filen i fuldformat og uden vandmærke. 
 Ved tab af filer eller glemt download, sletning, ødelagt harddrive eller lign. Er Amalie Sandgaard Photography ikke ansvarlig for at kunne levere filerne igen. Er det indenfor et år, efter fotograferingen har fundet sted, vil billederne stadig kunne findes i min database
@@ -112,12 +112,12 @@ Ved tab af filer eller glemt download, sletning, ødelagt harddrive eller lign. 
 <section class="section_text">
   	<div class="container">
   		<div class="row">
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Levering</h6>
   				<p> Amalie Sandgaard Photography redigere selv billederne, så du som kunde ved, at du får et unikt stykke håndværk. Har kunden købt digitale filer i høj opløsning, skal disse betales før levering. Kunden vil også modtage et webformat af de købte digitale filer, som skal anvendes på sociale medier. 	
   				</p></center>	
   			</div>
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Dine rettigheder</h6>
   				<p>Hvis du ønsker at få adgang til dine data, få dem rettet eller slettet, er du meget velkommen til at kontakte os, og vi vil undersøge muligheden. Du har ret til at få oplyst, hvilke data vi behandler om dig, samt hvor de stammer fra eller hvad vi anvender dem til. Det er også altid muligt, at få oplyst hvor længe vi opbevarer dine persondata.
 
@@ -135,7 +135,7 @@ Henvender du dig med anmodning om at få oplysninger rettet eller slettet, vil v
     <section class="section_text">
   	<div class="container">
   		<div class="row">
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Aflysning</h6>
   				<p> 	Ved aflysning inden 7 dage til fotograferingens starttidspunkt, vil det være muligt at rykke tiden uden at depositummet går tabt.  Dette er dog ikke gældende i oktober, november og december pga. Julefotograferinger.
 Ved aflysning imellem 7-2 dage inden fotograferingens starttidspunkt, vil depositummet ikke blive refunderet, og i tilfælde af at kunden ønsker en ny tid, betales der et nyt depositum. 
@@ -148,7 +148,7 @@ Evt. indbetaling for fotografering vil ikke blive refunderet, og har indbetaling
 
   				</p></center>	
   			</div>
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Force majure</h6>
   				<p>Amalie Sandgaard Photography tager forbehold for udefrakommende events, som Amalie Sandgaard Photography ikke har kontrol over, som kan forhindre Amalie Sandgaard Photography. I at opfylde aftalen. Det kunne være ting som dødsfald, sygdom, ulykker eller lign. I tilfælde af force majure, vil Amalie Sandgaard Photography gøre alt for at hjælpe kunderne med at få en anden fotograf til at hjælpe med at løse opgaven, men da disse tilfælde oftest opstår med kort varsel, kan Amalie Sandgaard Photography ikke garantere at dette lykkedes, og i tilfælde af store events(som bryllupper mm), vil kunden få det indbetalte depositum og evt. slutbbetaling refunderet. Kunden er ikke berettiget til anden godtgørelse. 
   				</p></center>
@@ -160,12 +160,12 @@ Evt. indbetaling for fotografering vil ikke blive refunderet, og har indbetaling
 <section class="section_text">
   	<div class="container">
   		<div class="row">
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Betaling</h6>
   				<p> Der kan betales med Mobile Pay, kontant eller bankoverførsel. 	
   				</p></center>	
   			</div>
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Prints</h6>
   				<p>Ved køb af prints, er leveringstiden normalt 2-3 uger. Billederne kan afhentes hos Amalie Sandgaard Photography (Bispensgade 13, 1.2, 9000 Aalborg)  eller hos Børneloppen (Stenbukken 6, Skalborg) Såfremt kunden ønsker at printene skal sendes, koster dette fra 100 kr og op alt afhængig af pakkens vægt. 
   				</p></center>
@@ -178,7 +178,7 @@ Evt. indbetaling for fotografering vil ikke blive refunderet, og har indbetaling
 <section class="section_text">
   	<div class="container">
   		<div class="row">
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Ophavsret</h6>
   				<p> Copyright 
 1) Ophavsretten vil altid tilhøre Amalie Sandgaard Photography. 
@@ -193,7 +193,7 @@ Læs mere om copyright og ophavsret her: <a href="https://www.retsinformation.dk
 	
   				</p></center>	
   			</div>
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Fortrydelsesret</h6>
   				<p>Da fotograferinger er kundetilpassede varer, bortfalder de 14 dages fortrydelsesret. Ved digitale produkter bortfalder fortrydelsesretten når man forlader fotoshootet hos Amalie Sandgaard Photography. 
 Forbrugeraftaleloven §18, Stk. 4. Såfremt aftalen vedrører fjernsalg af en ikke finansiel tjenesteydelse eller en vare, som skal fremstilles eller tilpasses efter forbrugerens individuelle behov, gælder fortrydelsesretten kun, indtil udførelsen, fremstillingen eller tilpasningen begynder, når forbrugeren forinden har givet sit samtykke til, at den erhvervsdrivende kunne begynde udførelsen m.v. inden fortrydelsesfristens udløb. Denne begrænsning i fortrydelsesretten gælder dog ikke, hvis den pågældende aftale vedrører løbende levering og er indgået under eller i forbindelse med den erhvervsdrivendes telefoniske henvendelse til forbrugeren uden dennes forudgående anmodning.

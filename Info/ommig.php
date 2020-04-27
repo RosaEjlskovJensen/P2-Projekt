@@ -37,7 +37,7 @@ if(!$results){
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Portfolio <i class=""></i></button>
+        <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
@@ -48,7 +48,7 @@ if(!$results){
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class=""></i></button>
+        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
@@ -57,21 +57,21 @@ if(!$results){
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class=""></i></button>
+        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="../Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class=""></i></button>
+        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="../Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class=""></i></button>
+        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
@@ -95,25 +95,25 @@ while($row = mysqli_fetch_assoc($results)){
 	<section class="om_mig">
     	<div class="container">
 			<div class="box">
-      			<div class="row">
+      			<div class="row padding5side">
         			<div class="one-half column">
          				<div class="container1">
-            				<center><img class="image_amalie" src="../Billeder/amalie.jpg"></center><br>
-							 <div class="row">
-								 <center><a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a> <a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></center><br>
-          					</div>
+            				<center><img class="image_amalie eleven columns" src="../Billeder/amalie.jpg"></center><br>
+							   
           				</div>
 					</div>
 			
 					<div class="one-half column">
 					<br>				
 					<h5>Om mig</h5>
+					<div class="twelve columns">
 					<p style="text-align: justify; font-size: 17px; padding-right: 15px"><?php echo $row['name']?></p>
 
 					<p style="text-align: justify; font-size: 17px; padding-right: 15px"><?php echo $row['description']?> </p>
 
 					<p style="text-align: justify; font-size: 17px; padding-right: 15px">Kh Amalie Sandgaard Photography</p>
 					</div>
+       		</div>
         		</div>
       		</div>
 		</div>

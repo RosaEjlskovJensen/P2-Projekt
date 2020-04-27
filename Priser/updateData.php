@@ -20,11 +20,16 @@ if(isset($_POST['Name'])&&isset($_POST['id'])){
 				}else{
 					$image="untitled.png";
 				}
+				if(isset($_POST['kommentar'])){
+					$kommentar = $_POST['kommentar'];
+				}else{
+					
+				}
 
 				//Man kan se her ved UPDATE at den ikke sletter, eller adder noget, den updater bare de data der allerede er skrevne. 
 
 				if(!empty($name)&&!empty($id)){
-					$query = "UPDATE prices SET name='$name',description='$description' WHERE id = '$id';";
+					$query = "UPDATE prices SET name='$name',description='$description',link='$image',kommentar='$kommentar' WHERE id = '$id';";
    				echo $query;
 					$results = mysqli_query($connection,$query);
 

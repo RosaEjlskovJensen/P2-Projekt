@@ -5,7 +5,7 @@ session_start();
 $item = $_GET['item'];
 $_SESSION["item"]=$item;
 $kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
-$kategori2 = array("baby", "bryllup", "Børn", "familie", "gravid", "konfirmation");
+$kategori2 = array("Baby", "Bryllup", "Børn", "Familie", "Gravid", "Konfirmation");
 
 ?>
 
@@ -22,7 +22,7 @@ $kategori2 = array("baby", "bryllup", "Børn", "familie", "gravid", "konfirmatio
    <h3 align="center"><?php echo($kategori2[$item])?></h3>  
    <br />
    <div align="right">
-    <button type="button" name="add" id="add" class="btn btn-success">Add</button>
+    <button type="button" name="add" id="add" class="btn btn-success">Tilføj</button>
    </div>
    <br />
    <div id="image_data">
@@ -37,25 +37,25 @@ $kategori2 = array("baby", "bryllup", "Børn", "familie", "gravid", "konfirmatio
   <div class="modal-content">
    <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal">&times;</button>
-    <h4 class="modal-title">Add Image</h4>
+    <h4 class="modal-title">Tilføj billede</h4>
    </div>
    <div class="modal-body">
     <form id="image_form" method="post" enctype="multipart/form-data">
-     <p><label>Select Image</label>
+     <p><label>Vælg Billede</label>
      <input type="file" name="image" id="image" /></p><br />
      <input type="hidden" name="action" id="action" value="insert" />
      <input type="hidden" name="image_id" id="image_id" />
-     <input type="submit" name="insert" id="insert" value="Insert" class="btn btn-info" />
+     <input type="submit" name="insert" id="insert" value="Indsæt" class="btn btn-info" />
       
     </form>
    </div>
    <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal">luk</button>
    </div>
   </div>
  </div>
 </div>
- <a href="Portfolieadminside.php">Tilbage</a>
+ <center><a class="btn btn-primary" href="Portfolieadminside.php">Tilbage</a></div>
 <script>  
 $(document).ready(function(){
  

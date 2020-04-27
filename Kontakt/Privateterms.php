@@ -23,7 +23,7 @@
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Portfolio <i class=""></i></button>
+        <button class="btn_dropdown">Portfolio <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
@@ -34,7 +34,7 @@
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class=""></i></button>
+        <button class="btn_dropdown">Info <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
@@ -43,21 +43,21 @@
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class=""></i></button>
+        <button class="btn_dropdown">Priser <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Priser/Priser.php" class="button">Pakker</a></li>
           <li><a href="../Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class=""></i></button>
+        <button class="btn_dropdown">Booking <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Booking-system-Casper/index.php" class="button">Kalender</a></li>
           <li><a href="../Admin side/Loginside.php" class="button">Login</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class=""></i></button>
+        <button class="btn_dropdown">Kontakt <i class="fas fa-chevron-down"></i></button>
           <div class="dropdown-content">
           <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
           <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
@@ -89,12 +89,12 @@
 <section class="section_text">
   	<div class="container">
   		<div class="row">
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Videregivelse af oplysninger</h6>
   				<p> Hos Amalie Sandgaard Photography videregiver vi udelukkende oplysninger til tredjepart i overensstemmelse med, hvad der er anført i denne privatlivspolitik eller aftalt med dig personligt. Det betyder, at vi kan videregive dine oplysninger, såfremt vi er forpligtet til at videregive eller dele data, for at overholde en retslig forpligtelse. Videregivelse kan også ske efter anvisning fra en domstol eller andenmyndighed. Dette indebærer udveksling af oplysninger med andre virksomheder og/eller organisationer medhenblik på beskyttelse mod svindel Amalie Sandgaard Photography beskytter dine persondata og behandler alle personfølsomme data med storforsigtighed.
   				</p></center>	
   			</div>
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Hvilke personoplysninger behandles?</h6>
   				<p>Privatlivspolitik for Amalie Sandgaard Photography 
 (CVR: 38 02 70 34) <br>
@@ -110,10 +110,10 @@ Hos Amalie Sandgaard Photography behandler vi dine persondata i overensstemmelse
   	</div>
 </section>
 
-<section class="section_text">
+<section class="section_text ">
   	<div class="container">
   		<div class="row">
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Hvilke data insamles?</h6>
   				<p> Vi gemmer almindelige personoplysninger om dig, som alle er afgivet til os af dig. Eksempler på data, som du aktivt kan have afgivet er:<br></br>
 •	Navn, adresse, telefonnummer, e-mailadresse og cvr. nr.<br><br>
@@ -122,7 +122,7 @@ Hos Amalie Sandgaard Photography behandler vi dine persondata i overensstemmelse
 	
   				</p></center>	
   			</div>
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Anvendelse og opbevaring af indsamlede data</h6>
   				<p>De indsamlede data anvendes med det formål at føre journal, for at kunne yde den bedst mulige behandling, samt informere og komme i kontakt med kunder.
   				</p></center>
@@ -134,13 +134,13 @@ Hos Amalie Sandgaard Photography behandler vi dine persondata i overensstemmelse
 <section class="section_text">
   	<div class="container">
   		<div class="row">
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Persondata opbevares</h6>
   				<p>•	Informationer opbevares på computerens egen harddisk, samt en ekstern harddisk<br><br>
 •	Amalie Sandgaard er underlagt tavshedspligt, og anvender udelukkende indsamlede oplysninger til sessioner<br><br>
 •	Oplysninger på computerens harddisk og eksterne harddisk slettes 1 år efter endt samarbejde</p></center>	
   			</div>
-  			<div class="six columns">
+  			<div class="six columns padding1side">
   				<center><h6>Du har ret til at klage til datatilsynet</h6>
   				<p>Amalie Sandgaard er underlagt persondatalovgivningens (herunder EU’s persondataforordningen og national persondatalovgivning) bestemmelser om behandling af personlige oplysninger. Oplever du en krænkelse af dit privatliv under brug af vores websted eller ved anden interaktion med Amalie Sandgaard Photography, kan du klage til Datatilsynet.
  <br>

@@ -26,7 +26,7 @@
 	
   <div>
     <label for="Name">Pakke</label>
-    <input type="text" name="name" id="name" required size="40" maxlength="60" required>
+    <input type="text" name="name" id="name" maxlength="60" required>
   </div>
   
   <div>
@@ -34,12 +34,19 @@
     <textarea name="description" id="description" cols="30" rows="1" required></textarea>
 
   </div>
+    <div>
+    <label for="Pris">Pris</label>
+    <input type="text" name="Pris" id="name" maxlength="60">
+  </div>
     
     <div>
   <label for="img">Indsæt billede URL:</label>
   <input name="link" type="text" required>
 </div>
-    
+    <div>
+    <label for="kommentar">Kommentar</label>
+    <input type="text" name="kommentar" id="kommentar" maxlength="200">
+  </div>
   <div class="addBtnDiv">
   	<input type="submit" id="addBtn" value="tilføj">
 	</div>
