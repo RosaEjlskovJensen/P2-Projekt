@@ -119,7 +119,7 @@ background-color: #e3e3dd;
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
           <li><a href="../Info/blog.php" class="button">Blog</a></li>
           
-          <li><a href="../Infoforside.php" class="button">Fotograferins info</a></li>
+          <li><a href="../Infoforside.php" class="button">Fotograferings info</a></li>
             </div>
             </div>
       <div class="nav_dropdown">

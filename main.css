@@ -326,6 +326,27 @@ margin-left: 20px}}
 .nav_dropdown:hover .dropdown-content{
   display: block;}
 
+#nav_dropdown{
+  float: left;
+  overflow: hidden;}
+
+#nav_dropdown #btn_dropdown{
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  padding-left: 20px;
+  background-color: inherit;
+  font-family: inherit;
+  margin-top: 12px;
+  margin-bottom: 20px; }
+
+#nav_dropdown:hover #btn_dropdown{
+  background-color: inherit;
+  color: #8b752e;
+  text-decoration: underline;}
+
 
 /* Color ref.
 #e3e3dd = cream~beige / den nuance bruges til navigationsbaren og footer. 

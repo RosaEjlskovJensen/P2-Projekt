@@ -32,16 +32,16 @@ if(!$results){
 	
  <!-- Navigation bar -->
   <nav class="nav">
-    <a href="../index.php"><img class="img_logo" src="../Billeder/AmalieSandgaardPhotography_LOGO.png"></a>
+    <a href="../index.php"><img class="img_logo" src="../billeder/AmalieSandgaardPhotography_LOGO.png"></a>
     <input type="checkbox" id="menu_btn" class="menu_btn" />
     <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
     <ul class="menu">
       <div class="nav_dropdown">
         <button class="btn_dropdown">Portfolio <i class=""></i></button>
           <div class="dropdown-content">
-         <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
+          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
-          <li><a href="../portfolie/Portfolietemplate.php?item=2" class="button">Børn</a></li>
+          <li><a href="../portfolie/Portfolietemplate.php?item=2" class="button">CV</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=3" class="button">Familie</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=4" class="button">Gravid</a></li>
           <li><a href="../portfolie/Portfolietemplate.php?item=5" class="button">Konfirmation</a></li>
@@ -51,16 +51,26 @@ if(!$results){
         <button class="btn_dropdown">Info <i class=""></i></button>
           <div class="dropdown-content">
           <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
-          <li><a href="../Info/blog.php" class="button">Blog</a></li>
-          
-          <li><a href="Infoforside.php" class="button">Fotograferins info</a></li>
+          <li><a href="../Infoforside.php" class="button">Fotograferings info</a></li>
             </div>
             </div>
+
+
+            <div id="nav_dropdown">
+                <a href="../Info/blog.php" id="btn_dropdown">blog</a>
+            </div>
+        
+            <div id="nav_dropdown">
+                <a href="../Kunde-billeder/FindTabel-kunde.php" id="btn_dropdown">Kundelogin</a>
+            </div>
+        
       <div class="nav_dropdown">
         <button class="btn_dropdown">Priser <i class=""></i></button>
           <div class="dropdown-content">
-          <li><a href="../Priser/Priser.php" class="button">Pakker</a></li>
-          <li><a href="../Kunde-billeder/FindTabel-kunde.php" class="button">Digital Print</a></li>
+          <li><a href="../Priser/Priser.php" class="button">Enkelt prints</a></li>
+            <li><a href="../Priser/Priser-Generel.php" class="button">Generelle pakker</a></li>
+              <li><a href="../Priser/Priser-Bryllup.php" class="button">Bryllups pakker</a></li>
+              <li><a href="../Priser/Priser-Konfirmation.php" class="button">Konfirmations pakker</a></li>
             </div>
             </div>
       <div class="nav_dropdown">
