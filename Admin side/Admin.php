@@ -40,8 +40,7 @@ session_start();
 				<a href="Mailing_List.php" class="btn3 btn-primary u-full-width">Mailing Liste</a>
                 <a href="Portfolieadminside.php" class="btn3 btn-primary u-full-width">Portfolie</a>
                 <a href="PortfolieInfoadminside.php" class="btn3 btn-primary u-full-width">portfolie infosider</a>
-                <a href="../Priser/Addprice.php" class="btn3 btn-primary u-full-width">Tilføj Prispakke</a>
-                <a href="../Priser/Editprice.php" class="btn3 btn-primary u-full-width">Rediger Prispakke</a>
+                <a href="../Priser/Priser_adminside.php" class="btn3 btn-primary u-full-width">Pris pakker</a>
                 <a href="../Info/ommigadmin.php" class="btn3 btn-primary u-full-width">Rediger Om mig</a>
 
 				

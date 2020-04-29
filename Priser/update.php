@@ -2,12 +2,13 @@
 require_once '../Connection.php';
 
 if(isset($_GET['conid'])){
-	
+	$item = $_GET['item'];
+	$kategori = array('prices','prices-generel','prices-bryllup','prices-konfirmation')	;	
 	$id=htmlentities($_GET['conid']);
 	
 	if(!empty($id)){
 		
-		$query = "SELECT * FROM prices WHERE id= $id ";
+		$query = "SELECT * FROM `$kategori[$item]` WHERE id= $id ";
 		
 		$results = mysqli_query($connection,$query);
 		
@@ -49,7 +50,7 @@ if(isset($_GET['conid'])){
 
 <!-- Form der kan reditere dataen i de forskellige pakker. Når du trykker på knappen til slut, sendes man videre til siden updatedata.php -->
 
-<form name="addform" id="addform" method="post" action="updateData.php" autocomplete="on">
+<form name="addform" id="addform" method="post" action="updateData.php?item=<?php echo $item ?>" autocomplete="on">
 	
   <div>
     <label for="addName">Pakke</label>
@@ -76,7 +77,7 @@ if(isset($_GET['conid'])){
   <input type="hidden" name="id" value="<?php echo $id?>">
 </form>
 
-<a href="Editprice.php" class="btn3 btn-warning">TILBAGE</a>
+<a href="Editprice.php?item=<?php echo $item ?>" class="btn3 btn-warning">TILBAGE</a>
 </body>
 </html>
 

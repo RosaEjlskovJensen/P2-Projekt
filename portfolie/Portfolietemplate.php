@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
-$kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
+$kategori = array("baby", "bryllup", "cv", "familie", "gravid", "konfirmation");
 $item = $_GET['item'];
-$kategorioverskrift = array("Babybilleder", "Bryllupsbilleder", "Børnebilleder", "Familiebilleder", "Graviditetsbilleder", "Konfirmationsbilleder");
+$kategorioverskrift = array("Babyer og Børnbilleder", "Bryllupsbilleder", "CV billeder", "Familiebilleder", "Graviditetsbilleder", "Konfirmationsbilleder");
 
 //database connection
 require_once '../Connection.php';
@@ -197,7 +197,7 @@ die("cannot connect to database".mysqli_connect_error());
   
   while($row = mysqli_fetch_array($result))
   {
-   $output.= '<img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="250" width="375" />'; 
+   $output.= '<img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="300" />'; 
   }
   echo $output;
  }

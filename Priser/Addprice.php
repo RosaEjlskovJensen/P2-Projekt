@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php 
+$item = $_GET['item'];
+
+?>
 <html>
   <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -23,7 +27,7 @@
 <h1>Tilføj pakke</h1>
 <!-- Simpel form til at uploade pakker. Action siden som laver handlingen hedder insterprice.php -->
 
-<form name="addform" id="addform" method="post" action="Insertprice.php" autocomplete="on" enctype="multipart/form-data">
+<form name="addform" id="addform" method="post" action="Insertprice.php?item=<?php echo $item ?>" autocomplete="on" enctype="multipart/form-data">
 	
   <div>
     <label for="Name">Pakke</label>

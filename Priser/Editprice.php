@@ -1,7 +1,9 @@
 <?php
  require_once '../Connection.php';
+$item = $_GET['item'];
+$kategori = array("prices","prices-generel","prices-bryllup","prices-konfirmation");
 
-$query = "SELECT id, name, description, link FROM prices";
+$query = "SELECT * FROM `$kategori[$item]` ORDER BY id DESC";
 $results = mysqli_query($connection,$query);
 
 if(!$results){
@@ -49,10 +51,10 @@ while($row = mysqli_fetch_assoc($results)){
     <h6><?php echo $row['name']." ".$row['description'] ?>"</h6>
     <div>
 <!-- Sender videre til update.php hvor man kan redigere i pakken -->
-    	<a href="update.php?conid=<?php echo $row['id']?>" class="btn3 btn-success">OPDATER</a>
+    	<a href="update.php?item=<?php echo $item ?>&conid=<?php echo $row['id']?>" class="btn3 btn-success">OPDATER</a>
 
 <!-- Sender viedere til ddeleteprice.php som sletter ved hjælp af databasen -->
-      <a href="Deleteprice.php?conid=<?php echo $row['id']?>" class="btn3 btn-danger">SLET</a>
+      <a href="Deleteprice.php?item=<?php echo $item ?>&conid=<?php echo $row['id']?>" class="btn3 btn-danger">SLET</a>
     </div>
    
 	</li>

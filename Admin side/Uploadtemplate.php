@@ -4,8 +4,8 @@
 session_start();
 $item = $_GET['item'];
 $_SESSION["item"]=$item;
-$kategori = array("baby", "bryllup", "boern", "familie", "gravid", "konfirmation");
-$kategori2 = array("Baby", "Bryllup", "Børn", "Familie", "Gravid", "Konfirmation");
+$kategori = array("baby", "bryllup", "cv", "familie", "gravid", "konfirmation");
+$kategori2 = array("Baby og Børn", "Bryllup", "CV", "Familie", "Gravid", "Konfirmation");
 
 ?>
 
@@ -20,7 +20,7 @@ $kategori2 = array("Baby", "Bryllup", "Børn", "Familie", "Gravid", "Konfirmatio
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
  </head>  
  <body>  
-  <br /><br />  
+  <br/><br/>  
   <div class="container" style="width:900px;">  
    <h3 align="center"><?php echo($kategori2[$item])?></h3>  
    <br />
@@ -90,7 +90,7 @@ $(document).ready(function(){
   var image_name = $('#image').val();
   if(image_name == '')
   {
-   alert("Please Select Image");
+   alert("Vælg et billede");
    return false;
   }
   else
@@ -98,7 +98,7 @@ $(document).ready(function(){
    var extension = $('#image').val().split('.').pop().toLowerCase();
    if(jQuery.inArray(extension, ['gif','png','jpg','jpeg']) == -1)
    {
-    alert("Invalid Image File");
+    alert("Forkert billede fil");
     $('#image').val('');
     return false;
    }
@@ -131,7 +131,7 @@ $(document).ready(function(){
  $(document).on('click', '.delete', function(){
   var image_id = $(this).attr("id");
   var action = "delete";
-  if(confirm("Are you sure you want to remove this image from database?"))
+  if(confirm("er du sikker på at du vil slette billedet?"))
   {
    $.ajax({
     url:"uploadaction.php",

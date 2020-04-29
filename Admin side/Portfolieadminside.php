@@ -24,9 +24,9 @@
 		<div class="six columns">	
 			
 				<h2> Vælg Kategori <h2>
-				<a href="Uploadtemplate.php?item=0" class="btn3 btn-primary u-full-width">BABY</a>
+				<a href="Uploadtemplate.php?item=0" class="btn3 btn-primary u-full-width">BABY OG BØRN</a>
 				<a href="Uploadtemplate.php?item=1" class="btn3 btn-primary u-full-width">BRYLLUP</a>
-				<a href="Uploadtemplate.php?item=2" class="btn3 btn-primary u-full-width">BØRN</a>
+				<a href="Uploadtemplate.php?item=2" class="btn3 btn-primary u-full-width">CV</a>
                 <a href="Uploadtemplate.php?item=3" class="btn3 btn-primary u-full-width">FAMILIE</a>
                 <a href="Uploadtemplate.php?item=4" class="btn3 btn-primary u-full-width">GRAVID</a>
                 <a href="Uploadtemplate.php?item=5" class="btn3 btn-primary u-full-width">KONFIRMATION</a>

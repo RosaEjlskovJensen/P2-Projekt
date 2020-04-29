@@ -1,7 +1,7 @@
     <?php
  require_once '../Connection.php';
 
-$query = "SELECT * FROM prices ASE";
+$query = "SELECT * FROM prices-bryllup ASE";
 $results = mysqli_query($connection,$query);
 
 if(!$results){
@@ -106,7 +106,8 @@ if(!$results){
   <!-- Heading -->
 
 	<div class="container u-full-width">
-		<h4><center>Enkelt Print</center>	</h4>
+		<h4><center>Bryllupspakker</center>	</h4>
+    	<center><p>Info eneklte prints priser og størelser kan findes <a href="Priser.php" class="text1">her</a></p>
      	
       
 	</div>

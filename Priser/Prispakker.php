@@ -1,6 +1,15 @@
 <!DOCTYPE html>
+<?php
+session_start();
+	if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == false)
+	{
+		header("Location: Loginside.php");
+		
+	}
+	$item = $_GET['item'];	
+?>
 <html>
-   <head>
+ <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     	<meta charset="utf-8">
 	<title>Amalie Sandgaard | Photography</title>
@@ -22,16 +31,14 @@
         
     
 		<div class="six columns">	
-			<div class="">
-				<h2> Vælg Infoside <h2>
-				<a href="Portfolieinfoupdate.php?id=0" class="btn3 btn-primary u-full-width">BABY OG BØRN</a>
-				<a href="Portfolieinfoupdate.php?id=1" class="btn3 btn-primary u-full-width">BRYLLUP</a>
-				<a href="Portfolieinfoupdate.php?id=2" class="btn3 btn-primary u-full-width">CV</a>
-                <a href="Portfolieinfoupdate.php?id=3" class="btn3 btn-primary u-full-width">FAMILIE</a>
-                <a href="Portfolieinfoupdate.php?id=4" class="btn3 btn-primary u-full-width">GRAVID</a>
-                <a href="Portfolieinfoupdate.php?id=5" class="btn3 btn-primary u-full-width">KONFIRMATION</a>
-                <a href="Admin.php" class="btn3 btn-warning u-full-width">TILBAGE</a>
-			</div>
+			
+				<h2> Vælg Kategori <h2>
+				<a href="Addprice.php?item=<?php echo $item ?>" class="btn3 btn-primary u-full-width">TILFØJ PAKKE</a><br>
+				<a href="Editprice.php?item=<?php echo $item ?>" class="btn3 btn-primary u-full-width">REDIGER PAKKE</a><br>
+				
+                <a href="../Admin side/Admin.php" class="btn3 btn-warning u-full-width">TILBAGE</a>
+					
+			
 		</div>
 	
   </body>

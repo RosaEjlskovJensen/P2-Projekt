@@ -34,7 +34,7 @@ session_start();
 			
 				<h2> Vælg Kategori <h2>
 				
-				<a href="EditKategoritemplate.php?item=0" class="btn3 btn-success u-full-width">FORSIDE</a><br>
+				<a href="Main-Blog-Side/EditKategoritemplate_Main.php" class="btn3 btn-success u-full-width">FORSIDE</a><br>
 				<a href="EditKategoritemplate.php?item=0" class="btn3 btn-primary u-full-width">FOTOGRAFERING</a><br>
 				<a href="EditKategoritemplate.php?item=1" class="btn3 btn-primary u-full-width">BILLEDE OPHÆNG</a><br>
 				<a href="EditKategoritemplate.php?item=2" class="btn3 btn-primary u-full-width">KUNDERS BLOGINDLÆG</a><br>

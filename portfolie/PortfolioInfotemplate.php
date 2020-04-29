@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-$kategori = array("baby", "bryllup", "børn", "familie", "gravid", "konfirmation");
-$kategori2 = array("Baby", "Bryllup", "Børn", "Familie", "Gravid", "Konfirmation");
+$kategori = array("baby", "bryllup", "cv", "familie", "gravid", "konfirmation");
+$kategori2 = array("Babyer og Børn", "Bryllup", "CV", "Familie", "Gravid", "Konfirmation");
 $item = $_GET['item'];
 require_once '../Connection.php';
 $query = "SELECT * FROM portfolieinfo WHERE id=$item ";
@@ -182,8 +182,17 @@ while($row = mysqli_fetch_assoc($results)){
          <a href="Portfolietemplate.php?item=<?php echo $item ?>" class="btn btn2 Portfolieknap1">Se Portfolie</a><br><br>
 
 
-
-<div class="row"><div class="offset-by-three columns six columns"><?php echo $row['Text']?></div></div>
+<style>
+	.billede img
+	{
+		display:block !important;
+		max-width: 600px !important;
+		max-height: 600px !important;
+		width: auto !important;
+  		height: auto !important;
+	}
+</style>
+<div class="row"><div class="offset-by-three columns six columns billede"><?php echo $row['Text']?></div></div>
 <br><br>
 
 

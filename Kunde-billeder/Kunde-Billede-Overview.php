@@ -178,10 +178,15 @@ die("cannot connect to database".mysqli_connect_error());
 <br>
 <br>
 <center>
+         
          <h1> Billede Bestilling </h1>
          <div class="twelve columns borderbox"><br>
          	<center>
-         	<p class="six columns offset-by-three">Her har du mulighed for at udvælge de billeder du ønsker printet. Samtidig har du mulig for at vælge hvordan dine billeder skal formateres samt typen. Du skal vælge 10 billeder der skal sendes til print. Vælger du mere end de 10 prints vil der bliver tilføjet en mer pris på 98,95,- per billede</p></center>
+         	<p class="six columns offset-by-three">Info om priser og pakker kan findes her:<br>
+			 <a href="../Priser/Priser.php" class="text1">Enkelt print</a><br>
+				<a href="../Priser/Priser-Generel.php" class="text1">Generelle pakker</a><br>
+					<a href="../Priser/Priser-Bryllup.php" class="text1">Bryllups pakker</a><br>
+						<a href="../Priser/Priser-Konfirmation.php" class="text1">Konfirmations pakker</a></p></center>
          </div>
 		</center>
     
@@ -236,6 +241,23 @@ die("cannot connect to database".mysqli_connect_error());
 <input type="radio" class=""'.  'name="option1'.$option1.'"  value="Farve">Farve
 	  <input type="radio" class=""'.  'name="option1'.$option1.'"  value="sort/hvid">Sorthvid
 		
+		<label for="Type">Tryk type</lable>
+		<select '.  'name="option5'.$option5.'" class="">
+	   <option disabled selected value>vælg</option>
+	   <option value="Blank">Blank</option>
+	   <option value="Mat">Mat</option>
+	   <option value="Skumplade">Skumplade</option>
+   </select>
+		
+				<label for="Antal">Antal</lable>
+  <select '.  'name="option4'.$option4.'" class="">
+		  <option disabled selected value>vælg</option>
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+  </select>
+		
 		<label for="stoerelse">Størelse</lable>
 		<select '.  'name="option3'.$option3.'" class="">
 		  <option disabled selected value>vælg</option>
@@ -245,22 +267,9 @@ die("cannot connect to database".mysqli_connect_error());
 		  <option value="10x9">10x9</option>
   </select>
   
-  		<label for="Antal">Antal</lable>
-  <select '.  'name="option4'.$option4.'" class="">
-		  <option disabled selected value>vælg</option>
-		  <option value="1">1</option>
-		  <option value="2">2</option>
-		  <option value="3">3</option>
-		  <option value="4">4</option>
-  </select>
+  
 		
-		<label for="Type">Tryk type</lable>
-		<select '.  'name="option5'.$option5.'" class="">
-	   <option disabled selected value>vælg</option>
-	   <option value="Blank">Blank</option>
-	   <option value="Mat">Mat</option>
-	   <option value="Skumplade">Skumplade</option>
-   </select>
+		
    
    		<label for="Kommentar">Kommentar</lable>
 		<input type"text" '.  'name="option6'.$option6.'" size="12" class="">

@@ -1,4 +1,18 @@
 <!DOCTYPE html>
+<?php
+//database connection
+require_once '../Connection.php';
+if(!$connection){
+die("cannot connect to database".mysqli_connect_error());
+}
+$query = "SELECT * FROM mainblog";
+$results = mysqli_query($connection,$query);
+
+if(!$results){
+   die("could not query the database" .mysqli_error());
+}
+
+?>
 <html>
 <head>		
 	<meta charset="utf-8">
@@ -102,34 +116,31 @@ body
 		
 	<!-- View of blogposts -->
 	<section class='blogpost'>
-		<div class=' offset-by-three columns six columns'>
-			<div class="box u-full-width">
-				<br>
-				
-				<div class='row'>
-					<div class='u-full-width'>
-					<center><img class="img_viewblog" src="https://cdn.sparesinmotion.com/sites/default/files/test-product-test.png"></center> <!-- Indhent information fra række; "image" -->
-					</div>
-				</div>
-				
-				<div class='row'>
-					<div class='u-full-width'>
-					<center><h5>Introduktion til blogs</h5></center> <!-- indhent information fra række; "title" -->
-					</div>
-				</div>
-				
-				<div class='row'>
-				<div class='u-full-width'>
-				<center><p style="font-size: 17px">Text omkring at her kan man finde information om mange spændene ting, og der løbende kommer nye intrasante posts</p></center> <!-- Indhent information fra række; "description" -->
-				</div>
-				</div>
-				
-				<div class='row'>
-				<p><center>Her kan der være en slut bemærkning</center></p>
-				</div>
-			</div><br>
+		<section class="priser"> 
+<div class=' offset-by-three columns six columns'>
+    
+          <?php 
+while($row = mysqli_fetch_assoc($results)){
 
-		</div>
+	?>  
+          
+            <div class='row box'>
+				<div class='u-full-width'>
+	 <center>
+                
+               <div class="box1">                                                       
+			     <?php echo $row['text']?>
+                  </div></div></div>
+     </center>
+				
+			
+	
+
+     
+ <?php } ?>
+ 	</div>
+  	</div>
+       </section> 
 
 		<div class="three columns">
 			<center>
@@ -190,4 +201,4 @@ body
   </section>
 	</body>
 	</html>
-
+	<?php mysqli_close($connection); ?>
