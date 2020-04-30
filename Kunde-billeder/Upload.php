@@ -1,9 +1,25 @@
 <!DOCTYPE html>  
 <?php 
 session_start();
+if(isset($_POST['pass'])){
+$pass = $_POST['pass'];
+$email = $_POST['email'];
+	$_SESSION['email'] = $email;
+	$_SESSION['pass'] = $pass;
+		
+}
 
-$email = $_SESSION["pass"];
-$kundemailemail = $_SESSION["email"];
+else{
+$pass = $_SESSION["pass"];
+$email = $_SESSION["email"];
+$_SESSION["pass"] = $pass;
+$_SESSION["email"] = $email;
+	
+
+};
+
+
+
 
 
 
@@ -14,14 +30,15 @@ $kundemailemail = $_SESSION["email"];
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+  <link rel="stylesheet" href="../main.css">
  </head>  
  <body>  
   <br /><br />  
   <div class="container" style="width:900px;">  
-   <h3 align="center">Upload til <?php echo $kundemailemail; ?></h3>  
+   <h3 align="center">Upload til <?php echo $email. " / ". $pass ; ?></h3>  
    <br />
    <div align="right">
-    <button type="button" name="add" id="add" class="btn btn-success">Add</button>
+    <button type="button" name="add" id="add" class="btn btn-success">TILFØJ</button>
    </div>
    <br />
    <div id="image_data">
@@ -36,11 +53,11 @@ $kundemailemail = $_SESSION["email"];
   <div class="modal-content">
    <div class="modal-header">
     <button type="button" class="close" data-dismiss="modal">&times;</button>
-    <h4 class="modal-title">Add Image</h4>
+    <h4 class="modal-title">TILFØJ BILLEDE</h4>
    </div>
    <div class="modal-body">
     <form id="image_form" method="post" enctype="multipart/form-data">
-     <p><label>Select Image</label>
+     <p><label>VÆLG BILLEDE</label>
      <input type="file" name="image" id="image" /></p><br />
      <input type="hidden" name="action" id="action" value="insert" />
      <input type="hidden" name="image_id" id="image_id" />
@@ -49,12 +66,12 @@ $kundemailemail = $_SESSION["email"];
     </form>
    </div>
    <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="button" class="btn btn-default" data-dismiss="modal">LUK</button>
    </div>
   </div>
  </div>
 </div>
- <a href="../Admin side/Admin.php">Tilbage</a>
+ <a href="../Admin side/Admin.php" class="btn3 btn-warning">TILBAGE</a>
 
 <script>  
 $(document).ready(function(){

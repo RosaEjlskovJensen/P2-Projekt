@@ -46,7 +46,7 @@ $kategori = array("fotografering", "billedeophæng", "kundersblog", "produkter",
 	 <div class="container">
 <form method="post" action=>
 	<textarea name="content"></textarea>
-	<a href="../Blog-kategorier/Blog_adminside.php" class="btn3 btn-warning u-pull-left">Tilbage</a>
+	<a href="../Blog-kategorier/Blog_adminside.php" class="btn3 btn-warning u-pull-left">TILBAGE</a>
 	<input type="submit" class="btn3 btn-success u-pull-right" value="Send">
 		</div>
 			 </form>

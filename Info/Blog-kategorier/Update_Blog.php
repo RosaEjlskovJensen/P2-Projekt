@@ -39,7 +39,7 @@
 			<form name="update" class="" autocomplete="off" method="post" action="Blog_Updater.php?item=<?php echo $item; ?>&id=<?php echo $row['id']; ?>">
 			  <textarea name="content"><?php echo($row['Text']) ?> </textarea>
 			
-			  <input  type="submit" class="btn3 btn-primary" name="update" value="Updater">
+			  <input  type="submit" class="btn3 btn-primary" name="update" value="OPDATER">
 			</form>
 		</div>
 	</div>

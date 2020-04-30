@@ -180,71 +180,7 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 <body>
 
 <!-- Navigation bar -->
-  <nav class="nav">
-    <a href="../index.php"><img class="img_logo" src="../billeder/AmalieSandgaardPhotography_LOGO.png"></a>
-    <input type="checkbox" id="menu_btn" class="menu_btn" />
-    <label class="menu_icon" for="menu_btn"><span class="nav_icon"></span></label>
-    <ul class="menu">
-      <div class="nav_dropdown">
-        <button class="btn_dropdown">Portfolio <i class=""></i></button>
-          <div class="dropdown-content">
-          <li><a href="../portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
-          <li><a href="../portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
-          <li><a href="../portfolie/Portfolietemplate.php?item=2" class="button">CV</a></li>
-          <li><a href="../portfolie/Portfolietemplate.php?item=3" class="button">Familie</a></li>
-          <li><a href="../portfolie/Portfolietemplate.php?item=4" class="button">Gravid</a></li>
-          <li><a href="../portfolie/Portfolietemplate.php?item=5" class="button">Konfirmation</a></li>
-            </div>
-            </div>
-      <div class="nav_dropdown">
-        <button class="btn_dropdown">Info <i class=""></i></button>
-          <div class="dropdown-content">
-          <li><a href="../Info/ommig.php" class="button">Om Mig</a></li>
-          <li><a href="../Infoforside.php" class="button">Fotograferings info</a></li>
-            </div>
-            </div>
-
-
-            <div id="nav_dropdown">
-                <a href="../Info/blog.php" id="btn_dropdown">blog</a>
-            </div>
-        
-            <div id="nav_dropdown">
-                <a href="../Kunde-billeder/FindTabel-kunde.php" id="btn_dropdown">Kundelogin</a>
-            </div>
-        
-      <div class="nav_dropdown">
-        <button class="btn_dropdown">Priser <i class=""></i></button>
-          <div class="dropdown-content">
-          <li><a href="../Priser/Priser.php" class="button">Enkelt prints</a></li>
-            <li><a href="../Priser/Priser-Generel.php" class="button">Generelle pakker</a></li>
-              <li><a href="../Priser/Priser-Bryllup.php" class="button">Bryllups pakker</a></li>
-              <li><a href="../Priser/Priser-Konfirmation.php" class="button">Konfirmations pakker</a></li>
-            </div>
-            </div>
-      <div class="nav_dropdown">
-        <button class="btn_dropdown">Booking <i class=""></i></button>
-          <div class="dropdown-content">
-          <li><a href="../Booking-system-Casper/index.php" class="button">Kalender</a></li>
-          <li><a href="../Admin side/Loginside.php" class="button">Login</a></li>
-            </div>
-            </div>
-      <div class="nav_dropdown">
-        <button class="btn_dropdown">Kontakt <i class=""></i></button>
-          <div class="dropdown-content">
-          <li><a href="../Kontakt/Kontakt.php" class="button">Kontakt</a></li>
-          <li><a href="../Kontakt/FAQ.php" class="button">FAQ</a></li>
-          <li><a href="../Kontakt/Privateterms.php" class="button">Privatlivspolitik</a></li>
-          <li><a href="../Kontakt/Terms_conditions.php" class="button">Vilkår & Betingelser</a></li>
-            </div>
-            </div>
-      <div class="nav_dropdown">
-        <button class="btn_dropdown"></button>
-          <div class="dropdown-content">
-          </div>
-      </div>
-    </ul>
-  </nav>
+<?php include_once('../header.php') ?>
 
 
   <!-- Heading -->
@@ -313,23 +249,23 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
 <div class="kontaktinformation">
     <div class="kontaktbillede">
         <div class="kontaktikon"> 
-           <span class='my-icon icon-file-text'> <i class="fas fa-map-marker-alt fa-2x"></i></span><span class='my-text'>  Adresse: Bispensgade 13, 1.2 </span>   
+           <span class='my-icon icon-file-text'> <i class="fas fa-map-marker-alt fa-2x"></i></span><span class='my-text'> <a href="https://www.google.com/maps/place/Amalie+Sandgaard+Photography/@57.0494046,9.9172136,17z/data=!3m1!4b1!4m5!3m4!1s0x464933a662f306d5:0x63fee768645596b7!8m2!3d57.0494017!4d9.9194023" class="text1" target="_blank"> Adresse: Bispensgade 13, 1.2</a></span>   
         </div>
         
         <div class="kontaktikon"> 
-             <span class='my-icon icon-file-text'><i class="fas fa-phone fa-2x"></i></span><span class='my-text'>  Telefonnummer: +45 31 51 45 55 </span>
+             <span class='my-icon icon-file-text'><i class="fas fa-phone fa-2x"></i></span><span class='my-text'> <a href="tel:+4531514555" class="text1">Telefonnummer: +45 31 51 45 55</a>  </span>
         </div>
     
         <div class="kontaktikon"> 
-            <span class='my-icon icon-file-text'><i class="fas fa-envelope fa-2x"></i></span><span class='my-text'>  Email: Amaliesandgaard@live.dk   </span>
+            <span class='my-icon icon-file-text'><i class="fas fa-envelope fa-2x"></i></span><span class='my-text'><a href="mailto:Amaliesandgaard@live.dk" class="text1" target="_blank">Email: Amaliesandgaard@live.dk</a></span>
         </div>
     
         <div class="kontaktikon"> 
-           <span class='my-icon icon-file-text'><i class="fab fa-facebook-f fa-2x"></i></span><span class='my-text'>  Facebook: Amalie Sandgaard Photography </span>
+           <span class='my-icon icon-file-text'><i class="fab fa-facebook-f fa-2x"></i></span><span class='my-text'> <a href="https://www.facebook.com/amaliesandgaardphotography" class="text1" target="_blank">Facebook: Amalie Sandgaard Photography</a>  </span>
         </div>
     
         <div class="kontaktikon"> 
-            <span class='my-icon icon-file-text'><i class="fab fa-instagram fa-2x"></i></span><span class='my-text'>  Instagram: Amalie_sandgaard_photography</span>
+            <span class='my-icon icon-file-text'><i class="fab fa-instagram fa-2x"></i></span><span class='my-text'> <a href="https://www.instagram.com/amalie_sandgaard_photography/" class="text1">Instagram: Amalie_sandgaard_photography</a> </span>
         </div>
     
         <div class="kontaktikon"> 
@@ -346,41 +282,6 @@ Tak for henvendelsen, du hører fra os hurtigst muligt.
     
     <br>
    <!-- Top part of the footer-->
-  <section class="section_topfooter">
-    <div class="container">
-      <div class="u-full-width">
-        <div class="row">
-          <div class="six columns">
-            <center>
-            <p style="font-size: 16px">KONTAKTOPLYSNINGER</p>
-            <p style="font-size: 15px">Amalie Sandgaard<br>CVR: 38 02 70 34<br>+45 31 51 45 55<br>amaliesandgaardphotography@hotmail.com</p>
-            </center>
-          </div>
-          <div class="two columns">
-            <center>
-            <p style="font-size: 16px">NYTTIGE LINKS</p>
-            <a style="font-size: 15px" href="#" >Privatlivspolitik</a><br>
-            <a style="font-size: 15px" href="#">Vilkår & Betingelser</a>
-            </center>
-          </div>
-          <div class="two columns">
-            <center>
-            <p style="font-size: 16px">FØLG MIG PÅ</p>
-            <a href="https://www.facebook.com/amaliesandgaardphotography/" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a><br>
-            <a href="https://www.instagram.com/amalie_sandgaard_photography/?hl=da" target="_blank"><i class="fab fa-instagram fa-2x"></i></a><br>
-            </center>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> 
- <!--Bottom part of the footer -->
-  <section class="section_bottomfooter">
-    <div>
-      <center>
-        <p style="font-size: 15px" class="footer"> &copy; Copyright <?php echo date("Y"); ?> | Amalie Sandgaard Photography | All Rights Reserved</p>
-      </center>
-    </div>
-  </section>
+ <?php include_once('../footer.php') ?>
 </body>
 </html>

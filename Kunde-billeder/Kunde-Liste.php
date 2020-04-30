@@ -47,21 +47,22 @@ die("could not query the database" .mysqli_error());
 		}
 		
 	</style>
-	<h4><center>Søg efter kundearkiv</center></h4>
+<!--	Denne er en søge funktion som næsten virker men ikke bruges ------------
+<h4><center>Søg efter kundearkiv</center></h4>
 <div class="offset-by-three columns six columns">
 <form action="Findtabelaction.php" method="post">
 <input class=" offset-by-two columns six columns soegefelt" type="text" name="pass" id="pass" placeholder="Kundens kode">
 
 <input class="two columns btn3 btn-success" value="SØG" type="submit" name="submit" id="submit">	
 	
-</form>
+</form> 
 
 
 </div><br>
 <br>
 <br>
 <br>
-
+-->
 <center>
 <h4>Liste over kundearkiver</h4>
 <table class="tabletotal">
@@ -69,7 +70,8 @@ die("could not query the database" .mysqli_error());
 		<th><center>Navn Efternavn</th><th><center>Email</th><th><center>Kode</th><th><center>Oprettelses dato</th><th><center>Slet</th><th><center>Gå til arkiv</th><th><center>Se bestilling</th></center>
 	</tr>
 	<?php 
-	while($row = mysqli_fetch_assoc($results)){ ?>
+	while($row = mysqli_fetch_assoc($results)){ 
+	$pass = $row['pass'] ?>
 	
 	<tr class="tablegreen">
 	<?php $email = $row['email']; ?>
@@ -80,20 +82,21 @@ die("could not query the database" .mysqli_error());
 		<td>
 				<?php echo "<form action='delete_archive.php' method='post'>";
 					echo "<input type='submit' value='SLET' class='btn3 paddinttop1 btn-danger'>";
-					echo "<input type='hidden' name='deleted' value='$email'>";
+					echo "<input type='hidden' name='deleted' value='$pass'>";
 					echo "</form>"; ?>
 		</td>
 					
 		<td>
-						<form action='Tableaction-FromList.php' method='post'>
+						<form action='Upload.php' method='post'>
 							<input type='submit' class="btn3 btn-success paddinttop1" value='ARKIV'>
+							<input type='hidden' name='pass' value='<?php echo $pass ?>'>
 							<input type='hidden' name='email' value='<?php echo $row['email'] ?>'>
 		</td>
 		
 		
 		<td>
 							
-						<a class="btn3 btn-primary" href="Se-Kunde-Bestilling.php?kunde=<?php echo $email ?>">Kunde Bestilling</a>
+						<a class="btn3 btn-primary" href="Se-Kunde-Bestilling.php?pass=<?php echo $pass ?>">Kunde Bestilling</a>
 		</td>
 						</form>
 					

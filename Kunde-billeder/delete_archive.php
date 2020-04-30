@@ -4,12 +4,12 @@ require_once '../Connection.php';
 
 if(isset($_POST['deleted']))
 {
-	$email = $_POST['deleted'];
-	$query = "DELETE FROM customer_archive WHERE email='$email';";
+	$pass = $_POST['deleted'];
+	$query = "DELETE FROM customer_archive WHERE pass='$pass';";
 	$results = mysqli_query($connection,$query);
 	if($results)
 	{
-		$query = "DROP TABLE `data`.`$email`";
+		$query = "DROP TABLE `data`.`$pass`";
 		$results = mysqli_query($connection,$query);
 		header("Location: Kunde-Liste.php");
 		exit();

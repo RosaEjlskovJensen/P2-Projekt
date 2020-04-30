@@ -1,8 +1,8 @@
 <!doctype html>
 <?php 
-$kunde = $_GET['kunde'];
+$pass = $_GET['pass'];
 require_once '../Connection.php';
-$query = "SELECT * FROM customer_archive WHERE email='$kunde'";
+$query = "SELECT * FROM customer_archive WHERE pass='$pass'";
 $results = mysqli_query($connection,$query);
 if(!$results){
 die("could not query the database" .mysqli_error());

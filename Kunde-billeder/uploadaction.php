@@ -1,21 +1,23 @@
 <?php
 session_start();
-$email = $_SESSION["pass"];
+$pass = $_SESSION['pass'];
+$email = $_SESSION['email'];
+
 //action.php
 if(isset($_POST["action"]))
 {
   require_once '../Connection.php';
  if($_POST["action"] == "fetch")
  {
-$query = "SELECT * FROM `$email` ORDER BY id DESC"; 
+$query = "SELECT * FROM `$pass` ORDER BY id DESC"; 
   $result = mysqli_query($connection, $query); 
   $output = '
    <table class="table table-bordered table-striped">  
     <tr>
      <th width="10%">ID</th>
-     <th width="70%">Image</th>
-     <th width="10%">Change</th>
-     <th width="10%">Remove</th>
+     <th width="70%">BILLEDE</th>
+     <th width="10%">SKIFT</th>
+     <th width="10%">SLET</th>
     </tr>
   ';
   while($row = mysqli_fetch_array($result))
@@ -27,8 +29,8 @@ $query = "SELECT * FROM `$email` ORDER BY id DESC";
      <td>
       <img src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="60" width="75" class="img-thumbnail" />
      </td>
-     <td><button type="button" name="update" class="btn btn-warning bt-xs update" id="'.$row["id"].'">Change</button></td>
-     <td><button type="button" name="delete" class="btn btn-danger bt-xs delete" id="'.$row["id"].'">Remove</button></td>
+     <td><button type="button" name="update" class="btn btn-warning bt-xs update" id="'.$row["id"].'">SKIFT</button></td>
+     <td><button type="button" name="delete" class="btn btn-danger bt-xs delete" id="'.$row["id"].'">SLET</button></td>
     </tr>
    ';
   }

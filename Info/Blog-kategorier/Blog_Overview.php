@@ -50,19 +50,19 @@ die("could not query the database" .mysqli_error());
 			
 		<td class="twelve columns">
 			<form action='delete_blog.php?item=<?php echo $item; ?>&id=<?php echo $row['id']; ?>"' method='post' >
-				<input type='submit' class="btn3 btn-danger u-full-width" value='Slet' onclick="return confirm('Er du sikker på at du vil slette dette opslag?');" >
+				<input type='submit' class="btn3 btn-danger u-full-width" value='SLET' onclick="return confirm('Er du sikker på at du vil slette dette opslag?');" >
 				<input type='hidden' name='deleted' value='<?php echo $row['id']?>'>
 			</form>
 
 			<form action="Update_Blog.php?item=<?php echo $item; ?>&id=<?php echo $row['id']; ?>" method='post'>
-				<input type='submit' value='Opdater' class="btn3 btn-success u-full-width" >
+				<input type='submit' value='OPDATER' class="btn3 btn-success u-full-width" >
 				<input type='hidden' name='updated' value='<?php echo $row['id']?>'>
 			</form>	
 		</td>		
 	</tr>
 	<?php } ?>	
 </table>
-<a href="EditKategoritemplate.php?item=<?php echo $item ?>" class="btn3 btn-warning">Tilbage</a>		
+<a href="EditKategoritemplate.php?item=<?php echo $item ?>" class="btn3 btn-warning">TILBAGE</a>		
 	
 
 </body>

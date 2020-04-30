@@ -59,7 +59,6 @@ session_start();
 	
 			<h2 class="u-full-width">Kunde Arkiver<h2><hr>	
 				<a href="../Kunde-billeder/Nytabel.php" class="btn3 btn-primary u-full-width">Ny kunde</a>
-				<a href="../Kunde-billeder/FindTabel.php" class="btn3 btn-primary u-full-width">Find kunde specifik arkiv</a>
 				<a href="../Kunde-billeder/Kunde-Liste.php" class="btn3 btn-primary u-full-width">Liste over alle kunde arkiver</a>		
 	
 	</div>
