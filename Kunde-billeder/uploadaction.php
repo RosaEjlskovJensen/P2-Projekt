@@ -2,7 +2,8 @@
 session_start();
 $pass = $_SESSION['pass'];
 $email = $_SESSION['email'];
-
+$_SESSION['pass'] = $pass;
+$_SESSION['email'] = $email;
 //action.php
 if(isset($_POST["action"]))
 {
@@ -42,7 +43,7 @@ $query = "SELECT * FROM `$pass` ORDER BY id DESC";
  {
   $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
   $filename = $_FILES["image"]["name"];
-  $query = "INSERT INTO `$email`(name, filename) VALUES ('$file','$filename')";
+  $query = "INSERT INTO `$pass`(name, filename) VALUES ('$file','$filename')";
   if(mysqli_query($connection, $query))
   {
    echo 'Image Inserted into Database';
@@ -51,7 +52,7 @@ $query = "SELECT * FROM `$pass` ORDER BY id DESC";
  if($_POST["action"] == "update")
  {
   $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));
-   $query = "UPDATE `$email` SET name = '$file' WHERE id = '".$_POST["image_id"]."'";
+   $query = "UPDATE `$pass` SET name = '$file' WHERE id = '".$_POST["image_id"]."'";
   if(mysqli_query($connection, $query))
   {
    echo 'Image Updated into Database';
@@ -59,7 +60,7 @@ $query = "SELECT * FROM `$pass` ORDER BY id DESC";
  }
  if($_POST["action"] == "delete")
  {  
-  $query = "DELETE FROM `$email` WHERE id = '".$_POST["image_id"]."'";
+  $query = "DELETE FROM `$pass` WHERE id = '".$_POST["image_id"]."'";
   if(mysqli_query($connection, $query))
   {
    echo 'Image Deleted from Database';

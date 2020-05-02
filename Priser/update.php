@@ -66,6 +66,9 @@ if(isset($_GET['conid'])){
   <input name="link" type="text" required value="<?php echo $row['link']?>">
 </div>
    <div>
+    <label for="kommentar">Pris</label>
+    <input type="pris" name="pris" id="pris" value="<?php echo $row['pris']?>">  </div>
+    
     <label for="kommentar">Kommentar</label>
     <input type="kommentar" name="kommentar" id="kommentar" maxlength="200" value="<?php echo $row['kommentar']?>">  </div>
   

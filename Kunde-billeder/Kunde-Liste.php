@@ -67,7 +67,7 @@ die("could not query the database" .mysqli_error());
 <h4>Liste over kundearkiver</h4>
 <table class="tabletotal">
 	<tr>
-		<th><center>Navn Efternavn</th><th><center>Email</th><th><center>Kode</th><th><center>Oprettelses dato</th><th><center>Slet</th><th><center>Gå til arkiv</th><th><center>Se bestilling</th></center>
+		<th><center>Navn Efternavn</th><th><center>Email</th><th><center>Kode</th><th><center>Oprettelses dato</th><th><center>Status</th><th><center>Slet</th><th><center>Gå til arkiv</th><th><center>Åben/Luk</th><th><center>Se bestilling</th></center>
 	</tr>
 	<?php 
 	while($row = mysqli_fetch_assoc($results)){ 
@@ -79,6 +79,7 @@ die("could not query the database" .mysqli_error());
 		<td><?php echo $row['email']?></td>
 		<td><?php echo $row['pass']?></td>
 		<td><?php echo $row['date']?></td>
+		<td><?php echo $row['frys']?></td>
 		<td>
 				<?php echo "<form action='delete_archive.php' method='post'>";
 					echo "<input type='submit' value='SLET' class='btn3 paddinttop1 btn-danger'>";
@@ -90,7 +91,21 @@ die("could not query the database" .mysqli_error());
 						<form action='Upload.php' method='post'>
 							<input type='submit' class="btn3 btn-success paddinttop1" value='ARKIV'>
 							<input type='hidden' name='pass' value='<?php echo $pass ?>'>
-							<input type='hidden' name='email' value='<?php echo $row['email'] ?>'>
+							<input type='hidden' name='email' value='<?php echo $email ?>'>
+						</form>
+		</td>
+		<td>
+						<form action='Frys.php' method='post'>
+							<input type='submit' class="btn3 btn-danger paddinttop1" value='LUK ARKIV'>
+							<input type='hidden' name='pass' value='<?php echo $pass ?>'>
+							<input type='hidden' name='lukket' value='<?php echo "lukket"?>'>
+							</form>
+					<form action='Frys.php' method='post'>
+							<input type='submit' class="btn3 btn-success paddinttop1" value='ÅBEN ARKIV'>
+							<input type='hidden' name='pass' value='<?php echo $pass ?>'>
+							<input type='hidden' name='åben' value='<?php echo "åben"?>'>
+						</form>
+							
 		</td>
 		
 		
@@ -98,7 +113,7 @@ die("could not query the database" .mysqli_error());
 							
 						<a class="btn3 btn-primary" href="Se-Kunde-Bestilling.php?pass=<?php echo $pass ?>">Kunde Bestilling</a>
 		</td>
-						</form>
+						
 					
 					
 	</tr>

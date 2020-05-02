@@ -13,9 +13,12 @@
 // her tjekkes der om der ligger noget data i formen. //
 	if (isset($_POST['username']) && isset($_POST['password']))
 	{// hvis det postede data i formen stemmer overens med det data der er i vores $username og $passwrod Så skal der logges ind //
-		if ($_POST['username'] == $username && $_POST['password'] == $password)
+		if($_POST['username'] == $username && $_POST['password'] == $password){
 		$_SESSION['loggedin'] = true;
-		header("Location: Admin.php");	
+		header("Location: Admin.php");
+		}else{
+			echo "<h3>Forkert login</h3>";
+		}
 	}
 ?>
 

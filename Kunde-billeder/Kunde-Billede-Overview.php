@@ -144,7 +144,18 @@ die("cannot connect to database".mysqli_connect_error());
      <?php
 
   $table = $kunde;
-  $query = "SELECT * FROM `$table` ORDER BY id ASC";
+  $query = "SELECT * FROM `customer_archive` WHERE pass='$kunde'";
+	   $results = mysqli_query($connection, $query);
+	   $row = mysqli_fetch_array($results);
+	    
+	  if($row['frys'] == "lukket")
+	  {
+		  echo "Dit arkiv er blevet lukket, skriv eventuelt til Amalie";
+	  }
+	   else
+	   {
+		  
+	 $query = "SELECT * FROM `$table` ORDER BY id ASC";
   $results = mysqli_query($connection, $query);
 
 	 $option1=0;
@@ -237,7 +248,7 @@ die("cannot connect to database".mysqli_connect_error());
   }
   echo $output;
  echo "</div>";
-	
+	}  
  
     ?>
      

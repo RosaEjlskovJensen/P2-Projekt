@@ -133,9 +133,19 @@ echo "<center><h1>Bookingindstillinger</h1></center>";
 </div>
 
 
-<div class="row offset-by-three columns">
-<table class="six columns">
+<div class="row offset-by-three columns ">
+<table class="six columns box2">
+
 <form name="create" id="create" autocomplete="on" method="post" action="Booking_Settings_Creator.php">
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th class="text-uppercase">Opret nye tider for dag</th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
  <tr> 
  <th><center>Dato</center></th>
  <th><center>Varighed (min)</center></th>

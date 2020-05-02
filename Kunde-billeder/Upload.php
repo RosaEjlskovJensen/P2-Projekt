@@ -1,11 +1,12 @@
 <!DOCTYPE html>  
 <?php 
 session_start();
-if(isset($_POST['pass'])){
+if(isset($_POST['email'])){
 $pass = $_POST['pass'];
 $email = $_POST['email'];
 	$_SESSION['email'] = $email;
 	$_SESSION['pass'] = $pass;
+	
 		
 }
 
@@ -59,9 +60,9 @@ $_SESSION["email"] = $email;
     <form id="image_form" method="post" enctype="multipart/form-data">
      <p><label>VÆLG BILLEDE</label>
      <input type="file" name="image" id="image" /></p><br />
-     <input type="hidden" name="action" id="action" value="insert" />
+     <input type="hidden" name="action" id="action" value="TILFØJ" />
      <input type="hidden" name="image_id" id="image_id" />
-     <input type="submit" name="insert" id="insert" value="Insert" class="btn btn-info" />
+     <input type="submit" name="insert" id="insert" value="TILFØJ" class="btn btn-info" />
       
     </form>
    </div>

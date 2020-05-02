@@ -191,13 +191,18 @@ a:hover{
 /* NAVIGATION MENU */
 
 /* Menu */
+.navbackground{
+background-color:hsla(0,0%,100%,0.63);	
+	width: 40%;
+}
 .nav{
-	background-color:hsla(0,0%,100%,0.63);
+	
 	opacity: 0.95;
 	position: fixed;
 	width: 100%;
   height: 83.39px;
-	z-index: 3;}
+	z-index: 3;
+}
 
 .nav ul{
 	margin: 0;
@@ -227,14 +232,23 @@ a:hover{
 .nav .menu{
 	clear: both;
 	max-height: 0;
-	transition: max-height .2 ease-out;}
+	transition: max-height .2 ease-out;
+	float: right;
+	display: block;
+	background-color: hsla(0,0%,100%,0.63);}
+	
 
 /* Checkbox */
 .nav .menu_icon{
 	position: relative;
   margin-top: 12px;
 	padding: 28px 20px;
-	float: right;} 
+	float: right;
+	} 
+.nav .menu .nav_dropdown{
+	
+	
+}
 
 .nav .menu_icon .nav_icon{
 	position: relative;
@@ -273,6 +287,7 @@ a:hover{
 	.nav .menu{
 		clear: none;
 		float: right;
+		display: block;
 		max-height: none;}
 	.nav .menu_icon{
 		display: none;}
@@ -653,7 +668,7 @@ there.
 .section_heading{
 	color:#2a2723;
 	background-color: #e3e3dd;
-	height: 150px;
+	height: 75px;
 	padding-top:150px;
 }
 
@@ -691,7 +706,7 @@ there.
 }
 
 .Questions{
-	background-color: grey;
+	background-color: #e3e3dd;
 	color:#2a2723;
 	width: 100%;
 	height: 40px;
@@ -843,4 +858,8 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
 .paddinttop1
 {
 	padding-top: 5px;
+}
+.faqtext
+{
+	text-align: left;
 }

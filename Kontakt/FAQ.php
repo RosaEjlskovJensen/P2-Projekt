@@ -23,9 +23,7 @@
  <!-- Heading -->
 <section class="section_heading">
 	<div class="container u-full-width">
-		<h3><center>FAQ
-		</center>	
-		</h3>
+		<h3><center>FAQ</center></h3>
 	</div>
 </section>  
   

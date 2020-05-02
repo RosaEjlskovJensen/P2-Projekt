@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
 			 $stmt = $mysqli->prepare("INSERT INTO bookings (name, phone, timeslot, email, adress, postnummer, date, kommentar, fototype, peoplecount, pet) VALUES (?,?,?,?,?,?,?,?,?,?,?)");
     $stmt->bind_param('sssssssssss', $name, $phone, $timeslot, $email, $adress, $postnummer, $date, $kommentar, $fototype, $peoplecount, $pet);
     $stmt->execute();
-    $msg = "<div class='alert alert-success'>Booking Successfull</div>";
+    $msg = "<div class='alert alert-success'>Booking reseveret til betaling er gennemført</div>";
 	$bookings[]=$timeslot;
     $stmt->close();
     $mysqli->close();
@@ -140,7 +140,7 @@ function timeslots($duration, $cleanup, $start, $end){
 					<div class="form-group">
 					<?php if(in_array($ts, $bookings)){?>
 					
-						<center><button class="btn btn-danger"><?php echo "<center>". $ts. "</center>"; ?></button> </center>
+						<center><button style="visibility: hidden"</button> </center>
        		<?php }else{ ?>
        		<center><button class="btn btn-success book" data-timeslot="<?php echo $ts; ?>"><center><?php echo $ts; ?></center></button> </center>
        		<?php } ?>
