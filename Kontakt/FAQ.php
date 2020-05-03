@@ -57,30 +57,21 @@
 <section class="section_question">
 <div class="container">
 
-<h6>Fotosessioner</h6>
+<h6>Generelle</h6>
 
 
-<button class="Questions">Hvad er dine åbningstider?</button>
+<button class="Questions">Hvad skal jeg have med/på til en fotosession?</button>
 <div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Valgt at tøj er selvfølgelig op til dit selv og hvilken fotosessions stil du bestiller.</p>
 </div>
 
-<button class="Questions">Hvordan finder vi dig?</button>
+<button class="Questions">Hvor kommer fotograferingen til at foregå?</button>
 <div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-</div>
-
-
-<button class="Questions">Spørgsmål 3</button>
-<div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	<p>Ved booking af en fotosession vil der i de fleste tilfælde være dedikeret en dag eller mere til en af følgende byer.</p>
 </div>
 
 
-<button class="Questions">Spørgsmål 4</button>
-<div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-</div>
+
 
  </div> 
  </section>
@@ -88,30 +79,26 @@
  <section class="section_question">
 <div class="container">
 
-<h6>Generelle spørgsmål</h6>
+<h6>Booking /Betaling</h6>
 
 
-<button class="Questions">Spørgsmål 1</button>
+<button class="Questions">Hvornår/hvordan kan jeg book en fotosession?</button>
 <div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>Du kan book en tid gennem bookingsystemet på hjemmesiden, ved at klikke på ”Booking” op i navigationsbar. Har vil du blive mødt af en kalender hvor du kan se de forskellige dage/tider som der er mulige at book.Ved booking af konfirmation, bryllupper eller speciale events SKAL du tag direkte kontakt til Amalie Sandgaard for at book en tid.</p>
 </div>
 
-<button class="Questions">Spørgsmål 2</button>
+<button class="Questions">Hvor meget skal jeg betale for fotograferingen?/button>
 <div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-</div>
-
-
-<button class="Questions">Spørgsmål 3</button>
-<div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	<p>Når du bestiller en tid igennem bookingsystemet vil du kunne se den fulde prisen for fotosession. Du vil ved booking af en tid blive bedt om at betale er depositums beløb som er ½ af den fuld pris for fotosessionen.
+Fx. Hvis der ved booking står at prisen for fotosessionen er 500 kr. så vil du skulle betale 250 kr. i depositummet ved booking.</p>
 </div>
 
 
-<button class="Questions">Spørgsmål 4</button>
+<button class="Questions">Hvordan betaler jeg for fotosessionen og evt. ydelser?</button>
 <div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+	<p>Virksomheden modtager alle sine betalinger gennem Danske Bank appen MobilePay til erhvervs nummer 87525.</p>
 </div>
+
 
  </div> 
  </section>
@@ -120,7 +107,31 @@
   <section class="section_question">
 <div class="container">
  
- <h6>Dine Rettigheder</h6>
+ <h6>Levering</h6>
+
+
+<button class="Questions">Hvornår er mit online-galleri åbent</button>
+<div class="Anwser">
+	<p>Efter en fotosession få kunden få adgang til et personligt online galleri, hvor de kan se billeder fra fotograferingen. Kunden få 5 dage til at vælge billeder og på 5 dagen vil online galleriet lukke kl. 23.59. Virksomheden bestræber sig i at det personlige online galleri vil blive tilgængelige indenfor 7 dage efter fotosession. Dette kan dog variere i forhold til fotosessions type.
+ <a href="Privateterms.php">HER</a></p>
+</div>
+
+<button class="Questions">Hvad er ventetiden for levering af mine print?</button>
+<div class="Anwser">
+	<p>Virksomheden oplyser besøgende på hjemmesiden at det et en leverings tid på 2-3 uger ved køb at print. Kunder skal hente deres print indenfor 31 dage ellers bliver de smidt ud.</p>
+</div>
+
+
+<button class="Questions">Hvor kan jeg hente mine print?</button>
+<div class="Anwser">
+	<p>Virksomheden tilbyder kunden nogle forskellige afhentningssteder som kan vælges efter print er blevet bestilt. Aalborg->Fotostudiet. Herning->Dolphin Hotel. Skalborg->Børneloppen.
+</p>
+</div>
+
+
+
+ 
+  <h6>Dine Rettigheder</h6>
 
 
 <button class="Questions">BRUGSRET</button>
@@ -133,17 +144,6 @@
 	<p>Har man været ophavsmanden til et værk – fx. et fotografi – så har man ejerskabet over dét fotografi. Køber man som kunde en digital fil af en fotograf, så har du kun købt brugsretten – dvs. retten til at bruge filen til et bestemt formål. Du har ikke købt ejendomsretten – den vil altid tilhøre fotografen. Det er bl.a. derfor det ikke er tilladt at ændre i billedet, ved fx redigering medmindre skriftlig tilladelse er givet fra ophavsmanden (fotografen).</p>
 </div>
 
-
-<button class="Questions">Spørgsmål 3</button>
-<div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-</div>
-
-
-<button class="Questions">Spørgsmål 4</button>
-<div class="Anwser">
-	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-</div>
 
  </div> 
  </section>

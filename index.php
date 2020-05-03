@@ -75,7 +75,7 @@
 					
  			<div class="one-third column" >
  				<div class="container1">
- 					<a href="portfolie/PortfolioInfotemplate.php?item=2"><img src="https://www.hk.dk/-/media/nyhedsbreve/om-hk/afdelinger/nordjylland/afdeling/cvfoto.jpg?la=da&hash=CCF623D1AF1CFB9C2A43E31CE47E9000" class="image1 link_picture">
+ 					<a href="portfolie/PortfolioInfotemplate.php?item=2"><img src="Billeder/front/1D8A0242.jpg" class="image1 link_picture">
  						</a>
 				 </div>
  			</div>
