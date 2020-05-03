@@ -150,7 +150,9 @@ die("cannot connect to database".mysqli_connect_error());
 	    
 	  if($row['frys'] == "lukket")
 	  {
-		  echo "Dit arkiv er blevet lukket, skriv eventuelt til Amalie";
+		  echo "<center><img src='https://png2.cleanpng.com/sh/201552a381c108157820f8403329f005/L0KzQYm3U8A5N5xviZH0aYP2gLBuTgRzaZdrgdU2c3nqfn76lP9xNaRuf9C2Y3zsgH7okwQuepZpRdV7b4P2PcH1h71xcZR5jeRuLUXkcYLtVBE5bmQ1T6IDLkm6SIOCVsI6OWY3SKcBNEG2RoqCVcUveJ9s/kisspng-traffic-sign-stop-sign-clip-art-red-cross-png-picture-5aa1f7a8f30708.9782962915205641369955.png' height='50' width='50'> 
+		  Dit arkiv er blevet lukket, skriv eventuelt til Amalie
+		  <img src='https://png2.cleanpng.com/sh/201552a381c108157820f8403329f005/L0KzQYm3U8A5N5xviZH0aYP2gLBuTgRzaZdrgdU2c3nqfn76lP9xNaRuf9C2Y3zsgH7okwQuepZpRdV7b4P2PcH1h71xcZR5jeRuLUXkcYLtVBE5bmQ1T6IDLkm6SIOCVsI6OWY3SKcBNEG2RoqCVcUveJ9s/kisspng-traffic-sign-stop-sign-clip-art-red-cross-png-picture-5aa1f7a8f30708.9782962915205641369955.png' height='50' width='50'>";
 	  }
 	   else
 	   {
@@ -173,13 +175,14 @@ die("cannot connect to database".mysqli_connect_error());
 	 $option4++; 
 	 $option5++; 
 	 $option6++; 
-   $output.= '<div class=" borderbox one-fourth column height615 checkbox-container">'. $row["filename"].'<center><img class="myImg" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="300" /> 
+   $output.=  '<div class=" borderbox one-fourth column height615 checkbox-container">'. $row["filename"].'<center><img class="myImg offset-by-one column ten columns" src="data:image/jpeg;base64,'.base64_encode($row['name'] ).'" height="200" width="300" /> 
 	   <br>
 	   <table class="tg">
 	
 	  
 	  <div>
-    <div>
+    <div class="displayflex">
+	
     Digital fil
 	 <input type="radio" name="'. 'option2'. $option2.'" id="digital" value="Digital Fil">
 	 <div class="reveal-if-active">
@@ -191,43 +194,68 @@ die("cannot connect to database".mysqli_connect_error());
     PRINT
 	 <input type="radio" name="'. 'option2'. $option2.'" id="print" value="PRINT">
 	 <div class="reveal-if-active">
-	 
         
-<input type="radio" class=""'.  'name="option1'.$option1.'"  value="Farve">Farve
-	  <input type="radio" class=""'.  'name="option1'.$option1.'"  value="sort/hvid">Sorthvid
+	  
+		  (<input type="radio" class=""'.  'name="option1'.$option1.'"  value="Farve">Farve)
+		  (<input type="radio" class=""'.  'name="option1'.$option1.'"  value="Sort/hvid">Sorthvid)
+		  (<input type="radio" class=""'.  'name="option1'.$option1.'"  value="Mix">Mix)
+	 
 		
-		<label for="Type">Tryk type</lable>
-		<select '.  'name="option5'.$option5.'" class="">
-	   <option disabled selected value>vælg</option>
-	   <option value="Blank">Blank</option>
-	   <option value="Mat">Mat</option>
-	   <option value="Skumplade">Skumplade</option>
+	<label style="font-size: 15px;" for="Type">Tryk type</lable>
+	<select '.  'name="option5'.$option5.'" class="u-full-width">
+			<option disabled selected value>vælg</option>
+	   		<option value="Mat">Mat</option>
+	   		<option value="Skumplade">Skumplade</option>
+	   		<option value="På lærred">På lærred</option>
    </select>
 		
-				<label for="Antal">Antal</lable>
-  <select '.  'name="option4'.$option4.'" class="">
+  <label style="font-size: 15px;" for="Antal">Antal</lable>
+  <select '.  'name="option4'.$option4.'" class="u-full-width">
 		  <option disabled selected value>vælg</option>
 		  <option value="1">1</option>
 		  <option value="2">2</option>
 		  <option value="3">3</option>
 		  <option value="4">4</option>
+		  <option value="5">5</option>
   </select>
 		
-		<label for="stoerelse">Størelse</lable>
-		<select '.  'name="option3'.$option3.'" class="">
+	<label style="font-size: 15px;" for="stoerelse">Størelse</lable>
+	<select '.  'name="option3'.$option3.'" class="u-full-width">
 		  <option disabled selected value>vælg</option>
-		  <option value="4x9">4x9</option>
-		  <option value="7x13">7x13</option>
-		  <option value="1x1">1x1</option>
-		  <option value="10x9">10x9</option>
+		  
+		  	<option disabled>Standart størrelser</option>
+			  <option value="13x18">13x18cm</option>
+			  <option value="15x22">15x22cm</option>
+			  <option value="20x30">20x30cm</option>
+			  <option value="30x40">30x40cm</option>
+			  <option value="40x60">40x60cm</option>
+			  <option value="50x70">50x70cm</option>
+			  
+		  <option disabled>Kvadratiske størrelser</option>
+			  <option value="15x15">15x15cm</option>
+			  <option value="30x30">30x30cm</option>
+			  <option value="50x50">50x50cm</option>
+			  
+		  <option disabled>Foto på lærred størrelser</option>
+			  <option value="20x20">20x20cm</option>
+			  <option value="20x30">20x30cm</option>
+			  <option value="30x40">30x40cm</option>
+			  <option value="40x40">40x40cm</option>
+			  <option value="40x60">40x60cm</option>
+			  
+		  <option disabled>Hård skumplade størrelser</option>
+		   	  <option value="20x20">20x20cm</option>
+			  <option value="20x30">20x30cm</option>
+			  <option value="30x45">30x45cm</option>
+			  <option value="40x60">40x60cm</option>
   </select>
   
   
 		
 		
    
-   		<label for="Kommentar">Kommentar</lable>
-		<input type"text" '.  'name="option6'.$option6.'" size="12" class="">
+   		<label style="font-size: 15px;" for="Kommentar">Hvis både nogle i farve og nogel sorthvid , skriv antal her:</lable>
+		<input type"text" '.  'name="option6'.$option6.'" size="12" class="u-full-width" placeholder="fx: 2 styk farve, 1styk sort/hvid">
 		
 		
       </div>

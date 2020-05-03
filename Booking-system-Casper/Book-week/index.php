@@ -80,13 +80,29 @@ $year = $dt->format('Y');
    <th>Lørdag</th>
    <th>Søndag</th>
     <tr class="">
-	<?php
+   
+	<?php 
+		$currentDay = 1;
+		$currentDayRel = str_pad($currentDay, 2, "0", STR_PAD_LEFT);
+        $date = "$year-$month-$currentDayRel";
+        $dayname = strtolower(date('l', strtotime($date)));
+        $today = $date==date('Y-m-d')? "today" : "";
+		 
+		 $date14 =strftime("%Y-%m-%d", strtotime("$today +14 day"));
+		
+		
+
 		do {
 			if($dt->format('M d Y')== date('M d Y')){
-				echo "<td style='background:lightgreen'><center>".$dt->format('d-m-Y')."<br><a class='btn btn-success' href='../booksettings.php?date=".$dt->format('Y-m-d')."'" . $dt->format('l') . "<br>" . "Se Tider". "</td>\n";
+					echo "<td style='background:lightgreen'><center>".$dt->format('d-m-Y')."<br><a class='btn btn-success' href='../booksettings.php?date=".$dt->format('Y-m-d')."'" . $dt->format('l') . "<br>" . "Se Tider". "</td>\n";				
+			}elseif($dt->format('Y-m-d')>=$date14){
+				echo "</td><td><center>".$dt->format('d-m-Y')."<br><a class='btn btn-warning' href=#'>"."Ikke Planlagt". "</td>\n";
+			
 			}elseif($dt->format('M d Y')<= date('M d Y')){
 				echo "</td><td><center>".$dt->format('d-m-Y')."<br><a class='btn btn-danger' href=#'>". "</td>\n";
 				
+				
+			
 				
 			}else{
 				echo "<td><center>".$dt->format('d-m-Y')."<br><a class='btn btn-success' href='../booksettings.php?date=".$dt->format('Y-m-d')."'" . $dt->format('l') . "<br>" . "Se Tider". "</td>\n";

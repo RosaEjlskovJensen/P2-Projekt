@@ -40,7 +40,7 @@ $table = $kunde;
 	  $body_message .= 'Fil: '.$row["filename"]."<br>";
 	  $body_message .= 'Print eller fil? '.$selektion2."<br>";
 	  // Så skrives de forskellige indstillinger //
-	  $body_message .= 'Farve eller Sort/hvid: '.$selektion1."<br>";
+	  $body_message .= 'Farve eller Sort/hvid eller mix: '.$selektion1."<br>";
 	  $body_message .= 'Størrelse: '.$selektion3."<br>";
 	  $body_message .= 'Antal: '.$selektion4."<br>";
 	  $body_message .= 'Print Type: '.$selektion5."<br>";

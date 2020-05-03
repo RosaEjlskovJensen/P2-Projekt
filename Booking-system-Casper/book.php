@@ -132,7 +132,8 @@ function timeslots($duration, $cleanup, $start, $end){
           </div>
           <!-- Hvis der ikke er nogen tider ville denne text komme frem -->
           <?php if(!isset($duration))
-				{echo "<center><p>Der er endten ingen ledige tider tilbage, eller også er der ikke planlagt skema for denne dag endnu, tjek tilbage i morgen.</p><a href='index.php' class='btn-danger two columns' >Tilbage</a></center>"?><?php } ?>
+				{echo "<center><p> Dagen er endten ikke planlagt endnu eller også er der lukket for bookinger denne dag.<br>Vi planlægger normalt 14 dage frem. Prøv igen senere. Eller kontakt os på<br>
+				<a class='text1' href='https://www.facebook.com/amaliesandgaardphotography' target='_blank'>Facebook</a></p><a href='index.php' class='btn-danger two columns' >Tilbage</a></center>"?><?php } ?>
            <?php $timeslots = timeslots($duration, $cleanup, $start, $end);
 			foreach($timeslots as $ts){
 			?>

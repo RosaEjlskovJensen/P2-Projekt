@@ -32,7 +32,6 @@ $kategori = array("fotografering", "billedeophæng", "kundersblog", "produkter",
 
 <title>test</title>
 </head>
-
 <body>
 	<div class="row">
 		<div class="six columns offset-by-three column">

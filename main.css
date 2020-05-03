@@ -840,7 +840,7 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
 }
 .height615
 {
-	height: 615px;
+	height: 650px;
 }
 .Portfolieknap1{
 	width: 198px;
@@ -862,4 +862,17 @@ input[type="checkbox"]:checked ~ .reveal-if-active {
 .faqtext
 {
 	text-align: left;
+}
+.lineheight1
+{
+	line-height: 18px;
+}
+.displayflex
+{
+	display: inline-table;
+	
+}
+.cke_button__image
+{
+		background-color: lightblue !important;
 }

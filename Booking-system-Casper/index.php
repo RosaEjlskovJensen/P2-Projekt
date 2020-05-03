@@ -114,19 +114,24 @@ function build_calendar($month, $year) {
           
           $currentDayRel = str_pad($currentDay, 2, "0", STR_PAD_LEFT);
           $date = "$year-$month-$currentDayRel";
-		 
+		  
 		  
             $dayname = strtolower(date('l', strtotime($date)));
             $eventNum = 0;
             $today = $date==date('Y-m-d')? "today" : "";
+		 
+		 $date14 =strftime("%Y-%m-%d", strtotime("$today +14 day"));
+		 
          if($date<date('Y-m-d')){
              $calendar.="<td><h4>$currentDay</h4> <center><button class='btn btn-danger'></button>";
 		 //}elseif($date>date('Y-m-d'),date("d")+3){
 			 //$calendar.="<td><h4>$currentDay</h4> <button class='btn btn-danger btn-xs'>Not yet open</button>";
+         }elseif($date>=$date14){
+             $calendar.="<td class='$today'><h4>$currentDay</h4> <center><a href='booksettings.php?date=".$date."' class='btn btn-warning btn-xs'>Ikke planlagt</a>";
          }else{
              $calendar.="<td class='$today'><h4>$currentDay</h4> <center><a href='booksettings.php?date=".$date."' class='btn btn-success btn-xs'>Se Tider</a>";
          }
-            
+           
             
            
             
@@ -137,7 +142,6 @@ function build_calendar($month, $year) {
           $dayOfWeek++;
 
      }
-     
      
 
      // Complete the row of the last week in month, if necessary

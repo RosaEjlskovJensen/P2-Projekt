@@ -1,4 +1,4 @@
-    <?php
+<?php
  require_once '../Connection.php';
 
 $query = "SELECT * FROM `prices-konfirmation` ASE";
@@ -7,10 +7,7 @@ $results = mysqli_query($connection,$query);
 if(!$results){
    die("could not query the database" .mysqli_error());
 }
-
-
 ?>
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -35,8 +32,6 @@ if(!$results){
 <br>
 <br>
 <br>
-
-
   <!-- Heading -->
 
 	<div class="container u-full-width">
@@ -44,57 +39,8 @@ if(!$results){
      	<center><p>Info eneklte prints priser og størelser kan findes <a href="Priser.php" class="text1">her</a></p>
       
 	</div>
-
-
-
-  <?php 
-while($row = mysqli_fetch_assoc($results)){
-
-	?>  
-    <!-- View of priser -->
-	<div class="row">
-		<div class=' offset-by-three columns six columns box2'>
-				
-				<div class="one-third column">
-					<div class="row">
-						<img class="u-full-width"  src="<?php echo $row['link']?>">
-					</div>
-				</div>
-			
-				
-				<div class="two-thirds column greywall">
-					<div class="row">
-								<br>
-						<center><p class="prispakkebillede" style="font-size: 45px"><?php echo $row['name']?> </p></center>
-						<center><p class="para" style="font-size: 20px"><?php echo $row['description']?></p> </center>  
-						<?php if(empty($row['pris']))
-							{
-								echo "<center><p class='padding5side' style='font-size: 10px'>". $row['kommentar']. "</p></center> ";
-							}else{ 
-					echo "<center><p class='u-pull-right padding5side' style='font-size: 20px'>". $row['pris']. ",-</p></center> ";
-	
-							echo "<center><p class=' padding5side' style='font-size: 12px'>". $row['kommentar']. "</p></center> ";} ?>
-						  
-					
-					</div>
-				</div>
-      		
-		</div>
-	
-	</div>
-
-
-
- <?php } ?>   
-
-    
-
-
-
-
- 
-
- <!-- Top part of the footer-->
+	<?php include_once('Pakke_opstiller.php')?> 
+  <!-- Top part of the footer-->
   <?php include_once('../footer.php') ?>
 </body>
 </html>
