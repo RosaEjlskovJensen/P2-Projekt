@@ -32,11 +32,9 @@ if(!$results){
 <br>
 <br>
   <!-- Heading -->
-
 	<div class="container u-full-width">
 		<h4><center>Generelle pakker</center>	</h4>
      	<center><p>Info eneklte prints priser og størelser kan findes <a href="Priser.php" class="text1">her</a></p>
-      
 	</div>
  	<?php include_once('Pakke_opstiller.php')?>
  <!-- Top part of the footer-->

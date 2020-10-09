@@ -9,7 +9,7 @@
       <div class="nav_dropdown">
         <button class="btn_dropdown">Portfolio <i class=""></i></button>
           <div class="dropdown-content">
-          <li><a href="/test/portfolie/Portfolietemplate.php?item=0" class="button">Baby</a></li>
+          <li><a href="/test/portfolie/Portfolietemplate.php?item=0" class="button">Børn og Baby</a></li>
           <li><a href="/test/portfolie/Portfolietemplate.php?item=1" class="button">Bryllup</a></li>
           <li><a href="/test/portfolie/Portfolietemplate.php?item=2" class="button">CV</a></li>
           <li><a href="/test/portfolie/Portfolietemplate.php?item=3" class="button">Familie</a></li>

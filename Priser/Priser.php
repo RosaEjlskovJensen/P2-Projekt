@@ -31,26 +31,13 @@ if(!$results){
 <br>
 <br>
 <br>
-
-
   <!-- Heading -->
 
 	<div class="container u-full-width">
 		<h4><center>Enkelt Print</center>	</h4>
 	</div>
 
-
-
   	<?php include_once('Pakke_opstiller.php')?>
-
-    
-
-
-
-
-
-
- 
 
  <!-- Top part of the footer-->
   <?php include_once('../footer.php') ?>
